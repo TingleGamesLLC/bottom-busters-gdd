@@ -1,9 +1,22 @@
 # Bottom Busters — Game Design Document
 
-First draft, for Assignment #1 (GDD First Draft, due Tue 10/20), Multi-Agent AI for Game Development, ELVTR.
-Studio: Tingle Games LLC. Draft date: 2026-10-08.
+Second draft, for Assignment #1 (GDD First Draft, due Tue 10/20), Multi-Agent AI for Game Development, ELVTR.
+Studio: Tingle Games LLC. First draft 2026-10-08; this revision 2026-10-15. A 5-page short form of this document exists alongside it.
 
-Status of this draft: the facts below come from the project's own docs (`CLAUDE.md`, the plan files and the session log in `C:\bbust\BBUST`). Lines marked **[DRAFT]** are proposed wording to confirm or change. The course template is handed out in class 02 (10/13); this draft follows a standard GDD structure so it can be moved into that template.
+Status of this draft: the facts below come from the project's own docs (`CLAUDE.md`, the plan files and the session log in `C:\bbust\BBUST`) and from the game as built on 2026-10-15. Lines marked **[DRAFT]** are proposed wording to confirm or change.
+
+## 0. What changed since the first draft (2026-10-08)
+
+The first draft went through a six-reviewer design board on 2026-10-14. The decisions below were made after that review and are now part of the design. Each one names the board finding it answers.
+
+- **The demo is the whole built game: all 99 levels, not 15.** The run ends, as a win, on the end card after Bonus Round 33, which follows level 99. Both the Steam and itch.io demos are this build. This answers the board's finding that a 15-level, pickup-boosted, bonus-heavy slice was a non-representative sample: what people play is what they will rate, and the flat stretch from level 8 is now exposed to real players before launch instead of after. (Sections 18, 19.)
+- **The demo now has a defined end state.** The run is bounded by the end card; nobody plays past Bonus Round 33. For the full game the same mechanism bounds the run at level 200 (Section 18). The endless mode, where the only thing that climbs is the AI difficulty number, is the home for unbounded play and is specified as a separate mode (Section 5). This answers the "no end state" half of the board's top issue; the curve half is answered below.
+- **The difficulty curve from level 8 on is a planned deliverable with a mechanism, not a gap.** Enemy count and the per-level difficulty number become a tuning table produced from playtest telemetry by a Difficulty Tuner agent and approved by hand, and the itch.io release exists to generate that telemetry. (Sections 6.3, 16.)
+- **Level count stays at 200, and the 101 new levels have a production method.** New single-screen level files come from a Level Architect agent, are checked by a QA agent in a headless build, and are discovered at runtime like today's levels. The art rule of one unique backdrop per level stands and the Wardrobe Stylist agent is scoped to help. The 200 figure is kept because the method for producing the levels is now written down, not because the end card says so. (Section 16.)
+- **The Custom Game menu stays in the demo as a teaser.** The board recommended pulling it as a dead click. The decision is to keep it: the end card already tells every player custom games are coming, the demo is explicitly a demo of a game in development, and the mockup is an explorable preview, not a dead button. The procedural-level and asset work from this course is what will sit behind it. (Section 5.)
+- **Release intent is now explicit: itch.io first as the proving ground, then Steam as the commercial release, same build.** Price is proposed at $9.99 for the full game and free for the demo on both stores. (Section 19.)
+- **Replays now cover every mode.** Gauntlet saves the whole run; Burrito Arena keeps a rolling 60-second window with Save Replay in the pause menu. Replay format v12. (Section 13.)
+- **Not yet decided, still open from the board:** 2P fail states and score ownership in versus and co-op; the pickup drop table and the trap presentation; the Chain Kills definition and the bonus-round payout ratio; the roast line spec and announcer count; the Section 3 audience and register; the announcer wave callouts 1 to 50 against 60 Survival waves. These stay in Section 20.
 
 ---
 
@@ -87,7 +100,8 @@ Controls can be remapped for keyboard and gamepad in Settings. In 1P, Player 1 r
 | **Survival** | 1P, 2P co-op | 60 waves in three tiers of 20. Each tier climbs from 1 to 20 enemies falling in from the sky; difficulty steps up at waves 21 and 41 (shown as 100%, +25%, +25%). Clearing wave 60 is a VICTORY. Own leaderboards for Highest Wave and Most Points. |
 | **Gauntlet** | 1v1 or 2v2 against AI | No powerups. The AI gets 10% tougher every wave, with no cap. One life per player; an eliminated player returns when their partner clears the wave. Every wave fully resets both sides, cheeks included. Ranked by wave. |
 | **Bonus Round** | inside High Score | Four chef animals flip food straight up; catch it for 500 points each (20 pieces in 1P, 40 in 2P). Nobody can die. When the round ends, the chefs' hats become trampolines until the player continues. |
-| **Custom Game** | teaser | A fully interactive menu mockup with no gameplay behind it yet. Custom games are promised for the full game. |
+| **Endless** (planned) | 1P, 2P co-op | Levels keep coming with no end. Nothing changes but the enemy difficulty number, which climbs a step every few levels with no cap, until the lives are gone. Ranked by the level reached. The infinite-play home for players who want more than 200. |
+| **Custom Game** | teaser | A fully interactive menu mockup with no gameplay behind it yet. Custom games are promised for the full game. Decision 2026-10-15: it stays in the demo as a teaser; the procedural-level and asset-generation work from this course is what goes behind it. |
 
 Survival, Gauntlet and versus Burrito Arena end cards have a PLAY AGAIN button. High Score has no retry: a run is a run.
 
@@ -117,7 +131,8 @@ Survival, Gauntlet and versus Burrito Arena end cards have a PLAY AGAIN button. 
 - **Every other level:** 3 enemies at difficulty 1.0 to 1.3.
 - **Lava:** replaces water on levels 84–99.
 - **Powerup odds:** Burrito and Green Burrito are 25% more likely in levels 1–15, which is the demo's range.
-- **[DRAFT]** Enemy count and difficulty do not ramp yet across levels 8–99. A planned curve for the full 200 belongs here.
+- **As built, enemy count and difficulty do not ramp across levels 8–99.** This is the board's top finding and it is now a planned deliverable with a mechanism: enemy count and the per-level difficulty number move out of the level files into one tuning table. The table is produced by the Difficulty Tuner agent (Section 16) from the per-run event logs of itch.io playtests, and nothing in it ships without a human playtest. The first target curve is **[DRAFT]**: 3 enemies at 1.0 through level 12, then +1 enemy every 25 levels and +0.05 difficulty every 10 levels, so that level 99 runs 6 enemies at about 1.5 and level 200 runs 10 enemies at about 2.0, with the lava world (levels 185–200) as the finale. Those numbers are a starting point for the first playtest round, not a promise.
+- **The run has an end.** The demo ends on the end card after Bonus Round 33 (level 99). The full game ends the same way after level 200's bonus round, with a VICTORY card **[DRAFT]**. Players who want no end play Endless (Section 5).
 
 ## 7. Characters
 
@@ -195,7 +210,8 @@ The score is one total for the whole run, never per level.
 ## 13. Replays, sharing and leaderboards
 
 - **Replays:** every run is recorded as a 1:1 copy of what was on screen, including poo, splats, sounds and the HUD. Players save runs to a library and can Watch, Rename, Delete or Share them. Library rows show live previews of the replay.
-- **Share clip:** a 25-second video, 9:16 for TikTok, Shorts and Reels, rendered in-game. The camera follows the action and zooms in around fights. Players save it through a Save As dialog. The encoder is a bundled LGPL FFmpeg build that uses the computer's own GPU encoder.
+- **Every mode records (as of 2026-10-15, format v12).** High Score and Survival as before. Gauntlet saves the whole run, with the late-spawning wave enemies and the WAVE banners recorded. Burrito Arena, which never ends in 1P and co-op, keeps a rolling window: the recorder holds at most the last 90 seconds, SAVE REPLAY in the pause menu writes the last 60 seconds as a snapshot and the session keeps recording, and the versus winner card saves the last 60 seconds of the match. The button's hover text says "Saves the last 60 seconds." Older replays still load.
+- **Share clip:** a 25-second video (60 seconds for arena replays), 9:16 for TikTok, Shorts and Reels, rendered in-game. The camera follows the action and zooms in around fights. Players save it through a Save As dialog. The encoder is a bundled LGPL FFmpeg build that uses the computer's own GPU encoder.
 - **Clip pages (planned, not built):** each shared clip gets its own public, anonymous page on tinglegames.com, rated in pairs of white underwear.
 - **Leaderboards:** Steam boards with Global and Friends tabs, a 1P/2P toggle, and High Score, Survival (Highest Wave and Most Points) and Gauntlet (by wave). The top 3 entries carry a replay anyone can watch in-game, with Steam names shown over the characters.
 - **Anti-cheat (planned):** a server checks each run before posting it to trusted boards. This waits on the game's own Steam App ID.
@@ -224,7 +240,18 @@ The score is one total for the whole run, never per level.
 - The roast lines come from a pre-written line bank, never generated live. This keeps the cost to $0 per player, works offline, and keeps Steam's disclosure to the pre-generated-content checkbox. The roast lines are due for a rework.
 - The announcer voices are text-to-speech recorded ahead of time (ElevenLabs), shipped as audio files. Steam's AI-disclosure rules treat that as pre-generated content.
 
-**[DRAFT] For this course:** later assignments build an agent crew, a RAG content pipeline, a GDD-reading coding agent, a style guide agent and QA/balance agents around this game. Which parts of Bottom Busters they target goes here once the template's AI sections are known.
+**For this course: a development-time agent crew.** Two kinds of AI exist in this project and they never mix. The shipped game's only AI is the enemy state machine above plus pre-recorded voices and pre-written text. The crew below runs at development time on the project's own files, and its output is ordinary game data the game already discovers at runtime: level files, a tuning table, text, sprites and test reports. No agent runs on a player's machine and no API key ships in the build. Each agent has one job and one output, no two write the same file, and the handoff between them is a file in the repository. A human playtest is the last gate for all of it.
+
+| Agent | Development role | What the player sees because of it |
+|---|---|---|
+| Level Architect | Writes new single-screen level files (ground gaps, platforms, spawn points, ceiling-drop markers, theme) that obey the rules in Section 6.1. | Levels 100 to 200 and the Endless mode's layouts. |
+| Difficulty Tuner | Reads the per-run event log from playtests and proposes enemy count and the difficulty number for each level and each Endless step. | The curve in Section 6.3 actually climbing after level 8. |
+| Roast Writer | Rewrites the roast line bank and superlatives, tagged to the run events that trigger them. | A GAME OVER card that roasts what you actually did, from text shipped inside the game. |
+| Wardrobe Stylist | Produces hat and shades sprites and backdrop picks that pass the house sprite standard. | More hats and shades on Character Select; more unique backdrops for the new levels. |
+| QA Playtester | Loads every new level in a headless Unity build and checks that each enemy is reachable, no spawn is over water, and the level can be cleared. | No unwinnable or empty level reaches the demo. |
+| Builder | Reads this GDD and the project's coding rules and implements one approved feature at a time in C#, then runs the existing build-and-verify loop. | The Endless mode, the Custom Game screen behind the teaser, and the loaders the other agents' output needs. |
+
+Semester token budget, as a cap: about 4.8 million tokens, of which the Builder is 3 million (six feature slices at about 500,000 each) and the five content agents share the rest. The budget and the per-agent file boundaries are in the short-form GDD.
 
 ## 17. Technical summary
 
@@ -233,19 +260,23 @@ The score is one total for the whole run, never per level.
 - Replays are recordings, not deterministic re-simulations, so balance patches never break saved replays.
 - One event log per run feeds three things: stats, replay playback and score checking.
 - Levels, player skins and AI variants are discovered at runtime, never hardcoded, so new content drops in.
-- Development so far is about 374 logged hours, counted as a minimum.
+- **One project, two build targets.** The Steam build and the itch.io build come from the same tree, scenes and assets. The itch target turns off the Steam define and leaves the two Steam DLLs out, asserts that no Steam file or debug symbol is in the output, and zips. There is nothing to keep in sync between the two stores because there is one source.
+- Development so far is about 389 logged hours, counted as a minimum.
 
 ## 18. Scope: demo and full game
 
-**Steam demo (built):**
-- 15 levels, ending after Bonus Round 5.
-- Burrito Arena and 2P are included.
-- The end card reads: "THAT'S THE DEMO. You played 15 levels. The full game has 200. Plus more characters, more music, more sounds, more powerups, and custom games you build yourself. Wishlist Bottom Busters on Steam."
+**Demo (built, 2026-10-15), identical on itch.io and Steam:**
+- All 99 built levels, ending as a win on the end card after Bonus Round 33.
+- Every mode and 2P are included. Custom Game is present as a teaser (Section 5).
+- The end card reads: "THAT'S THE DEMO. You played 99 levels. The full game has 200. Plus more characters, more music, more sounds, more powerups, and custom games you build yourself. Wishlist Bottom Busters on Steam."
+- Why 99 and not 15 (decision 2026-10-15): the 15-level slice was pickup-boosted, ended on a bonus round and was too short to show the curve, so wishlists and reviews would have come from a game the demo did not resemble. At 99, the demo is the honest version, the flat curve and the run length get real feedback before Next Fest, and the class deliverable is the actual game. The cost, accepted: the built game is free, and the purchase incentive is the 101 levels, the Endless mode and the content still to come.
+- The pickup boost for levels 1–15 (Section 6.3) was tuned for the old demo range and is on the drop-table list in Section 20.
 
 **Full game:**
-- 200 levels.
+- 200 levels, with the curve and ending in Section 6.3.
+- The Endless mode (Section 5).
 - More characters, music, sounds and powerups.
-- A custom game builder.
+- A custom game builder, fronted by the Custom Game screen that ships as a teaser today.
 
 **Planned later:**
 - A Hats 'n Shades store (real money).
@@ -257,23 +288,30 @@ The score is one total for the whole run, never per level.
 
 ## 19. Business and release [DRAFT]
 
-- Publisher: Tingle Games LLC (Texas). Steamworks approval is pending.
+- Publisher: Tingle Games LLC (Texas). Steamworks approval is in its identity-verification step.
 - The Steam build contains no sweepstakes, donation button or crypto.
+- **Release intent: itch.io first, then Steam, same build.** itch.io is the proving ground: the 99-level demo goes up first as a Draft or password-restricted page for the class and a small group of testers, then public. It is where the curve, the run length, the end card and the agent-made content get played by strangers before anything is promised on a store page that sells, and it is the source of the playtest telemetry the Difficulty Tuner needs. Builds push through itch's butler tool. Steam is the commercial release and carries the account-backed features: global and friends leaderboards with watchable replays, Remote Play Together, Workshop replays.
 - **Proposed timeline:**
-  - Demo in November 2026.
+  - itch.io demo: October 2026, restricted; public when the first playtest round is in.
+  - Steam demo in November 2026, once the App ID exists.
   - Steam Next Fest, Feb 22 – Mar 1, 2027, plus the Couch Co-Op Fest, Feb 8–15, 2027.
   - Launch in March or April 2027.
+- **Price [DRAFT, proposed]:** demo free on both stores; full game $9.99 on both, with a 10–15% launch discount. itch stays at price parity with Steam because Steam's terms require it. Level count does not move the price; the Endless mode is the retention feature that lets the price hold through sales.
 - Remote Play Together lets one owner play with a friend online. Steam turns it on for games listed as local co-op, and it also qualifies the game for the Couch Co-Op Fest.
 - **Marketing:** daily vertical clips from the game's own clip exporter, posted to YouTube Shorts, TikTok and Instagram Reels, with a wishlist link on every post.
 - **Localization:** store pages first, starting with Simplified Chinese. The game has very little text to translate.
-- The price is not set yet.
 
 ## 20. Risks and open questions
 
-- **Steam App ID:** online play, trusted leaderboards and Workshop features wait on Steamworks approval.
-- **Difficulty curve:** levels 8–99 mostly repeat the same enemy setup (section 6.3).
-- **Level variety:** single-screen levels on a fixed ground strip and three platform heights can look alike across 200 levels. Layout concepts to break that up are written in `LEVEL_DESIGN_CONCEPTS.md` and not yet decided.
+- **Steam App ID:** online play, trusted leaderboards and Workshop features wait on Steamworks approval. The itch.io release does not.
+- **Difficulty curve:** as built, levels 8–99 repeat the same enemy setup. The mechanism and first target curve are in Section 6.3; the risk is now that the first playtest round is late, not that the curve is unplanned.
+- **2P fail states and score ownership (open, from the board):** versus has no rule for simultaneous death; 1UP is not ruled out of versus; co-op does not say whose last life ends the run; Sections 5 and 11 say one score for the run while the HUD shows each player's total. To be written before the public itch page.
+- **Pickup drop table and trap presentation (open, from the board):** no per-pickup weights or placement rules; Splat Bat, Bomb and Cork share the reward presentation of real pickups; the levels 1–15 boost is left over from the old demo range.
+- **Scoring definitions (open, from the board):** Chain Kills base and stacking, Stomp Kill 500 vs 700, Flawless Clear's "lost," and the bonus-round payout against three levels of play.
+- **Roast lines and announcer:** the roast bank needs a spec (target, register, 1P vs 2P addressee) before the rework; whether the demo ships one announcer or three is undecided. Replays freeze whatever line was live, so the rework deadline is before the public demo records its first run.
+- **Announcer wave callouts** cover 1–50 against 60 Survival waves. One number.
+- **Audience and register (open, from the board):** "friends and families" next to an uzi and kill-streak callouts. Decide the buyer or the vocabulary, and write the roast spec on the same decision.
+- **Level variety:** single-screen levels on a fixed ground strip and three platform heights can look alike across 200 levels. Layout concepts are in `LEVEL_DESIGN_CONCEPTS.md`; the Level Architect agent's rules will be written from whichever are chosen.
 - **Remote Play latency:** remote play is video streamed, and the added delay may hurt flap timing. Not yet tested.
 - **Music and audio rights:** need to be cleared before clips and streams are promoted.
-- **Roast lines:** need a rework before they appear on clip pages or in marketing.
-- **Fill in:** pitch, pillars and audience wording, price, and the course template's AI-specific sections.
+- **Fill in:** pitch, pillars and audience wording.
