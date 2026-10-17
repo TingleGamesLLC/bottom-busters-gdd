@@ -1,7 +1,7 @@
 # Bottom Busters — Game Design Document
 
 Second draft, for Assignment #1 (GDD First Draft, due Tue 10/20), Multi-Agent AI for Game Development, ELVTR.
-Studio: Tingle Games LLC. First draft 2026-10-08; this revision 2026-10-15. A 5-page short form of this document exists alongside it.
+Studio: Tingle Games LLC. First draft 2026-10-08; this revision 2026-10-15, with game facts updated 2026-10-17 (share clip length, uzi streak rule, roast bank). A 5-page short form of this document exists alongside it.
 
 Status of this draft: the facts below come from the project's own docs (`CLAUDE.md`, the plan files and the session log in `C:\bbust\BBUST`) and from the game as built on 2026-10-15. Lines marked **[DRAFT]** are proposed wording to confirm or change.
 
@@ -43,7 +43,7 @@ The first draft went through a six-reviewer design board on 2026-10-14. The deci
 1. **Stomp or be stomped.** Height is power. Flap timing and position decide every fight, the same way they do in *Balloon Fight*.
 2. **Couch chaos.** Two players on one screen, as partners or rivals. Local 2P is in every mode and in the demo.
 3. **Gross-out humor that leaves a mark.** Poo is physical. It piles, squishes, dirties cheeks, bodies and hats, and the base coat never washes off.
-4. **Every run is a clip.** Every run is recorded 1:1, saved to a library, and can be exported as a 25-second vertical video to share.
+4. **Every run is a clip.** Every run is recorded 1:1, saved to a library, and can be exported as a 25- to 60-second vertical video to share.
 5. **Plays on a potato.** Performance is a design requirement, not a polish pass.
 
 ## 3. Target audience [DRAFT]
@@ -198,6 +198,7 @@ The score is one total for the whole run, never per level.
 - Points pop up on screen where they were earned, and pop-ups lift so they never overlap.
 - Uzi streak badges appear where the enemies died.
 - The end card lists each kill combo earned, for example "Double Kill: x2 – 2,000".
+- A streak counts once, at the top badge it reached: each new badge pays only the step up to its value, so a penta streak totals 2,500 and the card lists only that Penta Kill. The 6th kill is the mega and the last badge. A kill that lands after the shooter died or the level ended gets no badge and no bonus (2026-10-17).
 
 ## 12. Feedback, UI and presentation
 
@@ -211,7 +212,7 @@ The score is one total for the whole run, never per level.
 
 - **Replays:** every run is recorded as a 1:1 copy of what was on screen, including poo, splats, sounds and the HUD. Players save runs to a library and can Watch, Rename, Delete or Share them. Library rows show live previews of the replay.
 - **Every mode records (as of 2026-10-15, format v12).** High Score and Survival as before. Gauntlet saves the whole run, with the late-spawning wave enemies and the WAVE banners recorded. Burrito Arena, which never ends in 1P and co-op, keeps a rolling window: the recorder holds at most the last 90 seconds, SAVE REPLAY in the pause menu writes the last 60 seconds as a snapshot and the session keeps recording, and the versus winner card saves the last 60 seconds of the match. The button's hover text says "Saves the last 60 seconds." Older replays still load.
-- **Share clip:** a 25-second video (60 seconds for arena replays), 9:16 for TikTok, Shorts and Reels, rendered in-game. The camera follows the action and zooms in around fights. Players save it through a Save As dialog. The encoder is a bundled LGPL FFmpeg build that uses the computer's own GPU encoder.
+- **Share clip:** a 25- to 60-second video (a CLIP LENGTH chooser in 5-second steps, capped at the replay's length; arena and Gauntlet clips default to 60 seconds), 9:16 for TikTok, Shorts and Reels, rendered in-game. The camera follows the action and zooms in around fights. Players save it through a Save As dialog. The encoder is a bundled LGPL FFmpeg build that uses the computer's own GPU encoder.
 - **Clip pages (planned, not built):** each shared clip gets its own public, anonymous page on tinglegames.com, rated in pairs of white underwear.
 - **Leaderboards:** Steam boards with Global and Friends tabs, a 1P/2P toggle, and High Score, Survival (Highest Wave and Most Points) and Gauntlet (by wave). The top 3 entries carry a replay anyone can watch in-game, with Steam names shown over the characters.
 - **Anti-cheat (planned):** a server checks each run before posting it to trusted boards. This waits on the game's own Steam App ID.
@@ -237,7 +238,7 @@ The score is one total for the whole run, never per level.
 
 **In the game:**
 - Enemy AI with a single tunable difficulty value (section 8).
-- The roast lines come from a pre-written line bank, never generated live. This keeps the cost to $0 per player, works offline, and keeps Steam's disclosure to the pre-generated-content checkbox. The roast lines are due for a rework.
+- The roast lines come from a pre-written line bank, never generated live. This keeps the cost to $0 per player, works offline, and keeps Steam's disclosure to the pre-generated-content checkbox. The roast lines are due for a rework. As of 2026-10-17 the bank has 46 lines, picked by win or loss only, and the 25 lines about poo, toilets or smell never play in Gauntlet.
 - The announcer voices are text-to-speech recorded ahead of time (ElevenLabs), shipped as audio files. Steam's AI-disclosure rules treat that as pre-generated content.
 
 **For this course: a development-time agent crew.** Two kinds of AI exist in this project and they never mix. The shipped game's only AI is the enemy state machine above plus pre-recorded voices and pre-written text. The crew below runs at development time on the project's own files, and its output is ordinary game data the game already discovers at runtime: level files, a tuning table, text, sprites and test reports. No agent runs on a player's machine and no API key ships in the build. Each agent has one job and one output, no two write the same file, and the handoff between them is a file in the repository. A human playtest is the last gate for all of it.

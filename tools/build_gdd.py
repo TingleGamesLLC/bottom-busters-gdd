@@ -120,7 +120,7 @@ p(
     "The main mode is High Score: single-screen levels in order, three lives, one score for the "
     "whole run, a bonus round every three levels, and no retry. A run ends on a GAME OVER card with "
     "a roast line and superlatives, and every run can be saved as a replay and exported as a "
-    "25-second vertical clip. Three more modes share the same characters and rules: Burrito Arena "
+    "25- to 60-second vertical clip. Three more modes share the same characters and rules: Burrito Arena "
     "(casual deathmatch or co-op), Survival (60 waves) and Gauntlet (versus AI, difficulty rising "
     "10% per wave with no cap)."
 )
