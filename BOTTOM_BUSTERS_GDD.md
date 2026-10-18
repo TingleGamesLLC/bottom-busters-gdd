@@ -1,7 +1,7 @@
 # Bottom Busters — Game Design Document
 
 Second draft, for Assignment #1 (GDD First Draft, due Tue 10/20), Multi-Agent AI for Game Development, ELVTR.
-Studio: Tingle Games LLC. First draft 2026-10-08; this revision 2026-10-15, with game facts updated 2026-10-17 (share clip length, uzi streak rule, roast bank). A 5-page short form of this document exists alongside it.
+Studio: Tingle Games LLC. First draft 2026-10-08; this revision 2026-10-15, with game facts updated 2026-10-17 (share clip length, uzi streak rule, roast bank) and 2026-10-18 (cheek sets, colorblind mode, version number, demo and full-game builds). A 5-page short form of this document exists alongside it.
 
 Status of this draft: the facts below come from the project's own docs (`CLAUDE.md`, the plan files and the session log in `C:\bbust\BBUST`) and from the game as built on 2026-10-15. Lines marked **[DRAFT]** are proposed wording to confirm or change.
 
@@ -141,6 +141,7 @@ Survival, Gauntlet and versus Burrito Arena end cards have a PLAY AGAIN button. 
 - **Character Select** comes before every mode, with one cursor per player: skin, hat, shades and hat colors, then READY.
 - **Wearables today:** a santa hat and a turkey hat; black shades and silver aviators; 10 color swatches per hat region plus the art's default colors. Hats get dirty from poo too.
 - **Settings option:** "AI Wear Hats" puts random hats on enemies.
+- **Cheek sets (2026-10-18):** every character rolls one of four cheek sets each life, players and enemies alike: smooth (glossy skin), zits (razor burn: stubble, follicle-sized whiteheads, ingrown hairs, blackheads), scarred (stitched scar, bruise, crossed band-aids) and hairy (realistic hair of mixed lengths). All four keep the original disc, 5 px outline and skin tone. The menus roll them too. Replays show each life's own set; replays saved before the sets keep the original hairy cheeks.
 
 ## 8. Enemy AI
 
@@ -203,7 +204,9 @@ The score is one total for the whole run, never per level.
 ## 12. Feedback, UI and presentation
 
 - **Main menu:** a wrapping menu wheel (keys, stick, mouse and touch) with the Steam leaderboard on screen. A Tingle Games intro sting plays once per launch.
-- **Menu pages:** Replays, Stats (lifetime totals), Scoring (the points table), Settings (audio, remapping, announcer voice, AI Wear Hats; also used as the pause menu), Credits.
+- **Menu pages:** Replays, Stats (lifetime totals), Scoring (the points table), Settings (audio, remapping, announcer voice, colorblind mode, AI Wear Hats; also used as the pause menu), Credits.
+- **Colorblind mode (2026-10-18):** Off, Protanopia, Deuteranopia or Tritanopia, ported from Tingle Solitaire. One daltonization filter over the whole finished picture (every menu, the HUD and gameplay), not per-item color swaps. Checked by colorblindness simulation: the red/green problems are fixed (player vs enemy glow under deuteranopia 24.6 -> 69.3 deltaE; burrito vs green burrito under protanopia 3.9 -> 21.2); a few pairs come closer and are accepted (poo on the pale bone ground; the Quadra and Penta badges under tritanopia, which also differ in words). Share clips stay in normal colors.
+- **Version (2026-10-18):** the build's version shows in the main menu corner and at the foot of Settings, e.g. "v0.9.0 demo - itch - 2026-10-18 5e6f142", and is recorded in Player.log and every replay.
 - **HUD:** each player's run total and underwear life icons, a timer with the Bottom Busters logo on either side, the level number top right, and wave and difficulty % in Survival and Gauntlet. Every HUD text sits on a dark box so it reads on any backdrop.
 - **End of run:** a 10-second wind-down, then the result card. GAME OVER (with a sad trombone-style sting) or VICTORY, the final total and best, a roast line, and rotating superlatives such as Methane Released, Held It In, Full Coverage and Died Dirty.
 - **Announcer:** three pre-recorded voices (Grant is the default; also a drill sergeant and a Scottish voice). They read roast lines, wave callouts 1–50 and uzi kill streaks. Players can turn the announcer off.
@@ -263,14 +266,16 @@ Semester token budget, as a cap: about 4.8 million tokens, of which the Builder 
 - One event log per run feeds three things: stats, replay playback and score checking.
 - Levels, player skins and AI variants are discovered at runtime, never hardcoded, so new content drops in.
 - **One project, two build targets.** The Steam build and the itch.io build come from the same tree, scenes and assets. The itch target turns off the Steam define and leaves the two Steam DLLs out, asserts that no Steam file or debug symbol is in the output, and zips. There is nothing to keep in sync between the two stores because there is one source.
-- Development so far is about 389 logged hours, counted as a minimum.
+- **Demo builds and full-game test builds (2026-10-18).** Each build command makes two players per store: the demo players download, which saves no diagnostic files on their machines, and a full-game test copy that runs past the demo's end and keeps every diagnostic log, for development only.
+- Development so far is about 411 logged hours, counted as a minimum.
 
 ## 18. Scope: demo and full game
 
 **Demo (built, 2026-10-15), identical on itch.io and Steam:**
 - All 99 built levels, ending as a win on the end card after Bonus Round 33.
 - Every mode and 2P are included. Custom Game is present as a teaser (Section 5).
-- The end card reads: "THAT'S THE DEMO. You played 99 levels. The full game has 200. Plus more characters, more music, more sounds, more powerups, and custom games you build yourself. Wishlist Bottom Busters on Steam."
+- The end card reads: "THAT'S THE DEMO. You played 99 levels. The full game has 200. Plus more characters, more music, more sounds, more powerups, and custom games you build yourself." Its first button is WISHLIST ON STEAM in the Steam build and FOLLOW ON ITCH (the game's itch page) in the itch build (2026-10-18).
+- The developer level-skip buttons are gone from every build (2026-10-18).
 - Why 99 and not 15 (decision 2026-10-15): the 15-level slice was pickup-boosted, ended on a bonus round and was too short to show the curve, so wishlists and reviews would have come from a game the demo did not resemble. At 99, the demo is the honest version, the flat curve and the run length get real feedback before Next Fest, and the class deliverable is the actual game. The cost, accepted: the built game is free, and the purchase incentive is the 101 levels, the Endless mode and the content still to come.
 - The pickup boost for levels 1–15 (Section 6.3) was tuned for the old demo range and is on the drop-table list in Section 20.
 
