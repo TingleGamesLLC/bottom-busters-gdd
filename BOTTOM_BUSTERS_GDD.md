@@ -79,7 +79,7 @@ Controls can be remapped for keyboard and gamepad in Settings. In 1P, Player 1 r
 
 - **Two cheeks** are a character's health. A stomp, a bump, an uzi bullet, a chili flame or a whoopee cushion pops one cheek.
 - **Stomp Kill:** landing on an enemy so that both of its cheeks pop at once.
-- **Death:** with both cheeks gone the character deflates and flies off on a 5-second death flight.
+- **Death:** with both cheeks gone the character deflates and flies off on a 5-second death flight, arms flailing.
 - **Instant deaths:** water (or lava), the splat bat pickup, and the bomb pickup.
 - **Water** kills when the character's center is inside it, not on a graze, so standing at a ledge is safe.
 - Screen-wrap edge copies of a character can be hit, and those hits count on the real character.
@@ -223,6 +223,7 @@ The score is one total for the whole run, never per level.
 - Terrain is 32-pixel tile art with point filtering, drawn large on screen.
 - Gameplay has a light post-processing grade: bloom, slight contrast and saturation, and a soft vignette.
 - The splat effect is one flat brown (RGB 117, 74, 40) with no shading.
+- The splat bat throws the character it hit at the screen wearing its own face, with X eyes and a frown.
 - Humor-first visuals: underwear life icons, cheek "health", poo stains that stay, chef animals in the bonus rounds.
 - A house sprite standard (import settings, density against a 4K screen) is applied automatically to every new sprite.
 
