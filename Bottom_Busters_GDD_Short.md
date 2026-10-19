@@ -1,4 +1,4 @@
-# Bottom Busters
+# **Bottom Busters**
 
 Game Design Document, first draft (short form)
 
@@ -8,13 +8,13 @@ Multi-Agent AI for Game Development, ELVTR. Assignment #01. David, Tingle Games 
 
 Bottom Busters is a 2D arcade action platformer for one or two players on one screen, inspired by Nintendo's Balloon Fight. Every character floats like a balloon and flies by farting. Each character has two cheeks for health. You land on an enemy from above to pop its cheeks; lose both of yours and you deflate and fly off the screen. Water kills instantly. Thirteen powerups range from a speed burrito to an uzi to a cork that plugs you up for four seconds. The Green Burrito sprays poo that piles up, sticks to bodies and hats, and stays on the level for the rest of the run.
 
-The main mode is High Score: single-screen levels in order, three lives, one score for the whole run, a bonus round every three levels, and no retry. A run ends on a GAME OVER card with a roast line and superlatives, and every run can be saved as a replay and exported as a 25- to 60-second vertical clip. Three more modes share the same characters and rules: Burrito Arena (casual deathmatch or co-op), Survival (60 waves) and Gauntlet (versus AI, difficulty rising 10% per wave with no cap).
+The main mode is High Score: single-screen levels in order, three lives, one score for the whole run, a bonus round every three levels, and no retry. A run ends on a GAME OVER card with a roast line and superlatives, and every run can be saved as a replay and exported as a 25- to 60-second vertical clip or a 16:9 widescreen video. Three more modes share the same characters and rules: Burrito Arena (casual deathmatch or co-op), Survival (60 waves) and Gauntlet (versus AI, difficulty rising 10% per wave with no cap).
 
-99 hand-built levels across six terrain themes exist today and ship as the free demo on itch.io and Steam. The full game is 200 levels plus an endless mode whose difficulty keeps climbing. The game is playable now in all four modes with local co-op and versus, replays, clip export, Steam leaderboards and about 389 logged development hours. The capstone work for this course is the content that gets the game from 99 levels to 200 and endless, produced by a crew of AI agents that work at development time, not at runtime. Nothing an agent makes reaches a player until it has been built, tested and played by a human.
+99 hand-built levels across six terrain themes exist today and ship as the free demo on itch.io and Steam. The full game is 200 levels plus an endless mode whose difficulty keeps climbing. The game is playable now in all four modes with local co-op and versus, replays, clip export, Steam leaderboards and about 413 logged development hours. The capstone work for this course is the content that gets the game from 99 levels to 200 and endless, produced by a crew of AI agents that work at development time, not at runtime. Nothing an agent makes reaches a player until it has been built, tested and played by a human.
 - **Pillar 1.** Stomp or be stomped. Height is power; flap timing and position decide every fight.
 - **Pillar 2.** Couch chaos. Two players on one screen, as partners or rivals, in every mode.
 - **Pillar 3.** Gross-out humor that leaves a mark. Poo is physical and the base coat never washes off.
-- **Pillar 4.** Every run is a clip. Every run is recorded 1:1 and can be shared as a vertical video.
+- **Pillar 4.** Every run is a clip. Every run is recorded 1:1 and can be shared as a vertical or widescreen video.
 
 Target players: people who like short-session arcade action and chasing a high score, friends and families who want a couch game, fans of crude humor, and short-form video viewers.
 
@@ -46,7 +46,7 @@ The loop across a run: levels climb through six themed worlds, a bonus round com
 | High Score (1P or 2P co-op) | You clear the last level and its bonus round (level 99 in the demo, 200 in the full game). Otherwise the goal is the highest run score on the leaderboard. | All lives are gone. No retry; a run is a run. |
 | High Score versus | You end the run with the higher score. | You end it with the lower score, or lose all lives first. |
 | Survival (1P or 2P co-op) | You clear wave 60 (VICTORY). | All lives are gone. |
-| Gauntlet (1v1 or 2v2 vs AI) | There is no end; you are ranked by the wave you reached. | Your side is eliminated in a wave. |
+| Gauntlet (1v1 or 2v2 vs AI) | There is no end; two boards rank your highest wave and your most points. | Your side is eliminated in a wave. |
 | Burrito Arena versus | You are the last player standing (three lives each). | You lose all three lives. |
 | Endless (planned) | No end; you are ranked by the level reached. | All lives are gone. |
 

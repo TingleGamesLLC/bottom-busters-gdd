@@ -98,7 +98,7 @@ Controls can be remapped for keyboard and gamepad in Settings. In 1P, Player 1 r
 | **High Score** | 1P, 2P co-op, 2P versus | The main mode. Levels in order, three lives, one score for the whole run. A bonus round every 3 levels. |
 | **Burrito Arena** | 1P, 2P co-op, 2P versus | Casual fun mode on a random level's backdrop and terrain. 1P has infinite hidden lives and no visible timer. 2P versus is a deathmatch with three lives each; the last player standing gets a "P1 WINS!" or "P2 WINS!" victory card. |
 | **Survival** | 1P, 2P co-op | 60 waves in three tiers of 20. Each tier climbs from 1 to 20 enemies falling in from the sky; difficulty steps up at waves 21 and 41 (shown as 100%, +25%, +25%). Clearing wave 60 is a VICTORY. Own leaderboards for Highest Wave and Most Points. |
-| **Gauntlet** | 1v1 or 2v2 against AI | No powerups. The AI gets 10% tougher every wave, with no cap. One life per player; an eliminated player returns when their partner clears the wave. Every wave fully resets both sides, cheeks included. Ranked by wave. |
+| **Gauntlet** | 1v1 or 2v2 against AI | No powerups. The AI gets 10% tougher every wave, with no cap. One life per player; an eliminated player returns when their partner clears the wave. Every wave fully resets both sides, cheeks included. Own leaderboards for Highest Wave and Most Points, like Survival. |
 | **Bonus Round** | inside High Score | Four chef animals flip food straight up; catch it for 500 points each (20 pieces in 1P, 40 in 2P). Nobody can die. When the round ends, the chefs' hats become trampolines until the player continues. |
 | **Endless** (planned) | 1P, 2P co-op | Levels keep coming with no end. Nothing changes but the enemy difficulty number, which climbs a step every few levels with no cap, until the lives are gone. Ranked by the level reached. The infinite-play home for players who want more than 200. |
 | **Custom Game** | teaser | A fully interactive menu mockup with no gameplay behind it yet. Custom games are promised for the full game. Decision 2026-10-15: it stays in the demo as a teaser; the procedural-level and asset-generation work from this course is what goes behind it. |
@@ -209,15 +209,15 @@ The score is one total for the whole run, never per level.
 - **Version (2026-10-18):** the build's version shows in the main menu corner and at the foot of Settings, e.g. "v0.9.0 demo - itch - 2026-10-18 5e6f142", and is recorded in Player.log and every replay.
 - **HUD:** each player's run total and underwear life icons, a timer with the Bottom Busters logo on either side, the level number top right, and wave and difficulty % in Survival and Gauntlet. Every HUD text sits on a dark box so it reads on any backdrop.
 - **End of run:** a 10-second wind-down, then the result card. GAME OVER (with a sad trombone-style sting) or VICTORY, the final total and best, a roast line, and rotating superlatives such as Methane Released, Held It In, Full Coverage and Died Dirty.
-- **Announcer:** three pre-recorded voices (Grant is the default; also a drill sergeant and a Scottish voice). They read roast lines, wave callouts 1–50 and uzi kill streaks. Players can turn the announcer off.
+- **Announcer:** three pre-recorded voices, named in Settings as Mr. Announcer (the default), Drill Sergeant and Scottish. They read roast lines, wave callouts 1–50 and uzi kill streaks. Players can turn the announcer off.
 
 ## 13. Replays, sharing and leaderboards
 
 - **Replays:** every run is recorded as a 1:1 copy of what was on screen, including poo, splats, sounds and the HUD. Players save runs to a library and can Watch, Rename, Delete or Share them. Library rows show live previews of the replay.
 - **Every mode records (as of 2026-10-15, format v12).** High Score and Survival as before. Gauntlet saves the whole run, with the late-spawning wave enemies and the WAVE banners recorded. Burrito Arena, which never ends in 1P and co-op, keeps a rolling window: the recorder holds at most the last 90 seconds, SAVE REPLAY in the pause menu writes the last 60 seconds as a snapshot and the session keeps recording, and the versus winner card saves the last 60 seconds of the match. The button's hover text says "Saves the last 60 seconds." Older replays still load.
-- **Share clip:** a 25- to 60-second video (a CLIP LENGTH chooser in 5-second steps, capped at the replay's length; arena and Gauntlet clips default to 60 seconds), 9:16 for TikTok, Shorts and Reels, rendered in-game. The camera follows the action and zooms in around fights. Players save it through a Save As dialog. The encoder is a bundled LGPL FFmpeg build that uses the computer's own GPU encoder.
+- **Share clip:** a 25- to 60-second video (a CLIP LENGTH chooser in 5-second steps, capped at the replay's length; arena and Gauntlet clips default to 60 seconds), rendered in-game in one of two shapes, picked on a PHONE | 16:9 switch above the length slider (2026-10-18; the last pick is remembered): PHONE is 9:16 for TikTok, Shorts and Reels, where the camera follows the action and zooms in around fights; 16:9 is the whole screen exactly as Watch shows it, HUD included, for YouTube, Discord and Steam. Players save it through a Save As dialog. The encoder is a bundled LGPL FFmpeg build that uses the computer's own GPU encoder.
 - **Clip pages (planned, not built):** each shared clip gets its own public, anonymous page on tinglegames.com, rated in pairs of white underwear.
-- **Leaderboards:** Steam boards with Global and Friends tabs, a 1P/2P toggle, and High Score, Survival (Highest Wave and Most Points) and Gauntlet (by wave). The top 3 entries carry a replay anyone can watch in-game, with Steam names shown over the characters.
+- **Leaderboards:** Steam boards with Global and Friends tabs, a 1P/2P toggle, and High Score, Survival and Gauntlet, the last two each split into Highest Wave and Most Points (Gauntlet since 2026-10-18). The top 3 entries carry a replay anyone can watch in-game, with Steam names shown over the characters.
 - **Anti-cheat (planned):** a server checks each run before posting it to trusted boards. This waits on the game's own Steam App ID.
 
 ## 14. Art direction
@@ -267,7 +267,7 @@ Semester token budget, as a cap: about 4.8 million tokens, of which the Builder 
 - Levels, player skins and AI variants are discovered at runtime, never hardcoded, so new content drops in.
 - **One project, two build targets.** The Steam build and the itch.io build come from the same tree, scenes and assets. The itch target turns off the Steam define and leaves the two Steam DLLs out, asserts that no Steam file or debug symbol is in the output, and zips. There is nothing to keep in sync between the two stores because there is one source.
 - **Demo builds and full-game test builds (2026-10-18).** Each build command makes two players per store: the demo players download, which saves no diagnostic files on their machines, and a full-game test copy that runs past the demo's end and keeps every diagnostic log, for development only.
-- Development so far is about 411 logged hours, counted as a minimum.
+- Development so far is about 413 logged hours, counted as a minimum.
 
 ## 18. Scope: demo and full game
 
@@ -276,6 +276,7 @@ Semester token budget, as a cap: about 4.8 million tokens, of which the Builder 
 - Every mode and 2P are included. Custom Game is present as a teaser (Section 5).
 - The end card reads: "THAT'S THE DEMO. You played 99 levels. The full game has 200. Plus more characters, more music, more sounds, more powerups, and custom games you build yourself." Its first button is WISHLIST ON STEAM in the Steam build and FOLLOW ON ITCH (the game's itch page) in the itch build (2026-10-18).
 - The developer level-skip buttons are gone from every build (2026-10-18).
+- The demo says so (2026-10-18): its exe is "Bottom Busters Demo.exe" and the main menu shows a red DEMO stamp across the bottom corner of BUSTERS. The itch demo is uploaded with butler to the itch page's windows-demo channel (version 0.9.0), so updates patch only what changed.
 - Why 99 and not 15 (decision 2026-10-15): the 15-level slice was pickup-boosted, ended on a bonus round and was too short to show the curve, so wishlists and reviews would have come from a game the demo did not resemble. At 99, the demo is the honest version, the flat curve and the run length get real feedback before Next Fest, and the class deliverable is the actual game. The cost, accepted: the built game is free, and the purchase incentive is the 101 levels, the Endless mode and the content still to come.
 - The pickup boost for levels 1–15 (Section 6.3) was tuned for the old demo range and is on the drop-table list in Section 20.
 
