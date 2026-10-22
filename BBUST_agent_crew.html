@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bottom Busters Agent Crew</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { width: 1600px; background: #fafafa; font-family: "Segoe UI", system-ui, sans-serif; color: #1f2937; }
+  .page { padding: 40px 48px 28px; }
+  h1 { font-size: 30px; font-weight: 700; color: #111827; }
+  .sub { font-size: 16px; color: #4b5563; margin-top: 6px; }
+  .sub b { color: #111827; }
+
+  .tree { display: flex; flex-direction: column; align-items: center; margin-top: 26px; }
+  .node { color: #fff; border-radius: 10px; text-align: center; padding: 12px 22px; }
+  .node .t { font-size: 17px; font-weight: 700; }
+  .node .d { font-size: 13.5px; opacity: .88; margin-top: 3px; }
+  .dark { background: #1f2937; }
+  .purple { background: #4c1d95; }
+  .vline { width: 2px; height: 22px; background: #c7c9cf; }
+  .new { display: inline-block; font-size: 10.5px; font-weight: 700; letter-spacing: .06em; color: #065f46; background: #d1fae5; border-radius: 999px; padding: 1px 7px; margin-left: 6px; vertical-align: 2px; }
+  .node .new { background: #34d399; color: #064e3b; }
+  .caption { font-size: 13px; color: #6b7280; margin-top: 8px; }
+  .caption b { color: #374151; }
+
+  .bracket { position: relative; width: 100%; height: 40px; }
+  .bracket .stem { position: absolute; left: 50%; top: 0; width: 2px; height: 20px; background: #c7c9cf; }
+  .bracket .bar { position: absolute; top: 20px; left: calc((100% - 40px) / 4); right: calc((100% - 40px) / 4); height: 20px; border: 2px solid #c7c9cf; border-bottom: 0; }
+
+  .depts { display: flex; gap: 40px; align-items: stretch; }
+  .dept { flex: 1; border-radius: 14px; background: #fff; border: 1.5px solid #e5e7eb; overflow: hidden; }
+  .dept .head { padding: 14px 18px 12px; color: #fff; }
+  .dept .head .t { font-size: 19px; font-weight: 700; }
+  .dept .head .d { font-size: 13.5px; opacity: .92; margin-top: 2px; }
+  .blue .head { background: #2563eb; }
+  .teal .head { background: #0f766e; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; padding: 18px; }
+  .card { border: 1.5px solid #e5e7eb; border-left-width: 5px; border-radius: 8px; padding: 10px 12px; background: #fff; }
+  .blue .card { border-left-color: #2563eb; }
+  .teal .card { border-left-color: #0f766e; }
+  .card.opt { border-style: dashed; border-left-style: solid; background: #fcfcfd; }
+  .card.tool { background: #f9fafb; border-left-color: #9ca3af !important; }
+  .card .row { display: flex; justify-content: space-between; align-items: baseline; gap: 6px; }
+  .card .t { font-size: 15.5px; font-weight: 700; color: #111827; }
+  .card .tag { font-size: 10.5px; letter-spacing: .06em; color: #6b7280; white-space: nowrap; }
+  .card .d { font-size: 13px; color: #4b5563; margin-top: 4px; line-height: 1.35; }
+
+  .qc { margin-top: 28px; border: 2px dashed #c2410c; border-radius: 14px; background: #fffbf3; padding: 16px 20px 18px; }
+  .qc .title { font-size: 19px; font-weight: 700; color: #c2410c; }
+  .qc .title span { font-size: 13.5px; font-weight: 400; color: #4b5563; margin-left: 10px; }
+  .steps { display: flex; align-items: stretch; gap: 0; margin-top: 12px; }
+  .step { flex: 1; background: #fff; border: 1.5px solid #ead9c4; border-radius: 8px; padding: 10px 14px; }
+  .step .t { font-size: 15.5px; font-weight: 700; color: #111827; display: flex; align-items: center; gap: 7px; }
+  .num { width: 21px; height: 21px; border-radius: 50%; background: #c2410c; color: #fff; font-size: 12px; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; flex: none; }
+  .step .d { font-size: 13px; color: #4b5563; margin-top: 5px; line-height: 1.35; }
+  .op { width: 34px; display: flex; align-items: center; justify-content: center; color: #c2410c; font-size: 20px; font-weight: 600; flex: none; }
+
+  .bottom { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 22px; margin-top: 24px; }
+  .panel { background: #fff; border: 1.5px solid #e5e7eb; border-radius: 12px; padding: 14px 18px 16px; }
+  .panel .t { font-size: 17px; font-weight: 700; }
+  .panel .d { font-size: 13px; color: #6b7280; margin-top: 2px; }
+  .pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .pill { font-size: 13px; border-radius: 999px; padding: 4px 12px; border: 1px solid; }
+  .p-purple .t { color: #6d28d9; } .p-purple .pill { color: #4c1d95; background: #f3e8ff; border-color: #e3cffc; }
+  .p-gray .t { color: #374151; }   .p-gray .pill { color: #1f2937; background: #f3f4f6; border-color: #e5e7eb; }
+  .p-red .t { color: #9a3412; }    .p-red .pill { color: #9a3412; background: #fff1ea; border-color: #fbd5c0; }
+
+  .foot { font-size: 12.5px; color: #6b7280; margin-top: 18px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Tingle Games · Bottom Busters</h1>
+  <p class="sub"><b>10 agents</b>: 7 makers · 3 new control agents (Orchestrator, Critic, Technical Writer) · plus the 6-reviewer GDD board. Every agent runs at development time and ships only game data; nothing runs on a player's machine.</p>
+
+  <div class="tree">
+    <div class="node dark" style="min-width:360px">
+      <div class="t">Studio Director</div>
+      <div class="d">you · vision, play every build, say commit, approve every public post</div>
+    </div>
+    <div class="vline"></div>
+    <div class="node purple" style="min-width:330px">
+      <div class="t">Design Writer</div>
+      <div class="d">you + Claude Code · writes the GDD from the project's docs · runs the review board</div>
+    </div>
+    <div class="vline"></div>
+    <div class="node dark" style="min-width:600px">
+      <div class="t">Orchestrator <span class="new">NEW</span></div>
+      <div class="d">turns the GDD into cards on Trello · leases each card to one agent · moves it to Review · run report</div>
+    </div>
+    <div class="caption"><b>Trello columns:</b> Backlog → In Progress (leased) → Review → Your Playtest → Done</div>
+    <div class="bracket"><div class="stem"></div><div class="bar"></div></div>
+  </div>
+
+  <div class="depts">
+    <div class="dept blue">
+      <div class="head">
+        <div class="t">Content Lane</div>
+        <div class="d">makes game data the game already discovers at runtime · levels, tuning, text, art · never touches code</div>
+      </div>
+      <div class="grid">
+        <div class="card"><div class="row"><span class="t">Level Architect</span><span class="tag">LEVELS</span></div><div class="d">level files for 100–200 and the Endless layouts</div></div>
+        <div class="card"><div class="row"><span class="t">Difficulty Tuner</span><span class="tag">TUNING</span></div><div class="d">enemy count and difficulty table from itch playtest logs</div></div>
+        <div class="card"><div class="row"><span class="t">Roast Writer</span><span class="tag">TEXT</span></div><div class="d">roast bank and superlatives, tagged to run events</div></div>
+        <div class="card"><div class="row"><span class="t">Wardrobe Stylist</span><span class="tag">ART</span></div><div class="d">hats, shades and backdrop picks to the house sprite standard</div></div>
+        <div class="card"><div class="row"><span class="t">Character Artist <span class="new">NEW</span></span><span class="tag">ART</span></div><div class="d">new playable characters: body sprite, 12 death-flail frames, Character Select tile</div></div>
+        <div class="card opt"><div class="row"><span class="t">Juice Animator</span><span class="tag">OPTIONAL</span></div><div class="d">hit-stop, squash, shake and splat settings in one data file</div></div>
+      </div>
+    </div>
+    <div class="dept teal">
+      <div class="head">
+        <div class="t">Build Lane</div>
+        <div class="d">Unity 6.3 LTS · URP · Input System · Box2D · one approved feature at a time · never touches level data, tuning, text or art</div>
+      </div>
+      <div class="grid">
+        <div class="card"><div class="row"><span class="t">Builder</span><span class="tag">C#</span></div><div class="d">Endless mode, Custom Game behind the teaser, loaders for agent output</div></div>
+        <div class="card"><div class="row"><span class="t">QA Playtester</span><span class="tag">QA</span></div><div class="d">headless build: enemies reachable, no spawn over water, level clearable</div></div>
+        <div class="card tool"><div class="row"><span class="t">Build &amp; Ship</span><span class="tag">TOOL</span></div><div class="d">Steam and itch targets from one project, version stamp, butler uploads</div></div>
+        <div class="card tool"><div class="row"><span class="t">Clip Exporter</span><span class="tag">TOOL</span></div><div class="d">in-game export: short clips or full-length recordings, for the daily posts</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="qc">
+    <div class="title">Quality control<span>one layer, run by the Orchestrator whenever a card reaches <b>Review</b> on Trello · no agent calls its own reviewer</span></div>
+    <div class="steps">
+      <div class="step"><div class="t"><span class="num">1</span>Bridge</div><div class="d">a script, not AI: checks format before compile · malformed output goes back to its maker with a fix prompt</div></div>
+      <div class="op">+</div>
+      <div class="step"><div class="t"><span class="num">1</span>Critic <span class="new">NEW</span></div><div class="d">adversarial pass, only what the player sees: does the level read, the roast land, the hat read at 4K</div></div>
+      <div class="op">→</div>
+      <div class="step"><div class="t"><span class="num">2</span>QA Playtester</div><div class="d">headless Unity build in batches of 20 · provenance of every asset</div></div>
+      <div class="op">→</div>
+      <div class="step"><div class="t"><span class="num">3</span>Technical Writer <span class="new">NEW</span></div><div class="d">updates docs and the summary file, archives the card, compacts memory, keeps the diagrams current</div></div>
+      <div class="op">→</div>
+      <div class="step"><div class="t"><span class="num">4</span>Studio Director</div><div class="d">you play the build and say commit</div></div>
+    </div>
+  </div>
+
+  <div class="bottom">
+    <div class="panel p-purple">
+      <div class="t">GDD review board · 6</div>
+      <div class="d">ran on the first draft 2026-10-14 · its findings became these decisions (GDD Section 0)</div>
+      <div class="pills">
+        <span class="pill">99-level demo</span><span class="pill">defined end state</span><span class="pill">curve from playtest data</span>
+        <span class="pill">200 levels with a method</span><span class="pill">Custom Game teaser kept</span><span class="pill">itch first, then Steam</span>
+      </div>
+    </div>
+    <div class="panel p-gray">
+      <div class="t">bbust skills · proposed</div>
+      <div class="d">project know-how each agent loads instead of reading the whole repo</div>
+      <div class="pills">
+        <span class="pill">level-rules</span><span class="pill">house-sprite-standard</span><span class="pill">replay-rules</span>
+        <span class="pill">unity-headless-build</span><span class="pill">scoring-table</span><span class="pill">coding-rules</span>
+      </div>
+    </div>
+    <div class="panel p-red">
+      <div class="t">House rules · every agent</div>
+      <div class="d">from GDD Section 16 and the short GDD Section 4</div>
+      <div class="pills">
+        <span class="pill">no AI at runtime</span><span class="pill">$0 per player</span><span class="pill">one job, one output</span>
+        <span class="pill">no two agents write one file</span><span class="pill">handoff is a file in the repo</span>
+        <span class="pill">~5.0M token cap</span><span class="pill">your playtest is the last gate</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="foot">Source: C:\gdd\BOTTOM_BUSTERS_GDD.md (Section 16) and Bottom_Busters_GDD_Short.md (Section 4) · NEW = new agent: Character Artist added 2026-10-21 from feedback, the other three proposed for the next assignment · TOOL = already built, not an agent · OPTIONAL = a fourth new agent if wanted</p>
+</div>
+</body>
+</html>

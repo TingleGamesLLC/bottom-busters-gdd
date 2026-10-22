@@ -128,7 +128,7 @@ p(
     "99 hand-built levels across six terrain themes exist today and ship as the free demo on itch.io "
     "and Steam. The full game is 200 levels plus an endless mode whose difficulty keeps climbing. "
     "The game is playable now in all four modes with local co-op and versus, replays, clip export, "
-    "Steam leaderboards and about 418 logged development hours. The capstone work for this course "
+    "Steam leaderboards and about 422 logged development hours. The capstone work for this course "
     "is the content that gets the game from 99 levels to 200 and endless, plus the new playable "
     "characters feedback has asked for, produced by a crew of AI "
     "agents that work at development time, not at runtime. Nothing an agent makes reaches a player "
@@ -166,7 +166,10 @@ p(
     "and no App ID; local leaderboards, replays and clip export work the same. Every feature and every "
     "level the agent crew produces lands in both builds automatically, so the itch testers and the Steam "
     "buyers are always playing the same game. The demo is free on both stores; itch stays at price parity "
-    "with Steam once the full game sells, since Steam's terms require it."
+    "with Steam once the full game sells, since Steam's terms require it. A web leaderboard for the itch "
+    "demo is designed but not built: a page at tinglegames.com/bottom-busters/leaderboard that replicates "
+    "the animated main menu around one large board, fed by an upload after each run and listing only "
+    "players signed in with their itch accounts."
 )
 
 # ---------------- 2. Game Mechanics ----------------
@@ -255,7 +258,10 @@ p(
     "on one side, hats and shades on the other. "
     "The handoff between agents is a file in the repository, not a conversation, so any step can be "
     "re-run alone. A human (me) is the last gate: I play every build and nothing is committed without "
-    "my say-so. That rule already exists in the project and the agents inherit it."
+    "my say-so. That rule already exists in the project and the agents inherit it. Proposed for the next "
+    "assignment: an Orchestrator that turns this GDD into Trello cards and gives each card to one agent at "
+    "a time, a Critic that reviews agent output for what the player will see, and a Technical Writer "
+    "that keeps the docs and summaries current as cards close."
 )
 
 # ---------------- 4. Technical Strategy ----------------

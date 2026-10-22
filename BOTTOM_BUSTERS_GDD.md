@@ -1,7 +1,7 @@
 # Bottom Busters — Game Design Document
 
 Second draft, for Assignment #1 (GDD First Draft, due Tue 10/20), Multi-Agent AI for Game Development, ELVTR.
-Studio: Tingle Games LLC. First draft 2026-10-08; this revision 2026-10-15, with game facts updated 2026-10-17 (share clip length, uzi streak rule, roast bank) and 2026-10-18 (cheek sets, colorblind mode, version number, demo and full-game builds) and 2026-10-21 (whole-replay share clips, more playable characters). A 5-page short form of this document exists alongside it.
+Studio: Tingle Games LLC. First draft 2026-10-08; this revision 2026-10-15, with game facts updated 2026-10-17 (share clip length, uzi streak rule, roast bank) and 2026-10-18 (cheek sets, colorblind mode, version number, demo and full-game builds) and 2026-10-21 (whole-replay share clips, more playable characters, retiled levels, menu hats and shades, the itch web leaderboard plan). A 5-page short form of this document exists alongside it.
 
 Status of this draft: the facts below come from the project's own docs (`CLAUDE.md`, the plan files and the session log in `C:\bbust\BBUST`) and from the game as built on 2026-10-15. Lines marked **[DRAFT]** are proposed wording to confirm or change.
 
@@ -17,6 +17,7 @@ The first draft went through a six-reviewer design board on 2026-10-14. The deci
 - **Release intent is now explicit: itch.io first as the proving ground, then Steam as the commercial release, same build.** Price is proposed at $9.99 for the full game and free for the demo on both stores. (Section 19.)
 - **Replays now cover every mode.** Gauntlet saves the whole run; Burrito Arena keeps a rolling 60-second window with Save Replay in the pause menu. Replay format v12. (Section 13.)
 - **More playable characters (2026-10-21).** Feedback on the build asked for more playable characters than the ten skins. This answers that feedback, not a board finding. A seventh agent, the Character Artist, joins the crew to make them, and finished characters drop in through the game's runtime skin discovery. (Sections 7, 16.)
+- **A web leaderboard for the itch demo (designed 2026-10-21, not built).** The itch build has no Steam, so its boards are local only today. The plan is a full-window page at tinglegames.com/bottom-busters/leaderboard that replicates the animated main menu without its menus, fed by an upload from the game after each run, with itch accounts as the only identity. (Section 13; `ITCH_LEADERBOARD_PLAN.md` in the game repo.)
 - **Not yet decided, still open from the board:** 2P fail states and score ownership in versus and co-op; the pickup drop table and the trap presentation; the Chain Kills definition and the bonus-round payout ratio; the roast line spec and announcer count; the Section 3 audience and register; the announcer wave callouts 1 to 50 against 60 Survival waves. These stay in Section 20.
 
 ---
@@ -116,6 +117,7 @@ Survival, Gauntlet and versus Burrito Arena end cards have a PLAY AGAIN button. 
 - **Ceiling drops:** on some levels enemies start far above the screen and fall in. A red triangle at the top of the screen shows where each one will come through.
 - **Six all-water levels** (8, 25, 41, 58, 74, 91) have no ground at all; they use only sky or moon backdrops.
 - A level is cleared when every enemy is defeated. Levels are static, built once and shipped as-is, so replays and best times stay valid forever.
+- **Every level was retiled by hand on 2026-10-21** so terrain rows no longer sit stacked with a single empty cell between them, which left no room to fly.
 
 ### 6.2 Worlds and themes
 
@@ -206,6 +208,7 @@ The score is one total for the whole run, never per level.
 ## 12. Feedback, UI and presentation
 
 - **Main menu:** a wrapping menu wheel (keys, stick, mouse and touch) with the Steam leaderboard on screen. A Tingle Games intro sting plays once per launch.
+- **Menu background:** a random level's 3D backdrop, a field of characters and pickups flying across the screen and striking on the beat of the menu music, the title dancing letter by letter, and every 25 to 60 seconds a bat splat with one of the ten characters' faces. Since 2026-10-21 every flying character wears a random hat, sunglasses or both, in the items' own colors.
 - **Menu pages:** Replays, Stats (lifetime totals), Scoring (the points table), Settings (audio, remapping, announcer voice, colorblind mode, AI Wear Hats; also used as the pause menu), Credits.
 - **Colorblind mode (2026-10-18):** Off, Protanopia, Deuteranopia or Tritanopia, ported from Tingle Solitaire. One daltonization filter over the whole finished picture (every menu, the HUD and gameplay), not per-item color swaps. Checked by colorblindness simulation: the red/green problems are fixed (player vs enemy glow under deuteranopia 24.6 -> 69.3 deltaE; burrito vs green burrito under protanopia 3.9 -> 21.2); a few pairs come closer and are accepted (poo on the pale bone ground; the Quadra and Penta badges under tritanopia, which also differ in words). Share clips stay in normal colors.
 - **Version (2026-10-18):** the build's version shows in the main menu corner and at the foot of Settings, e.g. "v0.9.0 demo - itch - 2026-10-18 5e6f142", and is recorded in Player.log and every replay.
@@ -221,6 +224,7 @@ The score is one total for the whole run, never per level.
 - **Clip pages (planned, not built):** each shared clip gets its own public, anonymous page on tinglegames.com, rated in pairs of white underwear.
 - **Leaderboards:** Steam boards with Global and Friends tabs, a 1P/2P toggle, and High Score, Survival and Gauntlet, the last two each split into Highest Wave and Most Points (Gauntlet since 2026-10-18). The top 3 entries carry a replay anyone can watch in-game, with Steam names shown over the characters.
 - **Anti-cheat (planned):** a server checks each run before posting it to trusted boards. This waits on the game's own Steam App ID.
+- **itch web leaderboard (designed 2026-10-21, not built):** a page at tinglegames.com/bottom-busters/leaderboard that is the main menu without its menus (the same backdrops, flying characters, dancing title, DEMO stamp, music, beat strikes and bat splats) around one large, scrollable board. The game uploads each finished run; only players signed in with an itch account are listed, and a 2P run shows both names, with a seat that was not signed in shown as Player 1 or Player 2 (2P Character Select will ask the second player to sign in). Boards match the game's: High Score 1P and 2P with the level reached, Survival and Gauntlet each split into Highest Wave and Most Points; top 10 shown, and each top-3 run links to its own clip page. Those clips are the last 60 seconds for Survival and Gauntlet, and the whole of the highest level completed for High Score.
 
 ## 14. Art direction
 
@@ -259,7 +263,9 @@ The score is one total for the whole run, never per level.
 | QA Playtester | Loads every new level in a headless Unity build and checks that each enemy is reachable, no spawn is over water, and the level can be cleared. | No unwinnable or empty level reaches the demo. |
 | Builder | Reads this GDD and the project's coding rules and implements one approved feature at a time in C#, then runs the existing build-and-verify loop. | The Endless mode, the Custom Game screen behind the teaser, and the loaders the other agents' output needs. |
 
-Semester token budget, as a cap: about 5.0 million tokens, of which the Builder is 3 million (six feature slices at about 500,000 each) and the six content agents share the rest. The budget and the per-agent file boundaries are in the short-form GDD.
+Semester token budget, as a cap: about 5.0 million tokens, of which the Builder is 3 million (six feature slices at about 500,000 each) and the six content agents share the rest.
+
+**[DRAFT] Proposed for the next assignment (2026-10-21):** three control agents over the crew. An **Orchestrator** turns this GDD into cards on a Trello board (Backlog, In Progress, Review, Your Playtest, Done), gives each card to one agent at a time, and moves finished work to Review. A **Critic** reviews agent output for what the player will see, alongside a format check that runs before any Unity build. A **Technical Writer** updates the docs and summaries when a card closes and archives it. The crew diagram is `BBUST_agent_crew.png` beside this document. The budget and the per-agent file boundaries are in the short-form GDD.
 
 ## 17. Technical summary
 
@@ -270,7 +276,7 @@ Semester token budget, as a cap: about 5.0 million tokens, of which the Builder 
 - Levels, player skins and AI variants are discovered at runtime, never hardcoded, so new content drops in.
 - **One project, two build targets.** The Steam build and the itch.io build come from the same tree, scenes and assets. The itch target turns off the Steam define and leaves the two Steam DLLs out, asserts that no Steam file or debug symbol is in the output, and zips. There is nothing to keep in sync between the two stores because there is one source.
 - **Demo builds and full-game test builds (2026-10-18).** Each build command makes two players per store: the demo players download, which saves no diagnostic files on their machines, and a full-game test copy that runs past the demo's end and keeps every diagnostic log, for development only.
-- Development so far is about 418 logged hours, counted as a minimum.
+- Development so far is about 422 logged hours, counted as a minimum.
 
 ## 18. Scope: demo and full game
 
