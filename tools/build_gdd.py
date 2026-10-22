@@ -128,7 +128,7 @@ p(
     "99 hand-built levels across six terrain themes exist today and ship as the free demo on itch.io "
     "and Steam. The full game is 200 levels plus an endless mode whose difficulty keeps climbing. "
     "The game is playable now in all four modes with local co-op and versus, replays, clip export, "
-    "Steam leaderboards and about 413 logged development hours. The capstone work for this course "
+    "Steam leaderboards and about 418 logged development hours. The capstone work for this course "
     "is the content that gets the game from 99 levels to 200 and endless, produced by a crew of AI "
     "agents that work at development time, not at runtime. Nothing an agent makes reaches a player "
     "until it has been built, tested and played by a human.",
