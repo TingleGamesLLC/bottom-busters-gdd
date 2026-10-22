@@ -267,6 +267,8 @@ Semester token budget, as a cap: about 5.0 million tokens, of which the Builder 
 
 **[DRAFT] Proposed for the next assignment (2026-10-21):** three control agents over the crew. An **Orchestrator** turns this GDD into cards on a Trello board (Backlog, In Progress, Review, Your Playtest, Done), gives each card to one agent at a time, and moves finished work to Review. A **Critic** reviews agent output for what the player will see, alongside a format check that runs before any Unity build. A **Technical Writer** updates the docs and summaries when a card closes and archives it. The crew diagram is `BBUST_agent_crew.png` beside this document. The budget and the per-agent file boundaries are in the short-form GDD.
 
+**Development tooling (2026-10-21).** A local model cluster, the development PC and six Macs behind one router (MindRouter), is available for crew work that doesn't need Claude, and each agent has its own key there, so the tokens it runs locally are counted per agent instead of against the budget above. A development dashboard tracks the crew's cards and token use, and gives the Studio Director one place to approve or reject new characters, hats and levels, tune every sound's volume, and pick the store screenshots. None of it ships with the game.
+
 ## 17. Technical summary
 
 - Unity 6.3 LTS, URP, the new Input System, Box2D physics.
