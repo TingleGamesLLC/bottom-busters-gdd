@@ -1,7 +1,7 @@
 # Bottom Busters — Game Design Document
 
 Second draft, for Assignment #1 (GDD First Draft, due Tue 10/20), Multi-Agent AI for Game Development, ELVTR.
-Studio: Tingle Games LLC. First draft 2026-10-08; this revision 2026-10-15, with game facts updated 2026-10-17 (share clip length, uzi streak rule, roast bank) and 2026-10-18 (cheek sets, colorblind mode, version number, demo and full-game builds). A 5-page short form of this document exists alongside it.
+Studio: Tingle Games LLC. First draft 2026-10-08; this revision 2026-10-15, with game facts updated 2026-10-17 (share clip length, uzi streak rule, roast bank) and 2026-10-18 (cheek sets, colorblind mode, version number, demo and full-game builds) and 2026-10-21 (whole-replay share clips, more playable characters). A 5-page short form of this document exists alongside it.
 
 Status of this draft: the facts below come from the project's own docs (`CLAUDE.md`, the plan files and the session log in `C:\bbust\BBUST`) and from the game as built on 2026-10-15. Lines marked **[DRAFT]** are proposed wording to confirm or change.
 
@@ -16,6 +16,7 @@ The first draft went through a six-reviewer design board on 2026-10-14. The deci
 - **The Custom Game menu stays in the demo as a teaser.** The board recommended pulling it as a dead click. The decision is to keep it: the end card already tells every player custom games are coming, the demo is explicitly a demo of a game in development, and the mockup is an explorable preview, not a dead button. The procedural-level and asset work from this course is what will sit behind it. (Section 5.)
 - **Release intent is now explicit: itch.io first as the proving ground, then Steam as the commercial release, same build.** Price is proposed at $9.99 for the full game and free for the demo on both stores. (Section 19.)
 - **Replays now cover every mode.** Gauntlet saves the whole run; Burrito Arena keeps a rolling 60-second window with Save Replay in the pause menu. Replay format v12. (Section 13.)
+- **More playable characters (2026-10-21).** Feedback on the build asked for more playable characters than the ten skins. This answers that feedback, not a board finding. A seventh agent, the Character Artist, joins the crew to make them, and finished characters drop in through the game's runtime skin discovery. (Sections 7, 16.)
 - **Not yet decided, still open from the board:** 2P fail states and score ownership in versus and co-op; the pickup drop table and the trap presentation; the Chain Kills definition and the bonus-round payout ratio; the roast line spec and announcer count; the Section 3 audience and register; the announcer wave callouts 1 to 50 against 60 Survival waves. These stay in Section 20.
 
 ---
@@ -137,6 +138,7 @@ Survival, Gauntlet and versus Burrito Arena end cards have a PLAY AGAIN button. 
 ## 7. Characters
 
 - **Players:** 10 character skins plus RANDOM. A RANDOM pick rolls once and stays the same for the whole run.
+- **More playable characters (planned, 2026-10-21):** feedback on the build asked for more. New characters come from the Character Artist agent (Section 16). Each one is a body sprite, its 12 death-flail frames and a Character Select tile, made to the house sprite standard so hats, shades, cheek sets and poo stains sit on it like the original ten. Skins are discovered at runtime, so a finished character drops in. How many: **[DRAFT]** 10 more, doubling the roster to 20.
 - **Enemies:** 10 AI character variants. They fly, fart, drown and bounce off the ceiling under the same rules as players.
 - **Character Select** comes before every mode, with one cursor per player: skin, hat, shades and hat colors, then READY.
 - **Wearables today:** a santa hat and a turkey hat; black shades and silver aviators; 10 color swatches per hat region plus the art's default colors. Hats get dirty from poo too.
@@ -253,10 +255,11 @@ The score is one total for the whole run, never per level.
 | Difficulty Tuner | Reads the per-run event log from playtests and proposes enemy count and the difficulty number for each level and each Endless step. | The curve in Section 6.3 actually climbing after level 8. |
 | Roast Writer | Rewrites the roast line bank and superlatives, tagged to the run events that trigger them. | A GAME OVER card that roasts what you actually did, from text shipped inside the game. |
 | Wardrobe Stylist | Produces hat and shades sprites and backdrop picks that pass the house sprite standard. | More hats and shades on Character Select; more unique backdrops for the new levels. |
+| Character Artist | Makes new playable characters: the body sprite, its 12 death-flail frames and a Character Select tile, to the house sprite standard, so hats, shades, cheek sets and poo stains sit on it like the original ten. | More characters to pick on Character Select, which feedback on the build asked for. |
 | QA Playtester | Loads every new level in a headless Unity build and checks that each enemy is reachable, no spawn is over water, and the level can be cleared. | No unwinnable or empty level reaches the demo. |
 | Builder | Reads this GDD and the project's coding rules and implements one approved feature at a time in C#, then runs the existing build-and-verify loop. | The Endless mode, the Custom Game screen behind the teaser, and the loaders the other agents' output needs. |
 
-Semester token budget, as a cap: about 4.8 million tokens, of which the Builder is 3 million (six feature slices at about 500,000 each) and the five content agents share the rest. The budget and the per-agent file boundaries are in the short-form GDD.
+Semester token budget, as a cap: about 5.0 million tokens, of which the Builder is 3 million (six feature slices at about 500,000 each) and the six content agents share the rest. The budget and the per-agent file boundaries are in the short-form GDD.
 
 ## 17. Technical summary
 

@@ -129,7 +129,8 @@ p(
     "and Steam. The full game is 200 levels plus an endless mode whose difficulty keeps climbing. "
     "The game is playable now in all four modes with local co-op and versus, replays, clip export, "
     "Steam leaderboards and about 418 logged development hours. The capstone work for this course "
-    "is the content that gets the game from 99 levels to 200 and endless, produced by a crew of AI "
+    "is the content that gets the game from 99 levels to 200 and endless, plus the new playable "
+    "characters feedback has asked for, produced by a crew of AI "
     "agents that work at development time, not at runtime. Nothing an agent makes reaches a player "
     "until it has been built, tested and played by a human.",
 )
@@ -241,6 +242,7 @@ table(
         ("Difficulty Tuner", "Reads the per-run event log from playtests and proposes enemy count and the difficulty number for each level and each endless-mode step.", "A curve that actually climbs after level 8, and an endless mode where enemies dive sooner and track better every few levels until the run ends."),
         ("Roast Writer", "Rewrites the roast line bank and superlatives, tagged to the run events that trigger them (died dirty, held it in, drowned, flawless).", "A GAME OVER card that roasts what you actually did this run, from text shipped inside the game."),
         ("Wardrobe Stylist", "Produces new hat and shades sprites and backdrop picks that pass the house sprite standard (size, density, point filtering, color regions).", "More hats and shades on the Character Select screen, all of which still get dirty from poo like the originals."),
+        ("Character Artist", "Makes new playable characters: the body sprite, its 12 death-flail frames and a Character Select tile, to the house sprite standard, so hats, shades, cheek sets and poo stains sit on it like the original ten.", "More characters to pick on the Character Select screen, which feedback on the build asked for. They drop in through the game's runtime skin discovery."),
         ("QA Playtester", "Loads every new level in a headless Unity build and checks that each enemy is reachable, no spawn is over water, and the level can be cleared, then files a pass or fail report.", "No unwinnable or empty level ever reaches the demo; a failed level goes back to the Level Architect, not to the player."),
         ("Builder", "Reads this GDD and the project's coding rules and implements one approved feature at a time in Unity C#, then runs the existing build-and-verify loop.", "The endless mode itself, the Custom Game screen behind the current menu teaser, and whatever the other agents' output needs to load."),
     ],
@@ -249,6 +251,8 @@ table(
 p(
     "How they fit together: the Level Architect makes a level, the QA Playtester passes or fails it, the "
     "Difficulty Tuner sets its numbers after real playtest data exists, and the Builder only changes code. "
+    "The Character Artist and the Wardrobe Stylist both make sprites but never the same files: characters "
+    "on one side, hats and shades on the other. "
     "The handoff between agents is a file in the repository, not a conversation, so any step can be "
     "re-run alone. A human (me) is the last gate: I play every build and nothing is committed without "
     "my say-so. That rule already exists in the project and the agents inherit it."
@@ -264,6 +268,7 @@ table(
         ("Difficulty Tuner", "Playtest event logs, current tuning table", "Tuning table (enemy count, difficulty per level)", "Level layouts, code"),
         ("Roast Writer", "Scoring and event categories, current line bank", "Roast and superlative text files", "Anything but text"),
         ("Wardrobe Stylist", "Sprite standard, existing hat sprites", "Hat and shades sprites plus import settings", "Levels, code"),
+        ("Character Artist", "Sprite standard, the ten existing skins and their flail frames", "New skin sprites, flail frames and select tiles plus import settings", "Hats and shades, levels, code"),
         ("QA Playtester", "New level files, headless build", "Pass/fail report per level", "Any game file"),
         ("Builder", "This GDD, CLAUDE.md, the C# source", "C# source, scenes", "Level data, tuning, text, art"),
     ],
@@ -283,9 +288,10 @@ table(
         ("Difficulty Tuner", "One tuning pass over all levels", "25,000", "10 passes (one per playtest round)", "250,000"),
         ("Roast Writer", "One batch of 25 lines", "8,000", "10 batches (250 lines)", "80,000"),
         ("Wardrobe Stylist", "One hat or shades set", "5,000", "40 items", "200,000"),
+        ("Character Artist", "One playable character (body, 12 flail frames, tile), one redo", "15,000", "10 characters", "150,000"),
         ("QA Playtester", "One level check and report", "2,500", "180 checks (levels plus re-checks)", "450,000"),
         ("Builder", "One feature slice, build and verify", "500,000", "6 slices (endless mode, custom game, loaders)", "3,000,000"),
-        ("Total", "", "", "", "about 4.8 million"),
+        ("Total", "", "", "", "about 5.0 million"),
     ],
     [1.15, 2.0, 0.9, 1.75, 0.9],
 )
