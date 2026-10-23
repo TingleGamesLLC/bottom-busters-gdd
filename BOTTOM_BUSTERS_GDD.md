@@ -1,7 +1,7 @@
 # Bottom Busters — Game Design Document
 
 Second draft, for Assignment #1 (GDD First Draft, due Tue 10/20), Multi-Agent AI for Game Development, ELVTR.
-Studio: Tingle Games LLC. First draft 2026-10-08; this revision 2026-10-15, with game facts updated 2026-10-17 (share clip length, uzi streak rule, roast bank) and 2026-10-18 (cheek sets, colorblind mode, version number, demo and full-game builds) and 2026-10-21 (whole-replay share clips, more playable characters, retiled levels, menu hats and shades, the itch web leaderboard plan) and 2026-10-22 (High Score AI difficulty by world, High Score Play Again, roasts picked by the run's events, Custom Game mode defaults). A 5-page short form of this document exists alongside it.
+Studio: Tingle Games LLC. First draft 2026-10-08; this revision 2026-10-15, with game facts updated 2026-10-17 (share clip length, uzi streak rule, roast bank) and 2026-10-18 (cheek sets, colorblind mode, version number, demo and full-game builds) and 2026-10-21 (whole-replay share clips, more playable characters, retiled levels, menu hats and shades, the itch web leaderboard plan) and 2026-10-22 (High Score AI difficulty by world, High Score Play Again, roasts picked by the run's events, Custom Game mode defaults) and 2026-10-23 (both players start near each other, developer skip buttons out of every build). A 5-page short form of this document exists alongside it.
 
 Status of this draft: the facts below come from the project's own docs (`CLAUDE.md`, the plan files and the session log in `C:\bbust\BBUST`) and from the game as built on 2026-10-15. Lines marked **[DRAFT]** are proposed wording to confirm or change.
 
@@ -118,6 +118,7 @@ Survival, Gauntlet and versus Burrito Arena end cards have a PLAY AGAIN button. 
 - **Six all-water levels** (8, 25, 41, 58, 74, 91) have no ground at all; they use only sky or moon backdrops.
 - A level is cleared when every enemy is defeated. Levels are static, built once and shipped as-is, so replays and best times stay valid forever.
 - **Every level was retiled by hand on 2026-10-21** so terrain rows no longer sit stacked with a single empty cell between them, which left no room to fly.
+- **Both players start near each other (2026-10-23):** Player 2 starts on the ground 3 to 4 units to Player 1's left, on the far side of a water gap where Player 1 starts on a middle island, and a short hop up and to the right on the all-water levels.
 
 ### 6.2 Worlds and themes
 
@@ -279,7 +280,7 @@ Semester token budget, as a cap: about 5.0 million tokens, of which the Builder 
 - Levels, player skins and AI variants are discovered at runtime, never hardcoded, so new content drops in.
 - **One project, two build targets.** The Steam build and the itch.io build come from the same tree, scenes and assets. The itch target turns off the Steam define and leaves the two Steam DLLs out, asserts that no Steam file or debug symbol is in the output, and zips. There is nothing to keep in sync between the two stores because there is one source.
 - **Demo builds and full-game test builds (2026-10-18).** Each build command makes two players per store: the demo players download, which saves no diagnostic files on their machines, and a full-game test copy that runs past the demo's end and keeps every diagnostic log, for development only.
-- Development so far is about 429 logged hours, counted as a minimum.
+- Development so far is about 432 logged hours, counted as a minimum.
 
 ## 18. Scope: demo and full game
 
@@ -287,7 +288,7 @@ Semester token budget, as a cap: about 5.0 million tokens, of which the Builder 
 - All 99 built levels, ending as a win on the end card after Bonus Round 33.
 - Every mode and 2P are included. Custom Game is present as a teaser (Section 5).
 - The end card reads: "THAT'S THE DEMO. You played 99 levels. The full game has 200. Plus more characters, more music, more sounds, more powerups, and custom games you build yourself." Its first button is WISHLIST ON STEAM in the Steam build and FOLLOW ON ITCH (the game's itch page) in the itch build (2026-10-18).
-- The developer level-skip buttons were taken out for the demo release (2026-10-18) and put back while the levels are being worked on (2026-10-19). They come out again before the next demo upload.
+- The developer level-skip buttons were taken out for the demo release (2026-10-18), put back while the levels were being worked on (2026-10-19), and taken out of every build again on 2026-10-23.
 - The demo says so (2026-10-18): its exe is "Bottom Busters Demo.exe" and the main menu shows a red DEMO stamp across the bottom corner of BUSTERS. The itch demo is uploaded with butler to the itch page's windows-demo channel (version 0.9.0), so updates patch only what changed.
 - Why 99 and not 15 (decision 2026-10-15): the 15-level slice was pickup-boosted, ended on a bonus round and was too short to show the curve, so wishlists and reviews would have come from a game the demo did not resemble. At 99, the demo is the honest version, the flat curve and the run length get real feedback before Next Fest, and the class deliverable is the actual game. The cost, accepted: the built game is free, and the purchase incentive is the 101 levels, the Endless mode and the content still to come.
 - The pickup boost for levels 1–15 (Section 6.3) was tuned for the old demo range and is on the drop-table list in Section 20.
