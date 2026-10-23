@@ -1,7 +1,7 @@
 # Bottom Busters — Game Design Document
 
 Second draft, for Assignment #1 (GDD First Draft, due Tue 10/20), Multi-Agent AI for Game Development, ELVTR.
-Studio: Tingle Games LLC. First draft 2026-10-08; this revision 2026-10-15, with game facts updated 2026-10-17 (share clip length, uzi streak rule, roast bank) and 2026-10-18 (cheek sets, colorblind mode, version number, demo and full-game builds) and 2026-10-21 (whole-replay share clips, more playable characters, retiled levels, menu hats and shades, the itch web leaderboard plan). A 5-page short form of this document exists alongside it.
+Studio: Tingle Games LLC. First draft 2026-10-08; this revision 2026-10-15, with game facts updated 2026-10-17 (share clip length, uzi streak rule, roast bank) and 2026-10-18 (cheek sets, colorblind mode, version number, demo and full-game builds) and 2026-10-21 (whole-replay share clips, more playable characters, retiled levels, menu hats and shades, the itch web leaderboard plan) and 2026-10-22 (High Score AI difficulty by world, High Score Play Again, roasts picked by the run's events, Custom Game mode defaults). A 5-page short form of this document exists alongside it.
 
 Status of this draft: the facts below come from the project's own docs (`CLAUDE.md`, the plan files and the session log in `C:\bbust\BBUST`) and from the game as built on 2026-10-15. Lines marked **[DRAFT]** are proposed wording to confirm or change.
 
@@ -103,9 +103,9 @@ Controls can be remapped for keyboard and gamepad in Settings. In 1P, Player 1 r
 | **Gauntlet** | 1v1 or 2v2 against AI | No powerups. The AI gets 10% tougher every wave, with no cap. One life per player; an eliminated player returns when their partner clears the wave. Every wave fully resets both sides, cheeks included. Own leaderboards for Highest Wave and Most Points, like Survival. |
 | **Bonus Round** | inside High Score | Four chef animals flip food straight up; catch it for 500 points each (20 pieces in 1P, 40 in 2P). Nobody can die. When the round ends, the chefs' hats become trampolines until the player continues. |
 | **Endless** (planned) | 1P, 2P co-op | Levels keep coming with no end. Nothing changes but the enemy difficulty number, which climbs a step every few levels with no cap, until the lives are gone. Ranked by the level reached. The infinite-play home for players who want more than 200. |
-| **Custom Game** | teaser | A fully interactive menu mockup with no gameplay behind it yet. Custom games are promised for the full game. Decision 2026-10-15: it stays in the demo as a teaser; the procedural-level and asset-generation work from this course is what goes behind it. |
+| **Custom Game** | teaser | A fully interactive menu mockup with no gameplay behind it yet. Custom games are promised for the full game. Decision 2026-10-15: it stays in the demo as a teaser; the procedural-level and asset-generation work from this course is what goes behind it. Since 2026-10-22 each mode opens at the real game's settings (lives, which powerups spawn, spawn timing, caps, bonus round tuning), all still changeable, and the demo marks Start Game "Not Available in Demo". |
 
-Survival, Gauntlet and versus Burrito Arena end cards have a PLAY AGAIN button. High Score has no retry: a run is a run.
+Survival, Gauntlet and versus Burrito Arena end cards have a PLAY AGAIN button. Since 2026-10-22 the High Score GAME OVER card has one too, starting a new run from level 1; High Score's level-complete cards have no retry.
 
 ## 6. Levels and world
 
@@ -131,10 +131,11 @@ Survival, Gauntlet and versus Burrito Arena end cards have a PLAY AGAIN button. 
 - **Levels 1–3:** 3 enemies.
 - **Levels 4–6:** 4 enemies.
 - **Ceiling-drop levels:** levels 7, 24, 40, 57, 73 and 90 have 5 enemies, 4 of them falling in from above.
-- **Every other level:** 3 enemies at difficulty 1.0 to 1.3.
+- **Every other level:** 3 enemies.
+- **Enemy difficulty by world (2026-10-22):** every High Score enemy, in 1P, 2P co-op and 2P versus, uses its world's value: 1.0 in world 1, then 1.2, 1.4, 1.6, 1.8 and 2.0 in world 6.
 - **Lava:** replaces water on levels 84–99.
 - **Powerup odds:** Burrito and Green Burrito are 25% more likely in levels 1–15, which is the demo's range.
-- **As built, enemy count and difficulty do not ramp across levels 8–99.** This is the board's top finding and it is now a planned deliverable with a mechanism: enemy count and the per-level difficulty number move out of the level files into one tuning table. The table is produced by the Difficulty Tuner agent (Section 16) from the per-run event logs of itch.io playtests, and nothing in it ships without a human playtest. The first target curve is **[DRAFT]**: 3 enemies at 1.0 through level 12, then +1 enemy every 25 levels and +0.05 difficulty every 10 levels, so that level 99 runs 6 enemies at about 1.5 and level 200 runs 10 enemies at about 2.0, with the lava world (levels 185–200) as the finale. Those numbers are a starting point for the first playtest round, not a promise.
+- **As built, enemy count does not ramp across levels 8–99, and difficulty steps only once per world.** This is the board's top finding and it is now a planned deliverable with a mechanism: enemy count and the per-level difficulty number move out of the level files into one tuning table. The table is produced by the Difficulty Tuner agent (Section 16) from the per-run event logs of itch.io playtests, and nothing in it ships without a human playtest. The first target curve is **[DRAFT]**: 3 enemies at 1.0 through level 12, then +1 enemy every 25 levels and +0.05 difficulty every 10 levels, so that level 99 runs 6 enemies at about 1.5 and level 200 runs 10 enemies at about 2.0, with the lava world (levels 185–200) as the finale. Those numbers are a starting point for the first playtest round, not a promise.
 - **The run has an end.** The demo ends on the end card after Bonus Round 33 (level 99). The full game ends the same way after level 200's bonus round, with a VICTORY card **[DRAFT]**. Players who want no end play Endless (Section 5).
 
 ## 7. Characters
@@ -150,7 +151,7 @@ Survival, Gauntlet and versus Burrito Arena end cards have a PLAY AGAIN button. 
 ## 8. Enemy AI
 
 - A state machine: Flying, Diving, Stunned, Idle.
-- One difficulty value controls how aggressive and capable an enemy is. High Score levels use 1.0 to 1.3; Survival uses 1.4, 1.8 and 2.2 by tier; Gauntlet climbs 0.1 per wave without a limit.
+- One difficulty value controls how aggressive and capable an enemy is. High Score uses its world's value, 1.0 in world 1 up to 2.0 in world 6 in steps of 0.2; Survival uses 1.4, 1.8 and 2.2 by tier; Gauntlet climbs 0.1 per wave without a limit.
 - Enemies avoid water using look-ahead box checks.
 - In Survival, falling enemies are held at a height cap so they don't stay off screen too long and then drop in at extreme speed.
 
@@ -248,7 +249,7 @@ The score is one total for the whole run, never per level.
 
 **In the game:**
 - Enemy AI with a single tunable difficulty value (section 8).
-- The roast lines come from a pre-written line bank, never generated live. This keeps the cost to $0 per player, works offline, and keeps Steam's disclosure to the pre-generated-content checkbox. The roast lines are due for a rework. As of 2026-10-17 the bank has 46 lines, picked by win or loss only, and the 25 lines about poo, toilets or smell never play in Gauntlet.
+- The roast lines come from a pre-written line bank, never generated live. This keeps the cost to $0 per player, works offline, and keeps Steam's disclosure to the pre-generated-content checkbox. The roast lines are due for a rework. As of 2026-10-22 the bank has 40 lines, reviewed on the dashboard's Roast Review page. They are picked by the run's events again: the card's most interesting stat that has a line for the win or loss, else one of the 11 general lines. After an Enemies Defeated roast, the next 3 rounds roast something else. The 24 lines about poo, toilets or smell never play in Gauntlet.
 - The announcer voices are text-to-speech recorded ahead of time (ElevenLabs), shipped as audio files. Steam's AI-disclosure rules treat that as pre-generated content.
 
 **For this course: a development-time agent crew.** Two kinds of AI exist in this project and they never mix. The shipped game's only AI is the enemy state machine above plus pre-recorded voices and pre-written text. The crew below runs at development time on the project's own files, and its output is ordinary game data the game already discovers at runtime: level files, a tuning table, text, sprites and test reports. No agent runs on a player's machine and no API key ships in the build. Each agent has one job and one output, no two write the same file, and the handoff between them is a file in the repository. A human playtest is the last gate for all of it.
@@ -267,7 +268,7 @@ Semester token budget, as a cap: about 5.0 million tokens, of which the Builder 
 
 **[DRAFT] Proposed for the next assignment (2026-10-21):** three control agents over the crew. An **Orchestrator** turns this GDD into cards on a Trello board (Backlog, In Progress, Review, Your Playtest, Done), gives each card to one agent at a time, and moves finished work to Review. A **Critic** reviews agent output for what the player will see, alongside a format check that runs before any Unity build. A **Technical Writer** updates the docs and summaries when a card closes and archives it. The crew diagram is `BBUST_agent_crew.png` beside this document. The budget and the per-agent file boundaries are in the short-form GDD.
 
-**Development tooling (2026-10-21).** A local model cluster, the development PC and six Macs behind one router (MindRouter), is available for crew work that doesn't need Claude, and each agent has its own key there, so the tokens it runs locally are counted per agent instead of against the budget above. A development dashboard tracks the crew's cards and token use, and gives the Studio Director one place to approve or reject new characters, hats and levels, tune every sound's volume, and pick the store screenshots. None of it ships with the game.
+**Development tooling (2026-10-21).** A local model cluster, the development PC and six Macs behind one router (MindRouter), is available for crew work that doesn't need Claude, and each agent has its own key there, so the tokens it runs locally are counted per agent instead of against the budget above. A development dashboard tracks the crew's cards and token use, and gives the Studio Director one place to approve or reject new characters, hats and levels, tune every sound's volume, review the roast lines and the events that trigger them, and pick the store screenshots. None of it ships with the game.
 
 ## 17. Technical summary
 
@@ -278,7 +279,7 @@ Semester token budget, as a cap: about 5.0 million tokens, of which the Builder 
 - Levels, player skins and AI variants are discovered at runtime, never hardcoded, so new content drops in.
 - **One project, two build targets.** The Steam build and the itch.io build come from the same tree, scenes and assets. The itch target turns off the Steam define and leaves the two Steam DLLs out, asserts that no Steam file or debug symbol is in the output, and zips. There is nothing to keep in sync between the two stores because there is one source.
 - **Demo builds and full-game test builds (2026-10-18).** Each build command makes two players per store: the demo players download, which saves no diagnostic files on their machines, and a full-game test copy that runs past the demo's end and keeps every diagnostic log, for development only.
-- Development so far is about 422 logged hours, counted as a minimum.
+- Development so far is about 429 logged hours, counted as a minimum.
 
 ## 18. Scope: demo and full game
 

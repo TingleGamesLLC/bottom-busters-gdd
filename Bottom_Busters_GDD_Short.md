@@ -8,9 +8,9 @@ Multi-Agent AI for Game Development, ELVTR. Assignment #01. David, Tingle Games 
 
 Bottom Busters is a 2D arcade action platformer for one or two players on one screen, inspired by Nintendo's Balloon Fight. Every character floats like a balloon and flies by farting. Each character has two cheeks for health. You land on an enemy from above to pop its cheeks; lose both of yours and you deflate and fly off the screen. Water kills instantly. Thirteen powerups range from a speed burrito to an uzi to a cork that plugs you up for four seconds. The Green Burrito sprays poo that piles up, sticks to bodies and hats, and stays on the level for the rest of the run.
 
-The main mode is High Score: single-screen levels in order, three lives, one score for the whole run, a bonus round every three levels, and no retry. A run ends on a GAME OVER card with a roast line and superlatives, and every run can be saved as a replay and exported as a 25- to 60-second vertical clip or a 16:9 widescreen video. Three more modes share the same characters and rules: Burrito Arena (casual deathmatch or co-op), Survival (60 waves) and Gauntlet (versus AI, difficulty rising 10% per wave with no cap).
+The main mode is High Score: single-screen levels in order, three lives, one score for the whole run and a bonus round every three levels. A run ends on a GAME OVER card with a roast line, superlatives and Play Again, and every run can be saved as a replay and exported as a 25- to 60-second vertical clip or a 16:9 widescreen video. Three more modes share the same characters and rules: Burrito Arena (casual deathmatch or co-op), Survival (60 waves) and Gauntlet (versus AI, difficulty rising 10% per wave with no cap).
 
-99 hand-built levels across six terrain themes exist today and ship as the free demo on itch.io and Steam. The full game is 200 levels plus an endless mode whose difficulty keeps climbing. The game is playable now in all four modes with local co-op and versus, replays, clip export, Steam leaderboards and about 422 logged development hours. The capstone work for this course is the content that gets the game from 99 levels to 200 and endless, plus the new playable characters feedback has asked for, produced by a crew of AI agents that work at development time, not at runtime. Nothing an agent makes reaches a player until it has been built, tested and played by a human.
+99 hand-built levels across six terrain themes exist today and ship as the free demo on itch.io and Steam. The full game is 200 levels plus an endless mode whose difficulty keeps climbing. The game is playable now in all four modes with local co-op and versus, replays, clip export, Steam leaderboards and about 429 logged development hours. The capstone work for this course is the content that gets the game from 99 levels to 200 and endless, plus the new playable characters feedback has asked for, produced by a crew of AI agents that work at development time, not at runtime. Nothing an agent makes reaches a player until it has been built, tested and played by a human.
 - **Pillar 1.** Stomp or be stomped. Height is power; flap timing and position decide every fight.
 - **Pillar 2.** Couch chaos. Two players on one screen, as partners or rivals, in every mode.
 - **Pillar 3.** Gross-out humor that leaves a mark. Poo is physical and the base coat never washes off.
@@ -37,13 +37,13 @@ One level is one screen, about 18 by 10 units, with a ground strip along the bot
 - **4.** Grab powerups that float across the level (50 points each) to change the fight: speed, a weapon, a shield, a trap for the other player.
 - **5.** Clear every enemy on the screen and the next level loads. Score and lives carry across the whole run.
 
-The loop across a run: levels climb through six themed worlds, a bonus round comes every three levels (catch food flipped by chef animals, 500 points each, nobody can die), and the run ends when the last life is gone. The GAME OVER card shows the total, the best, a roast line and superlatives, then offers Save Replay. In the demo the run also ends, as a win, on the end card after Bonus Round 33, which follows level 99.
+The loop across a run: levels climb through six themed worlds, a bonus round comes every three levels (catch food flipped by chef animals, 500 points each, nobody can die), and the run ends when the last life is gone. The GAME OVER card shows the total, the best, a roast line and superlatives, then offers Play Again (a new run from level 1) and Save Replay. In the demo the run also ends, as a win, on the end card after Bonus Round 33, which follows level 99.
 
 ### 2.2 Win and loss conditions
 
 | Mode | You win when | You lose when |
 |---|---|---|
-| High Score (1P or 2P co-op) | You clear the last level and its bonus round (level 99 in the demo, 200 in the full game). Otherwise the goal is the highest run score on the leaderboard. | All lives are gone. No retry; a run is a run. |
+| High Score (1P or 2P co-op) | You clear the last level and its bonus round (level 99 in the demo, 200 in the full game). Otherwise the goal is the highest run score on the leaderboard. | All lives are gone. Play Again starts a new run from level 1. |
 | High Score versus | You end the run with the higher score. | You end it with the lower score, or lose all lives first. |
 | Survival (1P or 2P co-op) | You clear wave 60 (VICTORY). | All lives are gone. |
 | Gauntlet (1v1 or 2v2 vs AI) | There is no end; two boards rank your highest wave and your most points. | Your side is eliminated in a wave. |
@@ -52,7 +52,7 @@ The loop across a run: levels climb through six themed worlds, a bonus round com
 
 
 ### 2.3 Rules that keep the loop consistent
-- **Symmetry.** Everyone has two cheeks, including enemies, so the same hit rules apply to both sides. One difficulty number controls how aggressive an enemy is: 1.0 to 1.3 in High Score levels, 1.4 to 2.2 by tier in Survival, and +0.1 per wave in Gauntlet.
+- **Symmetry.** Everyone has two cheeks, including enemies, so the same hit rules apply to both sides. One difficulty number controls how aggressive an enemy is: 1.0 to 2.0 by world in High Score (0.2 a world), 1.4 to 2.2 by tier in Survival, and +0.1 per wave in Gauntlet.
 - **Screen wrap.** Fly off the left edge and you come in on the right. Edge copies of a character can be hit and the hit counts.
 - **Instant death.** Water and lava kill when your center is in them, never on a graze. The splat bat and bomb pickups are instant deaths too. The gum bubble absorbs one pop but not water or bombs.
 - **Lives.** Three lives per player, uncapped. A 1UP adds one or revives a knocked-out co-op partner. After a death you respawn and flicker invincible for one second.
