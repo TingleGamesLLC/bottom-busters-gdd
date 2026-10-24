@@ -128,7 +128,7 @@ p(
     "99 hand-built levels across six terrain themes exist today and ship as the free demo on itch.io "
     "and Steam. The full game is 200 levels plus an endless mode whose difficulty keeps climbing. "
     "The game is playable now in all four modes with local co-op and versus, replays, clip export, "
-    "Steam leaderboards and about 432 logged development hours. The capstone work for this course "
+    "Steam leaderboards and about 439 logged development hours. The capstone work for this course "
     "is the content that gets the game from 99 levels to 200 and endless, plus the new playable "
     "characters feedback has asked for, produced by a crew of AI "
     "agents that work at development time, not at runtime. Nothing an agent makes reaches a player "
@@ -167,9 +167,9 @@ p(
     "level the agent crew produces lands in both builds automatically, so the itch testers and the Steam "
     "buyers are always playing the same game. The demo is free on both stores; itch stays at price parity "
     "with Steam once the full game sells, since Steam's terms require it. A web leaderboard for the itch "
-    "demo is designed but not built: a page at tinglegames.com/bottom-busters/leaderboard that replicates "
+    "demo went live on 2026-10-23: a page at tinglegames.com/bottom-busters/leaderboard that replicates "
     "the animated main menu around one large board, fed by an upload after each run and listing only "
-    "players signed in with their itch accounts."
+    "players signed in with their itch accounts, with a public clip page for each top-3 run."
 )
 
 # ---------------- 2. Game Mechanics ----------------
