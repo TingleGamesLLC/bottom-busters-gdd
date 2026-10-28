@@ -1,8 +1,41 @@
 # **Bottom Busters**
 
-Game Design Document, first draft (short form)
+Final Game Design Document (short form)
 
-Multi-Agent AI for Game Development, ELVTR. Assignment #01. David, Tingle Games LLC (Austin, TX). October 2026. Engine: Unity 6.3 LTS. Platform: Windows on Steam and itch.io.
+Multi-Agent AI for Game Development, ELVTR. Assignment #02: Final GDD. David, Tingle Games LLC (Austin, TX). October 2026. Engine: Unity 6.3 LTS. Platform: Windows on Steam and itch.io.
+
+## 0. What changed since the first draft, and why
+
+The first draft (2026-10-08) was stress-tested twice by a multi-agent design review kit run in Claude Code. Each pass ran isolated reviews, then a cross-examination round in which the reviewers challenged each other's findings, then a moderated synthesis that ranked the issues. Pass 1 (2026-10-14, first draft): six AI specialists (systems designer, narrative critic, player psychologist, feasibility lead, adversarial QA, business analyst), 34 findings, 9 of them blocking. Pass 2 (2026-10-15, second draft): the same six plus five synthetic players (the optimizer, the couch host, the casual kid and parent, the clip maker and the Balloon Fight veteran), 70 findings, 15 of them blocking. The document's git history is its change log: 16 commits from 2026-10-15 to 2026-10-25.
+
+### 0.1 What the agent stress-test flagged, and what changed
+
+| What the crew flagged | What changed |
+|---|---|
+| The High Score run has no shape: flat difficulty from level 8, uncapped lives, no end state. (Pass 1, top issue, raised by four reviewers) | The run now has an end: the demo ends as a win on the end card after Bonus Round 33 (level 99), and the full game ends the same way after level 200. Enemy difficulty now steps up by world, 1.0 in world 1 to 2.0 in world 6 (the first draft had 1.0 to 1.3). The rest of the curve is a planned deliverable with a mechanism: a tuning table the Difficulty Tuner agent builds from itch.io playtest logs. Players who want no end get the separate Endless mode. |
+| A 15-level, pickup-boosted demo is not a fair sample of the game. (Pass 1, business analyst) | The demo is now the whole built game, all 99 levels, on itch.io and Steam. Pass 2 confirmed the fix: no reviewer raised it again, and the feasibility lead called the itch.io demo "feasible as written." |
+| The end card promises 200 levels and a custom game builder that nothing in the plan supports. (Pass 1, #2) | 200 levels stays, because the production method is now written down: the Level Architect writes the levels, the QA Playtester checks them in a headless build, and the game finds them at runtime (Sections 3 and 4). |
+| The main mode is one long run with no quick retry; restarting takes three menus. (Pass 2, #3) | The High Score GAME OVER card now has Play Again, which starts a new run from level 1 (2026-10-22). The first draft said "No retry; a run is a run." |
+| The roast line has no spec and can land on beginners after deaths they couldn't read. (Pass 1, #4; Pass 2, #5) | Partly answered. Roast lines are now picked by what happened in the run: the card's most interesting stat that has a line, otherwise a general line. After an Enemies Defeated roast the next 3 rounds roast something else, and lines about poo, toilets or smell never play in Gauntlet. The full rewrite belongs to the Roast Writer agent. |
+| Should Gauntlet stay or fold into Survival? (Pass 1, unresolved disagreement) | Kept. In Pass 2, every reviewer who addressed it wanted it kept. Gauntlet now has two boards like Survival, Highest Wave and Most Points (2026-10-18), instead of ranking by wave only. |
+
+
+### 0.2 What humans caught
+
+Human feedback on the build said the characters were hard to tell apart. To answer it I added a seventh agent to the crew, the Character Artist, which designs new playable characters: a body sprite, its 12 death-flail frames and a Character Select tile for each, made to the house sprite standard so hats, shades, cheek sets and poo stains still sit on them like the original ten. New characters drop in through the game's runtime skin discovery with no code change. The agent adds 150,000 tokens (10 characters, one redo each), which moves the semester budget from about 4.8 million to about 5.0 million tokens.
+
+### 0.3 My own judgment
+- **Kept the Custom Game teaser, against the board.** The board said to pull the dead Custom Game menu from the demo (Pass 1, quick win). I kept it as a teaser: the end card already tells every player custom games are coming, and the mockup is an explorable preview, not a dead button. Since 2026-10-22 each mode opens at the real game's settings, and Start Game is marked "Not Available in Demo."
+- **Release order.** itch.io first as the proving ground, then Steam as the commercial release, both built from one Unity project with two build targets (Section 1.1).
+- **itch leaderboard and online 2P.** A web leaderboard for the itch demo went live on 2026-10-23, with itch sign-in in the game and a public clip page for each top-3 run. A run check built on 2026-10-25 holds runs whose numbers don't add up; it ships with version 0.9.1. Online 2P on itch goes through Parsec, the free remote-play app.
+- **Levels.** Every level was retiled by hand so stacked terrain rows leave room to fly (2026-10-21), and in 2P both players now start near each other (2026-10-23).
+- **Controls.** Both players can share one keyboard or each use their own, Player 2 has its own gamepad layout, and every connected controller works in the menus (2026-10-24 and 25).
+- **Presentation and scoring.** Four cheek sets rolled each life; a colorblind mode (protanopia, deuteranopia, tritanopia); share clips of 25 to 60 seconds in phone 9:16 or widescreen 16:9, plus whole replays past 60 seconds; a version stamp and a DEMO stamp; developer skip buttons out of every build. An uzi streak now pays only its top badge.
+- **The crew.** Three control agents are proposed for the next assignment: an Orchestrator that turns this GDD into Trello cards and hands each card to one agent at a time, a Critic that reviews agent output for what the player will see, and a Technical Writer that keeps the docs current as cards close. A local model cluster can run crew work that doesn't need Claude, and a development dashboard tracks the crew's cards and token use.
+
+### 0.4 Still open from the review
+
+Not yet decided: 2P fail states and score ownership in versus and co-op; the pickup drop table and how traps look; the Chain Kills definition and the bonus-round payout; the roast spec and the announcer count; the audience and register; and the announcer's wave callouts (1 to 50) against Survival's 60 waves. Pass 2's top issue is also open: the contact rule (who loses a cheek on a bump, what makes a landing a Stomp Kill, what a one-cheeked character does). The built game already answers it, but this document does not write it down yet.
 
 ## 1. Executive Summary
 
@@ -10,7 +43,7 @@ Bottom Busters is a 2D arcade action platformer for one or two players on one sc
 
 The main mode is High Score: single-screen levels in order, three lives, one score for the whole run and a bonus round every three levels. A run ends on a GAME OVER card with a roast line, superlatives and Play Again, and every run can be saved as a replay and exported as a 25- to 60-second vertical clip or a 16:9 widescreen video. Three more modes share the same characters and rules: Burrito Arena (casual deathmatch or co-op), Survival (60 waves) and Gauntlet (versus AI, difficulty rising 10% per wave with no cap).
 
-99 hand-built levels across six terrain themes exist today and ship as the free demo on itch.io and Steam. The full game is 200 levels plus an endless mode whose difficulty keeps climbing. The game is playable now in all four modes with local co-op and versus, replays, clip export, Steam leaderboards and about 449 logged development hours. The capstone work for this course is the content that gets the game from 99 levels to 200 and endless, plus the new playable characters feedback has asked for, produced by a crew of AI agents that work at development time, not at runtime. Nothing an agent makes reaches a player until it has been built, tested and played by a human.
+99 hand-built levels across six terrain themes exist today and ship as the free demo on itch.io and Steam. The full game is 200 levels plus an endless mode whose difficulty keeps climbing. The game is playable now in all four modes with local co-op and versus, replays, clip export, Steam leaderboards and about 449 logged development hours. The capstone work for this course is the content that gets the game from 99 levels to 200 and endless, plus new playable characters, because feedback said the current ones are hard to tell apart, produced by a crew of AI agents that work at development time, not at runtime. Nothing an agent makes reaches a player until it has been built, tested and played by a human.
 - **Pillar 1.** Stomp or be stomped. Height is power; flap timing and position decide every fight.
 - **Pillar 2.** Couch chaos. Two players on one screen, as partners or rivals, in every mode.
 - **Pillar 3.** Gross-out humor that leaves a mark. Poo is physical and the base coat never washes off.
@@ -75,7 +108,7 @@ Each agent has one job and one output, and no two agents write the same file. Th
 | Difficulty Tuner | Reads the per-run event log from playtests and proposes enemy count and the difficulty number for each level and each endless-mode step. | A curve that actually climbs after level 8, and an endless mode where enemies dive sooner and track better every few levels until the run ends. |
 | Roast Writer | Rewrites the roast line bank and superlatives, tagged to the run events that trigger them (died dirty, held it in, drowned, flawless). | A GAME OVER card that roasts what you actually did this run, from text shipped inside the game. |
 | Wardrobe Stylist | Produces new hat and shades sprites and backdrop picks that pass the house sprite standard (size, density, point filtering, color regions). | More hats and shades on the Character Select screen, all of which still get dirty from poo like the originals. |
-| Character Artist | Makes new playable characters: the body sprite, its 12 death-flail frames and a Character Select tile, to the house sprite standard, so hats, shades, cheek sets and poo stains sit on it like the original ten. | More characters to pick on the Character Select screen, which feedback on the build asked for. They drop in through the game's runtime skin discovery. |
+| Character Artist | Makes new playable characters: the body sprite, its 12 death-flail frames and a Character Select tile, to the house sprite standard, so hats, shades, cheek sets and poo stains sit on it like the original ten. | More characters to pick on the Character Select screen, added because feedback on the build said the characters were hard to tell apart. They drop in through the game's runtime skin discovery. |
 | QA Playtester | Loads every new level in a headless Unity build and checks that each enemy is reachable, no spawn is over water, and the level can be cleared, then files a pass or fail report. | No unwinnable or empty level ever reaches the demo; a failed level goes back to the Level Architect, not to the player. |
 | Builder | Reads this GDD and the project's coding rules and implements one approved feature at a time in Unity C#, then runs the existing build-and-verify loop. | The endless mode itself, the Custom Game screen behind the current menu teaser, and whatever the other agents' output needs to load. |
 
@@ -86,13 +119,13 @@ How they fit together: the Level Architect makes a level, the QA Playtester pass
 
 ### 4.1 Agent roles and boundaries
 
-| Agent | Reads | Writes | Never touches |
+| Agent | Reads | Writes (format) | Never touches |
 |---|---|---|---|
-| Level Architect | Level rules, theme list, existing level files | New level files | Code, tuning, art |
-| Difficulty Tuner | Playtest event logs, current tuning table | Tuning table (enemy count, difficulty per level) | Level layouts, code |
-| Roast Writer | Scoring and event categories, current line bank | Roast and superlative text files | Anything but text |
-| Wardrobe Stylist | Sprite standard, existing hat sprites | Hat and shades sprites plus import settings | Levels, code |
-| Character Artist | Sprite standard, the ten existing skins and their flail frames | New skin sprites, flail frames and select tiles plus import settings | Hats and shades, levels, code |
+| Level Architect | Level rules, theme list, existing level files | New level scenes (Level100.unity and up), found at runtime by the level catalog | Code, tuning, art |
+| Difficulty Tuner | Playtest event logs, current tuning table | One tuning table data file: enemy count and difficulty per level (planned) | Level layouts, code |
+| Roast Writer | Scoring and event categories, current line bank | Roast and superlative lines, each tagged with the run event that triggers it (tags in roasts.json) | Anything but text |
+| Wardrobe Stylist | Sprite standard, existing hat sprites | Hat and shades sprites (PNG, with a color-region mask PNG) plus import settings | Levels, code |
+| Character Artist | Sprite standard, the ten existing skins and their flail frames | New skin sprites, 12 flail frames and select tiles (PNG) plus import settings | Hats and shades, levels, code |
 | QA Playtester | New level files, headless build | Pass/fail report per level | Any game file |
 | Builder | This GDD, CLAUDE.md, the C# source | C# source, scenes | Level data, tuning, text, art |
 
