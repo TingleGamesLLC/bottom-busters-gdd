@@ -163,7 +163,7 @@ bullet(
 bullet(
     "A web leaderboard for the itch demo went live on 2026-10-23, with itch sign-in in the game and a "
     "public clip page for each top-3 run. A run check built on 2026-10-25 holds runs whose numbers don't "
-    "add up; it ships with version 0.9.1. Online 2P on itch goes through Parsec, the free remote-play app.",
+    "add up; it went live with version 0.9.1 on 2026-10-28, when the itch demo went public. Online 2P on itch goes through Parsec, the free remote-play app.",
     "itch leaderboard and online 2P.",
 )
 bullet(
