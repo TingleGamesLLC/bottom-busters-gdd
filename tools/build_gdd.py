@@ -184,9 +184,9 @@ bullet(
     "Presentation and scoring.",
 )
 bullet(
-    "Three control agents are proposed for the next assignment: an Orchestrator that turns this GDD into "
-    "Trello cards and hands each card to one agent at a time, a Critic that reviews agent output for what "
-    "the player will see, and a Technical Writer that keeps the docs current as cards close. A local model "
+    "Three control agents were built for Assignment #3 (2026-10-30): an Orchestrator that works the Trello "
+    "board top to bottom and hands each card to one agent at a time, a Critic that reviews agent output for what "
+    "the player will see, and a Technical Writer that keeps the record current as cards close. A local model "
     "cluster can run crew work that doesn't need Claude, and a development dashboard tracks the crew's "
     "cards and token use.",
     "The crew.",
@@ -356,10 +356,11 @@ p(
     "on one side, hats and shades on the other. "
     "The handoff between agents is a file in the repository, not a conversation, so any step can be "
     "re-run alone. A human (me) is the last gate: I play every build and nothing is committed without "
-    "my say-so. That rule already exists in the project and the agents inherit it. Proposed for the next "
-    "assignment: an Orchestrator that turns this GDD into Trello cards and gives each card to one agent at "
+    "my say-so. That rule already exists in the project and the agents inherit it. Built for Assignment #3: "
+    "an Orchestrator that works the Trello board top to bottom and gives each card to one agent at "
     "a time, a Critic that reviews agent output for what the player will see, and a Technical Writer "
-    "that keeps the docs and summaries current as cards close."
+    "that keeps the summaries and memory current as cards close. Before the Critic sees anything, the Bridge, "
+    "a script with no AI in it, checks the format and sends malformed output back to its maker."
 )
 
 # ---------------- 4. Technical Strategy ----------------
@@ -375,6 +376,9 @@ table(
         ("Character Artist", "Sprite standard, the ten existing skins and their flail frames", "New skin sprites, 12 flail frames and select tiles (PNG) plus import settings", "Hats and shades, levels, code"),
         ("QA Playtester", "New level files, headless build", "Pass/fail report per level", "Any game file"),
         ("Builder", "This GDD, CLAUDE.md, the C# source", "C# source, scenes", "Level data, tuning, text, art"),
+        ("Orchestrator", "The Trello board, the crew's memory file", "Task briefs (JSON), card moves, run state", "Any game file"),
+        ("Critic", "A maker's previews and measurements", "A verdict (JSON): pass or fail, with a note for the maker", "Any game file"),
+        ("Technical Writer", "The run record", "Run summary, crew log, memory file, card comments", "Any game file"),
     ],
     [1.15, 2.0, 2.0, 1.55],
 )
@@ -403,7 +407,8 @@ p(
     "At current Claude Sonnet list prices this is tens of dollars for the semester, not hundreds; the exact "
     "figure is checked against the pricing page before each phase. The budget is a cap, not a target, and "
     "the Builder's share is the one to watch: if a slice runs past 500,000 tokens the slice is too big and "
-    "gets split."
+    "gets split. The three control agents run on the local cluster, each with a token cap per run, so they "
+    "don't draw on this budget."
 )
 doc.add_heading("4.3 Constraints", level=2)
 bullet(

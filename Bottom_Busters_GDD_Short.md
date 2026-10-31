@@ -31,7 +31,7 @@ Human feedback on the build said the characters were hard to tell apart. To answ
 - **Levels.** Every level was retiled by hand so stacked terrain rows leave room to fly (2026-10-21), and in 2P both players now start near each other (2026-10-23).
 - **Controls.** Both players can share one keyboard or each use their own, Player 2 has its own gamepad layout, and every connected controller works in the menus (2026-10-24 and 25).
 - **Presentation and scoring.** Four cheek sets rolled each life; a colorblind mode (protanopia, deuteranopia, tritanopia); share clips of 25 to 60 seconds in phone 9:16 or widescreen 16:9, plus whole replays past 60 seconds; a version stamp and a DEMO stamp; developer skip buttons out of every build. An uzi streak now pays only its top badge.
-- **The crew.** Three control agents are proposed for the next assignment: an Orchestrator that turns this GDD into Trello cards and hands each card to one agent at a time, a Critic that reviews agent output for what the player will see, and a Technical Writer that keeps the docs current as cards close. A local model cluster can run crew work that doesn't need Claude, and a development dashboard tracks the crew's cards and token use.
+- **The crew.** Three control agents were built for Assignment #3 (2026-10-30): an Orchestrator that works the Trello board top to bottom and hands each card to one agent at a time, a Critic that reviews agent output for what the player will see, and a Technical Writer that keeps the record current as cards close. A local model cluster can run crew work that doesn't need Claude, and a development dashboard tracks the crew's cards and token use.
 
 ### 0.4 Still open from the review
 
@@ -113,7 +113,7 @@ Each agent has one job and one output, and no two agents write the same file. Th
 | Builder | Reads this GDD and the project's coding rules and implements one approved feature at a time in Unity C#, then runs the existing build-and-verify loop. | The endless mode itself, the Custom Game screen behind the current menu teaser, and whatever the other agents' output needs to load. |
 
 
-How they fit together: the Level Architect makes a level, the QA Playtester passes or fails it, the Difficulty Tuner sets its numbers after real playtest data exists, and the Builder only changes code. The Character Artist and the Wardrobe Stylist both make sprites but never the same files: characters on one side, hats and shades on the other. The handoff between agents is a file in the repository, not a conversation, so any step can be re-run alone. A human (me) is the last gate: I play every build and nothing is committed without my say-so. That rule already exists in the project and the agents inherit it. Proposed for the next assignment: an Orchestrator that turns this GDD into Trello cards and gives each card to one agent at a time, a Critic that reviews agent output for what the player will see, and a Technical Writer that keeps the docs and summaries current as cards close.
+How they fit together: the Level Architect makes a level, the QA Playtester passes or fails it, the Difficulty Tuner sets its numbers after real playtest data exists, and the Builder only changes code. The Character Artist and the Wardrobe Stylist both make sprites but never the same files: characters on one side, hats and shades on the other. The handoff between agents is a file in the repository, not a conversation, so any step can be re-run alone. A human (me) is the last gate: I play every build and nothing is committed without my say-so. That rule already exists in the project and the agents inherit it. Built for Assignment #3: an Orchestrator that works the Trello board top to bottom and gives each card to one agent at a time, a Critic that reviews agent output for what the player will see, and a Technical Writer that keeps the summaries and memory current as cards close. Before the Critic sees anything, the Bridge, a script with no AI in it, checks the format and sends malformed output back to its maker.
 
 ## 4. Technical Strategy
 
@@ -128,6 +128,9 @@ How they fit together: the Level Architect makes a level, the QA Playtester pass
 | Character Artist | Sprite standard, the ten existing skins and their flail frames | New skin sprites, 12 flail frames and select tiles (PNG) plus import settings | Hats and shades, levels, code |
 | QA Playtester | New level files, headless build | Pass/fail report per level | Any game file |
 | Builder | This GDD, CLAUDE.md, the C# source | C# source, scenes | Level data, tuning, text, art |
+| Orchestrator | The Trello board, the crew's memory file | Task briefs (JSON), card moves, run state | Any game file |
+| Critic | A maker's previews and measurements | A verdict (JSON): pass or fail, with a note for the maker | Any game file |
+| Technical Writer | The run record | Run summary, crew log, memory file, card comments | Any game file |
 
 
 ### 4.2 Token budget per agent (semester)
@@ -146,7 +149,7 @@ Each figure is tokens in plus tokens out across all calls, with a retry allowanc
 | Total |  |  |  | about 5.0 million |
 
 
-At current Claude Sonnet list prices this is tens of dollars for the semester, not hundreds; the exact figure is checked against the pricing page before each phase. The budget is a cap, not a target, and the Builder's share is the one to watch: if a slice runs past 500,000 tokens the slice is too big and gets split.
+At current Claude Sonnet list prices this is tens of dollars for the semester, not hundreds; the exact figure is checked against the pricing page before each phase. The budget is a cap, not a target, and the Builder's share is the one to watch: if a slice runs past 500,000 tokens the slice is too big and gets split. The three control agents run on the local cluster, each with a token cap per run, so they don't draw on this budget.
 
 ### 4.3 Constraints
 - **No runtime API calls.** The game must cost $0 per player to run, work offline, and stay inside Steam's pre-generated-content disclosure. So every agent runs at development time and ships only static data. This rules out live roast generation, live level generation and any API key inside the build. It is the single biggest constraint and it is deliberate.
