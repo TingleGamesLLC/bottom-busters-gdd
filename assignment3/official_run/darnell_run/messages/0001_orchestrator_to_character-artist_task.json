@@ -1,0 +1,13 @@
+{
+  "n": 1,
+  "at": "2026-11-01T01:41:32",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t1",
+    "brief": "Design and finalize the first African American character with a unique skin tone, facial features, hair style, and first name, including all three required animations: flailing arms, idle, and flying arms.",
+    "slot": 11,
+    "notes": null
+  }
+}

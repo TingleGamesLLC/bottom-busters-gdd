@@ -1,0 +1,17 @@
+{
+  "n": 5,
+  "at": "2026-11-01T01:53:36",
+  "from": "critic",
+  "to": "orchestrator",
+  "kind": "verdict",
+  "payload": {
+    "task": "t1",
+    "what_i_see": "Dark skin, short hair, angry expression.",
+    "tell_apart": true,
+    "problems": [
+      "dark skin"
+    ],
+    "verdict": "pass",
+    "note_for_artist": ""
+  }
+}

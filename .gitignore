@@ -2,3 +2,6 @@
 Assignment*.pdf
 *.png
 ~$*
+
+# The hand-in shows its sample art
+!assignment3/**/*.png

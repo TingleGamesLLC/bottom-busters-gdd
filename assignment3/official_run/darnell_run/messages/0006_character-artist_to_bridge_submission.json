@@ -1,0 +1,23 @@
+{
+  "n": 6,
+  "at": "2026-11-01T01:43:08",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t1",
+    "folder": "C:\\cluster\\crew\\work\\player11_t1",
+    "concept": {
+      "first_name": "darnell",
+      "hair": "tight coiled afro, slightly asymmetrical, full and round",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "neatly trimmed, full chin and cheeks",
+      "face": "narrow eyes, thin brows, subtle smirk",
+      "skin_tone": "chestnut",
+      "why_distinct": "The combination of a tightly coiled afro with asymmetry, a full beard, narrow eyes, and a subtle smirk sets Darnell apart from the others, especially the balding and glasses-wearing characters.",
+      "set": "African American",
+      "name": "darnell"
+    }
+  }
+}

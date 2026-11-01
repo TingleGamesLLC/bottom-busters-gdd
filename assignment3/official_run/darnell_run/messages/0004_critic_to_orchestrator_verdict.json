@@ -1,0 +1,19 @@
+{
+  "n": 4,
+  "at": "2026-11-01T01:42:22",
+  "from": "critic",
+  "to": "orchestrator",
+  "kind": "verdict",
+  "payload": {
+    "task": "t1",
+    "what_i_see": "Short, dark hair, no beard, wide eyes, no smirk, chestnut skin.",
+    "tell_apart": true,
+    "problems": [
+      "no beard",
+      "wide eyes",
+      "no smirk"
+    ],
+    "verdict": "fail",
+    "note_for_artist": "Add a beard, narrow the eyes, and include a subtle smirk."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "n": 8,
+  "at": "2026-11-01T01:43:15",
+  "from": "critic",
+  "to": "orchestrator",
+  "kind": "verdict",
+  "payload": {
+    "task": "t1",
+    "what_i_see": "Afro hair, chestnut skin, narrow eyes, subtle smirk.",
+    "tell_apart": true,
+    "problems": [
+      "hair looks detached from the head"
+    ],
+    "verdict": "fail",
+    "note_for_artist": "Ensure the hair is properly attached to the head."
+  }
+}

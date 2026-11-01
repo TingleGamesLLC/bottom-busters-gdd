@@ -1,0 +1,13 @@
+{
+  "n": 1,
+  "at": "2026-11-01T01:53:02",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t1",
+    "brief": "Design and deliver the first African American character with a chubby body, white briefs, a distinct skin tone, unique facial features, original hair style, a first name, and all three animations: flailing arms, idle, and flying arms.",
+    "slot": 12,
+    "notes": null
+  }
+}

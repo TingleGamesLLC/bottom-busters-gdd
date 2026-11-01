@@ -1,0 +1,23 @@
+{
+  "n": 2,
+  "at": "2026-11-01T01:42:12",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t1",
+    "folder": "C:\\cluster\\crew\\work\\player11_t1",
+    "concept": {
+      "first_name": "darnell",
+      "hair": "tall, tight cornrows forming a geometric crown",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "sharp, trimmed square jawline beard",
+      "face": "thin brows, narrow eyes, subtle smirk",
+      "skin_tone": "chestnut",
+      "why_distinct": "The geometric cornrow pattern and square-cut beard create a sharp, architectural look unlike any other in the roster.",
+      "set": "African American",
+      "name": "darnell"
+    }
+  }
+}

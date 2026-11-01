@@ -1,0 +1,23 @@
+{
+  "n": 3,
+  "at": "2026-11-01T01:53:28",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t1",
+    "folder": "C:\\cluster\\crew\\work\\player12_t1",
+    "concept": {
+      "first_name": "Marvin",
+      "hair": "tall, rigid cornrows forming a geometric crown",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "sharp, angular, trimmed to a point",
+      "face": "narrow brows, squinting eyes, faint smirk",
+      "skin_tone": "chestnut",
+      "why_distinct": "The geometric cornrow crown and sharp-pointed beard create a striking, almost architectural look unlike any other character\u2019s silhouette.",
+      "set": "African American",
+      "name": "Marvin"
+    }
+  }
+}
