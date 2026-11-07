@@ -1,9 +1,9 @@
 # Bottom Busters — Game Design Document
 
-Second draft, for Assignment #1 (GDD First Draft, due Tue 10/20), Multi-Agent AI for Game Development, ELVTR.
+Started for Assignment #1 (GDD First Draft, due Tue 10/20), Multi-Agent AI for Game Development, ELVTR.
 Studio: Tingle Games LLC. First draft 2026-10-08; this revision 2026-10-15, with game facts updated 2026-10-17 (share clip length, uzi streak rule, roast bank) and 2026-10-18 (cheek sets, colorblind mode, version number, demo and full-game builds) and 2026-10-21 (whole-replay share clips, more playable characters, retiled levels, menu hats and shades, the itch web leaderboard plan) and 2026-10-22 (High Score AI difficulty by world, High Score Play Again, roasts picked by the run's events, Custom Game mode defaults) and 2026-10-23 (both players start near each other, developer skip buttons out of every build) and 2026-10-23/24 (itch sign-in, the web leaderboard and clip pages live, High Score replays cut to the last level played, Parsec for online 2P on itch) and 2026-10-24/25 (both players on keyboards, Player 2's own gamepad layout, every controller works in menus, the itch run check built, version 0.9.1, tinglegames.com live) and 2026-10-28 (the itch demo public with version 0.9.1, the run check live with its review in the developer dashboard, a whispered "Tingle" in the intro sting, a warning when quitting would drop a run from the boards, the first trailer, a Bottom Busters YouTube channel and Instagram account) and 2026-10-31 (arms flap on every normal fart, an idle breath for characters standing still, version 0.9.3). A 5-page short form of this document exists alongside it.
 
-Status of this draft: the facts below come from the project's own docs (`CLAUDE.md`, the plan files and the session log in `C:\bbust\BBUST`) and from the game as built on 2026-10-15. Lines marked **[DRAFT]** are proposed wording to confirm or change.
+Sources: the facts below come from the project's own docs (`CLAUDE.md`, the plan files and the session log in `C:\bbust\BBUST`) and from the game as built on 2026-10-15.
 
 ## 0. What changed since the first draft (2026-10-08)
 
@@ -14,7 +14,7 @@ The first draft went through a six-reviewer design board on 2026-10-14. The deci
 - **The difficulty curve from level 8 on is a planned deliverable with a mechanism, not a gap.** Enemy count and the per-level difficulty number become a tuning table produced from playtest telemetry by a Difficulty Tuner agent and approved by hand, and the itch.io release exists to generate that telemetry. (Sections 6.3, 16.)
 - **Level count stays at 200, and the 101 new levels have a production method.** New single-screen level files come from a Level Architect agent, are checked by a QA agent in a headless build, and are discovered at runtime like today's levels. The art rule of one unique backdrop per level stands and the Wardrobe Stylist agent is scoped to help. The 200 figure is kept because the method for producing the levels is now written down, not because the end card says so. (Section 16.)
 - **The Custom Game menu stays in the demo as a teaser.** The board recommended pulling it as a dead click. The decision is to keep it: the end card already tells every player custom games are coming, the demo is explicitly a demo of a game in development, and the mockup is an explorable preview, not a dead button. The procedural-level and asset work from this course is what will sit behind it. (Section 5.)
-- **Release intent is now explicit: itch.io first as the proving ground, then Steam as the commercial release, same build.** Price is proposed at $9.99 for the full game and free for the demo on both stores. (Section 19.)
+- **Release intent is now explicit: itch.io first as the proving ground, then Steam as the commercial release, same build.** Price is $9.99 for the full game and free for the demo on both stores. (Section 19.)
 - **Replays now cover every mode.** Gauntlet saves the whole run; Burrito Arena keeps a rolling 60-second window with Save Replay in the pause menu. Replay format v12. (Section 13.)
 - **More playable characters (2026-10-21).** Feedback on the build asked for more playable characters than the ten skins. This answers that feedback, not a board finding. A seventh agent, the Character Artist, joins the crew to make them, and finished characters drop in through the game's runtime skin discovery. (Sections 7, 16.)
 - **A web leaderboard for the itch demo (designed 2026-10-21, live 2026-10-23).** The itch build has no Steam, so its boards were local only. Players now sign in with their itch accounts in the game, and each finished run uploads to a full-window page at tinglegames.com/bottom-busters/leaderboard that replicates the animated main menu without its menus; itch accounts are the only identity. Top-3 runs get public clip pages. Online 2P on itch goes through Parsec, the free remote-play app. (Section 13; `ITCH_LEADERBOARD_PLAN.md`, `CLIP_PAGES_PLAN.md` and `MULTIPLAYER_PLAN.md` in the game repo.)
@@ -36,11 +36,11 @@ The first draft went through a six-reviewer design board on 2026-10-14. The deci
 
 **Inspiration:** Nintendo's *Balloon Fight*
 
-**[DRAFT] One-line pitch:** A fart-powered Balloon Fight brawler where you pop your enemies' cheeks from above, survive the poo storm, and save every disaster as a replay.
+**One-line pitch:** A fart-powered Balloon Fight brawler where you pop your enemies' cheeks from above, survive the poo storm, and save every disaster as a replay.
 
-**[DRAFT] Elevator pitch:** Every character floats like a balloon and flies by farting. Each one has two cheeks for health. Land on an enemy from above to pop its cheeks; lose both of yours and you deflate and fly off the screen. Water kills instantly. Thirteen powerups range from a speed burrito to an uzi to a cork that plugs you up for four seconds. The Green Burrito sprays poo that piles up, sticks to bodies and hats, and stays on the level. Play 99 single-screen levels for the highest run score, or jump into Burrito Arena, Survival or Gauntlet with a friend on the couch.
+**Elevator pitch:** Every character floats like a balloon and flies by farting. Each one has two cheeks for health. Land on an enemy from above to pop its cheeks; lose both of yours and you deflate and fly off the screen. Water kills instantly. Thirteen powerups range from a speed burrito to an uzi to a cork that plugs you up for four seconds. The Green Burrito sprays poo that piles up, sticks to bodies and hats, and stays on the level. Play 99 single-screen levels for the highest run score, or jump into Burrito Arena, Survival or Gauntlet with a friend on the couch.
 
-## 2. Design pillars [DRAFT]
+## 2. Design pillars
 
 1. **Stomp or be stomped.** Height is power. Flap timing and position decide every fight, the same way they do in *Balloon Fight*.
 2. **Couch chaos.** Two players on one screen, as partners or rivals. Local 2P is in every mode and in the demo.
@@ -48,7 +48,7 @@ The first draft went through a six-reviewer design board on 2026-10-14. The deci
 4. **Every run is a clip.** Every run is recorded 1:1, saved to a library, and can be exported as a 25- to 60-second vertical video to share.
 5. **Plays on a potato.** Performance is a design requirement, not a polish pass.
 
-## 3. Target audience [DRAFT]
+## 3. Target audience
 
 - Players who like short-session arcade action and chasing a high score.
 - Friends and families looking for a local couch co-op or versus game.
@@ -136,13 +136,13 @@ Survival, Gauntlet and versus Burrito Arena end cards have a PLAY AGAIN button. 
 - **Enemy difficulty by world (2026-10-22):** every High Score enemy, in 1P, 2P co-op and 2P versus, uses its world's value: 1.0 in world 1, then 1.2, 1.4, 1.6, 1.8 and 2.0 in world 6.
 - **Lava:** replaces water on levels 84–99.
 - **Powerup odds:** Burrito and Green Burrito are 25% more likely in levels 1–15, which is the demo's range.
-- **As built, enemy count does not ramp across levels 8–99, and difficulty steps only once per world.** This is the board's top finding and it is now a planned deliverable with a mechanism: enemy count and the per-level difficulty number move out of the level files into one tuning table. The table is produced by the Difficulty Tuner agent (Section 16) from the per-run event logs of itch.io playtests, and nothing in it ships without a human playtest. The first target curve is **[DRAFT]**: 3 enemies at 1.0 through level 12, then +1 enemy every 25 levels and +0.05 difficulty every 10 levels, so that level 99 runs 6 enemies at about 1.5 and level 200 runs 10 enemies at about 2.0, with the lava world (levels 185–200) as the finale. Those numbers are a starting point for the first playtest round, not a promise.
-- **The run has an end.** The demo ends on the end card after Bonus Round 33 (level 99). The full game ends the same way after level 200's bonus round, with a VICTORY card **[DRAFT]**. Players who want no end play Endless (Section 5).
+- **As built, enemy count does not ramp across levels 8–99, and difficulty steps only once per world.** This is the board's top finding and it is now a planned deliverable with a mechanism: enemy count and the per-level difficulty number move out of the level files into one tuning table. The table is produced by the Difficulty Tuner agent (Section 16) from the per-run event logs of itch.io playtests, and nothing in it ships without a human playtest. The first target curve: 3 enemies at 1.0 through level 12, then +1 enemy every 25 levels and +0.05 difficulty every 10 levels, so that level 99 runs 6 enemies at about 1.5 and level 200 runs 10 enemies at about 2.0, with the lava world (levels 185–200) as the finale. Those numbers are a starting point for the first playtest round, not a promise.
+- **The run has an end.** The demo ends on the end card after Bonus Round 33 (level 99). The full game ends the same way after level 200's bonus round, with a VICTORY card. Players who want no end play Endless (Section 5).
 
 ## 7. Characters
 
 - **Players:** 10 character skins plus RANDOM. A RANDOM pick rolls once and stays the same for the whole run.
-- **More playable characters (planned, 2026-10-21):** feedback on the build asked for more. New characters come from the Character Artist agent (Section 16). Each one is a body sprite, its 12 death-flail frames and a Character Select tile, made to the house sprite standard so hats, shades, cheek sets and poo stains sit on it like the original ten. Skins are discovered at runtime, so a finished character drops in. How many: **[DRAFT]** 10 more, doubling the roster to 20.
+- **More playable characters (planned, 2026-10-21):** feedback on the build asked for more. New characters come from the Character Artist agent (Section 16). Each one is a body sprite, its 12 death-flail frames and a Character Select tile, made to the house sprite standard so hats, shades, cheek sets and poo stains sit on it like the original ten. Skins are discovered at runtime, so a finished character drops in. How many: 80 more, in eight sets of ten made one set at a time, for 90 in all (Section 21.1).
 - **Enemies:** 10 AI character variants. They fly, fart, drown and bounce off the ceiling under the same rules as players.
 - **Character Select** comes before every mode, with one cursor per player: skin, hat, shades and hat colors, then READY.
 - **Wearables today:** a santa hat and a turkey hat; black shades and silver aviators; 10 color swatches per hat region plus the art's default colors. Hats get dirty from poo too.
@@ -309,17 +309,17 @@ Semester token budget, as a cap: about 5.0 million tokens, of which the Builder 
 - Achievements (a list of about 60 has been drafted).
 - Remote Play Together for online 2P.
 
-## 19. Business and release [DRAFT]
+## 19. Business and release
 
 - Publisher: Tingle Games LLC (Texas). Steamworks approval is in its identity-verification step.
 - The Steam build contains no sweepstakes, donation button or crypto.
 - **Release intent: itch.io first, then Steam, same build.** itch.io is the proving ground: the 99-level demo goes up first as a Draft or password-restricted page for the class and a small group of testers, then public. It is where the curve, the run length, the end card and the agent-made content get played by strangers before anything is promised on a store page that sells, and it is the source of the playtest telemetry the Difficulty Tuner needs. Builds push through itch's butler tool. Steam is the commercial release and carries the account-backed features: global and friends leaderboards with watchable replays, Remote Play Together, Workshop replays.
-- **Proposed timeline:**
+- **Timeline:**
   - itch.io demo: public since 2026-10-28, version 0.9.3 since 2026-10-31, with devlogs posted for 0.9.2 and 0.9.3.
   - Steam demo in November 2026, once the App ID exists.
   - Steam Next Fest, Feb 22 – Mar 1, 2027, plus the Couch Co-Op Fest, Feb 8–15, 2027.
   - Launch in March or April 2027.
-- **Price [DRAFT, proposed]:** demo free on both stores; full game $9.99 on both, with a 10–15% launch discount. itch stays at price parity with Steam because Steam's terms require it. Level count does not move the price; the Endless mode is the retention feature that lets the price hold through sales.
+- **Price:** demo free on both stores; full game $9.99 on both, with a 10–15% launch discount. itch stays at price parity with Steam because Steam's terms require it. Level count does not move the price; the Endless mode is the retention feature that lets the price hold through sales.
 - Remote Play Together lets one owner play with a friend online. Steam turns it on for games listed as local co-op, and it also qualifies the game for the Couch Co-Op Fest.
 - **Marketing:** daily vertical clips from the game's own clip exporter, posted to YouTube Shorts, TikTok and Instagram Reels, with a wishlist link on every post. Since 2026-10-28 the game has its own YouTube channel (Bottom Busters, with a 30-second trailer as its channel trailer, also on the itch page) and Instagram account (@bottombusters, with the trailer as its first post, a collab with @tingle.games).
 - **Localization:** store pages first, starting with Simplified Chinese. The game has very little text to translate.
@@ -337,4 +337,150 @@ Semester token budget, as a cap: about 5.0 million tokens, of which the Builder 
 - **Level variety:** single-screen levels on a fixed ground strip and three platform heights can look alike across 200 levels. Layout concepts are in `LEVEL_DESIGN_CONCEPTS.md`; the Level Architect agent's rules will be written from whichever are chosen.
 - **Remote Play latency:** remote play is video streamed, and the added delay may hurt flap timing. Not yet tested.
 - **Music and audio rights:** need to be cleared before clips and streams are promoted.
-- **Fill in:** pitch, pillars and audience wording.
+
+## 21. Content guide
+
+Every content agent reads the opening of this section, then its own part, before it generates anything. Rulings carry the Studio Director's name and date.
+
+**The game, for every agent.** Bottom Busters is a comedy arcade game. Every character is a chubby man in white briefs who floats like a balloon and flies by farting. A character's health is two cheeks, and lives are white underwear icons. The humor is gross-out and physical. Poo piles up and dirties bodies, cheeks and hats, and the base coat never washes off. Other humor-first visuals include cheek "health" and the chef animals in the bonus rounds. Everything new has to read at game size and sit beside what's already in the game. Nothing comes from the real world: no real people, brands, logos, or characters from other games or shows.
+
+### 21.1 Characters (Character Artist)
+
+**What it is.** A new playable character with the same chubby body and white briefs as everyone else. Only the skin tone, face and hair change (Studio Director, 2026-10-31: "same chubby body and white briefs, change skin tone, faces and hair"). Each one comes with the body sprite, 12 death-flail frames, 3 idle frames, 8 flying-arm frames and a splat pair. The animations are made by the same tools as the original ten, never drawn by a model.
+
+**Reading at game size.**
+- A character is about 100 pixels tall in play.
+- Players tell characters apart by the shape and color of the hair first, and the face second.
+- Hair uses bold silhouettes. Never green hair.
+- A new character can't be mistakable for anyone already on the roster.
+
+**The face.**
+- Every face gets the same cartoon treatment, with no exaggerated features.
+- That means two eyes with whites and dark pupils, eyebrows, a nose and a mouth.
+- A character gets its own face from the shape of its brows, the size of its eyes and its expression.
+- No hats, glasses, masks or held objects. Players pick hats and shades at Character Select.
+
+**Names.**
+- Every character has one real first name.
+- The original ten (Studio Director, 2026-11-01): Larry, Doug, Norm, Greg, Carl, Steve, Barry, Terry, Kevin and Phil.
+
+**The roster today.**
+
+| Name | Look |
+|---|---|
+| Larry | Balding with dark hair on one side, no beard |
+| Doug | Shaggy brown hair, round glasses, big dark brown beard |
+| Norm | Gray side-parted hair, balding, no beard |
+| Greg | Long wavy brown hair to the shoulders, small goatee |
+| Carl | Long brown hair to the shoulders, black bandit mask, dark goatee |
+| Steve | Short black hair, glasses, no beard |
+| Barry | Dark red swept hair, round glasses, big dark beard |
+| Terry | Curly black hair, full black beard |
+| Kevin | Short curly ginger-brown hair, black bandit mask |
+| Phil | Short curly ginger-brown hair, no mask, no beard |
+
+**Sets.**
+- 80 new characters, for 90 in all (Studio Director, 2026-11-07).
+- They come in sets of ten, one set at a time (Studio Director, 2026-11-03).
+- The set order: African American, East Asian, Southeast Asian, Pacific Islander, Hispanic, Indian, Middle Eastern/North African, Native American/Indigenous.
+- Each set has its own skin tones and hair notes.
+- The game shows no ethnicity information, just a list of characters with first names.
+
+**The not-offensive line.**
+- Names are "comically stereotypical but not offensive" (Studio Director): the most classic name you'd really hear for the set.
+- No jokes about accents or the group, no nicknames or titles, and no word that names the group.
+- No ethnic or religious caricature, and no feathers, headdresses or face paint.
+- The Studio Director approves every name.
+
+**Failure.**
+- A character that can be mistaken for one on the roster at game size.
+- A name that's already taken, is a joke, or names the group.
+- Any exaggerated feature or caricature.
+
+### 21.2 Roast lines (Roast Writer)
+
+**What it is.** The line the narrator reads on the end card, tied to what the player just did. Lines are written ahead of time and ship as text, never generated live. The 40 lines the Studio Director kept are the voice to match. This is the roast line spec Section 20 asks for (Studio Director, 2026-11-04: "thats right").
+
+**The voice.**
+- Short: one to three sentences, 15 words at most.
+- A flat verdict, then a turn.
+- A deadpan, formal narrator who treats something gross like an official matter.
+- The gross thing is never named. It's "it," a smell, a plumber, a bad curry, never "poop" or "fart."
+- Backhanded praise on a win, meaner on a loss.
+- Threes work.
+- Periods only, with at most one word in capitals for stress.
+- No pop culture.
+
+**Who it talks to.**
+- "You": the player whose card it is, about the exact thing the card shows.
+- In 2P each player has their own card, so "you" is always one player.
+- No names, and nothing about the player's body, race, age or looks, so a line fits any character.
+
+**Events.**
+- Lines are tied to the 11 events the kept lines use: General, Methane Released, Enemies Defeated, Lifeguard Off Duty, Bombs On Target, Direct Deposit, In One Sitting, Longest Streak Of Poo, Received, Full Coverage and Died Dirty.
+- The seven splat events never play in Gauntlet.
+- Any line about poo, toilets or smell is kept out of Gauntlet too.
+
+**Kept lines, quoted exactly.**
+- "Dead. Even the enemies looked away out of respect." (loss)
+- "Victory. Somewhere, a plumber felt a disturbance." (win)
+- "Efficient. Brutal. Faintly upsetting." (Enemies Defeated, win)
+- "That is a LOT of propulsion for someone going nowhere." (Methane Released, loss)
+- "Precision bombing. Genuinely disgusting. Well done." (Direct Deposit, win)
+- "Covered in it AND dead. A comprehensive defeat." (Died Dirty, loss)
+
+**Failure.**
+- A line that passes every rule and still isn't funny.
+- A line that explains the joke or leans on a pun alone.
+- A line that's random, with no tie to the event.
+- A line that names the gross thing.
+- A line about a character's body or looks.
+- The same shape over and over.
+
+### 21.3 Hats and shades (Wardrobe Stylist)
+
+**What it is.** Wearables players put on at Character Select. The game has four today: the Santa hat, the turkey hat, black shades and silver aviators. Each item is drawn by code from flat shapes, the same way those four were (Studio Director, 2026-11-04).
+
+**Style.**
+- Pixel art on the characters' own grid.
+- A thick dark outline all the way round.
+- Flat fills, with no shading or gradients.
+- It has to look like it belongs with the four already in the game.
+
+**Color.**
+- A hat has one to three color areas that players recolor at Character Select.
+- Shades take no colors.
+
+**Fit.**
+- Every character faces right, so a hat leans or flops left, toward the back of the head.
+- A hat's bottom edge is its brim, and it sits on the head.
+- Shades have two lenses, one on each eye, with a bridge between them.
+- Every item has to sit right on every character.
+
+**Failure.**
+- An item that doesn't read as what it is at game size, or reads as a blob.
+- Off-style art.
+- A hat that floats above the head, or shades that miss the eyes.
+- Real logos, brands or team names.
+
+### 21.4 Backgrounds (Level Architect)
+
+**What it is.** The layered parallax backdrop behind a single-screen level. Every level has its own, and no backdrop is used twice. New ones are made by the crew, with no bought art (Studio Director, 2026-11-03). Each one is a recipe: a palette, plus layers stacked back to front.
+- A solid sky made by code.
+- A soft haze band made by code.
+- Object layers, one kind of object per layer, with each object painted whole, one at a time.
+- Every layer is 576 by 324 and loops sideways as it drifts.
+
+**Themes and taste.**
+- The game's terrain themes are blue stone, green sludge, pale bone, ice, charred ember and red crimson, with the red lava world last.
+- The six all-water levels use only sky or moon backdrops.
+- A new idea can't repeat any of the 99 backdrops in the game.
+- The Studio Director liked the violets of the first test, a giant mushroom forest at dusk.
+
+**Failure** (Studio Director, 2026-11-04):
+- Any visible seam or vertical line while a layer moves.
+- An object split across layers.
+- Holes inside objects.
+- Key color left behind.
+- Anything but sky on the sky layer.
+- Copying flaws from the bought originals.
