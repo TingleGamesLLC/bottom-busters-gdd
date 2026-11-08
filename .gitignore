@@ -5,3 +5,4 @@ Assignment*.pdf
 
 # The hand-in shows its sample art
 !assignment3/**/*.png
+!assignment4/**/*.png
