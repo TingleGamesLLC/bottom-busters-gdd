@@ -1,0 +1,14 @@
+{
+  "n": 7,
+  "at": "2026-11-07T17:16:11",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t2",
+    "brief": "Develop detailed character designs for each of the eight characters, including skin tone, hair texture, facial structure, and unique visual traits, based on the approved concept sketches.",
+    "set": "African American",
+    "slot": 17,
+    "notes": null
+  }
+}

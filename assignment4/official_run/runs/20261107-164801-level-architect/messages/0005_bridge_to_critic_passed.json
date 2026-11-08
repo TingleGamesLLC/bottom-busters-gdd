@@ -1,0 +1,17 @@
+{
+  "n": 5,
+  "at": "2026-11-07T16:49:16",
+  "from": "bridge",
+  "to": "critic",
+  "kind": "passed",
+  "payload": {
+    "task": "t1",
+    "folder": "C:\\cluster\\crew\\work\\background_t1",
+    "facts": {
+      "nearest_background": "test_system1",
+      "difference": 44.9,
+      "layers": 5,
+      "size_mb": 0.05
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "n": 15,
+  "at": "2026-11-07T17:03:56",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t2",
+    "folder": "C:\\cluster\\crew\\work\\player14_t2",
+    "concept": {
+      "first_name": "Reggie",
+      "hair": "Tight, coiled afro with a slight asymmetrical lift on one side",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "neat, full, and tightly coiled",
+      "face": "thin, arched brows, wide-set eyes, calm expression",
+      "skin_tone": "chestnut",
+      "why_distinct": "The asymmetrical afro with a lifted side and tightly coiled beard sets it apart from the symmetrical afros and full beards already in the roster.",
+      "set": "African American",
+      "name": "Reggie"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "n": 25,
+  "at": "2026-11-07T17:05:11",
+  "from": "character-artist",
+  "to": "critic",
+  "kind": "design",
+  "payload": {
+    "task": "t4",
+    "design": {
+      "first_name": "Clarence",
+      "set": "African American",
+      "skin_tone": "chestnut",
+      "hair": "Tight, coiled afro with a slight asymmetrical lift on one side (black)",
+      "beard": "neat, full, and slightly rounded",
+      "face": "thin brows, small eyes, calm expression"
+    }
+  }
+}

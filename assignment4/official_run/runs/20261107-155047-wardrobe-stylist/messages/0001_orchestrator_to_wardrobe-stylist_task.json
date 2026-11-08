@@ -1,0 +1,14 @@
+{
+  "n": 1,
+  "at": "2026-11-07T15:50:47",
+  "from": "orchestrator",
+  "to": "wardrobe-stylist",
+  "kind": "task",
+  "payload": {
+    "id": "t1",
+    "brief": "Top Hat: A tall flat-topped cylinder on a narrow brim, with a band just above the brim.",
+    "idea": "idea_01",
+    "slot": null,
+    "notes": null
+  }
+}

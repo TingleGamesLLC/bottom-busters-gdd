@@ -1,0 +1,23 @@
+{
+  "n": 10,
+  "at": "2026-11-07T17:17:00",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t2",
+    "folder": "C:\\cluster\\crew\\work\\player17_t2",
+    "concept": {
+      "first_name": "James",
+      "hair": "Tight, coiled afro with a slight asymmetrical lift on one side",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "neat, full, and slightly asymmetrical",
+      "face": "thin eyebrows, small eyes, neutral expression",
+      "skin_tone": "chestnut",
+      "why_distinct": "The combination of a uniquely asymmetrical afro and a full, asymmetrical beard sets Curtis apart from the roster\u2019s similar afros and beards.",
+      "set": "African American",
+      "name": "James"
+    }
+  }
+}

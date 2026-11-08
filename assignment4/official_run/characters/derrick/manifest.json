@@ -1,0 +1,163 @@
+{
+  "kind": "character",
+  "name": "Derrick (player20)",
+  "agent": "Character Artist",
+  "slot": 20,
+  "skin": "player20",
+  "first_name": "Derrick",
+  "set": "African American",
+  "face": {
+    "eyes": [
+      [
+        473,
+        223
+      ],
+      [
+        566,
+        223
+      ]
+    ],
+    "mouth": [
+      543,
+      269
+    ],
+    "eye_boxes": [
+      [
+        456,
+        490,
+        212,
+        234
+      ],
+      [
+        549,
+        583,
+        212,
+        234
+      ]
+    ],
+    "mouth_box": [
+      503,
+      583,
+      246,
+      292
+    ]
+  },
+  "concept": {
+    "first_name": "Derrick",
+    "hair": "Tight, coiled afro with a slight asymmetrical lift on one side",
+    "hair_color": "black",
+    "beard": true,
+    "beard_desc": "neat, full, and slightly tapered",
+    "face": "thin eyebrows, narrow eyes, neutral expression",
+    "skin_tone": "chestnut",
+    "why_distinct": "The combination of a tightly coiled afro with asymmetry and a full, tapered beard sets it apart from the other afro and beard styles on the roster.",
+    "set": "African American",
+    "name": "Derrick"
+  },
+  "seed": 17156200,
+  "rect": {
+    "x": 237,
+    "y": 54,
+    "width": 503,
+    "height": 956
+  },
+  "files": [
+    "Resources/CharacterIdle/player20_idle_00.png",
+    "Resources/CharacterIdle/player20_idle_00.png.meta",
+    "Resources/CharacterIdle/player20_idle_01.png",
+    "Resources/CharacterIdle/player20_idle_01.png.meta",
+    "Resources/CharacterIdle/player20_idle_02.png",
+    "Resources/CharacterIdle/player20_idle_02.png.meta",
+    "Resources/DeathFlail/player20_flail_00.png",
+    "Resources/DeathFlail/player20_flail_00.png.meta",
+    "Resources/DeathFlail/player20_flail_01.png",
+    "Resources/DeathFlail/player20_flail_01.png.meta",
+    "Resources/DeathFlail/player20_flail_02.png",
+    "Resources/DeathFlail/player20_flail_02.png.meta",
+    "Resources/DeathFlail/player20_flail_03.png",
+    "Resources/DeathFlail/player20_flail_03.png.meta",
+    "Resources/DeathFlail/player20_flail_04.png",
+    "Resources/DeathFlail/player20_flail_04.png.meta",
+    "Resources/DeathFlail/player20_flail_05.png",
+    "Resources/DeathFlail/player20_flail_05.png.meta",
+    "Resources/DeathFlail/player20_flail_06.png",
+    "Resources/DeathFlail/player20_flail_06.png.meta",
+    "Resources/DeathFlail/player20_flail_07.png",
+    "Resources/DeathFlail/player20_flail_07.png.meta",
+    "Resources/DeathFlail/player20_flail_08.png",
+    "Resources/DeathFlail/player20_flail_08.png.meta",
+    "Resources/DeathFlail/player20_flail_09.png",
+    "Resources/DeathFlail/player20_flail_09.png.meta",
+    "Resources/DeathFlail/player20_flail_10.png",
+    "Resources/DeathFlail/player20_flail_10.png.meta",
+    "Resources/DeathFlail/player20_flail_11.png",
+    "Resources/DeathFlail/player20_flail_11.png.meta",
+    "Resources/DeathSplat/player20_splat.png",
+    "Resources/DeathSplat/player20_splat.png.meta",
+    "Resources/DeathSplat/player20_splatchar.png",
+    "Resources/DeathSplat/player20_splatchar.png.meta",
+    "Resources/FartFlap/player20_flap_00.png",
+    "Resources/FartFlap/player20_flap_00.png.meta",
+    "Resources/FartFlap/player20_flap_01.png",
+    "Resources/FartFlap/player20_flap_01.png.meta",
+    "Resources/FartFlap/player20_flap_02.png",
+    "Resources/FartFlap/player20_flap_02.png.meta",
+    "Resources/FartFlap/player20_flap_03.png",
+    "Resources/FartFlap/player20_flap_03.png.meta",
+    "Resources/FartFlap/player20_flap_04.png",
+    "Resources/FartFlap/player20_flap_04.png.meta",
+    "Resources/FartFlap/player20_flap_05.png",
+    "Resources/FartFlap/player20_flap_05.png.meta",
+    "Resources/FartFlap/player20_flap_06.png",
+    "Resources/FartFlap/player20_flap_06.png.meta",
+    "Resources/FartFlap/player20_flap_07.png",
+    "Resources/FartFlap/player20_flap_07.png.meta",
+    "Sprites/Characters/player20.png",
+    "Sprites/Characters/player20.png.meta"
+  ],
+  "pixellab": {
+    "calls": 1,
+    "usd": 0.0,
+    "generations": 5.0
+  },
+  "previews": [
+    "preview_lineup.png",
+    "preview_body.png",
+    "preview_head.png",
+    "preview_splat.png",
+    "preview_strip_flail.png",
+    "preview_strip_idle.png",
+    "preview_strip_flap.png"
+  ],
+  "card": "77b8be0a-9999-4c82-976a-e88c72a3ad05",
+  "card_name": "[Character Artist] First set: the other 8 characters",
+  "run": "20261107-171522-character-artist",
+  "bridge": {
+    "nearest_roster": "player12",
+    "difference_from_nearest": 21.5,
+    "hair_distance": 16.9,
+    "nearest_hair": "player12",
+    "face_distance": 35.4,
+    "nearest_face": "player11",
+    "skin_distance": 0.0,
+    "nearest_skin": "player11",
+    "size_mb": 6.0,
+    "running_total_mb": 59.49
+  },
+  "critic": {
+    "what_i_see": "The character has a large afro and a neutral expression.",
+    "tell_apart": true,
+    "problems": [
+      "afro is large and prominent"
+    ],
+    "verdict": "pass",
+    "note_for_artist": ""
+  },
+  "gdd_check": {
+    "verdict": "pass",
+    "problems": [],
+    "note_for_maker": "",
+    "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1",
+    "dropped": []
+  }
+}

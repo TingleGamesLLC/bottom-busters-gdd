@@ -1,0 +1,16 @@
+{
+  "n": 5,
+  "at": "2026-11-07T16:57:56",
+  "from": "bridge",
+  "to": "critic",
+  "kind": "passed",
+  "payload": {
+    "task": "t1",
+    "folder": "C:\\cluster\\crew\\work\\wardrobe_t1",
+    "facts": {
+      "nearest_item": "Top Hat",
+      "difference": 66.1,
+      "size_kb": 511
+    }
+  }
+}

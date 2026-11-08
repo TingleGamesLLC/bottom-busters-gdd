@@ -1,0 +1,32 @@
+{
+  "n": 3,
+  "at": "2026-11-07T16:48:46",
+  "from": "critic",
+  "to": "orchestrator",
+  "kind": "gdd_check",
+  "payload": {
+    "task": "t1",
+    "verdict": "pass",
+    "problems": [],
+    "note_for_maker": "",
+    "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.4",
+    "dropped": [
+      {
+        "finding": {
+          "rule": "The game's terrain themes are blue stone, green sludge, pale bone, ice, charred ember and red crimson, with the red lava world last.",
+          "words": "theme: haunted mansion on a crooked hill",
+          "why": "The theme 'haunted mansion on a crooked hill' does not match any of the allowed terrain themes."
+        },
+        "dropped": "it quotes a sentence that describes the game today, not a rule for new work"
+      },
+      {
+        "finding": {
+          "rule": "The six all-water levels use only sky or moon backdrops.",
+          "words": "theme: haunted mansion on a crooked hill",
+          "why": "The theme 'haunted mansion on a crooked hill' is not an all-water level, but it still uses a sky layer, which is not allowed unless the level is an all-water level."
+        },
+        "dropped": "the second look found no break: The rule only applies to all-water levels, not to the haunted mansion theme."
+      }
+    ]
+  }
+}

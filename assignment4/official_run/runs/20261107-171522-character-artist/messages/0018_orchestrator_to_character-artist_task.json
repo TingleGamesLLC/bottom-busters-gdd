@@ -1,0 +1,14 @@
+{
+  "n": 18,
+  "at": "2026-11-07T17:17:47",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t3",
+    "brief": "Create full-color, high-resolution renderings of each character in a standard standing pose, with consistent lighting and background to ensure visual uniformity across the set.",
+    "set": "African American",
+    "slot": 18,
+    "notes": "Make the face look less like player11's: difference 25.8, needs at least 29.7."
+  }
+}

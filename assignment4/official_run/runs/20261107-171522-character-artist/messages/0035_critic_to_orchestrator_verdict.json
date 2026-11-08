@@ -1,0 +1,17 @@
+{
+  "n": 35,
+  "at": "2026-11-07T17:20:24",
+  "from": "critic",
+  "to": "orchestrator",
+  "kind": "verdict",
+  "payload": {
+    "task": "t5",
+    "what_i_see": "The character has a large afro and a neutral expression.",
+    "tell_apart": true,
+    "problems": [
+      "afro is large and prominent"
+    ],
+    "verdict": "pass",
+    "note_for_artist": ""
+  }
+}

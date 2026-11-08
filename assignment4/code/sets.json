@@ -1,0 +1,18 @@
+[
+  {"name": "African American", "tones": ["bronze", "brown", "chestnut", "deep", "espresso"],
+   "hair_notes": "Mostly black or dark brown, with the odd bright dye job. Afros, high-top fades, short twists, cornrows, shoulder-length locs, bald fades. Full beards, goatees and thin mustaches all work."},
+  {"name": "East Asian", "tones": ["ivory", "pale", "sand", "honey"],
+   "hair_notes": "Mostly black or very dark brown, with the odd bright dye job. Straight hair: bowl cuts, spiky crops, center parts, curtain bangs, slicked back, long and tied back. Thin mustaches or clean-shaven."},
+  {"name": "Southeast Asian", "tones": ["honey", "tan", "golden", "caramel"],
+   "hair_notes": "Mostly black, straight or wavy, with the odd bright dye job. Layered mops, side-swept fringes, short crops, shoulder-length waves. Mostly clean-shaven, some thin mustaches."},
+  {"name": "Pacific Islander", "tones": ["golden", "caramel", "bronze", "brown"],
+   "hair_notes": "Mostly black, thick, wavy or curly. Big curls, topknots, shaved sides with a long top, long waves. Full beards and goatees work."},
+  {"name": "Hispanic", "tones": ["honey", "tan", "olive", "caramel"],
+   "hair_notes": "Mostly black or dark brown, with the odd bright dye job. Slicked-back waves, pompadours, short fades, curly mops, long hair. Thick mustaches, goatees and short beards work."},
+  {"name": "Indian", "tones": ["caramel", "bronze", "brown", "chestnut"],
+   "hair_notes": "Mostly black. Side parts, thick wavy hair, combed-back hair, puffed-up quiffs, curls. Thick mustaches and trimmed beards work."},
+  {"name": "Middle Eastern/North African", "tones": ["honey", "olive", "tan", "golden"],
+   "hair_notes": "Mostly black or dark brown. Thick curls, short slicked hair, swept-back waves, receding hairlines. Full dark beards, stubble and thick mustaches work."},
+  {"name": "Native American/Indigenous", "tones": ["copper", "caramel", "bronze", "chestnut"],
+   "hair_notes": "Mostly black. Long straight hair, two long braids, shoulder-length cuts, short crops. Mostly clean-shaven. No feathers, headdresses or face paint."}
+]

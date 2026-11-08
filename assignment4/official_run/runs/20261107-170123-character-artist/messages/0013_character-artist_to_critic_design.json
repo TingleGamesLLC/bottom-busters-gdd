@@ -1,0 +1,18 @@
+{
+  "n": 13,
+  "at": "2026-11-07T17:03:23",
+  "from": "character-artist",
+  "to": "critic",
+  "kind": "design",
+  "payload": {
+    "task": "t2",
+    "design": {
+      "first_name": "Reggie",
+      "set": "African American",
+      "skin_tone": "chestnut",
+      "hair": "Tight, coiled afro with a slight asymmetrical lift on one side (black)",
+      "beard": "neat, full, and tightly coiled",
+      "face": "thin, arched brows, wide-set eyes, calm expression"
+    }
+  }
+}

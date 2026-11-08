@@ -342,7 +342,7 @@ Semester token budget, as a cap: about 5.0 million tokens, of which the Builder 
 
 Every content agent reads the opening of this section, then its own part, before it generates anything. Rulings carry the Studio Director's name and date.
 
-**The game, for every agent.** Bottom Busters is a comedy arcade game. Every character is a chubby man in white briefs who floats like a balloon and flies by farting. A character's health is two cheeks, and lives are white underwear icons. The humor is gross-out and physical. Poo piles up and dirties bodies, cheeks and hats, and the base coat never washes off. Other humor-first visuals include cheek "health" and the chef animals in the bonus rounds. Everything new has to read at game size and sit beside what's already in the game. Nothing comes from the real world: no real people, brands, logos, or characters from other games or shows.
+**The game, for every agent.** Bottom Busters is a comedy arcade game. Every character is a chubby man in white briefs who floats like a balloon and flies by farting. A character's health is two cheeks, and lives are white underwear icons. The humor is gross-out and physical. Poo piles up and dirties bodies, cheeks and hats, and the base coat never washes off. Other humor-first visuals include cheek "health" and the chef animals in the bonus rounds. Everything new has to read at game size and sit beside what's already in the game. Nothing is copied from real people, brands, logos, or characters from other games or shows.
 
 ### 21.1 Characters (Character Artist)
 

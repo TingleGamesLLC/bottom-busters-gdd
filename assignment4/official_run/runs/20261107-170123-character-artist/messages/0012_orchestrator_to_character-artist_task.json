@@ -1,0 +1,14 @@
+{
+  "n": 12,
+  "at": "2026-11-07T17:03:10",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t2",
+    "brief": "Create a detailed visual sketch of the character's full-body appearance, emphasizing facial features, posture, and overall silhouette.",
+    "set": "African American",
+    "slot": 14,
+    "notes": null
+  }
+}

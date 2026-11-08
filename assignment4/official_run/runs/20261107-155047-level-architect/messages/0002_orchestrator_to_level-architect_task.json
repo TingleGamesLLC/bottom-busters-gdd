@@ -1,0 +1,13 @@
+{
+  "n": 2,
+  "at": "2026-11-07T15:51:17",
+  "from": "orchestrator",
+  "to": "level-architect",
+  "kind": "task",
+  "payload": {
+    "id": "t1",
+    "brief": "Generate 100 distinct animated background designs, one for each level, ensuring visual variety and adherence to the art style guidelines in GDD Sections 6.2 and 16.",
+    "slot": null,
+    "notes": "the recipe failed its checks twice: Make the sky the first layer, and the only sky. Use two to four objects layers."
+  }
+}

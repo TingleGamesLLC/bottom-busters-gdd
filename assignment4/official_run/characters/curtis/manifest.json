@@ -1,0 +1,180 @@
+{
+  "kind": "character",
+  "name": "Curtis (player13)",
+  "agent": "Character Artist",
+  "slot": 13,
+  "skin": "player13",
+  "first_name": "Curtis",
+  "set": "African American",
+  "face": {
+    "eyes": [
+      [
+        462,
+        206
+      ],
+      [
+        550,
+        206
+      ]
+    ],
+    "mouth": [
+      543,
+      269
+    ],
+    "eye_boxes": [
+      [
+        445,
+        478,
+        200,
+        211
+      ],
+      [
+        530,
+        571,
+        200,
+        211
+      ]
+    ],
+    "mouth_box": [
+      503,
+      583,
+      246,
+      292
+    ]
+  },
+  "concept": {
+    "first_name": "Curtis",
+    "hair": "Tall, rigid cornrows forming a geometric crown",
+    "hair_color": "black",
+    "beard": true,
+    "beard_desc": "sharp, angular, trimmed close",
+    "face": "thin brows, narrow eyes, neutral expression",
+    "skin_tone": "chestnut",
+    "why_distinct": "The geometric cornrow crown and sharp, angular beard create a starkly different silhouette from the roster's softer or more symmetrical styles",
+    "set": "African American",
+    "name": "Curtis"
+  },
+  "seed": 17012310,
+  "rect": {
+    "x": 237,
+    "y": 54,
+    "width": 503,
+    "height": 922
+  },
+  "files": [
+    "Resources/CharacterIdle/player13_idle_00.png",
+    "Resources/CharacterIdle/player13_idle_00.png.meta",
+    "Resources/CharacterIdle/player13_idle_01.png",
+    "Resources/CharacterIdle/player13_idle_01.png.meta",
+    "Resources/CharacterIdle/player13_idle_02.png",
+    "Resources/CharacterIdle/player13_idle_02.png.meta",
+    "Resources/DeathFlail/player13_flail_00.png",
+    "Resources/DeathFlail/player13_flail_00.png.meta",
+    "Resources/DeathFlail/player13_flail_01.png",
+    "Resources/DeathFlail/player13_flail_01.png.meta",
+    "Resources/DeathFlail/player13_flail_02.png",
+    "Resources/DeathFlail/player13_flail_02.png.meta",
+    "Resources/DeathFlail/player13_flail_03.png",
+    "Resources/DeathFlail/player13_flail_03.png.meta",
+    "Resources/DeathFlail/player13_flail_04.png",
+    "Resources/DeathFlail/player13_flail_04.png.meta",
+    "Resources/DeathFlail/player13_flail_05.png",
+    "Resources/DeathFlail/player13_flail_05.png.meta",
+    "Resources/DeathFlail/player13_flail_06.png",
+    "Resources/DeathFlail/player13_flail_06.png.meta",
+    "Resources/DeathFlail/player13_flail_07.png",
+    "Resources/DeathFlail/player13_flail_07.png.meta",
+    "Resources/DeathFlail/player13_flail_08.png",
+    "Resources/DeathFlail/player13_flail_08.png.meta",
+    "Resources/DeathFlail/player13_flail_09.png",
+    "Resources/DeathFlail/player13_flail_09.png.meta",
+    "Resources/DeathFlail/player13_flail_10.png",
+    "Resources/DeathFlail/player13_flail_10.png.meta",
+    "Resources/DeathFlail/player13_flail_11.png",
+    "Resources/DeathFlail/player13_flail_11.png.meta",
+    "Resources/DeathSplat/player13_splat.png",
+    "Resources/DeathSplat/player13_splat.png.meta",
+    "Resources/DeathSplat/player13_splatchar.png",
+    "Resources/DeathSplat/player13_splatchar.png.meta",
+    "Resources/FartFlap/player13_flap_00.png",
+    "Resources/FartFlap/player13_flap_00.png.meta",
+    "Resources/FartFlap/player13_flap_01.png",
+    "Resources/FartFlap/player13_flap_01.png.meta",
+    "Resources/FartFlap/player13_flap_02.png",
+    "Resources/FartFlap/player13_flap_02.png.meta",
+    "Resources/FartFlap/player13_flap_03.png",
+    "Resources/FartFlap/player13_flap_03.png.meta",
+    "Resources/FartFlap/player13_flap_04.png",
+    "Resources/FartFlap/player13_flap_04.png.meta",
+    "Resources/FartFlap/player13_flap_05.png",
+    "Resources/FartFlap/player13_flap_05.png.meta",
+    "Resources/FartFlap/player13_flap_06.png",
+    "Resources/FartFlap/player13_flap_06.png.meta",
+    "Resources/FartFlap/player13_flap_07.png",
+    "Resources/FartFlap/player13_flap_07.png.meta",
+    "Sprites/Characters/player13.png",
+    "Sprites/Characters/player13.png.meta"
+  ],
+  "pixellab": {
+    "calls": 1,
+    "usd": 0.0,
+    "generations": 5.0
+  },
+  "previews": [
+    "preview_lineup.png",
+    "preview_body.png",
+    "preview_head.png",
+    "preview_splat.png",
+    "preview_strip_flail.png",
+    "preview_strip_idle.png",
+    "preview_strip_flap.png"
+  ],
+  "card": "77b8be0a-9999-4c82-976a-e88c72a3ad05",
+  "card_name": "[Character Artist] First set: the other 8 characters",
+  "run": "20261107-170123-character-artist",
+  "bridge": {
+    "nearest_roster": "player2",
+    "difference_from_nearest": 24.9,
+    "hair_distance": 12.9,
+    "nearest_hair": "player6",
+    "face_distance": 37.7,
+    "nearest_face": "player11",
+    "skin_distance": 0.0,
+    "nearest_skin": "player11",
+    "size_mb": 5.97,
+    "running_total_mb": 17.86
+  },
+  "critic": {
+    "what_i_see": "Dark skin, short hair, serious expression.",
+    "tell_apart": true,
+    "problems": [
+      "dark skin"
+    ],
+    "verdict": "pass",
+    "note_for_artist": ""
+  },
+  "gdd_check": {
+    "verdict": "pass",
+    "problems": [],
+    "note_for_maker": "",
+    "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1",
+    "dropped": [
+      {
+        "finding": {
+          "rule": "Hair uses bold silhouettes. Never green hair.",
+          "words": "Tall, rigid cornrows forming a geometric crown (black)",
+          "why": "The description implies a specific, possibly intricate hairstyle that may not form a bold silhouette at game size, violating the requirement for bold silhouettes."
+        },
+        "dropped": "a maybe, not a break (\"implies\")"
+      },
+      {
+        "finding": {
+          "rule": "A new character can't be mistakable for anyone already on the roster.",
+          "words": "Curtis",
+          "why": "The name 'Curtis' is not in the original ten names list (Larry, Doug, Norm, Greg, Carl, Steve, Barry, Terry, Kevin, Phil), but the GDD requires that every character have one real first name from the original roster or be newly approved; since 'Curtis' is not among the original ten and no indication of approval is given, it violates the naming rule."
+        },
+        "dropped": "the second look found no break: Curtis is not a name already on the roster."
+      }
+    ]
+  }
+}

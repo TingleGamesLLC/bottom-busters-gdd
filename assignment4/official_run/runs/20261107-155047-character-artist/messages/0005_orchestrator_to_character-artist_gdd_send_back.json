@@ -1,0 +1,11 @@
+{
+  "n": 5,
+  "at": "2026-11-07T15:51:30",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "gdd_send_back",
+  "payload": {
+    "task": "t1",
+    "notes": "The Critic checked it against the GDD and sent it back: The character has a full, neatly trimmed beard, which is not explicitly prohibited, but combined with the afro and facial features, it may create a caricature that borders on stereotypical representation, violating the 'no caricature' rule in spirit, though not in letter. (GDD: \"No hats, glasses, masks or held objects. Players pick hats and shades at Character Select.\"); The combination of a tight, coiled afro with slight asymmetry and a full, neatly trimmed beard closely resembles existing characters like Carl and Terry, who also have full beards and distinct hairstyles, making it potentially mistakable at game size. (GDD: \"A character can't be mistakable for anyone already on the roster.\"). Adjust the hair or beard style to ensure clear distinction from existing characters, and avoid any features that could be interpreted as stereotypical or caricatured, especially in combination with facial hair and hair texture."
+  }
+}

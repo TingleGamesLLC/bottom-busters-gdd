@@ -1,0 +1,16 @@
+{
+  "n": 4,
+  "at": "2026-11-07T16:57:56",
+  "from": "wardrobe-stylist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t1",
+    "folder": "C:\\cluster\\crew\\work\\wardrobe_t1",
+    "concept": {
+      "name": "Top Hat",
+      "kind": "hat",
+      "idea": "idea_01"
+    }
+  }
+}

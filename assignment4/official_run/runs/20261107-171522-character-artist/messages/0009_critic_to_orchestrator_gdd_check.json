@@ -1,0 +1,32 @@
+{
+  "n": 9,
+  "at": "2026-11-07T17:16:26",
+  "from": "critic",
+  "to": "orchestrator",
+  "kind": "gdd_check",
+  "payload": {
+    "task": "t2",
+    "verdict": "pass",
+    "problems": [],
+    "note_for_maker": "",
+    "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1",
+    "dropped": [
+      {
+        "finding": {
+          "rule": "No hats, glasses, masks or held objects.",
+          "words": "beard: neat, full, and slightly asymmetrical",
+          "why": "The rule forbids facial features that are exaggerated or caricatured, and 'neat, full, and slightly asymmetrical' beard is a stylistic detail that could imply a caricatured or overly specific feature beyond the allowed cartoon treatment."
+        },
+        "dropped": "a maybe, not a break (\"imply\")"
+      },
+      {
+        "finding": {
+          "rule": "Every face gets the same cartoon treatment, with no exaggerated features.",
+          "words": "thin eyebrows, small eyes, neutral expression",
+          "why": "The combination of 'thin eyebrows' and 'small eyes' constitutes an exaggerated facial feature that deviates from the standard cartoon treatment and risks caricature."
+        },
+        "dropped": "a maybe, not a break (\"risks\")"
+      }
+    ]
+  }
+}

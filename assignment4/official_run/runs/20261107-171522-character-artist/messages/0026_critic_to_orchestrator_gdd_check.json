@@ -1,0 +1,32 @@
+{
+  "n": 26,
+  "at": "2026-11-07T17:18:52",
+  "from": "critic",
+  "to": "orchestrator",
+  "kind": "gdd_check",
+  "payload": {
+    "task": "t4",
+    "verdict": "pass",
+    "problems": [],
+    "note_for_maker": "",
+    "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1",
+    "dropped": [
+      {
+        "finding": {
+          "rule": "Hair uses bold silhouettes. Never green hair.",
+          "words": "Tall, rigid cornrows forming a geometric crown, slightly asymmetrical (black)",
+          "why": "The description specifies a geometric crown, which implies a stylized, potentially exaggerated silhouette that may not be bold or simple enough at game size."
+        },
+        "dropped": "a maybe, not a break (\"implies\")"
+      },
+      {
+        "finding": {
+          "rule": "A new character can't be mistakable for anyone already on the roster.",
+          "words": "Daniel",
+          "why": "Daniel is not one of the original ten names (Larry, Doug, Norm, Greg, Carl, Steve, Barry, Terry, Kevin, Phil), so this is not a name conflict, but the name 'Daniel' is not listed as a permitted name in the current roster, and the set's names must follow the 'comically stereotypical but not offensive' guideline, which may not be met by this name."
+        },
+        "dropped": "a maybe, not a break (\"may\")"
+      }
+    ]
+  }
+}

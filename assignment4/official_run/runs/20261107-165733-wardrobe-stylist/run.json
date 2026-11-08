@@ -1,0 +1,46 @@
+{
+  "id": "20261107-165733-wardrobe-stylist",
+  "started": "2026-11-07T16:57:33",
+  "status": "waiting on David",
+  "card": "[Wardrobe Stylist] Redo Top Hat: its upside down",
+  "tasks": [
+    {
+      "id": "t1",
+      "brief": "Redraw Top Hat",
+      "idea": "idea_01",
+      "note": "its upside down"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-11-07T16:57:55",
+      "agent": "critic",
+      "text": "GDD check on t1 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.3): pass"
+    },
+    {
+      "at": "2026-11-07T16:57:55",
+      "agent": "critic",
+      "text": "GDD check on t1: a finding was dropped, a maybe, not a break (\"may\"): The hat has two color areas, but the rule limits hats to one to three; this is not a violation since it's within the limit, but the issue is that the design includes a band that is not a standard part of the existing hats and may not fit the game's style."
+    },
+    {
+      "at": "2026-11-07T16:57:55",
+      "agent": "critic",
+      "text": "GDD check on t1: a finding was dropped, its rule is about how the finished art looks, which is checked on the picture after it's made: The description implies a specific shape that may not align properly with the floating, balloon-like character design or the existing hat fit standards, risking misalignment or floating above the head."
+    },
+    {
+      "at": "2026-11-07T16:57:55",
+      "agent": "critic",
+      "text": "GDD check on t1: a finding was dropped, its rule is about how the finished art looks, which is checked on the picture after it's made: The top hat's design is too elaborate and stylized compared to the simple, flat, and cartoonish hats already in the game, breaking visual consistency."
+    },
+    {
+      "at": "2026-11-07T16:58:04",
+      "agent": "critic",
+      "text": "t1 pass: The item resembles a top hat and is positioned on top of each character's head."
+    },
+    {
+      "at": "2026-11-07T16:58:05",
+      "agent": "wardrobe-stylist",
+      "text": "t1 done: Top Hat (top_hat_2)"
+    }
+  ]
+}

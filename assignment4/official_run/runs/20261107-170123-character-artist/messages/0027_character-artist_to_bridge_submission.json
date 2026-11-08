@@ -1,0 +1,23 @@
+{
+  "n": 27,
+  "at": "2026-11-07T17:05:45",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t4",
+    "folder": "C:\\cluster\\crew\\work\\player16_t4",
+    "concept": {
+      "first_name": "Clarence",
+      "hair": "Tight, coiled afro with a slight asymmetrical lift on one side",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "neat, full, and slightly rounded",
+      "face": "thin brows, small eyes, calm expression",
+      "skin_tone": "chestnut",
+      "why_distinct": "His asymmetrical afro lift and full, rounded beard set him apart from the other afro-haired characters with symmetrical or mask-wearing designs",
+      "set": "African American",
+      "name": "Clarence"
+    }
+  }
+}

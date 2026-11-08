@@ -1,0 +1,179 @@
+{
+  "kind": "background",
+  "agent": "Level Architect",
+  "name": "haunted mansion on a crooked hill (16-bit pixel art, thick dark outline, two-tone shading)",
+  "idea": "idea_001",
+  "theme": "haunted mansion on a crooked hill",
+  "ground_type": "stone",
+  "files": [
+    "00.png",
+    "01.png",
+    "02.png",
+    "03.png",
+    "04.png"
+  ],
+  "previews": [
+    "preview_1_whole.png",
+    "preview_2_layers.png",
+    "preview_3_loop_check.png",
+    "preview_4_drift_1.png",
+    "preview_4_drift_2.png",
+    "preview_4_drift_3.png",
+    "preview_4_drift_4.png",
+    "drift.gif"
+  ],
+  "placements": [
+    {
+      "layer": "02.png",
+      "x": 547,
+      "top": 128,
+      "width": 141,
+      "height": 142,
+      "lowest_row": 269,
+      "ground_row": 263
+    },
+    {
+      "layer": "02.png",
+      "x": 185,
+      "top": 114,
+      "width": 154,
+      "height": 155,
+      "lowest_row": 268,
+      "ground_row": 262
+    },
+    {
+      "layer": "02.png",
+      "x": 402,
+      "top": 113,
+      "width": 149,
+      "height": 150,
+      "lowest_row": 262,
+      "ground_row": 256
+    },
+    {
+      "layer": "03.png",
+      "x": 571,
+      "top": 223,
+      "width": 101,
+      "height": 51,
+      "lowest_row": 273,
+      "ground_row": 270
+    },
+    {
+      "layer": "03.png",
+      "x": 69,
+      "top": 217,
+      "width": 113,
+      "height": 57,
+      "lowest_row": 273,
+      "ground_row": 270
+    },
+    {
+      "layer": "03.png",
+      "x": 214,
+      "top": 229,
+      "width": 80,
+      "height": 40,
+      "lowest_row": 268,
+      "ground_row": 265
+    },
+    {
+      "layer": "03.png",
+      "x": 301,
+      "top": 223,
+      "width": 97,
+      "height": 49,
+      "lowest_row": 271,
+      "ground_row": 268
+    },
+    {
+      "layer": "03.png",
+      "x": 378,
+      "top": 231,
+      "width": 93,
+      "height": 47,
+      "lowest_row": 277,
+      "ground_row": 274
+    },
+    {
+      "layer": "03.png",
+      "x": 484,
+      "top": 234,
+      "width": 86,
+      "height": 43,
+      "lowest_row": 276,
+      "ground_row": 273
+    },
+    {
+      "layer": "04.png",
+      "x": 111,
+      "top": 193,
+      "width": 83,
+      "height": 89,
+      "lowest_row": 281,
+      "ground_row": 278
+    },
+    {
+      "layer": "04.png",
+      "x": 470,
+      "top": 203,
+      "width": 77,
+      "height": 83,
+      "lowest_row": 285,
+      "ground_row": 282
+    }
+  ],
+  "objects": [
+    "C:\\cluster\\crew\\library\\16-bit-pixel-art-thick-dark-outline-two-tone-shading--a-broken-stone-fence-with-jagged-gaps.png",
+    "C:\\cluster\\crew\\library\\16-bit-pixel-art-thick-dark-outline-two-tone-shading--a-crooked-stone-mansion-with-a-leaning-tower.png",
+    "C:\\cluster\\crew\\library\\16-bit-pixel-art-thick-dark-outline-two-tone-shading--a-rusted-iron-gate-with-twisted-bars.png"
+  ],
+  "card": "0faac098-dce3-4c5d-97e0-3ddbfb1d88a1",
+  "card_name": "[Level Architect] 100 new animated backgrounds",
+  "run": "20261107-164801-level-architect",
+  "bridge": {
+    "nearest_background": "test_system1",
+    "difference": 44.9,
+    "layers": 5,
+    "size_mb": 0.05
+  },
+  "critic": {
+    "verdict": "pass",
+    "answers": {
+      "unfilled": false,
+      "split": false,
+      "floating": false,
+      "specks": false
+    },
+    "facts": {
+      "nearest_background": "test_system1",
+      "difference": 44.9,
+      "layers": 5,
+      "size_mb": 0.05
+    }
+  },
+  "gdd_check": {
+    "verdict": "pass",
+    "problems": [],
+    "note_for_maker": "",
+    "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.4",
+    "dropped": [
+      {
+        "finding": {
+          "rule": "The game's terrain themes are blue stone, green sludge, pale bone, ice, charred ember and red crimson, with the red lava world last.",
+          "words": "theme: haunted mansion on a crooked hill",
+          "why": "The theme 'haunted mansion on a crooked hill' does not match any of the allowed terrain themes."
+        },
+        "dropped": "it quotes a sentence that describes the game today, not a rule for new work"
+      },
+      {
+        "finding": {
+          "rule": "The six all-water levels use only sky or moon backdrops.",
+          "words": "theme: haunted mansion on a crooked hill",
+          "why": "The theme 'haunted mansion on a crooked hill' is not an all-water level, but it still uses a sky layer, which is not allowed unless the level is an all-water level."
+        },
+        "dropped": "the second look found no break: The rule only applies to all-water levels, not to the haunted mansion theme."
+      }
+    ]
+  }
+}

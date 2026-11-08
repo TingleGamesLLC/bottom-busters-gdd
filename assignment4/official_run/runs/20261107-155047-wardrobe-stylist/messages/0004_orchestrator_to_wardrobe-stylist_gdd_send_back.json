@@ -1,0 +1,11 @@
+{
+  "n": 4,
+  "at": "2026-11-07T15:51:31",
+  "from": "orchestrator",
+  "to": "wardrobe-stylist",
+  "kind": "gdd_send_back",
+  "payload": {
+    "task": "t1",
+    "notes": "The Critic checked it against the GDD and sent it back: The top hat has two color areas, which is within the allowed range, but the design includes a band that may not be intended as a separate recolorable region; however, the main issue is that the hat's shape and structure do not match the established style of the existing hats, which are simpler and more cartoonish, making it look out of place. (GDD: \"A hat has one to three color areas that players recolor at Character Select.\"); The top hat's tall, narrow design with a flat top and narrow brim does not sit properly on the character's head as the existing hats do, likely causing visual misalignment or floating. (GDD: \"Every item has to sit right on every character.\"); The top hat's formal, structured shape contrasts sharply with the playful, exaggerated, and simple flat shapes of the Santa hat, turkey hat, black shades, and silver aviators, breaking visual consistency. (GDD: \"It has to look like it belongs with the four already in the game.\"). Redesign the hat using simpler, more cartoonish flat shapes that match the existing hats' style\u2014avoid tall, structured silhouettes. Ensure it sits correctly on the character\u2019s head and maintains the same visual language as the current wearables."
+  }
+}

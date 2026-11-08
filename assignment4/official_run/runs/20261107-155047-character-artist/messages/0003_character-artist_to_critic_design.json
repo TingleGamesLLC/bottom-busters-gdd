@@ -1,0 +1,19 @@
+{
+  "n": 3,
+  "at": "2026-11-07T15:51:21",
+  "from": "character-artist",
+  "to": "critic",
+  "kind": "design",
+  "payload": {
+    "task": "t1",
+    "design": {
+      "first_name": "Maurice",
+      "set": "African American",
+      "skin_tone": "chestnut",
+      "hair": "Tight, coiled afro with a slight asymmetry, full and round (black)",
+      "beard": "full, thick, and neatly trimmed",
+      "face": "bushy eyebrows, wide eyes, calm expression",
+      "why_distinct": "its full, tightly coiled afro with a subtle asymmetry and a full, neatly trimmed beard sets it apart from the existing afro and beard styles on the roster"
+    }
+  }
+}

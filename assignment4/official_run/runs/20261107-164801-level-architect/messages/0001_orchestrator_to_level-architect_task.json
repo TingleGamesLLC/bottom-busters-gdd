@@ -1,0 +1,13 @@
+{
+  "n": 1,
+  "at": "2026-11-07T16:48:08",
+  "from": "orchestrator",
+  "to": "level-architect",
+  "kind": "task",
+  "payload": {
+    "id": "t1",
+    "brief": "Generate 100 distinct animated background designs, one for each level, ensuring each background is visually unique and fits the game's art style.",
+    "slot": null,
+    "notes": null
+  }
+}

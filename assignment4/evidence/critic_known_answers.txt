@@ -1,0 +1,34 @@
+Known-answer check of the Critic's GDD check, real model (qwen3:30b-instruct on the cluster), 2026-11-07 17:24
+Script: critic_known_answers.py. Cases: the work it wrongly failed in run 20261107-155047, and work that must fail.
+
+character-artist  judgment (vs Terry)  -> pass []
+                                        dropped: a maybe, not a break ("implies")
+                                        dropped: a maybe, not a break ("risks")
+character-artist  should pass          -> pass []
+                                        dropped: a maybe, not a break ("may")
+                                        dropped: a maybe, not a break ("implies")
+character-artist  should fail          -> fail ['The feather headdress is a held object or headwear, which is explicitly forbidden. (GDD: "No hats, glasses, masks or held objects.")', 'The feather headdress directly violates the prohibition on feathers and headdresses. (GDD: "No ethnic or religious caricature, and no feathers, headdresses or face paint.")', 'Exaggerated facial features like a \'huge hooked nose\' constitute caricature, which is forbidden. (GDD: "A character can\'t be mistakable for one on the roster at game size.")']
+wardrobe-stylist  should pass          -> pass []
+                                        dropped: its rule is about how the finished art looks, which is checked on the picture after it's made
+wardrobe-stylist  should pass          -> pass []
+                                        dropped: a maybe, not a break ("may")
+                                        dropped: its rule is about how the finished art looks, which is checked on the picture after it's made
+                                        dropped: the second look found no break: The propeller is one of three color areas, within the allowed limit.
+wardrobe-stylist  should fail          -> fail ['The Swoosh region is marked as not recolorable, which contradicts the rule that all color areas on a hat must be recolorable by players. (GDD: "A hat has one to three color areas that players recolor at Character Select.")']
+                                        dropped: its rule is about how the finished art looks, which is checked on the picture after it's made
+                                        dropped: its rule is about how the finished art looks, which is checked on the picture after it's made
+                                        dropped: its rule isn't in the GDD
+level-architect   should fail          -> fail ['Using \'Bowser\'s castle\' from Super Mario violates the rule against copying from other games or shows. (GDD: "A new idea can\'t repeat any of the 99 backdrops in the game.")', 'The sky layer contains mountains and a castle, which are not allowed on the sky layer. (GDD: "Anything but sky on the sky layer.")']
+                                        dropped: it quotes a sentence that describes the game today, not a rule for new work
+                                        dropped: a maybe, not a break ("risks")
+roast line should pass -> pass Dead. Even the enemies looked away out of respect. | 
+roast line should pass -> pass Ten in a row. The level is now a monument. |  | dropped: the words it quotes aren't in the work
+roast line should pass -> pass You left no trace. Just the smell. And the regret. |  | dropped: it blames words the rule allows: only a banned word names the gross thing, and the Bridge checks those
+roast line should pass -> pass No survivors. No witnesses. No dignity. |  | dropped: it blames words the rule allows: only a banned word names the gross thing, and the Bridge checks those
+roast line should pass -> pass Full coverage. The air itself refused to carry it further. |  | dropped: it blames words the rule allows: only a banned word names the gross thing, and the Bridge checks those
+roast line should pass -> pass Every target hit. The cleanup crew has been reassigned. |  | dropped: a maybe, not a break ("implies")
+roast line should pass -> pass Complete. The level has been declared unfit for occupancy. |  | dropped: a maybe, not a break ("indirectly")
+roast line should fail -> fail You pooped all over them, dude! | The word "pooped" directly names the gross thing, violating the rule. (GDD: "The gross thing is never named. It's "it," a smell, a plumber, a bad curry, never "
+roast line should fail -> fail Nice belly. Shame about the aim. | The phrase "Nice belly" refers to the player's body, which is explicitly forbidden. (GDD: "No names, and nothing about the player's body, race, age or looks, so
+roast line should fail -> fail Bombs away. Like that famous plumber in the red hat. | The phrase references a specific pop culture character (Mario), which is prohibited. (GDD: "No pop culture.")
+critic tokens: {'critic': 34348}

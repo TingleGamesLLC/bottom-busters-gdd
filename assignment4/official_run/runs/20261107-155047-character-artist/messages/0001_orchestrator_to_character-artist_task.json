@@ -1,0 +1,14 @@
+{
+  "n": 1,
+  "at": "2026-11-07T15:51:08",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t1",
+    "brief": "Design and finalize the character concept for the first of the eight remaining characters, including a unique name, skin tone, and distinctive visual features.",
+    "set": "African American",
+    "slot": 13,
+    "notes": null
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "name": "Top Hat",
+  "kind": "hat",
+  "regions": [
+    {
+      "id": 1,
+      "name": "HAT",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "colorable": true
+    },
+    {
+      "id": 2,
+      "name": "BAND",
+      "color": [
+        0,
+        0,
+        0
+      ],
+      "colorable": true
+    }
+  ],
+  "shapes": [
+    {
+      "shape": "rect",
+      "box": [
+        8,
+        20,
+        24,
+        30
+      ],
+      "region": 1
+    },
+    {
+      "shape": "rect",
+      "box": [
+        6,
+        16,
+        26,
+        20
+      ],
+      "region": 1
+    },
+    {
+      "shape": "rect",
+      "box": [
+        10,
+        18,
+        22,
+        20
+      ],
+      "region": 2
+    },
+    {
+      "shape": "rect",
+      "box": [
+        8,
+        20,
+        24,
+        22
+      ],
+      "region": 2
+    },
+    {
+      "shape": "rect",
+      "box": [
+        10,
+        18,
+        22,
+        20
+      ],
+      "region": 2
+    },
+    {
+      "shape": "rect",
+      "box": [
+        6,
+        16,
+        26,
+        18
+      ],
+      "region": 2
+    }
+  ]
+}

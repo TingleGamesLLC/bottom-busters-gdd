@@ -1,0 +1,11 @@
+{
+  "n": 8,
+  "at": "2026-11-07T15:51:50",
+  "from": "orchestrator",
+  "to": "wardrobe-stylist",
+  "kind": "gdd_send_back",
+  "payload": {
+    "task": "t1",
+    "notes": "The Critic checked it against the GDD and sent it back: The top hat has two color areas, which is within the allowed range, but the design includes a band that may not align with the flat fill and thick outline style of the existing hats. (GDD: \"A hat has one to three color areas that players recolor at Character Select.\"); The tall, flat-topped cylinder shape may not fit properly on the character's head due to its height and narrow brim, potentially causing misalignment or floating. (GDD: \"Every item has to sit right on every character.\"); The top hat's design is too stylized and distinct from the simple, cartoonish flat shapes of the existing hats, breaking visual consistency. (GDD: \"It has to look like it belongs with the four already in the game.\"). Simplify the shape to match the existing hats' flat, minimal design; ensure the brim sits flush on the head and the overall form reads clearly at game size."
+  }
+}

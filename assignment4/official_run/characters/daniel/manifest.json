@@ -1,0 +1,180 @@
+{
+  "kind": "character",
+  "name": "Daniel (player19)",
+  "agent": "Character Artist",
+  "slot": 19,
+  "skin": "player19",
+  "first_name": "Daniel",
+  "set": "African American",
+  "face": {
+    "eyes": [
+      [
+        474,
+        182
+      ],
+      [
+        566,
+        182
+      ]
+    ],
+    "mouth": [
+      543,
+      269
+    ],
+    "eye_boxes": [
+      [
+        445,
+        502,
+        177,
+        188
+      ],
+      [
+        538,
+        595,
+        177,
+        188
+      ]
+    ],
+    "mouth_box": [
+      503,
+      583,
+      246,
+      292
+    ]
+  },
+  "concept": {
+    "first_name": "Daniel",
+    "hair": "Tall, rigid cornrows forming a geometric crown, slightly asymmetrical",
+    "hair_color": "black",
+    "beard": true,
+    "beard_desc": "thick, full, and neatly trimmed",
+    "face": "thin eyebrows, narrow eyes, neutral expression",
+    "skin_tone": "chestnut",
+    "why_distinct": "The combination of geometric cornrows with a full, trimmed beard and narrow eyes sets it apart from the existing roster, especially from the similar cornrow styles already used.",
+    "set": "African American",
+    "name": "Daniel"
+  },
+  "seed": 17155200,
+  "rect": {
+    "x": 237,
+    "y": 54,
+    "width": 503,
+    "height": 933
+  },
+  "files": [
+    "Resources/CharacterIdle/player19_idle_00.png",
+    "Resources/CharacterIdle/player19_idle_00.png.meta",
+    "Resources/CharacterIdle/player19_idle_01.png",
+    "Resources/CharacterIdle/player19_idle_01.png.meta",
+    "Resources/CharacterIdle/player19_idle_02.png",
+    "Resources/CharacterIdle/player19_idle_02.png.meta",
+    "Resources/DeathFlail/player19_flail_00.png",
+    "Resources/DeathFlail/player19_flail_00.png.meta",
+    "Resources/DeathFlail/player19_flail_01.png",
+    "Resources/DeathFlail/player19_flail_01.png.meta",
+    "Resources/DeathFlail/player19_flail_02.png",
+    "Resources/DeathFlail/player19_flail_02.png.meta",
+    "Resources/DeathFlail/player19_flail_03.png",
+    "Resources/DeathFlail/player19_flail_03.png.meta",
+    "Resources/DeathFlail/player19_flail_04.png",
+    "Resources/DeathFlail/player19_flail_04.png.meta",
+    "Resources/DeathFlail/player19_flail_05.png",
+    "Resources/DeathFlail/player19_flail_05.png.meta",
+    "Resources/DeathFlail/player19_flail_06.png",
+    "Resources/DeathFlail/player19_flail_06.png.meta",
+    "Resources/DeathFlail/player19_flail_07.png",
+    "Resources/DeathFlail/player19_flail_07.png.meta",
+    "Resources/DeathFlail/player19_flail_08.png",
+    "Resources/DeathFlail/player19_flail_08.png.meta",
+    "Resources/DeathFlail/player19_flail_09.png",
+    "Resources/DeathFlail/player19_flail_09.png.meta",
+    "Resources/DeathFlail/player19_flail_10.png",
+    "Resources/DeathFlail/player19_flail_10.png.meta",
+    "Resources/DeathFlail/player19_flail_11.png",
+    "Resources/DeathFlail/player19_flail_11.png.meta",
+    "Resources/DeathSplat/player19_splat.png",
+    "Resources/DeathSplat/player19_splat.png.meta",
+    "Resources/DeathSplat/player19_splatchar.png",
+    "Resources/DeathSplat/player19_splatchar.png.meta",
+    "Resources/FartFlap/player19_flap_00.png",
+    "Resources/FartFlap/player19_flap_00.png.meta",
+    "Resources/FartFlap/player19_flap_01.png",
+    "Resources/FartFlap/player19_flap_01.png.meta",
+    "Resources/FartFlap/player19_flap_02.png",
+    "Resources/FartFlap/player19_flap_02.png.meta",
+    "Resources/FartFlap/player19_flap_03.png",
+    "Resources/FartFlap/player19_flap_03.png.meta",
+    "Resources/FartFlap/player19_flap_04.png",
+    "Resources/FartFlap/player19_flap_04.png.meta",
+    "Resources/FartFlap/player19_flap_05.png",
+    "Resources/FartFlap/player19_flap_05.png.meta",
+    "Resources/FartFlap/player19_flap_06.png",
+    "Resources/FartFlap/player19_flap_06.png.meta",
+    "Resources/FartFlap/player19_flap_07.png",
+    "Resources/FartFlap/player19_flap_07.png.meta",
+    "Sprites/Characters/player19.png",
+    "Sprites/Characters/player19.png.meta"
+  ],
+  "pixellab": {
+    "calls": 1,
+    "usd": 0.0,
+    "generations": 5.0
+  },
+  "previews": [
+    "preview_lineup.png",
+    "preview_body.png",
+    "preview_head.png",
+    "preview_splat.png",
+    "preview_strip_flail.png",
+    "preview_strip_idle.png",
+    "preview_strip_flap.png"
+  ],
+  "card": "77b8be0a-9999-4c82-976a-e88c72a3ad05",
+  "card_name": "[Character Artist] First set: the other 8 characters",
+  "run": "20261107-171522-character-artist",
+  "bridge": {
+    "nearest_roster": "player12",
+    "difference_from_nearest": 23.3,
+    "hair_distance": 16.2,
+    "nearest_hair": "player",
+    "face_distance": 31.3,
+    "nearest_face": "player12",
+    "skin_distance": 0.0,
+    "nearest_skin": "player11",
+    "size_mb": 5.93,
+    "running_total_mb": 53.49
+  },
+  "critic": {
+    "what_i_see": "Dark skin, short hair, neutral expression.",
+    "tell_apart": true,
+    "problems": [
+      "dark skin"
+    ],
+    "verdict": "pass",
+    "note_for_artist": ""
+  },
+  "gdd_check": {
+    "verdict": "pass",
+    "problems": [],
+    "note_for_maker": "",
+    "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1",
+    "dropped": [
+      {
+        "finding": {
+          "rule": "Hair uses bold silhouettes. Never green hair.",
+          "words": "Tall, rigid cornrows forming a geometric crown, slightly asymmetrical (black)",
+          "why": "The description specifies a geometric crown, which implies a stylized, potentially exaggerated silhouette that may not be bold or simple enough at game size."
+        },
+        "dropped": "a maybe, not a break (\"implies\")"
+      },
+      {
+        "finding": {
+          "rule": "A new character can't be mistakable for anyone already on the roster.",
+          "words": "Daniel",
+          "why": "Daniel is not one of the original ten names (Larry, Doug, Norm, Greg, Carl, Steve, Barry, Terry, Kevin, Phil), so this is not a name conflict, but the name 'Daniel' is not listed as a permitted name in the current roster, and the set's names must follow the 'comically stereotypical but not offensive' guideline, which may not be met by this name."
+        },
+        "dropped": "a maybe, not a break (\"may\")"
+      }
+    ]
+  }
+}

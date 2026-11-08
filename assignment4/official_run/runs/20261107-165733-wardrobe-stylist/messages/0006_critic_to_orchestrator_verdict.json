@@ -1,0 +1,23 @@
+{
+  "n": 6,
+  "at": "2026-11-07T16:58:04",
+  "from": "critic",
+  "to": "orchestrator",
+  "kind": "verdict",
+  "payload": {
+    "task": "t1",
+    "verdict": "pass",
+    "what_i_see": "The item resembles a top hat and is positioned on top of each character's head.",
+    "problems": [],
+    "note_for_artist": "",
+    "answers": {
+      "reads": true,
+      "sits": true
+    },
+    "facts": {
+      "nearest_item": "Top Hat",
+      "difference": 66.1,
+      "size_kb": 511
+    }
+  }
+}

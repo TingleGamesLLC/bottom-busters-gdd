@@ -1,0 +1,15 @@
+{
+  "n": 1,
+  "at": "2026-11-07T16:57:34",
+  "from": "orchestrator",
+  "to": "wardrobe-stylist",
+  "kind": "task",
+  "payload": {
+    "id": "t1",
+    "brief": "Redraw Top Hat",
+    "idea": "idea_01",
+    "note": "its upside down",
+    "slot": null,
+    "notes": "David rejected the last one: its upside down"
+  }
+}

@@ -1,0 +1,381 @@
+Crew tests, 2026-11-07 17:26, C:\cluster\crew
+
+=== test_approvals.py: PASS
+Only submissions with no decision and no review card are waiting
+One review card per maker, kind and card, titled by count, at most 200 to a card
+Each item shows the name, who made it, the rest of the name, and every preview
+A roast line shows whole, with its event and outcome, on a card titled in roast lines
+Wardrobe items and ideas are titled in their own plurals
+New submissions go up as one review card under the maker's card, and each folder notes where
+A preview too big for Paperclip, or not a picture, is named instead and the item still goes up
+A post that fails halfway is cancelled, nothing is marked posted, and it tries again after 15 minutes
+A file error halfway through is handled the same way, so the board doesn't fill with copies
+Each call becomes decision.json with David's note, and a fully decided card is closed
+Items David applied are passed on; the card stays open for the ones he skipped
+A decision.json that's already there is never overwritten
+A cancelled review issue or an expired card puts its undecided items back up
+One card Paperclip can't read doesn't stop the others
+One pass passes on David's calls, then posts what's new
+all passed
+
+=== test_background_bridge.py: PASS
+A good stand-in background passes
+Caught (vertical line): Take the vertical line out of 03.png: it shows while the layer moves.
+Caught (green): Take the green out of 03.png: key color was left on it.
+Caught (hole): Fill the hole inside the object at x 27 on 03.png.
+Caught (sky): Make the sky, 00.png, solid: it has see-through pixels.
+Caught (floating): Stand the object at x 50 on 03.png on its ground: it floats.
+A copy of another background is caught
+The Critic's four answers come back as a note, any yes a fail
+all passed
+
+=== test_backup_paperclip.py: PASS
+The NAS folder is a full path, so the listing and the copy look at the same place
+Copies only what the NAS lacks, and redoes a copy that was cut short
+Nothing new: nothing copied, and the status still moves on
+A copy that doesn't match its size fails, and the status isn't moved on
+Behind when the last good copy is over 3 hours old or never happened; fine otherwise
+all passed
+
+=== test_bridge.py: PASS
+The original ten pass
+A character with a new look passes
+Missing frames are named
+Changed briefs are caught
+A head on a different skin from its body is caught
+A new skin tone alone fails on both hair and face
+The original ten's skin tone is caught
+A missing first name is caught
+A repeated first name is caught
+A rejected submission's name is free again
+A slot past the game's limit is fine, since characters are generated first; a slot that isn't a number is caught
+Missing eye and mouth positions are caught
+A duplicate guid is caught
+Corrupt files come back as problems, not exceptions
+Very dark skin still sorts into hair, face and briefs
+Eyes and mouths land where the splat tables have them
+Chunk plans are checked
+Facts: {'nearest_roster': 'player7', 'difference_from_nearest': 50.9, 'hair_distance': 28.6, 'nearest_hair': 'player', 'face_distance': 31.5, 'nearest_face': 'player3', 'skin_distance': 120.7, 'nearest_skin': 'player5', 'size_mb': 6.6, 'running_total_mb': 6.6}
+Limits come down to what David approved: {'hair': 0.0, 'face': 0.0, 'skin': 10.0}
+all passed
+
+=== test_character_artist.py: PASS
+player14: game pair written, hair strip 43 px
+Whatever skin PixelLab paints, the head matches the body
+player18: game frames rect 83,53 840x934 pivot 0.4827,0.4679
+player18: game frames rect 236,53 505x957 pivot 0.5000,0.4566
+player18: game frames rect 59,55 922x933 pivot 0.4658,0.4662
+player18: game pair written, hair strip 43 px
+Big black hair stays hair
+player13: game frames rect 83,53 840x934 pivot 0.4827,0.4679
+player13: game frames rect 236,53 505x957 pivot 0.5000,0.4566
+player13: game frames rect 59,55 922x933 pivot 0.4658,0.4662
+player13: game pair written, hair strip 43 px
+A beard keeps the mouth where the beard leaves room
+The prompt carries David's rules
+Names and looks against the rules go back to the maker
+A tone from outside the set is replaced from the set
+player21: game frames rect 83,53 840x934 pivot 0.4827,0.4679
+player21: game frames rect 236,53 505x957 pivot 0.5000,0.4566
+player21: game frames rect 59,55 922x933 pivot 0.4658,0.4662
+player21: game pair written, hair strip 43 px
+A slot past the game's limit asks David, naming the Builder's job
+player11: game frames rect 83,53 840x934 pivot 0.4827,0.4679
+player11: game frames rect 236,53 505x957 pivot 0.5000,0.4566
+player11: game frames rect 59,55 922x933 pivot 0.4658,0.4662
+player11: game pair written, hair strip 43 px
+A folder David decided on is kept, and the new attempt goes beside it
+player11: game frames rect 83,53 840x934 pivot 0.4827,0.4679
+player11: game frames rect 236,53 505x957 pivot 0.5000,0.4566
+player11: game frames rect 59,55 922x933 pivot 0.4658,0.4662
+player11: game pair written, hair strip 43 px
+An undecided attempt is replaced
+No eyes from PixelLab tries once more, then goes back to the maker, with nothing left behind
+Out of credits stops the run, with nothing on the approval screen
+A full set moves on to the next one
+First names for the original ten come in as one submission
+A taken first name is swapped by plain code for the first free one of twelve the model lists; the design is kept
+With no free name on three lists, it's sent back, and only then costs a cheek
+A send-back names the character it's too close to, with its look, never a bare skin id: Make the face look less like Garh's (curly black hair, full black bear
+A refused picture is asked for once more, without the body or skin words PixelLab blocks most
+Two refusals go back to the Character Artist as a send-back, not a stop
+all passed
+
+=== test_daily_page.py: PASS
+A question card: its question, who asked, and where the answer goes
+David's own cards: how many are open, the first one, and the ones waiting on something else
+An approval card is neither a question nor one of David's own cards
+One group per card, the card with the newest entry first, crew upkeep last
+Each line says who did it, a task's line goes under its card, a question under the card it's about
+Only today's entries, and Paperclip's own housekeeping is left out
+Crew upkeep: what the Foreman fixed or raised, and how often it checked
+all passed
+
+=== test_foreman.py: PASS
+While a crew run is alive, its card and tasks are left alone
+A crew card left in progress with no run alive goes back to the queue; a Builder card is left alone
+A crew task left open is closed as cancelled; David's own subtask is left alone
+Blocked by finished work goes back to todo; an outside wait stays blocked
+All approved closes; a rejection or an undecided one keeps the card waiting
+A rejection with a note goes back to the maker as a redo card, and its old card closes
+A rejected roast line never becomes a redo card; its note goes to the Roast Writer's next batch
+A wardrobe item rejected with a note becomes a redo card while its card waits in the queue
+David's note and his no-note rejection are raised with him
+Runs from before the Foreman started aren't reported
+A stopped run, a crash and a run that died are each raised with the reason; a finished run isn't
+Nothing is raised twice
+An answer to a no-note rejection becomes the note: the work goes back to the maker, and the question closes
+Any other answer is kept on the question, goes on its card unless that's finished (a comment would reopen it), and the question closes, once
+A pre-flight problem is raised once, closed when it clears, and raised again if it comes back
+An open issue for a check that was taken out is closed on the next pass
+The pre-flight never raises ComfyUI: the Level Architect starts it when it's needed
+The pre-flight raises Paperclip's backups falling behind on the NAS, and clears when they catch up
+A decisions-only check runs just the step that acts on David's decisions
+Only one Foreman check runs at a time; the next one gets its turn when the first finishes
+The restart command quotes the window title, so Windows doesn't take it for the program
+all passed
+
+=== test_gdd.py: PASS
+character-artist reads the opening and 21.1 Characters, and no other maker's part (666 words)
+roast-writer reads the opening and 21.2 Roast lines, and no other maker's part (527 words)
+wardrobe-stylist reads the opening and 21.3 Hats and shades, and no other maker's part (351 words)
+level-architect reads the opening and 21.4 Backgrounds, and no other maker's part (352 words)
+Each part carries its own rules: the roster, the kept lines, the four wearables, the layer size
+The prompt block names the GDD and the sections it quotes
+character-artist: all 1 of its generating prompts open with the GDD's opening and its own part
+level-architect: all 4 of its generating prompts open with the GDD's opening and its own part
+wardrobe-stylist: all 1 of its generating prompts open with the GDD's opening and its own part
+roast-writer: all 1 of its generating prompts open with the GDD's opening and its own part
+A quote counts with its quote marks swapped, its markdown, or a one-word slip
+The Critic's problem stands only when the rule it quotes is in the GDD; an invented rule is dropped
+A hedged finding ('may', 'in spirit') is dropped by plain code, before any model call: a maybe, not a break ("may")
+A finding that blames words the line doesn't have (here, the event's name) is dropped: the words it quotes aren't in the work
+A finding on the never-named rule that blames no banned word ('the smell', 'it') is dropped by plain code
+A finding plain code can't rule out goes to a second look, which can overrule it: the second look found no break: stand-in
+A design isn't failed for the words of its set's name, which the game never shows
+A finding that quotes a sentence describing the game today (the terrain themes) is dropped: it isn't a rule
+A design's text can't fail on a rule about how the finished art looks; each such rule is still in the GDD
+A finding quoting a whole paragraph is read as its one sentence, so it's checked against the right rule
+A finding the second look agrees with sends the work back, quoting the GDD rule: it says poop (GDD: "The gross thing is never named. It's 'it
+A GDD that isn't readable stops the run: the GDD isn't readable at C:\Users\david\AppData\Local\Temp\tmpgnxncuxo\gdd.md: 
+A GDD that no Section 21 stops the run: the GDD at C:\Users\david\AppData\Local\Temp\tmpgnxncuxo\gdd.md has no Section 2
+A GDD that missing its opening stops the run: the GDD's Content guide is missing its opening or Section 21.2
+An agent with no part in the Content guide stops
+all passed
+
+=== test_install.py: PASS
+Undecided and rejected work is refused, and nothing changes
+would copy 52 files
+would write player11Prefab.prefab
+would write ai11Prefab.prefab
+would add 4 fit places for player11; hats lifted 72 px, shades moved +12,+8 px
+would add player11's row to flail.py
+would add first names: {'player11': 'Darnell'}
+A dry run changes nothing
+copied 52 files
+writing player11Prefab.prefab
+writing ai11Prefab.prefab
+adding 4 fit places for player11; hats lifted 72 px, shades moved +12,+8 px
+adding player11's row to flail.py
+adding first names: {'player11': 'Darnell'}
+All the files are copied, idle and flap included
+Two prefabs, with only the name, the sprite and the size changed
+Shades sit on the new eyes, and hats ride up on the taller hair
+The first name and the flail row are in, once each
+A second install refuses, and nothing is overwritten
+copied 52 files
+writing player12Prefab.prefab
+writing ai12Prefab.prefab
+adding 4 fit places for player12; hats lifted 72 px, shades moved +7,+0 px
+adding player12's row to flail.py
+adding first names: {'player12': 'Marcus'}
+A half-installed slot refuses first, and a second character installs beside the first
+adding first names: {'player': 'Gary', 'player2': 'Doug'}
+The original ten's names go in once approved, and a different name is refused
+The real project wasn't touched
+all passed
+
+=== test_layers.py: PASS
+The sky is the same down every column, and solid
+The haze is the same across the width, strongest at its center row
+A ground line's two ends meet
+An object crossing the right end carries on at the left end, whole
+After one full loop every layer is back where it started
+The previews and a moving loop under 4 MB are written
+all passed
+
+=== test_level_architect.py: PASS
+A gap of 12 pixels at an object's foot is filled with its color; a 400-pixel window stays see-through
+An object that wraps across the layer's edge is filled the same way
+An idea that's just one of the 99 at another time of day is a repeat
+Two ideas with one theme are a repeat
+The same place with new weather, a new sky or a new detail is a repeat
+Places that only share a word or two aren't repeats
+A batch asked for moon or sky ideas fails without them, unless the batches still to come can make up the rest
+Every idea needs a style
+Topping up posts only what it takes to reach 100 approved and waiting
+An empty list is written 10 at a time, the moon and sky ideas first, each batch posted as it passes
+A batch one moon idea short passes, and the next batch is asked for the one still missing
+A batch that fails stops the top-up, and the batches before it stay posted
+After two tries, a batch drops only its repeats and keeps the new ideas
+A batch with nothing new in it stops the top-up
+The next idea is the lowest-numbered approved one not used yet
+David's note on an approval replaces the idea's wording
+With no approved idea waiting, the card waits on David before any model call
+comfy.start launches ComfyUI only when it's down, waits for it, and stops if it never answers
+test_starts_comfyui_when_down: started first; one that never answers stops before any recipe tokens
+make builds a background that passes every Bridge check
+The first run makes one; after it, up to 10 per run, never more than the approved ideas waiting
+An approved background is stored outside the game once, and skipped after that
+test_count_stops_at_100: with 99 made, the next run makes 1
+A good recipe passes
+Caught: Take bright green out of the palette: it's cut away from painted objects.
+Caught: Use a new theme: forestB1 is taken.
+Caught: Make the sky the first layer, and the only sky.
+Caught: Make every layer's speed at least the one before it, far to near.
+Caught: Use at most two haze layers.
+Caught: Fix an object on layer 1: a description, a count from 1 to 40, and a height [min, max] from 12 to 230.
+A bad recipe gets one fix prompt, and the idea's theme and style are kept
+The prompt names each layer's "kind", and a layer the model labels "type" is read as its kind (run 20261107-155047)
+all passed
+
+=== test_objects.py: PASS
+A whole object is cut out with no green and no holes
+An object cut off by the picture's edge is refused
+A green speck painted inside an object is filled
+Shrunk to 40 px: no loose specks, no green, every color from the palette
+The library finds an object by style and description, and records approval
+An object cut off on every try stops the background and names the object
+all passed
+
+=== test_paperclip_view.py: PASS
+A task in progress, or a run Paperclip started, is working
+Blocked by a question to David, or in his playtest by its title, is waiting on him
+Waiting beats queued; a card blocked only by another card is queued, not waiting
+Among queued cards, one ready to take shows before a lower-numbered one waiting on another card
+Paused in Paperclip shows paused; nothing to do is idle
+Cards per column: top-level cards only, blocked counts as Backlog, cancelled isn't shown
+A question card's answer is David's own words, or Done; an unanswered card has none
+Every question gets a card with Done and Answer in my own words, and answering it wakes no agent
+all passed
+
+=== test_pixellab.py: PASS
+Sends the image and mask, waits for the job, and returns the painting
+Finds the image in either reply shape, and adds up what the calls cost
+Too many jobs gets waited out
+Out of credits, a failed job and a job that never finishes all stop the run, and the token is in none of the messages
+Reads the balance
+Asks David before a call that would run PixelLab dry; credits count as room
+all passed
+
+=== test_roast_writer.py: PASS
+A line in the voice passes
+All 40 kept lines pass every check but the new-id one, so the rules fit what David kept
+Too long, ! or ?, quotes, emoji, the gross thing named, a name, two capital words or a body joke are each refused
+A near-copy of a known line is a repeat; a line that only shares a word isn't
+A splat event or a smell word needs the Gauntlet flag; a flag where none is needed is fine
+An unknown event, an outcome the event can't have, a taken id or a badly formed id are each refused
+The card's description names the event, the outcome and Gauntlet
+A batch covers the events with the fewest lines first, and within one the outcome it has least of
+Died Dirty only gets loss lines
+Ids are new and numbered per event
+Before any line is made, the next batch is the 5-line test
+Every line needed gets 4 candidates, and an outcome with none left after the checks gets one more try
+The prompt holds the kept lines, the approved lines, and each rejected line with David's note
+Every write starts with the GDD's Content guide opening and Section 21.2, before anything else
+The best line for each outcome goes up; the poop line, the long one, the repeat and the ! ones never do
+Each line is its own submission folder, with the whole line as its card label
+The game's roast file is read, never written
+While David hasn't decided the last card, no new batch starts
+Approved lines collect outside the game, in the game's own line format
+Every line that passed the Bridge goes to the Critic's GDD check, with its event and outcome
+A line the Critic sent back is dropped, and its GDD reason reaches that event's next try
+Only a line that passed the GDD check goes up, and the run log says what the Critic sent back
+[17:28:07] roast-writer: waiting on David's calls on 3 lines before the next batch
+While David is deciding the last card, the run leaves the card alone
+
+Done. 2 roast lines for David.
+Run folder: C:\Users\david\AppData\Local\Temp\tmpj2ydfbr4\runs\r-go
+The Orchestrator hands the batch the Critic's GDD check
+A batch leases the card, closes its task, and puts the card back in the queue for the next batch
+[17:28:07] orchestrator: stopped: MindRouter is down
+A stopped batch cancels its task and puts the card back with the reason
+[17:28:07] roast-writer: all 250 lines approved; the card is done
+With 250 approved, the card is done, and its note names the file with forward slashes
+all passed
+
+=== test_sendback.py: PASS
+Bridge catches a missing flail frame: Write Resources/DeathFlail/player11_flail_05.png: the manifest lists it but it isn't there.
+Bridge passes a good character
+[17:28:10] bridge: sent back t1: Write Resources/DeathFlail/player11_flail_05.png: the manifest lists it but it isn't there. Write player11_flail_05.png and its .meta.
+[17:28:11] critic: t1 pass: stand-in
+Bad then good: the maker got the fix prompt and the task finished as player11
+Paperclip got the maker's task with the Bridge's send-back on it, and the Critic's review, both closed
+Only work that passed reaches the approval screen
+[17:28:11] bridge: sent back t1: Write Resources/DeathFlail/player11_flail_05.png: the manifest lists it but it isn't there. Write player11_flail_05.png and its .meta.
+[17:28:11] bridge: sent back t1: Write Resources/DeathFlail/player11_flail_05.png: the manifest lists it but it isn't there. Write player11_flail_05.png and its .meta.
+Bad twice: stopped after two tries: character-artist lost both cheeks on t1: Write Resources/DeathFlail/player11_flail_05.png:
+The stopped task is closed as cancelled in Paperclip, saying why
+The failed attempt stays with the run, off the approval screen, and holds no slot
+[17:28:11] critic: GDD check on t1 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): fail: green hair breaks Section 21.1
+[17:28:11] critic: GDD check on t1 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): pass
+[17:28:12] critic: t1 pass: stand-in
+GDD fail, then pass: the design went back with the GDD rule it broke, and only the passing design was built
+Every design, verdict and send-back is a handoff file in the run's messages folder
+Paperclip shows each GDD check as the Critic's task, and the manifest carries the passing verdict
+[17:28:12] critic: GDD check on t1 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): fail: green hair breaks Section 21.1
+[17:28:12] critic: GDD check on t1 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): fail: green hair breaks Section 21.1
+GDD fail twice: both cheeks popped, nothing was built, and the run says why: character-artist lost both cheeks on t1: the Critic sent it back again
+A stopped run's card goes back to the Backlog, saying why
+[17:28:12] orchestrator: asked David, and the card waits: player21 is past player20
+A question for David is asked once and blocks the card, instead of a stop that repeats
+A set card makes what its set still needs: a rejection with no note is remade, one sent back as a redo isn't counted twice
+Every maker gets its own child run at the same time, and the worst exit code is the run's
+[17:28:12] orchestrator: no card on the board that this crew can work
+[17:28:12] orchestrator: no card on the board that this crew can work
+[17:28:12] orchestrator: no card on the board that this crew can work
+[17:28:12] orchestrator: no card on the board that this crew can work
+[17:28:12] orchestrator: no card on the board that this crew can work
+crew upkeep step failed, and the makers start anyway: RuntimeError: Paperclip answered HTTP 500
+Closing finished cards and the diagram run once before the makers start, never inside one maker's run; the Level Architect's run stores only its own backgrounds
+A maker's child run takes only that maker's cards
+[17:28:13] critic: t1 fail: stand-in
+A Critic fail reaches David as a note, without a send-back
+all passed
+
+=== test_wardrobe_stylist.py: PASS
+A rejected Top Hat leaves its name free for its redo; a waiting or approved item keeps its name
+A hat ending at y 26 is moved down to y 28, the same size, and sits on the head
+Shades are left where they are
+The 4 items in the game, written as recipes, draw pixel for pixel the same as their PNGs
+The 4 pass every recipe and art check
+Unknown shapes, undefined regions, bad color areas, backwards boxes, shapes off the grid, bad colors, a period in the name, a floating hat, a color area too small, an empty region, colored shades and one-lens shades are each refused
+The 40 ideas pass: 30 hats and 10 shades, no repeats, none of the 4 in the game
+An idea already in the game, one listed twice, a hat with no color areas or shades with some are refused
+The first run draws the 2-item test, from approved ideas only
+The prompt holds the idea, David's note and the 4 items' own recipes
+An item's folder has its art, mask, recipe, the sheet on all 10 characters and a close-up
+The Bridge passes it and measures it against the 4 in the game
+Art that doesn't match its recipe is refused
+Published items wait on David, and no new batch starts until he decides them
+An approved item goes outside the game with its art, mask, recipe and a catalog entry in the game's format
+A redo card redraws the same idea with David's note
+[17:28:14] wardrobe-stylist: waiting on David's calls on 2 items
+While David is deciding the last items, the run leaves the card alone
+[17:28:14] wardrobe-stylist: t1 done: n (s)
+[17:28:14] wardrobe-stylist: t2 done: n (s)
+[17:28:14] wardrobe-stylist: t3 done: n (s)
+[17:28:14] wardrobe-stylist: t4 done: n (s)
+[17:28:14] wardrobe-stylist: t5 done: n (s)
+
+Done. summary
+Run folder: C:\Users\david\AppData\Local\Temp\tmp5y7b3qah\runs\20261104-120000-w-go
+A batch draws 5 items through the usual steps and puts the card back in the queue
+[17:28:14] wardrobe-stylist: t1 done: n (s)
+
+Done. summary
+Run folder: C:\Users\david\AppData\Local\Temp\tmp5y7b3qah\runs\20261104-120000-w-redo
+A redo card goes first: the same idea with David's note, then it waits at Your Playtest
+[17:28:14] wardrobe-stylist: all 40 items approved; the card is done
+With 40 approved, the card is done
+all passed

@@ -1,0 +1,37 @@
+{
+  "n": 2,
+  "at": "2026-11-07T15:51:23",
+  "from": "wardrobe-stylist",
+  "to": "critic",
+  "kind": "design",
+  "payload": {
+    "task": "t1",
+    "design": {
+      "name": "Top Hat",
+      "kind": "hat",
+      "idea": "A tall flat-topped cylinder on a narrow brim, with a band just above the brim.",
+      "outline": "the usual dark outline",
+      "regions": [
+        {
+          "name": "HAT",
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "players_recolor_it": true
+        },
+        {
+          "name": "BAND",
+          "color": [
+            0,
+            0,
+            0
+          ],
+          "players_recolor_it": true
+        }
+      ],
+      "shapes": 4
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "n": 27,
+  "at": "2026-11-07T17:19:31",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t4",
+    "folder": "C:\\cluster\\crew\\work\\player19_t4",
+    "concept": {
+      "first_name": "Daniel",
+      "hair": "Tall, rigid cornrows forming a geometric crown, slightly asymmetrical",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "thick, full, and neatly trimmed",
+      "face": "thin eyebrows, narrow eyes, neutral expression",
+      "skin_tone": "chestnut",
+      "why_distinct": "The combination of geometric cornrows with a full, trimmed beard and narrow eyes sets it apart from the existing roster, especially from the similar cornrow styles already used.",
+      "set": "African American",
+      "name": "Daniel"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "n": 21,
+  "at": "2026-11-07T17:18:30",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t3",
+    "folder": "C:\\cluster\\crew\\work\\player18_t3",
+    "concept": {
+      "first_name": "Marcus",
+      "hair": "Tall, rigid cornrows forming a geometric crown, slightly asymmetrical",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "thick, full, and neatly trimmed",
+      "face": "thin, arched brows, narrow eyes, calm expression",
+      "skin_tone": "chestnut",
+      "why_distinct": "The geometric cornrow crown with a full, neatly trimmed beard and narrow, calm eyes sets it apart from the roster's similar cornrow styles and broader facial features.",
+      "set": "African American",
+      "name": "Marcus"
+    }
+  }
+}

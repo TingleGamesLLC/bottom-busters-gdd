@@ -1,0 +1,14 @@
+{
+  "n": 1,
+  "at": "2026-11-07T17:15:27",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t1",
+    "brief": "Generate concept sketches for the eight new African American characters, ensuring diversity in facial features, hairstyles, and body types while maintaining consistency with the established art style.",
+    "set": "African American",
+    "slot": 16,
+    "notes": null
+  }
+}

@@ -1,0 +1,744 @@
+{
+  "id": "20261107-165733-roast-writer",
+  "started": "2026-11-07T16:57:33",
+  "status": "waiting on David",
+  "card": "[Roast Writer] 250 new roast lines",
+  "tasks": [],
+  "events": [
+    {
+      "at": "2026-11-07T16:57:33",
+      "agent": "orchestrator",
+      "text": "no runner yet for wardrobe-stylist: [Wardrobe Stylist] 40 new hats and shades"
+    },
+    {
+      "at": "2026-11-07T16:57:39",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Full coverage. Not one of them left clean.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:39",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Everybody got some. Nobody was spared. Democratic.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:39",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"You went out wearing most of the level.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:39",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Covered in it AND dead. A comprehensive defeat.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:39",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"That is a LOT of propulsion for someone going nowhere.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:39",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Every one of them saw it coming and could do nothing.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:39",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"You found a rhythm. Everyone wishes you hadn't.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:39",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"That sound never gets less alarming.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:39",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Efficient. Brutal. Faintly upsetting.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:39",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Precision bombing. Genuinely disgusting. Well done.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:39",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"You had one job and gravity had another.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:39",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"That run belongs in a museum. In the basement. Unlabelled.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:48",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Full coverage. Not one of them left clean.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:48",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"No one\u2019s coming. Not even the cleanup crew.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:48",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Even the current looked away.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:48",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"That is a LOT of propulsion for someone going nowhere.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:48",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"You had one job and gravity had another.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:48",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Everybody got some. Nobody was spared. Democratic.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:48",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"The cleanup crew has filed a grievance.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:48",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"That was not a plan. That was a series of accidents in a row.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:48",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"You found a rhythm. Everyone wishes you hadn't.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:57:56",
+      "agent": "roast-writer",
+      "text": "critic: kept \"Every single one. No exceptions. No mercy.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T16:57:56",
+      "agent": "roast-writer",
+      "text": "critic: kept \"You left nothing behind. Not even a memory.\": its finding was dropped, a maybe, not a break (\"suggests\")"
+    },
+    {
+      "at": "2026-11-07T16:57:56",
+      "agent": "roast-writer",
+      "text": "critic: kept \"The level is now a monument. To you.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T16:57:56",
+      "agent": "roast-writer",
+      "text": "critic: 3 of 3 Full Coverage lines passed the GDD check"
+    },
+    {
+      "at": "2026-11-07T16:57:56",
+      "agent": "roast-writer",
+      "text": "roast-writer: no Full Coverage line on a loss passed the checks, so that one is left out"
+    },
+    {
+      "at": "2026-11-07T16:57:56",
+      "agent": "roast-writer",
+      "text": "roast-writer: no Full Coverage line on a win or a loss passed the checks, so that one is left out"
+    },
+    {
+      "at": "2026-11-07T16:57:56",
+      "agent": "roast-writer",
+      "text": "roast-writer: no Full Coverage line on a loss passed the checks, so that one is left out"
+    },
+    {
+      "at": "2026-11-07T16:58:12",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Efficient. Brutal. Faintly upsetting.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:12",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"That was not a plan. That was a series of accidents in a row.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:12",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"All that output and still not enough lift. Tragic.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:12",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Every one of those was a decision you made on purpose.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:12",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"You went through them like a bad curry.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:12",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Precision bombing. Genuinely disgusting. Well done.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:12",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Direct deposit. Straight to the top floor.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:12",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Back to back to back. No breaks. No shame.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:12",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"That is a streak. An unbroken, unwelcome streak.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:12",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"You found a rhythm. Everyone wishes you hadn't.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:12",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"There is more of it on the level than in you at this point.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:12",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Volume like that raises real medical questions.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:17",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Efficient. Brutal. Faintly upsetting.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:17",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"That was not a plan. That was a series of accidents in a row.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:17",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"All that output and still not enough lift. Tragic.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:17",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Every one of those was a decision you made on purpose.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:17",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"You went through them like a bad curry.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:17",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Precision bombing. Genuinely disgusting. Well done.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:17",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Back to back to back. No breaks. No shame.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:17",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"You found a rhythm. Everyone wishes you hadn't.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:17",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"That is a LOT of propulsion for someone going nowhere.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:17",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"No one\u2019s coming. Not even the cleanup crew.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:17",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Even the current looked away.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:17",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"That was not a strategy. That was a statement.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:17",
+      "agent": "roast-writer",
+      "text": "roast-writer: no Methane Released line on a win passed the checks, so that one is left out"
+    },
+    {
+      "at": "2026-11-07T16:58:17",
+      "agent": "roast-writer",
+      "text": "roast-writer: no Methane Released line on a win or a loss passed the checks, so that one is left out"
+    },
+    {
+      "at": "2026-11-07T16:58:17",
+      "agent": "roast-writer",
+      "text": "roast-writer: no Methane Released line on a win passed the checks, so that one is left out"
+    },
+    {
+      "at": "2026-11-07T16:58:22",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"No one\u2019s coming. Not even the cleanup crew.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:22",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Even the current looked away.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:22",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"That was not a strategy. That was a statement.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:22",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"The lifeguard is on a break. A permanent one.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:22",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"No one\u2019s coming. Not even the cleanup crew.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:22",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Even the current looked away.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:22",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"That was not a strategy. That was a statement.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:22",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"You went through them like a bad curry.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T16:58:27",
+      "agent": "roast-writer",
+      "text": "critic: kept \"The lifeguard is off duty. A permanent one.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T16:58:27",
+      "agent": "roast-writer",
+      "text": "critic: kept \"You cleared the level. The water is still mourning.\": its finding was dropped, a maybe, not a break (\"indirectly\")"
+    },
+    {
+      "at": "2026-11-07T16:58:27",
+      "agent": "roast-writer",
+      "text": "critic: 4 of 4 Lifeguard Off Duty lines passed the GDD check"
+    },
+    {
+      "at": "2026-11-07T16:58:57",
+      "agent": "roast-writer",
+      "text": "critic: kept \"Every hit was a decision. All wrong.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T16:58:57",
+      "agent": "roast-writer",
+      "text": "critic: kept \"Targeted. Effective. Deeply inappropriate.\": its finding was dropped, a maybe, not a break (\"leans into\")"
+    },
+    {
+      "at": "2026-11-07T16:58:57",
+      "agent": "roast-writer",
+      "text": "critic: kept \"That was not a shot. That was a declaration.\": its finding was dropped, it blames words the rule allows: only a banned word names the gross thing, and the Bridge checks those"
+    },
+    {
+      "at": "2026-11-07T16:58:57",
+      "agent": "roast-writer",
+      "text": "critic: sent back \"No margin. No mercy. No explanation.\" against the GDD: The line contains three sentences, each with three words, totaling nine words, which is within the 15-word limit. However, it breaks the 'threes work' rule by being too rigidly structured in a triplet that lacks the required turn. The kept lines use threes, but always with a twist or shift in tone. This line lacks a turn and reads like a slogan, not a deadpan verdict. (GDD: \"Short: one to three sentences, 15 words at most.\")"
+    },
+    {
+      "at": "2026-11-07T16:58:57",
+      "agent": "roast-writer",
+      "text": "critic: kept \"You made it a choreography of failure.\": its finding was dropped, it blames words the rule allows: only a banned word names the gross thing, and the Bridge checks those"
+    },
+    {
+      "at": "2026-11-07T16:58:57",
+      "agent": "roast-writer",
+      "text": "critic: kept \"Aiming with intent. With no regard for consequence.\": its finding was dropped, it blames words the rule allows: only a banned word names the gross thing, and the Bridge checks those"
+    },
+    {
+      "at": "2026-11-07T16:58:57",
+      "agent": "roast-writer",
+      "text": "critic: kept \"That was not a hit. That was a complaint.\": its finding was dropped, it blames words the rule allows: only a banned word names the gross thing, and the Bridge checks those"
+    },
+    {
+      "at": "2026-11-07T16:58:57",
+      "agent": "roast-writer",
+      "text": "critic: kept \"You hit every one. Even the air.\": its finding was dropped, it blames words the rule allows: only a banned word names the gross thing, and the Bridge checks those"
+    },
+    {
+      "at": "2026-11-07T16:58:57",
+      "agent": "roast-writer",
+      "text": "critic: kept \"The trajectory was not a mistake. It was a message.\": its finding was dropped, it blames words the rule allows: only a banned word names the gross thing, and the Bridge checks those"
+    },
+    {
+      "at": "2026-11-07T16:58:57",
+      "agent": "roast-writer",
+      "text": "critic: kept \"You cleared the board. With a side of regret.\": its finding was dropped, it blames words the rule allows: only a banned word names the gross thing, and the Bridge checks those"
+    },
+    {
+      "at": "2026-11-07T16:58:57",
+      "agent": "roast-writer",
+      "text": "critic: kept \"The enemy didn\u2019t see it. They just felt it.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T16:58:57",
+      "agent": "roast-writer",
+      "text": "critic: 11 of 12 Bombs On Target lines passed the GDD check"
+    },
+    {
+      "at": "2026-11-07T16:59:30",
+      "agent": "roast-writer",
+      "text": "critic: kept \"That was not a hit. That was a declaration.\": its finding was dropped, a maybe, not a break (\"imply\")"
+    },
+    {
+      "at": "2026-11-07T16:59:30",
+      "agent": "roast-writer",
+      "text": "critic: sent back \"Too precise. The air is still recovering.\" against the GDD: The phrase \"the air is still recovering\" is a pun on the aftermath of a strong smell, which is a pun-based joke, violating the rule against puns. (GDD: \"A line that explains the joke or leans on a pun alone.\")"
+    },
+    {
+      "at": "2026-11-07T16:59:30",
+      "agent": "roast-writer",
+      "text": "critic: kept \"The head is now a permanent fixture.\": its finding was dropped, a maybe, not a break (\"implying\")"
+    },
+    {
+      "at": "2026-11-07T16:59:30",
+      "agent": "roast-writer",
+      "text": "critic: sent back \"One hit. The entire floor is now a memorial.\" against the GDD: The phrase \"a memorial\" is a pun on the idea of honoring something gross, which is a pun-based joke, violating the rule. (GDD: \"A line that explains the joke or leans on a pun alone.\")"
+    },
+    {
+      "at": "2026-11-07T16:59:30",
+      "agent": "roast-writer",
+      "text": "critic: kept \"You hit the same spot twice. The building is angry.\": its finding was dropped, a maybe, not a break (\"implying\")"
+    },
+    {
+      "at": "2026-11-07T16:59:30",
+      "agent": "roast-writer",
+      "text": "critic: sent back \"The impact was not in the head. It was in the timeline.\" against the GDD: The phrase \"in the timeline\" is a pun on time travel or historical impact, which is a pun-based joke, violating the rule. (GDD: \"A line that explains the joke or leans on a pun alone.\")"
+    },
+    {
+      "at": "2026-11-07T16:59:30",
+      "agent": "roast-writer",
+      "text": "critic: sent back \"That\u2019s not a splat. That\u2019s a historical event.\" against the GDD: The phrase \"historical event\" is a pun on the gravity of the moment, which is a pun-based joke, violating the rule. (GDD: \"A line that explains the joke or leans on a pun alone.\")"
+    },
+    {
+      "at": "2026-11-07T16:59:30",
+      "agent": "roast-writer",
+      "text": "critic: sent back \"The target is now a monument. To you.\" against the GDD: The phrase \"a monument\" is a pun on the idea of being remembered for something gross, which is a pun-based joke, violating the rule. (GDD: \"A line that explains the joke or leans on a pun alone.\")"
+    },
+    {
+      "at": "2026-11-07T16:59:30",
+      "agent": "roast-writer",
+      "text": "critic: 7 of 12 Direct Deposit lines passed the GDD check"
+    },
+    {
+      "at": "2026-11-07T16:59:56",
+      "agent": "roast-writer",
+      "text": "critic: kept \"In one sitting. A performance. A tragedy.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T16:59:56",
+      "agent": "roast-writer",
+      "text": "critic: kept \"That was a sequence. A very loud, very messy sequence.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T16:59:56",
+      "agent": "roast-writer",
+      "text": "critic: kept \"No pauses. No mercy. No clean-up crew.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T16:59:56",
+      "agent": "roast-writer",
+      "text": "critic: kept \"You did it. The level will never recover.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T16:59:56",
+      "agent": "roast-writer",
+      "text": "critic: kept \"Three. Four. Five. The pattern is clear.\": its finding was dropped, a maybe, not a break (\"suggests\")"
+    },
+    {
+      "at": "2026-11-07T16:59:56",
+      "agent": "roast-writer",
+      "text": "critic: kept \"It wasn\u2019t a streak. It was a siege.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T16:59:56",
+      "agent": "roast-writer",
+      "text": "critic: kept \"You kept going. Even the air gave up.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T16:59:56",
+      "agent": "roast-writer",
+      "text": "critic: kept \"Every one. All of them. No breaks.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T16:59:56",
+      "agent": "roast-writer",
+      "text": "critic: kept \"The rhythm was perfect. The timing was terrible.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T16:59:56",
+      "agent": "roast-writer",
+      "text": "critic: kept \"It wasn\u2019t a run. It was a declaration.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T16:59:56",
+      "agent": "roast-writer",
+      "text": "critic: kept \"You didn\u2019t miss. You just kept going.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T16:59:56",
+      "agent": "roast-writer",
+      "text": "critic: kept \"That was not a string. That was a flood.\": its finding was dropped, it blames words the rule allows: only a banned word names the gross thing, and the Bridge checks those"
+    },
+    {
+      "at": "2026-11-07T16:59:56",
+      "agent": "roast-writer",
+      "text": "critic: 12 of 12 In One Sitting lines passed the GDD check"
+    },
+    {
+      "at": "2026-11-07T17:00:07",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"A streak. Unbroken. Unforgivable.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T17:00:07",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Every one of those was a decision you made on purpose.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T17:00:20",
+      "agent": "roast-writer",
+      "text": "critic: kept \"That\u2019s not a pattern. That\u2019s a crime scene.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T17:00:20",
+      "agent": "roast-writer",
+      "text": "critic: kept \"It\u2019s not a streak. It\u2019s a monument to bad choices.\": its finding was dropped, a maybe, not a break (\"implying\")"
+    },
+    {
+      "at": "2026-11-07T17:00:20",
+      "agent": "roast-writer",
+      "text": "critic: kept \"You didn\u2019t aim. You just kept adding to it.\": its finding was dropped, it blames words the rule allows: only a banned word names the gross thing, and the Bridge checks those"
+    },
+    {
+      "at": "2026-11-07T17:00:20",
+      "agent": "roast-writer",
+      "text": "critic: kept \"The level is now a landfill. You\u2019re the manager.\": its finding was dropped, a maybe, not a break (\"implying\")"
+    },
+    {
+      "at": "2026-11-07T17:00:20",
+      "agent": "roast-writer",
+      "text": "critic: kept \"You didn\u2019t stop. Not even to breathe.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T17:00:20",
+      "agent": "roast-writer",
+      "text": "critic: kept \"That\u2019s not a run. That\u2019s a public service announcement.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T17:00:20",
+      "agent": "roast-writer",
+      "text": "critic: kept \"The air is still. The silence is worse.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T17:00:20",
+      "agent": "roast-writer",
+      "text": "critic: kept \"It\u2019s not a streak. It\u2019s a warning.\": its finding was dropped, a maybe, not a break (\"implying\")"
+    },
+    {
+      "at": "2026-11-07T17:00:20",
+      "agent": "roast-writer",
+      "text": "critic: 10 of 10 Longest Streak Of Poo lines passed the GDD check"
+    },
+    {
+      "at": "2026-11-07T17:00:42",
+      "agent": "roast-writer",
+      "text": "critic: kept \"Received. The level is now your personal archive.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T17:00:42",
+      "agent": "roast-writer",
+      "text": "critic: kept \"A complete transfer. No regrets. No apologies.\": its finding was dropped, a maybe, not a break (\"imply\")"
+    },
+    {
+      "at": "2026-11-07T17:00:42",
+      "agent": "roast-writer",
+      "text": "critic: kept \"You absorbed it all. Even the leftovers.\": its finding was dropped, a maybe, not a break (\"implying\")"
+    },
+    {
+      "at": "2026-11-07T17:00:42",
+      "agent": "roast-writer",
+      "text": "critic: kept \"Perfect reception. The level is now a museum.\": its finding was dropped, a maybe, not a break (\"implying\")"
+    },
+    {
+      "at": "2026-11-07T17:00:42",
+      "agent": "roast-writer",
+      "text": "critic: kept \"No waste. All of it. All of it yours.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T17:00:42",
+      "agent": "roast-writer",
+      "text": "critic: kept \"You took the hit. And kept going. Impressive.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T17:00:42",
+      "agent": "roast-writer",
+      "text": "critic: kept \"Total uptake. The level has no memory of clean.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T17:00:42",
+      "agent": "roast-writer",
+      "text": "critic: 8 of 8 Received lines passed the GDD check"
+    },
+    {
+      "at": "2026-11-07T17:01:02",
+      "agent": "roast-writer",
+      "text": "critic: kept \"Died dirty. The floor has a new stain. It\u2019s not going away.\": its finding was dropped, it blames words the rule allows: only a banned word names the gross thing, and the Bridge checks those"
+    },
+    {
+      "at": "2026-11-07T17:01:02",
+      "agent": "roast-writer",
+      "text": "critic: kept \"You went down covered. The level is still cleaning up.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T17:01:02",
+      "agent": "roast-writer",
+      "text": "critic: kept \"Caked in it. Even the air gave up.\": its finding was dropped, a maybe, not a break (\"indirectly\")"
+    },
+    {
+      "at": "2026-11-07T17:01:02",
+      "agent": "roast-writer",
+      "text": "critic: kept \"Last breath. Still not clean. That\u2019s how you end.\": its finding was dropped, a maybe, not a break (\"indirectly\")"
+    },
+    {
+      "at": "2026-11-07T17:01:02",
+      "agent": "roast-writer",
+      "text": "critic: kept \"You were the last thing on the level. It wasn\u2019t kind.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T17:01:02",
+      "agent": "roast-writer",
+      "text": "critic: kept \"No escape. Not even from yourself.\": its finding was dropped, a maybe, not a break (\"implies\")"
+    },
+    {
+      "at": "2026-11-07T17:01:02",
+      "agent": "roast-writer",
+      "text": "critic: kept \"You finished. The place is still mourning.\": its finding was dropped, a maybe, not a break (\"indirectly\")"
+    },
+    {
+      "at": "2026-11-07T17:01:02",
+      "agent": "roast-writer",
+      "text": "critic: 8 of 8 Died Dirty lines passed the GDD check"
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_drowned_003 (Lifeguard Off Duty, on a win): You drowned them all. The water is still angry."
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_drowned_004 (Lifeguard Off Duty, on a loss): The water remembers. It is not forgiving."
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_drowned_005 (Lifeguard Off Duty, on a win or a loss): The lifeguard is off duty. A permanent one."
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_bombsOnTarget_001 (Bombs On Target, on a loss, not in Gauntlet): That was not a shot. That was a declaration."
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_bombsOnTarget_002 (Bombs On Target, on a win, not in Gauntlet): Precision. Brutal. Unavoidable."
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_bombsOnTarget_003 (Bombs On Target, on a loss, not in Gauntlet): That was not a hit. That was a complaint."
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_directDeposit_001 (Direct Deposit, on a loss, not in Gauntlet): The head is now a permanent fixture."
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_directDeposit_002 (Direct Deposit, on a win, not in Gauntlet): On target. The structural integrity is not."
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_directDeposit_003 (Direct Deposit, on a loss, not in Gauntlet): You hit the same spot twice. The building is angry."
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_inOneSitting_001 (In One Sitting, on a loss, not in Gauntlet): Every one. All of them. No breaks."
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_inOneSitting_002 (In One Sitting, on a win, not in Gauntlet): No pauses. No mercy. No clean-up crew."
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_inOneSitting_003 (In One Sitting, on a loss, not in Gauntlet): That was not a string. That was a flood."
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_longestStreak_002 (Longest Streak Of Poo, on a loss, not in Gauntlet): The air is still. The silence is worse."
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_longestStreak_003 (Longest Streak Of Poo, on a win, not in Gauntlet): That\u2019s not a pattern. That\u2019s a crime scene."
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_longestStreak_004 (Longest Streak Of Poo, on a loss, not in Gauntlet): It\u2019s not a streak. It\u2019s a warning."
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_received_001 (Received, on a win, not in Gauntlet): Efficient. Unpleasantly thorough. Well done."
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_received_002 (Received, on a win, not in Gauntlet): You absorbed it all. Even the leftovers."
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_diedDirty_001 (Died Dirty, on a loss, not in Gauntlet): Caked in it. Even the air gave up."
+    },
+    {
+      "at": "2026-11-07T17:01:06",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_diedDirty_002 (Died Dirty, on a loss, not in Gauntlet): Died dirty. The floor has a new stain. It\u2019s not going away."
+    }
+  ]
+}

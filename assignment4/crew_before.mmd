@@ -1,0 +1,35 @@
+flowchart TD
+    D(["Studio Director (David)<br/>plays every build, says commit"])
+    T[("Trello board<br/>Backlog, In Progress, Review, Your Playtest, Done")]
+    O("Orchestrator<br/>qwen3:30b on the cluster")
+    A("Character Artist: concept<br/>qwen3:30b on the cluster")
+    F["Character Artist: art<br/>PixelLab, flail.py, idle_game.py, flap_game.py, splat_faces.py"]
+    B["Bridge<br/>a script, not AI: checks the files"]
+    C("Critic<br/>qwen2.5vl:7b on the cluster")
+    W("Technical Writer<br/>qwen3:30b on the cluster")
+    S[("C:\cluster\submissions<br/>character files waiting for approval")]
+    H["Dashboard<br/>Crew and Characters tabs"]
+    G[("Bottom Busters<br/>Unity project")]
+    T -->|"next card in David's order"| O
+    O -->|"leases and moves the card"| T
+    O -->|"task brief (JSON)"| A
+    A -->|"concept (JSON)"| F
+    F -->|"sprite, flail, idle and flap frames, splat, metas"| S
+    S -->|"submission"| B
+    B -->|"fix prompt if malformed"| A
+    B -->|"passes the format check"| C
+    C -->|"verdict (JSON)"| O
+    O -->|"the Critic's note, beside the character"| S
+    O -->|"run record"| W
+    W -->|"summary comment"| T
+    O -->|"status, cheeks, tokens"| H
+    S -->|"shown for approval"| H
+    H -->|"Approve or Reject with a note"| D
+    D -->|"decision.json"| S
+    D -->|"tests, says commit"| G
+    class O,A,C,W cluster
+    class F,B script
+    class D human
+    classDef cluster fill:#CFE8F7,stroke:#1F2A44
+    classDef script fill:#FBFBF8,stroke:#1F2A44
+    classDef human fill:#F3D9A4,stroke:#1F2A44

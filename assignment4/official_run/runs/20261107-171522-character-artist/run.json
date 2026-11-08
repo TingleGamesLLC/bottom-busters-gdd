@@ -1,0 +1,181 @@
+{
+  "id": "20261107-171522-character-artist",
+  "started": "2026-11-07T17:15:22",
+  "status": "waiting on David",
+  "card": "[Character Artist] First set: the other 8 characters",
+  "tasks": [
+    {
+      "id": "t1",
+      "brief": "Generate concept sketches for the eight new African American characters, ensuring diversity in facial features, hairstyles, and body types while maintaining consistency with the established art style.",
+      "set": "African American"
+    },
+    {
+      "id": "t2",
+      "brief": "Develop detailed character designs for each of the eight characters, including skin tone, hair texture, facial structure, and unique visual traits, based on the approved concept sketches.",
+      "set": "African American"
+    },
+    {
+      "id": "t3",
+      "brief": "Create full-color, high-resolution renderings of each character in a standard standing pose, with consistent lighting and background to ensure visual uniformity across the set.",
+      "set": "African American"
+    },
+    {
+      "id": "t4",
+      "brief": "Assign unique, non-repeating names to each character, ensuring no conflicts with existing names in the game\u2019s database, particularly avoiding duplicates like Darnell.",
+      "set": "African American"
+    },
+    {
+      "id": "t5",
+      "brief": "Compile all eight character assets into a single deliverable package with labeled files, including renderings, color palettes, and style guides, ready for David\u2019s review on the Characters tab.",
+      "set": "African American"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-11-07T17:15:22",
+      "agent": "orchestrator",
+      "text": "no runner yet for wardrobe-stylist: [Wardrobe Stylist] 40 new hats and shades"
+    },
+    {
+      "at": "2026-11-07T17:15:22",
+      "agent": "orchestrator",
+      "text": "no runner yet for roast-writer: [Roast Writer] 250 new roast lines"
+    },
+    {
+      "at": "2026-11-07T17:15:23",
+      "agent": "orchestrator",
+      "text": "PixelLab balance before: {'usd': 0.0, 'generations': 1940.0}"
+    },
+    {
+      "at": "2026-11-07T17:15:27",
+      "agent": "orchestrator",
+      "text": "plan for [Character Artist] First set: the other 8 characters: 5 tasks"
+    },
+    {
+      "at": "2026-11-07T17:15:34",
+      "agent": "critic",
+      "text": "GDD check on t1 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): pass"
+    },
+    {
+      "at": "2026-11-07T17:16:11",
+      "agent": "critic",
+      "text": "t1 fail: Afro hair, brown skin, simple facial features."
+    },
+    {
+      "at": "2026-11-07T17:16:11",
+      "agent": "character-artist",
+      "text": "t1 done: Darius (player16)"
+    },
+    {
+      "at": "2026-11-07T17:16:26",
+      "agent": "critic",
+      "text": "GDD check on t2 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): pass"
+    },
+    {
+      "at": "2026-11-07T17:16:26",
+      "agent": "critic",
+      "text": "GDD check on t2: a finding was dropped, a maybe, not a break (\"imply\"): The rule forbids facial features that are exaggerated or caricatured, and 'neat, full, and slightly asymmetrical' beard is a stylistic detail that could imply a caricatured or overly specific feature beyond the allowed cartoon treatment."
+    },
+    {
+      "at": "2026-11-07T17:16:26",
+      "agent": "critic",
+      "text": "GDD check on t2: a finding was dropped, a maybe, not a break (\"risks\"): The combination of 'thin eyebrows' and 'small eyes' constitutes an exaggerated facial feature that deviates from the standard cartoon treatment and risks caricature."
+    },
+    {
+      "at": "2026-11-07T17:17:07",
+      "agent": "critic",
+      "text": "t2 fail: Afro hair, brown skin, no beard, simple face."
+    },
+    {
+      "at": "2026-11-07T17:17:07",
+      "agent": "character-artist",
+      "text": "t2 done: James (player17)"
+    },
+    {
+      "at": "2026-11-07T17:17:20",
+      "agent": "critic",
+      "text": "GDD check on t3 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): pass"
+    },
+    {
+      "at": "2026-11-07T17:17:47",
+      "agent": "bridge",
+      "text": "sent back t3: Make the face look less like player11's: difference 25.8, needs at least 29.7."
+    },
+    {
+      "at": "2026-11-07T17:17:57",
+      "agent": "critic",
+      "text": "GDD check on t3 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): pass"
+    },
+    {
+      "at": "2026-11-07T17:17:57",
+      "agent": "critic",
+      "text": "GDD check on t3: a finding was dropped, a maybe, not a break (\"imply\"): The description includes 'geometric crown' and 'asymmetrical', which imply exaggerated or stylized features that could make the character visually distinguishable in a way that may cross into caricature, violating the rule against exaggerated features."
+    },
+    {
+      "at": "2026-11-07T17:17:57",
+      "agent": "critic",
+      "text": "GDD check on t3: a finding was dropped, a maybe, not a break (\"risk\"): The specific description of 'geometric crown' and 'asymmetrical' cornrows is overly detailed and unique, increasing the risk of visual confusion with existing characters, especially if similar stylization exists elsewhere."
+    },
+    {
+      "at": "2026-11-07T17:18:37",
+      "agent": "critic",
+      "text": "t3 pass: Dark skin, short hair, neutral expression."
+    },
+    {
+      "at": "2026-11-07T17:18:37",
+      "agent": "character-artist",
+      "text": "t3 done: Marcus (player18)"
+    },
+    {
+      "at": "2026-11-07T17:18:52",
+      "agent": "critic",
+      "text": "GDD check on t4 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): pass"
+    },
+    {
+      "at": "2026-11-07T17:18:52",
+      "agent": "critic",
+      "text": "GDD check on t4: a finding was dropped, a maybe, not a break (\"implies\"): The description specifies a geometric crown, which implies a stylized, potentially exaggerated silhouette that may not be bold or simple enough at game size."
+    },
+    {
+      "at": "2026-11-07T17:18:52",
+      "agent": "critic",
+      "text": "GDD check on t4: a finding was dropped, a maybe, not a break (\"may\"): Daniel is not one of the original ten names (Larry, Doug, Norm, Greg, Carl, Steve, Barry, Terry, Kevin, Phil), so this is not a name conflict, but the name 'Daniel' is not listed as a permitted name in the current roster, and the set's names must follow the 'comically stereotypical but not offensive"
+    },
+    {
+      "at": "2026-11-07T17:19:37",
+      "agent": "critic",
+      "text": "t4 pass: Dark skin, short hair, neutral expression."
+    },
+    {
+      "at": "2026-11-07T17:19:37",
+      "agent": "character-artist",
+      "text": "t4 done: Daniel (player19)"
+    },
+    {
+      "at": "2026-11-07T17:19:50",
+      "agent": "critic",
+      "text": "GDD check on t5 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): pass"
+    },
+    {
+      "at": "2026-11-07T17:20:24",
+      "agent": "critic",
+      "text": "t5 pass: The character has a large afro and a neutral expression."
+    },
+    {
+      "at": "2026-11-07T17:20:24",
+      "agent": "character-artist",
+      "text": "t5 done: Derrick (player20)"
+    },
+    {
+      "at": "2026-11-07T17:20:31",
+      "agent": "orchestrator",
+      "text": "PixelLab this run: {'calls': 6, 'usd': 0.0, 'generations': 30.0}"
+    }
+  ],
+  "objective": "Create the remaining eight characters of the first set, all African American, in a single production run, following the established style and naming conventions.",
+  "pixellab": {
+    "calls": 6,
+    "usd": 0.0,
+    "generations": 30.0
+  }
+}

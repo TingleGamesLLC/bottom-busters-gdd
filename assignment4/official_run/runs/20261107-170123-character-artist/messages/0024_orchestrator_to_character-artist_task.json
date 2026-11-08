@@ -1,0 +1,14 @@
+{
+  "n": 24,
+  "at": "2026-11-07T17:05:01",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t4",
+    "brief": "Generate a color palette for the character, specifying skin tone, hair color, and outfit colors, ensuring visual harmony and differentiation from other characters.",
+    "set": "African American",
+    "slot": 16,
+    "notes": null
+  }
+}

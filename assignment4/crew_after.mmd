@@ -1,0 +1,49 @@
+flowchart TD
+    D(["Studio Director (David)<br/>plays every build, says commit"])
+    T[("Paperclip<br/>tasks, agents and costs, on the dev PC")]
+    O("Orchestrator<br/>qwen3:30b on the cluster")
+    P[("Bottom Busters GDD<br/>Section 21, Content guide")]
+    A("Maker: design<br/>Character Artist, Level Architect, Wardrobe Stylist<br/>qwen3:30b on the cluster")
+    R("Roast Writer<br/>qwen3:30b on the cluster: write, then pick")
+    K("Critic: GDD check<br/>qwen3:30b on the cluster")
+    F["Maker: build<br/>PixelLab and the art tools, ComfyUI, draw_wearables.py"]
+    B["Bridge<br/>a script, not AI: checks the files"]
+    C("Critic: picture review<br/>qwen2.5vl:7b on the cluster")
+    W("Technical Writer<br/>qwen3:30b on the cluster")
+    S[("C:\cluster\submissions<br/>work waiting for approval")]
+    H["Dashboard<br/>Crew and Characters tabs"]
+    G[("Bottom Busters<br/>Unity project")]
+    T -->|"next task by priority"| O
+    O -->|"moves the task, one task per agent, costs"| T
+    O -->|"task brief (JSON)"| A
+    P -->|"the opening and the maker's own part, read before it writes"| A
+    A -->|"design (JSON)"| K
+    P -->|"the same part, to check against"| K
+    K -->|"send back with the GDD rule broken, costs a cheek"| A
+    K -->|"passes the GDD check"| F
+    O -->|"batch brief"| R
+    P -->|"the opening and Section 21.2, read before it writes"| R
+    R -->|"lines that passed the Bridge's line checks"| K
+    K -->|"send back with the GDD rule broken"| R
+    R -->|"the best line for each event"| S
+    F -->|"art files and previews"| S
+    S -->|"submission"| B
+    B -->|"fix prompt if malformed"| A
+    B -->|"passes the format check"| C
+    C -->|"verdict (JSON)"| O
+    O -->|"the Critic's note, beside the work"| S
+    O -->|"run record"| W
+    W -->|"summary comment"| T
+    O -->|"status, cheeks, tokens"| H
+    S -->|"shown for approval"| H
+    H -->|"Approve or Reject with a note"| D
+    D -->|"decision.json"| S
+    D -->|"tests, says commit"| G
+    class O,A,R,K,C,W cluster
+    class F,B script
+    class D human
+    class P gdd
+    classDef cluster fill:#CFE8F7,stroke:#1F2A44
+    classDef script fill:#FBFBF8,stroke:#1F2A44
+    classDef human fill:#F3D9A4,stroke:#1F2A44
+    classDef gdd fill:#D8F0D2,stroke:#1F2A44

@@ -1,0 +1,180 @@
+{
+  "kind": "character",
+  "name": "James (player17). Critic's note: Reconnect the hair to the head for a more cohesive look.",
+  "agent": "Character Artist",
+  "slot": 17,
+  "skin": "player17",
+  "first_name": "James",
+  "set": "African American",
+  "face": {
+    "eyes": [
+      [
+        473,
+        234
+      ],
+      [
+        566,
+        234
+      ]
+    ],
+    "mouth": [
+      543,
+      269
+    ],
+    "eye_boxes": [
+      [
+        456,
+        490,
+        223,
+        245
+      ],
+      [
+        549,
+        583,
+        223,
+        245
+      ]
+    ],
+    "mouth_box": [
+      503,
+      583,
+      246,
+      292
+    ]
+  },
+  "concept": {
+    "first_name": "James",
+    "hair": "Tight, coiled afro with a slight asymmetrical lift on one side",
+    "hair_color": "black",
+    "beard": true,
+    "beard_desc": "neat, full, and slightly asymmetrical",
+    "face": "thin eyebrows, small eyes, neutral expression",
+    "skin_tone": "chestnut",
+    "why_distinct": "The combination of a uniquely asymmetrical afro and a full, asymmetrical beard sets Curtis apart from the roster\u2019s similar afros and beards.",
+    "set": "African American",
+    "name": "James"
+  },
+  "seed": 17153200,
+  "rect": {
+    "x": 237,
+    "y": 54,
+    "width": 503,
+    "height": 956
+  },
+  "files": [
+    "Resources/CharacterIdle/player17_idle_00.png",
+    "Resources/CharacterIdle/player17_idle_00.png.meta",
+    "Resources/CharacterIdle/player17_idle_01.png",
+    "Resources/CharacterIdle/player17_idle_01.png.meta",
+    "Resources/CharacterIdle/player17_idle_02.png",
+    "Resources/CharacterIdle/player17_idle_02.png.meta",
+    "Resources/DeathFlail/player17_flail_00.png",
+    "Resources/DeathFlail/player17_flail_00.png.meta",
+    "Resources/DeathFlail/player17_flail_01.png",
+    "Resources/DeathFlail/player17_flail_01.png.meta",
+    "Resources/DeathFlail/player17_flail_02.png",
+    "Resources/DeathFlail/player17_flail_02.png.meta",
+    "Resources/DeathFlail/player17_flail_03.png",
+    "Resources/DeathFlail/player17_flail_03.png.meta",
+    "Resources/DeathFlail/player17_flail_04.png",
+    "Resources/DeathFlail/player17_flail_04.png.meta",
+    "Resources/DeathFlail/player17_flail_05.png",
+    "Resources/DeathFlail/player17_flail_05.png.meta",
+    "Resources/DeathFlail/player17_flail_06.png",
+    "Resources/DeathFlail/player17_flail_06.png.meta",
+    "Resources/DeathFlail/player17_flail_07.png",
+    "Resources/DeathFlail/player17_flail_07.png.meta",
+    "Resources/DeathFlail/player17_flail_08.png",
+    "Resources/DeathFlail/player17_flail_08.png.meta",
+    "Resources/DeathFlail/player17_flail_09.png",
+    "Resources/DeathFlail/player17_flail_09.png.meta",
+    "Resources/DeathFlail/player17_flail_10.png",
+    "Resources/DeathFlail/player17_flail_10.png.meta",
+    "Resources/DeathFlail/player17_flail_11.png",
+    "Resources/DeathFlail/player17_flail_11.png.meta",
+    "Resources/DeathSplat/player17_splat.png",
+    "Resources/DeathSplat/player17_splat.png.meta",
+    "Resources/DeathSplat/player17_splatchar.png",
+    "Resources/DeathSplat/player17_splatchar.png.meta",
+    "Resources/FartFlap/player17_flap_00.png",
+    "Resources/FartFlap/player17_flap_00.png.meta",
+    "Resources/FartFlap/player17_flap_01.png",
+    "Resources/FartFlap/player17_flap_01.png.meta",
+    "Resources/FartFlap/player17_flap_02.png",
+    "Resources/FartFlap/player17_flap_02.png.meta",
+    "Resources/FartFlap/player17_flap_03.png",
+    "Resources/FartFlap/player17_flap_03.png.meta",
+    "Resources/FartFlap/player17_flap_04.png",
+    "Resources/FartFlap/player17_flap_04.png.meta",
+    "Resources/FartFlap/player17_flap_05.png",
+    "Resources/FartFlap/player17_flap_05.png.meta",
+    "Resources/FartFlap/player17_flap_06.png",
+    "Resources/FartFlap/player17_flap_06.png.meta",
+    "Resources/FartFlap/player17_flap_07.png",
+    "Resources/FartFlap/player17_flap_07.png.meta",
+    "Sprites/Characters/player17.png",
+    "Sprites/Characters/player17.png.meta"
+  ],
+  "pixellab": {
+    "calls": 1,
+    "usd": 0.0,
+    "generations": 5.0
+  },
+  "previews": [
+    "preview_lineup.png",
+    "preview_body.png",
+    "preview_head.png",
+    "preview_splat.png",
+    "preview_strip_flail.png",
+    "preview_strip_idle.png",
+    "preview_strip_flap.png"
+  ],
+  "card": "77b8be0a-9999-4c82-976a-e88c72a3ad05",
+  "card_name": "[Character Artist] First set: the other 8 characters",
+  "run": "20261107-171522-character-artist",
+  "bridge": {
+    "nearest_roster": "player11",
+    "difference_from_nearest": 20.7,
+    "hair_distance": 14.4,
+    "nearest_hair": "player11",
+    "face_distance": 31.6,
+    "nearest_face": "player11",
+    "skin_distance": 0.0,
+    "nearest_skin": "player11",
+    "size_mb": 5.95,
+    "running_total_mb": 41.64
+  },
+  "critic": {
+    "what_i_see": "Afro hair, brown skin, no beard, simple face.",
+    "tell_apart": true,
+    "problems": [
+      "hair looks detached from head"
+    ],
+    "verdict": "fail",
+    "note_for_artist": "Reconnect the hair to the head for a more cohesive look."
+  },
+  "gdd_check": {
+    "verdict": "pass",
+    "problems": [],
+    "note_for_maker": "",
+    "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1",
+    "dropped": [
+      {
+        "finding": {
+          "rule": "No hats, glasses, masks or held objects.",
+          "words": "beard: neat, full, and slightly asymmetrical",
+          "why": "The rule forbids facial features that are exaggerated or caricatured, and 'neat, full, and slightly asymmetrical' beard is a stylistic detail that could imply a caricatured or overly specific feature beyond the allowed cartoon treatment."
+        },
+        "dropped": "a maybe, not a break (\"imply\")"
+      },
+      {
+        "finding": {
+          "rule": "Every face gets the same cartoon treatment, with no exaggerated features.",
+          "words": "thin eyebrows, small eyes, neutral expression",
+          "why": "The combination of 'thin eyebrows' and 'small eyes' constitutes an exaggerated facial feature that deviates from the standard cartoon treatment and risks caricature."
+        },
+        "dropped": "a maybe, not a break (\"risks\")"
+      }
+    ]
+  }
+}

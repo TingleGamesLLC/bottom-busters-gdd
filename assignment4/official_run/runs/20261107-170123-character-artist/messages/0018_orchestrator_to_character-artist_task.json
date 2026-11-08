@@ -1,0 +1,14 @@
+{
+  "n": 18,
+  "at": "2026-11-07T17:04:03",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t3",
+    "brief": "Develop a unique outfit or accessory set for the character that complements their personality and visual theme, ensuring consistency with the game's established wardrobe style.",
+    "set": "African American",
+    "slot": 15,
+    "notes": null
+  }
+}

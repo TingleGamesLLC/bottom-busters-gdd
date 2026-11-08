@@ -1,0 +1,89 @@
+{
+  "kind": "wardrobe item",
+  "agent": "Wardrobe Stylist",
+  "name": "Top Hat",
+  "description": "Hat, 2 color areas",
+  "item": "top_hat_2",
+  "item_kind": "hat",
+  "idea": "idea_01",
+  "regions": [
+    "HAT",
+    "BAND"
+  ],
+  "files": [
+    "top_hat_2.png",
+    "top_hat_2_mask.png",
+    "recipe.json"
+  ],
+  "previews": [
+    "closeup.png",
+    "sheet.png"
+  ],
+  "fit": {
+    "player": true,
+    "player2": true,
+    "player3": true,
+    "player4": true,
+    "player5": true,
+    "player6": true,
+    "player7": true,
+    "player8": true,
+    "player9": true,
+    "player10": true
+  },
+  "card": "d54a7f68-7add-4869-aea6-6fbdd9b85f78",
+  "card_name": "[Wardrobe Stylist] Redo Top Hat: its upside down",
+  "run": "20261107-165733-wardrobe-stylist",
+  "bridge": {
+    "nearest_item": "Top Hat",
+    "difference": 66.1,
+    "size_kb": 511
+  },
+  "critic": {
+    "verdict": "pass",
+    "what_i_see": "The item resembles a top hat and is positioned on top of each character's head.",
+    "problems": [],
+    "note_for_artist": "",
+    "answers": {
+      "reads": true,
+      "sits": true
+    },
+    "facts": {
+      "nearest_item": "Top Hat",
+      "difference": 66.1,
+      "size_kb": 511
+    }
+  },
+  "gdd_check": {
+    "verdict": "pass",
+    "problems": [],
+    "note_for_maker": "",
+    "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.3",
+    "dropped": [
+      {
+        "finding": {
+          "rule": "A hat has one to three color areas that players recolor at Character Select.",
+          "words": "players_recolor_it True",
+          "why": "The hat has two color areas, but the rule limits hats to one to three; this is not a violation since it's within the limit, but the issue is that the design includes a band that is not a standard part of the existing hats and may not fit the game's style."
+        },
+        "dropped": "a maybe, not a break (\"may\")"
+      },
+      {
+        "finding": {
+          "rule": "Every item has to sit right on every character.",
+          "words": "A tall flat-topped cylinder on a narrow brim, with a band just above the brim.",
+          "why": "The description implies a specific shape that may not align properly with the floating, balloon-like character design or the existing hat fit standards, risking misalignment or floating above the head."
+        },
+        "dropped": "its rule is about how the finished art looks, which is checked on the picture after it's made"
+      },
+      {
+        "finding": {
+          "rule": "It has to look like it belongs with the four already in the game.",
+          "words": "A tall flat-topped cylinder on a narrow brim, with a band just above the brim.",
+          "why": "The top hat's design is too elaborate and stylized compared to the simple, flat, and cartoonish hats already in the game, breaking visual consistency."
+        },
+        "dropped": "its rule is about how the finished art looks, which is checked on the picture after it's made"
+      }
+    ]
+  }
+}

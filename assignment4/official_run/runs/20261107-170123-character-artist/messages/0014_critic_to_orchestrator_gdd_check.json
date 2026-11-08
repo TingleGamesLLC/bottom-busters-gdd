@@ -1,0 +1,32 @@
+{
+  "n": 14,
+  "at": "2026-11-07T17:03:29",
+  "from": "critic",
+  "to": "orchestrator",
+  "kind": "gdd_check",
+  "payload": {
+    "task": "t2",
+    "verdict": "pass",
+    "problems": [],
+    "note_for_maker": "",
+    "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1",
+    "dropped": [
+      {
+        "finding": {
+          "rule": "No hats, glasses, masks or held objects.",
+          "words": "beard: neat, full, and tightly coiled",
+          "why": "The description includes a beard, which is not allowed as part of a character's base design."
+        },
+        "dropped": "the second look found no break: A beard is not a hat, glasses, mask, or held object."
+      },
+      {
+        "finding": {
+          "rule": "The face. Every face gets the same cartoon treatment, with no exaggerated features.",
+          "words": "thin, arched brows, wide-set eyes, calm expression",
+          "why": "The description includes 'thin, arched brows' and 'wide-set eyes', which are exaggerated features not allowed by the rule."
+        },
+        "dropped": "the second look found no break: The described features are within normal cartoon treatment and not exaggerated."
+      }
+    ]
+  }
+}

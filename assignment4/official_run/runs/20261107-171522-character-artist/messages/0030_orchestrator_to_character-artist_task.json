@@ -1,0 +1,14 @@
+{
+  "n": 30,
+  "at": "2026-11-07T17:19:38",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t5",
+    "brief": "Compile all eight character assets into a single deliverable package with labeled files, including renderings, color palettes, and style guides, ready for David\u2019s review on the Characters tab.",
+    "set": "African American",
+    "slot": 20,
+    "notes": null
+  }
+}

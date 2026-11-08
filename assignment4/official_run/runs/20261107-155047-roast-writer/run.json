@@ -1,0 +1,204 @@
+{
+  "id": "20261107-155047-roast-writer",
+  "started": "2026-11-07T15:50:47",
+  "status": "waiting on David",
+  "card": "[Roast Writer] 250 new roast lines",
+  "tasks": [],
+  "events": [
+    {
+      "at": "2026-11-07T15:50:47",
+      "agent": "orchestrator",
+      "text": "no runner yet for level-architect: [Level Architect] 100 new animated backgrounds"
+    },
+    {
+      "at": "2026-11-07T15:50:47",
+      "agent": "orchestrator",
+      "text": "no runner yet for wardrobe-stylist: [Wardrobe Stylist] 40 new hats and shades"
+    },
+    {
+      "at": "2026-11-07T15:51:02",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"The lifeguard is on a break. A permanent one.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T15:51:02",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Efficient. Brutal. Faintly upsetting.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T15:51:02",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"You win. The smell will linger far longer than the achievement.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T15:51:02",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"That was not a plan. That was a series of accidents in a row.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T15:51:02",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Covered in it AND dead. A comprehensive defeat.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T15:51:02",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Precision bombing. Genuously disgusting. Well done.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T15:51:02",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Every one of them saw it coming and could do nothing.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T15:51:02",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"You went through them like a bad curry.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T15:51:37",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"The lifeguard is on a break. A permanent one.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T15:51:52",
+      "agent": "roast-writer",
+      "text": "critic: sent back \"The lifeguard is off duty. So are you.\" against the GDD: The line 'The lifeguard is off duty. So are you.' implies a failure tied to bodily function or shame, but more critically, it breaks the rule by being a weak, non-specific joke that doesn't tie to the event with the required tone or structure. It lacks the deadpan, formal delivery and the turn after a flat verdict. It also fails to reference the event meaningfully\u2014'off duty' is repeated without consequence, and it doesn't treat the situation as an official matter. It\u2019s a clich\u00e9 with no gross-out or physical humor, and it doesn\u2019t fit the voice of the narrator as defined in the GDD. (GDD: \"The gross thing is never named. It's 'it,' a smell, a plumber, a bad curry, never 'poop' or 'fart.'\")"
+    },
+    {
+      "at": "2026-11-07T15:51:52",
+      "agent": "roast-writer",
+      "text": "critic: 6 of 7 Lifeguard Off Duty lines passed the GDD check"
+    },
+    {
+      "at": "2026-11-07T15:51:59",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"A streak. Unbroken. Unforgivable.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T15:52:01",
+      "agent": "roast-writer",
+      "text": "critic: sent back \"Ten in a row. The level is now a monument.\" against the GDD: The line references 'Ten in a row' which implies a named gross thing (poop), breaking the rule against naming the gross thing. (GDD: \"The gross thing is never named. It's 'it,' a smell, a plumber, a bad curry, never 'poop' or 'fart.'\")"
+    },
+    {
+      "at": "2026-11-07T15:52:01",
+      "agent": "roast-writer",
+      "text": "critic: 2 of 3 Longest Streak Of Poo lines passed the GDD check"
+    },
+    {
+      "at": "2026-11-07T15:52:11",
+      "agent": "roast-writer",
+      "text": "critic: sent back \"Full coverage. Even the air gave up. Period.\" against the GDD: The line implies the 'it' of full coverage is named or directly referenced through 'air gave up,' which leans into naming the gross thing indirectly, violating the rule against referencing the gross thing by association or metaphor. (GDD: \"The gross thing is never named. It's 'it,' a smell, a bad curry, never 'poop' or 'fart.'\")"
+    },
+    {
+      "at": "2026-11-07T15:52:11",
+      "agent": "roast-writer",
+      "text": "critic: sent back \"Every target hit. Every one of them. A thorough mess.\" against the GDD: The line is overly literal and explanatory, using 'A thorough mess' as a direct explanation rather than a deadpan, formal verdict with a turn, making it fail the humor and tone requirements. (GDD: \"A line that passes every rule and still isn't funny.\")"
+    },
+    {
+      "at": "2026-11-07T15:52:11",
+      "agent": "roast-writer",
+      "text": "critic: sent back \"You left nothing untouched. Nothing left to say.\" against the GDD: The line is a clich\u00e9d, non-sequitur conclusion with no comedic payoff or turn, failing to deliver the required deadpan, formal tone with a sharp, unexpected twist. (GDD: \"A line that passes every rule and still isn't funny.\")"
+    },
+    {
+      "at": "2026-11-07T15:52:11",
+      "agent": "roast-writer",
+      "text": "critic: sent back \"No survivors. No witnesses. No dignity.\" against the GDD: The line uses the phrase 'No dignity,' which is a common pop culture trope often associated with over-the-top or dramatic statements, violating the rule against pop culture references. (GDD: \"No pop culture.\")"
+    },
+    {
+      "at": "2026-11-07T15:52:11",
+      "agent": "roast-writer",
+      "text": "critic: 0 of 4 Full Coverage lines passed the GDD check"
+    },
+    {
+      "at": "2026-11-07T15:52:20",
+      "agent": "roast-writer",
+      "text": "critic: sent back \"Full coverage. The air itself refused to carry it further.\" against the GDD: The line references 'it' in a way that directly names the gross thing by implication, and 'the smell' is too explicit and breaks the rule of never naming the gross thing directly. (GDD: \"The gross thing is never named. It's 'it,' a smell, a plumber, a bad curry, never 'poop' or 'fart.'\")"
+    },
+    {
+      "at": "2026-11-07T15:52:20",
+      "agent": "roast-writer",
+      "text": "critic: sent back \"Every target hit. The cleanup crew has been reassigned.\" against the GDD: The phrase 'the cleanup crew has been reassigned' implies the gross thing is named or directly referenced, violating the rule against naming the gross thing. (GDD: \"The gross thing is never named. It's 'it,' a smell, a plumber, a bad curry, never 'poop' or 'fart.'\")"
+    },
+    {
+      "at": "2026-11-07T15:52:20",
+      "agent": "roast-writer",
+      "text": "critic: sent back \"You left no trace. Just the smell. And the regret.\" against the GDD: The line explicitly names 'the smell,' which directly violates the rule against naming the gross thing. (GDD: \"The gross thing is never named. It's 'it,' a smell, a plumber, a bad curry, never 'poop' or 'fart.'\")"
+    },
+    {
+      "at": "2026-11-07T15:52:20",
+      "agent": "roast-writer",
+      "text": "critic: sent back \"Complete. The level has been declared unfit for occupancy.\" against the GDD: The line implies the gross thing by stating the level is unfit for occupancy due to it, which indirectly names the gross thing through context, violating the rule. (GDD: \"The gross thing is never named. It's 'it,' a smell, a plumber, a bad curry, never 'poop' or 'fart.'\")"
+    },
+    {
+      "at": "2026-11-07T15:52:20",
+      "agent": "roast-writer",
+      "text": "critic: 0 of 4 Full Coverage lines passed the GDD check"
+    },
+    {
+      "at": "2026-11-07T15:52:20",
+      "agent": "roast-writer",
+      "text": "roast-writer: no Full Coverage line on a loss passed the checks, so that one is left out"
+    },
+    {
+      "at": "2026-11-07T15:52:24",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Efficient. Brutal. Faintly upsetting.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T15:52:24",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"That was not a plan. That was a series of accidents in a row.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T15:52:24",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Every one of those was a decision you made on purpose.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T15:52:24",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"You went through them like a bad curry.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T15:52:25",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Efficient. Brutal. Faintly upsetting.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T15:52:25",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"That was not a plan. That was a series of accidents in a row.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T15:52:25",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"You win. The smell will linger far longer than the achievement.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T15:52:25",
+      "agent": "roast-writer",
+      "text": "roast-writer: dropped \"Victory. Somewhere, a plumber felt a disturbance.\": a repeat of a line that's already there"
+    },
+    {
+      "at": "2026-11-07T15:52:25",
+      "agent": "roast-writer",
+      "text": "roast-writer: no Methane Released line on a win passed the checks, so that one is left out"
+    },
+    {
+      "at": "2026-11-07T15:52:25",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_drowned_001 (Lifeguard Off Duty, on a win, not in Gauntlet): No one\u2019s coming. Not even the cleanup crew."
+    },
+    {
+      "at": "2026-11-07T15:52:25",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_drowned_002 (Lifeguard Off Duty, on a loss): Even the current looked away."
+    },
+    {
+      "at": "2026-11-07T15:52:25",
+      "agent": "roast-writer",
+      "text": "roast-writer: rw_longestStreak_001 (Longest Streak Of Poo, on a win, not in Gauntlet): That was not a strategy. That was a statement."
+    }
+  ]
+}

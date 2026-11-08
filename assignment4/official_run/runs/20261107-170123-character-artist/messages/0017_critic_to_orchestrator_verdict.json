@@ -1,0 +1,17 @@
+{
+  "n": 17,
+  "at": "2026-11-07T17:04:03",
+  "from": "critic",
+  "to": "orchestrator",
+  "kind": "verdict",
+  "payload": {
+    "task": "t2",
+    "what_i_see": "Afro hair, brown skin, simple face with two eyes and a mouth.",
+    "tell_apart": true,
+    "problems": [
+      "hair looks detached from the head"
+    ],
+    "verdict": "pass",
+    "note_for_artist": "Ensure the hair is properly attached to the head to avoid detachment."
+  }
+}
