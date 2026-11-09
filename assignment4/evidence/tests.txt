@@ -1,4 +1,4 @@
-Crew tests, 2026-11-08 22:02, C:\cluster\crew
+Crew tests, 2026-11-08 22:14, C:\cluster\crew
 
 === test_approvals.py: PASS
 Only submissions with no decision and no review card are waiting
@@ -182,8 +182,8 @@ A finding that quotes a sentence describing the game today (the terrain themes) 
 A design's text can't fail on a rule about how the finished art looks; each such rule is still in the GDD
 A finding quoting a whole paragraph is read as its one sentence, so it's checked against the right rule
 A finding the second look agrees with sends the work back, quoting the GDD rule: it says poop (GDD: "The gross thing is never named. It's 'it
-A GDD that isn't readable stops the run: the GDD isn't readable at C:\Users\david\AppData\Local\Temp\tmp1opnz332\gdd.md: 
-A GDD that no Section 21 stops the run: the GDD at C:\Users\david\AppData\Local\Temp\tmp1opnz332\gdd.md has no Section 2
+A GDD that isn't readable stops the run: the GDD isn't readable at C:\Users\david\AppData\Local\Temp\tmpe59neuqb\gdd.md: 
+A GDD that no Section 21 stops the run: the GDD at C:\Users\david\AppData\Local\Temp\tmpe59neuqb\gdd.md has no Section 2
 A GDD that missing its opening stops the run: the GDD's Content guide is missing its opening or Section 21.2
 An agent with no part in the Content guide stops
 all passed
@@ -316,55 +316,55 @@ Approved lines collect outside the game, in the game's own line format
 Every line that passed the Bridge goes to the Critic's GDD check, with its event and outcome
 A line the Critic sent back is dropped, and its GDD reason reaches that event's next try
 Only a line that passed the GDD check goes up, and the run log says what the Critic sent back
-[22:04:06] roast-writer: waiting on David's calls on 3 lines before the next batch
+[22:15:57] roast-writer: waiting on David's calls on 3 lines before the next batch
 While David is deciding the last card, the run leaves the card alone
 
 Done. 2 roast lines for David.
-Run folder: C:\Users\david\AppData\Local\Temp\tmppt48t9ij\runs\r-go
+Run folder: C:\Users\david\AppData\Local\Temp\tmpf0sckbo7\runs\r-go
 The Orchestrator hands the batch the Critic's GDD check
 A batch leases the card, closes its task, and puts the card back in the queue for the next batch
-[22:04:06] orchestrator: stopped: MindRouter is down
+[22:15:57] orchestrator: stopped: MindRouter is down
 A stopped batch cancels its task and puts the card back with the reason
-[22:04:06] roast-writer: all 250 lines approved; the card is done
+[22:15:57] roast-writer: all 250 lines approved; the card is done
 With 250 approved, the card is done, and its note names the file with forward slashes
 all passed
 
 === test_sendback.py: PASS
 Bridge catches a missing flail frame: Write Resources/DeathFlail/player11_flail_05.png: the manifest lists it but it isn't there.
 Bridge passes a good character
-[22:04:09] bridge: sent back t1: Write Resources/DeathFlail/player11_flail_05.png: the manifest lists it but it isn't there. Write player11_flail_05.png and its .meta.
-[22:04:10] critic: t1 pass: stand-in
+[22:16:01] bridge: sent back t1: Write Resources/DeathFlail/player11_flail_05.png: the manifest lists it but it isn't there. Write player11_flail_05.png and its .meta.
+[22:16:02] critic: t1 pass: stand-in
 Bad then good: the maker got the fix prompt and the task finished as player11
 Paperclip got the maker's task with the Bridge's send-back on it, and the Critic's review, both closed
 Only work that passed reaches the approval screen
-[22:04:10] bridge: sent back t1: Write Resources/DeathFlail/player11_flail_05.png: the manifest lists it but it isn't there. Write player11_flail_05.png and its .meta.
-[22:04:11] bridge: sent back t1: Write Resources/DeathFlail/player11_flail_05.png: the manifest lists it but it isn't there. Write player11_flail_05.png and its .meta.
+[22:16:02] bridge: sent back t1: Write Resources/DeathFlail/player11_flail_05.png: the manifest lists it but it isn't there. Write player11_flail_05.png and its .meta.
+[22:16:03] bridge: sent back t1: Write Resources/DeathFlail/player11_flail_05.png: the manifest lists it but it isn't there. Write player11_flail_05.png and its .meta.
 Bad twice: stopped after two tries: character-artist lost both cheeks on t1: Write Resources/DeathFlail/player11_flail_05.png:
 The stopped task is closed as cancelled in Paperclip, saying why
 The failed attempt stays with the run, off the approval screen, and holds no slot
-[22:04:11] critic: GDD check on t1 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): fail: green hair breaks Section 21.1
-[22:04:11] critic: GDD check on t1 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): pass
-[22:04:12] critic: t1 pass: stand-in
+[22:16:03] critic: GDD check on t1 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): fail: green hair breaks Section 21.1
+[22:16:03] critic: GDD check on t1 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): pass
+[22:16:03] critic: t1 pass: stand-in
 GDD fail, then pass: the design went back with the GDD rule it broke, and only the passing design was built
 Every design, verdict and send-back is a handoff file in the run's messages folder
 Paperclip shows each GDD check as the Critic's task, and the manifest carries the passing verdict
-[22:04:12] critic: GDD check on t1 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): fail: green hair breaks Section 21.1
-[22:04:12] critic: GDD check on t1 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): fail: green hair breaks Section 21.1
+[22:16:03] critic: GDD check on t1 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): fail: green hair breaks Section 21.1
+[22:16:03] critic: GDD check on t1 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): fail: green hair breaks Section 21.1
 GDD fail twice: both cheeks popped, nothing was built, and the run says why: character-artist lost both cheeks on t1: the Critic sent it back again
 A stopped run's card goes back to the Backlog, saying why
-[22:04:12] orchestrator: asked David, and the card waits: player21 is past player20
+[22:16:03] orchestrator: asked David, and the card waits: player21 is past player20
 A question for David is asked once and blocks the card, instead of a stop that repeats
 A set card makes what its set still needs: a rejection with no note is remade, one sent back as a redo isn't counted twice
 Every maker gets its own child run at the same time, and the worst exit code is the run's
-[22:04:12] orchestrator: no card on the board that this crew can work
-[22:04:12] orchestrator: no card on the board that this crew can work
-[22:04:12] orchestrator: no card on the board that this crew can work
-[22:04:12] orchestrator: no card on the board that this crew can work
-[22:04:12] orchestrator: no card on the board that this crew can work
+[22:16:03] orchestrator: no card on the board that this crew can work
+[22:16:03] orchestrator: no card on the board that this crew can work
+[22:16:03] orchestrator: no card on the board that this crew can work
+[22:16:03] orchestrator: no card on the board that this crew can work
+[22:16:03] orchestrator: no card on the board that this crew can work
 crew upkeep step failed, and the makers start anyway: RuntimeError: Paperclip answered HTTP 500
 Closing finished cards and the diagram run once before the makers start, never inside one maker's run; the Level Architect's run stores only its own backgrounds
 A maker's child run takes only that maker's cards
-[22:04:12] critic: t1 fail: stand-in
+[22:16:04] critic: t1 fail: stand-in
 A Critic fail reaches David as a note, without a send-back
 all passed
 
@@ -385,22 +385,22 @@ Art that doesn't match its recipe is refused
 Published items wait on David, and no new batch starts until he decides them
 An approved item goes outside the game with its art, mask, recipe and a catalog entry in the game's format
 A redo card redraws the same idea with David's note
-[22:04:14] wardrobe-stylist: waiting on David's calls on 2 items
+[22:16:06] wardrobe-stylist: waiting on David's calls on 2 items
 While David is deciding the last items, the run leaves the card alone
-[22:04:14] wardrobe-stylist: t1 done: n (s)
-[22:04:14] wardrobe-stylist: t2 done: n (s)
-[22:04:14] wardrobe-stylist: t3 done: n (s)
-[22:04:14] wardrobe-stylist: t4 done: n (s)
-[22:04:14] wardrobe-stylist: t5 done: n (s)
+[22:16:06] wardrobe-stylist: t1 done: n (s)
+[22:16:06] wardrobe-stylist: t2 done: n (s)
+[22:16:06] wardrobe-stylist: t3 done: n (s)
+[22:16:06] wardrobe-stylist: t4 done: n (s)
+[22:16:06] wardrobe-stylist: t5 done: n (s)
 
 Done. summary
-Run folder: C:\Users\david\AppData\Local\Temp\tmp90rirad1\runs\20261104-120000-w-go
+Run folder: C:\Users\david\AppData\Local\Temp\tmptxshzm1j\runs\20261104-120000-w-go
 A batch draws 5 items through the usual steps and puts the card back in the queue
-[22:04:14] wardrobe-stylist: t1 done: n (s)
+[22:16:06] wardrobe-stylist: t1 done: n (s)
 
 Done. summary
-Run folder: C:\Users\david\AppData\Local\Temp\tmp90rirad1\runs\20261104-120000-w-redo
+Run folder: C:\Users\david\AppData\Local\Temp\tmptxshzm1j\runs\20261104-120000-w-redo
 A redo card goes first: the same idea with David's note, then it waits at Your Playtest
-[22:04:14] wardrobe-stylist: all 40 items approved; the card is done
+[22:16:06] wardrobe-stylist: all 40 items approved; the card is done
 With 40 approved, the card is done
 all passed

@@ -640,18 +640,86 @@ def splat_eye_boxes(light_body, boxes, keep):
             ys, xs = np.nonzero(np.isin(lab, found))
             wb = (xs.min() + wx0, xs.max() + wx0, ys.min() + wy0, ys.max() + wy0)
             if abs((wb[2] + wb[3]) / 2 - (y0 + y1) / 2) > (y1 - y0) / 2:
-                x0, x1, y0, y1 = wb   # the box held something else, the brows on Clayton: the whites are the eye
+                # The box held something else, the brows on Clayton: the whites are the eye, with the dark of the eye
+                # joined to them (his eyes are dark shapes round a white dot), from just above the whites down so the
+                # brows stay.
+                x0, x1, y0, y1 = wb
+                dark = (L < 90) & (light_body[..., 3] > 200)
+                rx0, ry0 = wb[0] - 36, wb[2] - 2
+                region = dark[ry0:wb[3] + 25, rx0:wb[1] + 37]   # 3 cells across, 2 down; a cell is ~12 px
+                seed = np.zeros(region.shape, bool)
+                seed[wb[2] - ry0:wb[3] - ry0 + 1, wb[0] - rx0:wb[1] - rx0 + 1] = True
+                lab2, _ = ndimage.label(region, structure=np.ones((3, 3)))
+                ids = sorted(set(np.unique(lab2[ndimage.binary_dilation(seed, iterations=2) & region]).tolist()) - {0})
+                if ids:
+                    ys2, xs2 = np.nonzero(np.isin(lab2, ids))
+                    x0, x1 = min(x0, xs2.min() + rx0), max(x1, xs2.max() + rx0)
+                    y0, y1 = min(y0, ys2.min() + ry0), max(y1, ys2.max() + ry0)
             else:
                 x0, x1, y0, y1 = min(x0, wb[0]), max(x1, wb[1]), min(y0, wb[2]), max(y1, wb[3])
-        grown.append((int(x0) - 4, int(x1) + 4, int(y0) - 1, int(y1) + 4))
+        grown.append((int(x0) - 12, int(x1) + 12, int(y0) - 1, int(y1) + 4))   # a cell either side takes the eye's outline
     return grown
+
+
+def splat_mouth_box(light_body, box):
+    """The mouth's box for the splat's frown, grown to the thin dark mouth lines next to it. A design that says "beard" gets
+    the head's whole mouth box, which missed the real mouth on David, Marcus, Clayton and James, and their smiles showed
+    under the frown. Big dark shapes are beard and stay; the chin's outline is below the reach."""
+    x0, x1, y0, y1 = box
+    dark = (lum(light_body[..., :3].astype(float)) < 110) & (light_body[..., 3] > 200)
+    rx0, ry0 = x0 - 36, y0 - 4
+    region = dark[ry0:y1 + 25, rx0:x1 + 37]   # 3 cells either side, 2 below; a cell is ~12 px
+    seed = np.zeros(region.shape, bool)
+    seed[y0 - ry0:y1 - ry0 + 1, x0 - rx0:x1 - rx0 + 1] = True
+    seed = ndimage.binary_dilation(seed, iterations=6)
+    lab, n = ndimage.label(region, structure=np.ones((3, 3)))
+    gx0, gx1, gy0, gy1 = x0, x1, y0, y1
+    for k in range(1, n + 1):
+        part = lab == k
+        if not (part & seed).any():
+            continue
+        ys, xs = np.nonzero(part)
+        if ys.min() == 0 or xs.min() == 0 or ys.max() == region.shape[0] - 1 or xs.max() == region.shape[1] - 1:
+            continue   # runs on past the reach: a beard or the face's outline
+        if part.sum() > 1900 or ys.max() - ys.min() + 1 > 40 or xs.max() - xs.min() + 1 > 120:   # ~14 cells, 3.5 tall, 10 wide
+            continue   # beard, or the face's outline
+        gx0, gx1 = min(gx0, xs.min() + rx0), max(gx1, xs.max() + rx0)
+        gy0, gy1 = min(gy0, ys.min() + ry0), max(gy1, ys.max() + ry0)
+    return (int(gx0) - 1, int(gx1) + 1, int(gy0) - 1, int(gy1) + 1)
+
+
+def clear_thin_lines(light_body, windows):
+    """Thin dark lines inside each (x0, x1, y0, y1) window painted over with the skin there: the live mouth's smile and
+    corners, and eye outline round the box. Beards and brows are thick, so they stay. Returns the new body and the pixels
+    painted, which take the tone like the rest of the skin. On 2026-11-08 Marcus's and James's smiles showed under the
+    frown, and Clayton's eye outline round the X."""
+    img = light_body.copy()
+    L = lum(img[..., :3].astype(float))
+    dark = (L < 110) & (img[..., 3] > 200)
+    painted = np.zeros(dark.shape, bool)
+    for (x0, x1, y0, y1) in windows:
+        win = dark[y0:y1 + 1, x0:x1 + 1]
+        thick = ndimage.binary_dilation(ndimage.binary_opening(win, structure=np.ones((25, 25))), iterations=2) & win   # 2 cells
+        thin = win & ~thick
+        lab, n = ndimage.label(thin, structure=np.ones((3, 3)))
+        edge = set(np.unique(np.concatenate([lab[0], lab[-1], lab[:, 0], lab[:, -1]])).tolist()) - {0}
+        thin &= ~np.isin(lab, list(edge))   # a thin beard runs on past the window to the jaw (Derrick's); a mouth line doesn't
+        around = img[y0:y1 + 1, x0:x1 + 1]
+        skin = around[(L[y0:y1 + 1, x0:x1 + 1] > 140) & (L[y0:y1 + 1, x0:x1 + 1] < 225) & (around[..., 3] > 200)]
+        if thin.any() and len(skin):
+            around[thin] = tuple(np.median(skin[:, :3], axis=0).astype(np.uint8)) + (255,)
+            painted[y0:y1 + 1, x0:x1 + 1] |= thin
+    return img, painted
 
 
 def make_splat(name, light_body, layer, tone, out, where):
     """splat_faces.py's own steps on this character's own eyes and mouth, with the skin moved to its tone at the end."""
     sf = splat_faces
     sf.EYES[name] = tuple(splat_eye_boxes(light_body, where["eye_boxes"], layer.hair_px))
-    sf.MOUTHS[name] = (tuple(where["mouth_box"]), tuple(where["mouth"]), None)
+    sf.MOUTHS[name] = (splat_mouth_box(light_body, where["mouth_box"]), tuple(where["mouth"]), None)
+    mx0, mx1, my0, my1 = sf.MOUTHS[name][0]
+    windows = [(mx0 - 24, mx1 + 24, my0 - 4, my1 + 14)]   # not round the eyes: one-cell brows would read as thin lines
+    light_body, cleared = clear_thin_lines(light_body, windows)
     sf.GAME_OUT = str(out / "Resources" / "DeathSplat")
     splatchar, splat, base = sf.load(sf.SPLATCHAR), sf.load(sf.SPLAT), sf.load(sf.SPLATBASE)
     marks, x_color = sf.x_marks(splatchar)
@@ -666,7 +734,7 @@ def make_splat(name, light_body, layer, tone, out, where):
     head = sf.shift(head, dx, dy)
     for side, (mx, my) in zip("LR", mids):
         sf.stamp(head, marks[side], mx + dx, my + dy, tuple(x_color) + (255,))
-    kept = layer.hair_px.copy()
+    kept = layer.hair_px & ~cleared
     for (x0, x1, y0, y1) in list(sf.EYES[name]) + [sf.MOUTHS[name][0]]:
         kept[y0:y1 + 1, x0:x1 + 1] = False   # painted over with skin, so it takes the tone; left light on Daniel and Derrick
     hair = (sf.shift(kept[..., None].astype(np.uint8), dx, dy)[..., 0] > 0) & (head[..., 3] > 0)   # never the splat's own chest under it
