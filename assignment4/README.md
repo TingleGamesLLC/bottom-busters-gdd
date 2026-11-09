@@ -21,6 +21,8 @@ All of it was made on 2026-11-07 by the crew on the local cluster (qwen3:30b-ins
 
 Every item waits for the Studio Director's Approve or Reject in Paperclip before it can go into the game.
 
+**Did it run?** Yes. Every output here came from the crew's runs on 2026-11-07, which are in `official_run/runs`. Five of those nine runs finished with their work up for approval. Four stopped: the first three, when the Critic was too strict (see What the Critic caught), and one character run, which twice picked a name that was already taken on its fourth character, after it had made Curtis, Reggie and Trevor. The next run made the other five. All 17 crew tests pass (`evidence/tests.txt`).
+
 ![The 8 new characters](official_run/the_8_new_characters.png)
 
 ## How the GDD drives it
