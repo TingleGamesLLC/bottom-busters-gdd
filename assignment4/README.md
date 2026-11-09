@@ -60,7 +60,7 @@ Every handoff is a JSON file in the run's `messages` folder, and every model pro
 - "The lifeguard is off duty. A permanent one." (Lifeguard Off Duty)
 - "On target. The structural integrity is not." (Direct Deposit, win)
 
-Where it falls short: 6 of the 22 use the same shape, "That was not X. That was Y.", which the GDD lists as a failure ("The same shape over and over"). The Critic checks each line on its own, so it doesn't see repetition across a batch. "Efficient. Unpleasantly thorough. Well done." also leans on the kept line "Efficient. Brutal. Faintly upsetting." The Studio Director's approvals are the final word on what's funny.
+Where it falls short: 6 of the 22 use the same shape. Four are "That was not X. That was Y." and two say it in other words ("It’s not a streak. It’s a warning."). The GDD lists that as a failure ("The same shape over and over"). The Critic checks each line on its own, so it doesn't see repetition across a batch. "Efficient. Unpleasantly thorough. Well done." also leans on the kept line "Efficient. Brutal. Faintly upsetting." The Studio Director's approvals are the final word on what's funny.
 
 **Characters, partly.** All 8 keep the same chubby body, the same cartoon face with two eyes, brows, a nose and a mouth, and no hats, glasses or masks, as Section 21.1 asks. The names are classic real first names, with no jokes or nicknames. Every face passed the Bridge's measured difference from every character made before it. Looking at them side by side, the set is short on variety: all 8 have black hair, five have rounded afros (Reggie, Trevor, Darius, James, Derrick), and two have cornrows (Marcus, Daniel). The face check compares each new character with the roster, not with the others made in the same batch.
 
