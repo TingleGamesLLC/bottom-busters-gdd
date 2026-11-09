@@ -2,6 +2,8 @@
 
 Assignment #4, Multi-Agent AI for Game Development (ELVTR). David St. Onge, Tingle Games LLC.
 
+The Studio Director, here and in the GDD, is David St. Onge, who approves or rejects everything the crew makes.
+
 The Assignment #3 crew made characters without reading the design document. For this assignment every maker reads the game's GDD before it writes anything, and a Critic checks each piece of work against the same part of the GDD before any art is made. Work that breaks a GDD rule goes back to its maker with the rule quoted, and costs it a cheek. Two lost cheeks stop the task.
 
 The GDD is `BOTTOM_BUSTERS_GDD.md` in the folder above this one. Section 21, the **Content guide**, was written for this assignment: an opening every agent reads, then one part per maker (21.1 Characters, 21.2 Roast lines, 21.3 Hats and shades, 21.4 Backgrounds).
