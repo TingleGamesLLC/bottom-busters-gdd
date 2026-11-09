@@ -1,6 +1,6 @@
 # What the Critic did, run by run
 
-Compiled from each run's `run.json` (C:\cluster\crew\runs) by `critic_tally.py`. Runs on 2026-11-07, Assignment #4.
+Compiled from each run's `run.json` (C:\cluster\crew\runs) by `critic_tally.py`. Runs on 2026-11-07 and 2026-11-08, Assignment #4.
 
 | Run | Designs checked | Passed | Sent back | Roast lines checked | Lines sent back | How the run ended |
 |---|---|---|---|---|---|---|
@@ -24,6 +24,12 @@ Compiled from each run's `run.json` (C:\cluster\crew\runs) by `critic_tally.py`.
 | 20261107-170937-character-artist | 2 | 2 | 0 | 0 | 0 | stopped: character-artist lost both cheeks on t1: Make the face look less like player12's: |
 | 20261107-171426-character-artist | 2 | 1 | 1 | 0 | 0 | stopped: character-artist lost both cheeks on t1: Make the face look less like player11's: |
 | 20261107-171522-character-artist | 6 | 6 | 0 | 0 | 0 | waiting on David |
+| 20261108-213543-character-artist | 9 | 8 | 1 | 0 | 0 | stopped: character-artist lost both cheeks on t7: the Critic sent it back against the GDD: |
+| 20261108-214330-character-artist | 2 | 1 | 1 | 0 | 0 | stopped: character-artist lost both cheeks on t1: the Critic sent it back against the GDD: |
+| 20261108-214431-character-artist | 2 | 1 | 1 | 0 | 0 | stopped: character-artist lost both cheeks on t1: the Critic sent it back against the GDD: |
+| 20261108-214537-character-artist | 2 | 2 | 0 | 0 | 0 | stopped: character-artist reached its cap of 30000 tokens for this run |
+| 20261108-214743-character-artist | 1 | 1 | 0 | 0 | 0 | stopped: character-artist lost both cheeks on t1: 'slanted' is against the rules for this  |
+| 20261108-214852-character-artist | 1 | 1 | 0 | 0 | 0 | waiting on David |
 
 ## Findings plain code or the second look threw out
 
@@ -31,9 +37,9 @@ Counted from run 20261107-163826 on, after the fix (the first run had no filter 
 
 | Why it was dropped | Findings |
 |---|---|
-| a maybe, not a break | 82 |
+| a maybe, not a break | 88 |
 | it blames words the rule allows: only a banned word names the gross thing, and the Bridge checks those | 16 |
-| the second look found no break | 9 |
+| the second look found no break | 15 |
 | its rule is about how the finished art looks, which is checked on the picture after it's made | 4 |
 | it quotes a sentence that describes the game today, not a rule for new work | 3 |
 
@@ -60,6 +66,9 @@ Counted from run 20261107-163826 on, after the fix (the first run had no filter 
 - **20261107-165733-roast-writer**, roast line "That’s not a splat. That’s a historical event.": The phrase "historical event" is a pun on the gravity of the moment, which is a pun-based joke, violating the rule. (GDD: "A line that explains the joke or leans on a pun alone.")
 - **20261107-165733-roast-writer**, roast line "The target is now a monument. To you.": The phrase "a monument" is a pun on the idea of being remembered for something gross, which is a pun-based joke, violating the rule. (GDD: "A line that explains the joke or leans on a pun alone.")
 - **20261107-171426-character-artist**, design t1: The combination of 'thick brows' and 'small eyes' constitutes exaggerated features, which violates the rule against exaggerated facial characteristics. (GDD: "The face. Every face gets the same cartoon treatment, with no exaggerated features.")
+- **20261108-213543-character-artist**, design t7: The combination of 'wide-set eyes' and 'thick bushy brows' constitutes exaggerated facial features, which breaks the rule against exaggerated features. (GDD: "The face. Every face gets the same cartoon treatment, with no exaggerated features.")
+- **20261108-214330-character-artist**, design t1: The description includes exaggerated facial features such as 'wide-set eyes', 'thick bushy brows', and 'surprised grimace', which violate the rule against exaggerated features. (GDD: "The face. Every face gets the same cartoon treatment, with no exaggerated features.")
+- **20261108-214431-character-artist**, design t1: The combination of 'wide eyes' and 'startled expression' constitutes an exaggerated facial feature, which violates the rule against exaggerated features. (GDD: "The face. Every face gets the same cartoon treatment, with no exaggerated features.")
 
 ## Every Bridge send-back (plain code, after the GDD check)
 
@@ -78,6 +87,12 @@ Counted from run 20261107-163826 on, after the fix (the first run had no filter 
 - **20261107-170937-character-artist**: t1: Make the face look less like player12's: difference 29.3, needs at least 29.7.
 - **20261107-171426-character-artist**: t1: Make the face look less like player11's: difference 22.8, needs at least 29.7.
 - **20261107-171522-character-artist**: t3: Make the face look less like player11's: difference 25.8, needs at least 29.7.
+- **20261108-213543-character-artist**: t3: Make the hair look less like player13's: difference 8.9, needs at least 9.8. Make the face look less like player13's: difference 28.3, needs at least 29.7.
+- **20261108-213543-character-artist**: t7: Make the face look less like player15's: difference 27.5, needs at least 29.7.
+- **20261108-214330-character-artist**: t1: Make the hair look less like player15's: difference 9.1, needs at least 9.8. Make the face look less like player11's: difference 28.3, needs at least 29.7.
+- **20261108-214431-character-artist**: t1: Make the hair look less like player18's: difference 9.8, needs at least 9.8. Make the face look less like player11's: difference 28.6, needs at least 29.7.
+- **20261108-214537-character-artist**: t1: Make the face look less like player11's: difference 28.9, needs at least 29.7.
+- **20261108-214743-character-artist**: t1: Make the hair look less like player19's: difference 9.5, needs at least 9.8. Make the face look less like player19's: difference 13.5, needs at least 29.7.
 
 ## Everything made
 
@@ -114,3 +129,11 @@ Counted from run 20261107-163826 on, after the fix (the first run had no filter 
 - **20261107-171522-character-artist**: Marcus (player18)
 - **20261107-171522-character-artist**: Daniel (player19)
 - **20261107-171522-character-artist**: Derrick (player20)
+- **20261108-213543-character-artist**: David (player13)
+- **20261108-213543-character-artist**: Clay (player14)
+- **20261108-213543-character-artist**: Marcus (player15)
+- **20261108-213543-character-artist**: Daniel (player16)
+- **20261108-213543-character-artist**: Derrick (player17)
+- **20261108-213543-character-artist**: Curtis (player18)
+- **20261108-214537-character-artist**: Clayton (player19)
+- **20261108-214852-character-artist**: James (player20)

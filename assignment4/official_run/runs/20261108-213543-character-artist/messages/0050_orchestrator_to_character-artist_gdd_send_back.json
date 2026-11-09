@@ -1,0 +1,11 @@
+{
+  "n": 50,
+  "at": "2026-11-08T21:43:27",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "gdd_send_back",
+  "payload": {
+    "task": "t7",
+    "notes": "The Critic checked it against the GDD and sent it back: The combination of 'wide-set eyes' and 'thick bushy brows' constitutes exaggerated facial features, which breaks the rule against exaggerated features. (GDD: \"The face. Every face gets the same cartoon treatment, with no exaggerated features.\"). Remove exaggerated facial features such as 'wide-set eyes' and 'thick bushy brows'; adjust the face to use only standard cartoon features with no exaggeration."
+  }
+}

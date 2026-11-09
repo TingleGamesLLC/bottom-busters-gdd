@@ -33,8 +33,13 @@ def makers_read_it():
         return {k: [] for k in required}
     real = common.ask_json
     common.ask_json = fake_ask_json
+    real_subs = common.SUBMISSIONS
     try:
-        character_artist.concept("a new character", [], None, character_artist.SETS[0], 11)
+        # An empty submissions folder: the real one holds the set's characters, and their hair styles are taken (2026-11-08).
+        with tempfile.TemporaryDirectory() as subs:
+            common.SUBMISSIONS = Path(subs)
+            character_artist.concept("a new character", [], None, character_artist.SETS[0], 11)
+        common.SUBMISSIONS = real_subs
         for call in (lambda: level_architect.recipe({"id": "idea_x", "theme": "a test", "style": "flat"}, None),
                      lambda: level_architect.write_ideas(1),
                      lambda: wardrobe_stylist.recipe({"name": "Test Hat", "kind": "hat", "looks": "a hat", "areas": ["Band"]}),
@@ -45,6 +50,7 @@ def makers_read_it():
                 pass   # the stand-in's empty answers fail the makers' own checks; the prompts are what's tested
     finally:
         common.ask_json = real
+        common.SUBMISSIONS = real_subs
     for agent in ("character-artist", "level-architect", "wardrobe-stylist", "roast-writer"):
         prompts = [p for a, p in seen if a == agent]
         assert prompts, agent

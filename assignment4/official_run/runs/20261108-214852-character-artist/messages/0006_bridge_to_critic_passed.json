@@ -1,0 +1,23 @@
+{
+  "n": 6,
+  "at": "2026-11-08T21:49:51",
+  "from": "bridge",
+  "to": "critic",
+  "kind": "passed",
+  "payload": {
+    "task": "t1",
+    "folder": "C:\\cluster\\crew\\work\\player20_t1",
+    "facts": {
+      "nearest_roster": "player19",
+      "difference_from_nearest": 16.1,
+      "hair_distance": 11.5,
+      "nearest_hair": "player19",
+      "face_distance": 35.0,
+      "nearest_face": "player12",
+      "skin_distance": 0.0,
+      "nearest_skin": "player11",
+      "size_mb": 5.93,
+      "running_total_mb": 57.98
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "n": 6,
+  "at": "2026-11-08T21:37:14",
+  "from": "critic",
+  "to": "orchestrator",
+  "kind": "verdict",
+  "payload": {
+    "task": "t1",
+    "what_i_see": "Dark skin, short hair, simple face with no distinct features.",
+    "tell_apart": true,
+    "problems": [
+      "dark skin",
+      "short hair",
+      "simple face"
+    ],
+    "verdict": "pass",
+    "note_for_artist": ""
+  }
+}

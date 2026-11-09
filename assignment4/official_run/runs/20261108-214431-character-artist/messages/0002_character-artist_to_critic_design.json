@@ -1,0 +1,18 @@
+{
+  "n": 2,
+  "at": "2026-11-08T21:44:39",
+  "from": "character-artist",
+  "to": "critic",
+  "kind": "design",
+  "payload": {
+    "task": "t1",
+    "design": {
+      "first_name": "Tyrone",
+      "set": "African American",
+      "skin_tone": "chestnut",
+      "hair": "Short, tightly coiled hair with a flat, wide crown and tapered sides (black)",
+      "beard": "thick, full, and sharply defined in a square shape",
+      "face": "small eyes, thin straight brows, neutral expression"
+    }
+  }
+}

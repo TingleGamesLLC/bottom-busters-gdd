@@ -1,0 +1,13 @@
+{
+  "n": 46,
+  "at": "2026-11-08T21:43:17",
+  "from": "bridge",
+  "to": "character-artist",
+  "kind": "fix_prompt",
+  "payload": {
+    "task": "t7",
+    "problems": [
+      "Make the face look less like player15's: difference 27.5, needs at least 29.7."
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "n": 4,
+  "at": "2026-11-08T21:37:05",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t1",
+    "folder": "C:\\cluster\\crew\\work\\player13_t1",
+    "concept": {
+      "first_name": "David",
+      "hair": "Shaved sides with a high-top fade, center ridge of short black hair",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "thin, neatly trimmed, follows jawline",
+      "face": "wide-set eyes, thick straight brows, neutral expression",
+      "skin_tone": "chestnut",
+      "why_distinct": "The high-top fade with a center ridge and thin, jawline-following beard sets David apart from the afro, cornrows, and full beards already in the African American set.",
+      "set": "African American",
+      "name": "David"
+    }
+  }
+}

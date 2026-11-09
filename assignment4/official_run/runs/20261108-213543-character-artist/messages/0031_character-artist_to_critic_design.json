@@ -1,0 +1,18 @@
+{
+  "n": 31,
+  "at": "2026-11-08T21:40:26",
+  "from": "character-artist",
+  "to": "critic",
+  "kind": "design",
+  "payload": {
+    "task": "t5",
+    "design": {
+      "first_name": "Derrick",
+      "set": "African American",
+      "skin_tone": "chestnut",
+      "hair": "Long, thick dreadlocks coiled tightly in a spiral pattern down the back (black)",
+      "beard": "neatly trimmed, full sideburns and chin",
+      "face": "wide-set eyes, thick bushy brows, calm expression"
+    }
+  }
+}

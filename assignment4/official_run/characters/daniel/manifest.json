@@ -1,20 +1,20 @@
 {
   "kind": "character",
-  "name": "Daniel (player19)",
+  "name": "Daniel (player16)",
   "agent": "Character Artist",
-  "slot": 19,
-  "skin": "player19",
+  "slot": 16,
+  "skin": "player16",
   "first_name": "Daniel",
   "set": "African American",
   "face": {
     "eyes": [
       [
-        474,
-        182
+        502,
+        206
       ],
       [
-        566,
-        182
+        588,
+        211
       ]
     ],
     "mouth": [
@@ -23,16 +23,16 @@
     ],
     "eye_boxes": [
       [
-        445,
-        502,
-        177,
-        188
+        478,
+        525,
+        189,
+        222
       ],
       [
-        538,
-        595,
-        177,
-        188
+        559,
+        618,
+        189,
+        233
       ]
     ],
     "mouth_box": [
@@ -44,76 +44,76 @@
   },
   "concept": {
     "first_name": "Daniel",
-    "hair": "Tall, rigid cornrows forming a geometric crown, slightly asymmetrical",
+    "hair": "Side-parted with a sharp fade on the left, short on the right, black hair",
     "hair_color": "black",
     "beard": true,
-    "beard_desc": "thick, full, and neatly trimmed",
-    "face": "thin eyebrows, narrow eyes, neutral expression",
+    "beard_desc": "thin, straight, neatly trimmed",
+    "face": "small eyes, thick straight brows, slight frown",
     "skin_tone": "chestnut",
-    "why_distinct": "The combination of geometric cornrows with a full, trimmed beard and narrow eyes sets it apart from the existing roster, especially from the similar cornrow styles already used.",
+    "why_distinct": "Unique side-parted fade with a sharp asymmetrical fade and straight beard, differing from all others in the African American set by its clean, angular contrast and neutral frown expression",
     "set": "African American",
     "name": "Daniel"
   },
-  "seed": 17155200,
+  "seed": 21357300,
   "rect": {
     "x": 237,
     "y": 54,
     "width": 503,
-    "height": 933
+    "height": 922
   },
   "files": [
-    "Resources/CharacterIdle/player19_idle_00.png",
-    "Resources/CharacterIdle/player19_idle_00.png.meta",
-    "Resources/CharacterIdle/player19_idle_01.png",
-    "Resources/CharacterIdle/player19_idle_01.png.meta",
-    "Resources/CharacterIdle/player19_idle_02.png",
-    "Resources/CharacterIdle/player19_idle_02.png.meta",
-    "Resources/DeathFlail/player19_flail_00.png",
-    "Resources/DeathFlail/player19_flail_00.png.meta",
-    "Resources/DeathFlail/player19_flail_01.png",
-    "Resources/DeathFlail/player19_flail_01.png.meta",
-    "Resources/DeathFlail/player19_flail_02.png",
-    "Resources/DeathFlail/player19_flail_02.png.meta",
-    "Resources/DeathFlail/player19_flail_03.png",
-    "Resources/DeathFlail/player19_flail_03.png.meta",
-    "Resources/DeathFlail/player19_flail_04.png",
-    "Resources/DeathFlail/player19_flail_04.png.meta",
-    "Resources/DeathFlail/player19_flail_05.png",
-    "Resources/DeathFlail/player19_flail_05.png.meta",
-    "Resources/DeathFlail/player19_flail_06.png",
-    "Resources/DeathFlail/player19_flail_06.png.meta",
-    "Resources/DeathFlail/player19_flail_07.png",
-    "Resources/DeathFlail/player19_flail_07.png.meta",
-    "Resources/DeathFlail/player19_flail_08.png",
-    "Resources/DeathFlail/player19_flail_08.png.meta",
-    "Resources/DeathFlail/player19_flail_09.png",
-    "Resources/DeathFlail/player19_flail_09.png.meta",
-    "Resources/DeathFlail/player19_flail_10.png",
-    "Resources/DeathFlail/player19_flail_10.png.meta",
-    "Resources/DeathFlail/player19_flail_11.png",
-    "Resources/DeathFlail/player19_flail_11.png.meta",
-    "Resources/DeathSplat/player19_splat.png",
-    "Resources/DeathSplat/player19_splat.png.meta",
-    "Resources/DeathSplat/player19_splatchar.png",
-    "Resources/DeathSplat/player19_splatchar.png.meta",
-    "Resources/FartFlap/player19_flap_00.png",
-    "Resources/FartFlap/player19_flap_00.png.meta",
-    "Resources/FartFlap/player19_flap_01.png",
-    "Resources/FartFlap/player19_flap_01.png.meta",
-    "Resources/FartFlap/player19_flap_02.png",
-    "Resources/FartFlap/player19_flap_02.png.meta",
-    "Resources/FartFlap/player19_flap_03.png",
-    "Resources/FartFlap/player19_flap_03.png.meta",
-    "Resources/FartFlap/player19_flap_04.png",
-    "Resources/FartFlap/player19_flap_04.png.meta",
-    "Resources/FartFlap/player19_flap_05.png",
-    "Resources/FartFlap/player19_flap_05.png.meta",
-    "Resources/FartFlap/player19_flap_06.png",
-    "Resources/FartFlap/player19_flap_06.png.meta",
-    "Resources/FartFlap/player19_flap_07.png",
-    "Resources/FartFlap/player19_flap_07.png.meta",
-    "Sprites/Characters/player19.png",
-    "Sprites/Characters/player19.png.meta"
+    "Resources/CharacterIdle/player16_idle_00.png",
+    "Resources/CharacterIdle/player16_idle_00.png.meta",
+    "Resources/CharacterIdle/player16_idle_01.png",
+    "Resources/CharacterIdle/player16_idle_01.png.meta",
+    "Resources/CharacterIdle/player16_idle_02.png",
+    "Resources/CharacterIdle/player16_idle_02.png.meta",
+    "Resources/DeathFlail/player16_flail_00.png",
+    "Resources/DeathFlail/player16_flail_00.png.meta",
+    "Resources/DeathFlail/player16_flail_01.png",
+    "Resources/DeathFlail/player16_flail_01.png.meta",
+    "Resources/DeathFlail/player16_flail_02.png",
+    "Resources/DeathFlail/player16_flail_02.png.meta",
+    "Resources/DeathFlail/player16_flail_03.png",
+    "Resources/DeathFlail/player16_flail_03.png.meta",
+    "Resources/DeathFlail/player16_flail_04.png",
+    "Resources/DeathFlail/player16_flail_04.png.meta",
+    "Resources/DeathFlail/player16_flail_05.png",
+    "Resources/DeathFlail/player16_flail_05.png.meta",
+    "Resources/DeathFlail/player16_flail_06.png",
+    "Resources/DeathFlail/player16_flail_06.png.meta",
+    "Resources/DeathFlail/player16_flail_07.png",
+    "Resources/DeathFlail/player16_flail_07.png.meta",
+    "Resources/DeathFlail/player16_flail_08.png",
+    "Resources/DeathFlail/player16_flail_08.png.meta",
+    "Resources/DeathFlail/player16_flail_09.png",
+    "Resources/DeathFlail/player16_flail_09.png.meta",
+    "Resources/DeathFlail/player16_flail_10.png",
+    "Resources/DeathFlail/player16_flail_10.png.meta",
+    "Resources/DeathFlail/player16_flail_11.png",
+    "Resources/DeathFlail/player16_flail_11.png.meta",
+    "Resources/DeathSplat/player16_splat.png",
+    "Resources/DeathSplat/player16_splat.png.meta",
+    "Resources/DeathSplat/player16_splatchar.png",
+    "Resources/DeathSplat/player16_splatchar.png.meta",
+    "Resources/FartFlap/player16_flap_00.png",
+    "Resources/FartFlap/player16_flap_00.png.meta",
+    "Resources/FartFlap/player16_flap_01.png",
+    "Resources/FartFlap/player16_flap_01.png.meta",
+    "Resources/FartFlap/player16_flap_02.png",
+    "Resources/FartFlap/player16_flap_02.png.meta",
+    "Resources/FartFlap/player16_flap_03.png",
+    "Resources/FartFlap/player16_flap_03.png.meta",
+    "Resources/FartFlap/player16_flap_04.png",
+    "Resources/FartFlap/player16_flap_04.png.meta",
+    "Resources/FartFlap/player16_flap_05.png",
+    "Resources/FartFlap/player16_flap_05.png.meta",
+    "Resources/FartFlap/player16_flap_06.png",
+    "Resources/FartFlap/player16_flap_06.png.meta",
+    "Resources/FartFlap/player16_flap_07.png",
+    "Resources/FartFlap/player16_flap_07.png.meta",
+    "Sprites/Characters/player16.png",
+    "Sprites/Characters/player16.png.meta"
   ],
   "pixellab": {
     "calls": 1,
@@ -129,20 +129,20 @@
     "preview_strip_idle.png",
     "preview_strip_flap.png"
   ],
-  "card": "77b8be0a-9999-4c82-976a-e88c72a3ad05",
-  "card_name": "[Character Artist] First set: the other 8 characters",
-  "run": "20261107-171522-character-artist",
+  "card": "1e020801-70d8-4a4c-bf21-d986491f98ef",
+  "card_name": "[Character Artist] First set: the other 8 characters, made again",
+  "run": "20261108-213543-character-artist",
   "bridge": {
-    "nearest_roster": "player12",
-    "difference_from_nearest": 23.3,
-    "hair_distance": 16.2,
-    "nearest_hair": "player",
-    "face_distance": 31.3,
-    "nearest_face": "player12",
+    "nearest_roster": "player15",
+    "difference_from_nearest": 20.1,
+    "hair_distance": 11.5,
+    "nearest_hair": "player15",
+    "face_distance": 29.9,
+    "nearest_face": "player11",
     "skin_distance": 0.0,
     "nearest_skin": "player11",
-    "size_mb": 5.93,
-    "running_total_mb": 53.49
+    "size_mb": 5.92,
+    "running_total_mb": 35.11
   },
   "critic": {
     "what_i_see": "Dark skin, short hair, neutral expression.",
@@ -161,19 +161,11 @@
     "dropped": [
       {
         "finding": {
-          "rule": "Hair uses bold silhouettes. Never green hair.",
-          "words": "Tall, rigid cornrows forming a geometric crown, slightly asymmetrical (black)",
-          "why": "The description specifies a geometric crown, which implies a stylized, potentially exaggerated silhouette that may not be bold or simple enough at game size."
+          "rule": "No hats, glasses, masks or held objects.",
+          "words": "beard: thin, straight, neatly trimmed",
+          "why": "The rule prohibits facial hair that could be considered a distinguishing feature beyond the face's basic structure, but the description includes a specific, styled beard which is not allowed as it adds a defined, exaggerated trait beyond the standard face components."
         },
-        "dropped": "a maybe, not a break (\"implies\")"
-      },
-      {
-        "finding": {
-          "rule": "A new character can't be mistakable for anyone already on the roster.",
-          "words": "Daniel",
-          "why": "Daniel is not one of the original ten names (Larry, Doug, Norm, Greg, Carl, Steve, Barry, Terry, Kevin, Phil), so this is not a name conflict, but the name 'Daniel' is not listed as a permitted name in the current roster, and the set's names must follow the 'comically stereotypical but not offensive' guideline, which may not be met by this name."
-        },
-        "dropped": "a maybe, not a break (\"may\")"
+        "dropped": "a maybe, not a break (\"could be considered\")"
       }
     ]
   }

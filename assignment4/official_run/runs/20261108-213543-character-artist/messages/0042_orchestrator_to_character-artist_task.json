@@ -1,0 +1,14 @@
+{
+  "n": 42,
+  "at": "2026-11-08T21:42:29",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t7",
+    "brief": "Generate character Caleb with a non-repeating hairstyle (e.g., curly Afro with a side part, layered cut, or a mohawk) and a unique skin tone variation (e.g., deep brown) to avoid visual duplication.",
+    "set": "African American",
+    "slot": 19,
+    "notes": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "n": 1,
+  "at": "2026-11-08T21:45:41",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t1",
+    "brief": "Modify the character designer to enforce unique hairstyles across all 8 characters, ensuring no two characters share the same hair style, including afros and cornrows.",
+    "set": "African American",
+    "slot": 19,
+    "notes": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "n": 4,
+  "at": "2026-11-08T21:48:34",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t1",
+    "folder": "C:\\cluster\\crew\\work\\player20_t1",
+    "concept": {
+      "first_name": "Troy",
+      "hair": "Short, straight, with a deep side part and a single, sharp ridge of hair combed upward on the left temple",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "thin, clipped close, only on the jawline",
+      "face": "narrow eyes, thin straight brows, neutral stare",
+      "skin_tone": "bronze",
+      "why_distinct": "its sharp, upward-pointing ridge of hair and minimal jawline beard create a unique, angular silhouette not found in any other character\u2019s style",
+      "set": "African American",
+      "name": "Troy"
+    }
+  }
+}

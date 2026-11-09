@@ -1,0 +1,66 @@
+{
+  "id": "20261108-214743-character-artist",
+  "started": "2026-11-08T21:47:43",
+  "status": "stopped: character-artist lost both cheeks on t1: 'slanted' is against the rules for this look: describe only hair and a plain cartoon face",
+  "card": "[Character Artist] First set: the other 8 characters, made again",
+  "tasks": [
+    {
+      "id": "t1",
+      "brief": "Generate 8 new African American characters with unique, non-repeating hairstyles, ensuring no afro or cornrow styles are reused from the previous failed batch.",
+      "set": "African American"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-11-08T21:47:43",
+      "agent": "orchestrator",
+      "text": "no runner yet for wardrobe-stylist: [Wardrobe Stylist] 40 new hats and shades"
+    },
+    {
+      "at": "2026-11-08T21:47:43",
+      "agent": "orchestrator",
+      "text": "no runner yet for roast-writer: [Roast Writer] 250 new roast lines"
+    },
+    {
+      "at": "2026-11-08T21:47:44",
+      "agent": "orchestrator",
+      "text": "PixelLab balance before: {'usd': 0.0, 'generations': 1850.0}"
+    },
+    {
+      "at": "2026-11-08T21:47:47",
+      "agent": "orchestrator",
+      "text": "plan for [Character Artist] First set: the other 8 characters, made again: 1 tasks"
+    },
+    {
+      "at": "2026-11-08T21:48:01",
+      "agent": "critic",
+      "text": "GDD check on t1 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): pass"
+    },
+    {
+      "at": "2026-11-08T21:48:37",
+      "agent": "bridge",
+      "text": "sent back t1: Make the hair look less like player19's: difference 9.5, needs at least 9.8. Make the face look less like player19's: difference 13.5, needs at least 29.7."
+    },
+    {
+      "at": "2026-11-08T21:48:49",
+      "agent": "character-artist",
+      "text": "sent back: 'slanted' is against the rules for this look: describe only hair and a plain cartoon face"
+    },
+    {
+      "at": "2026-11-08T21:48:50",
+      "agent": "orchestrator",
+      "text": "stopped: character-artist lost both cheeks on t1: 'slanted' is against the rules for this look: describe only hair and a plain cartoon face"
+    },
+    {
+      "at": "2026-11-08T21:48:50",
+      "agent": "orchestrator",
+      "text": "PixelLab this run: {'calls': 1, 'usd': 0.0, 'generations': 5.0}"
+    }
+  ],
+  "objective": "Generate a new set of 8 distinct African American characters, ensuring no hairstyle repeats and each character differs significantly from the others, following the feedback from the failed 2026-11-07 run.",
+  "pixellab": {
+    "calls": 1,
+    "usd": 0.0,
+    "generations": 5.0
+  }
+}

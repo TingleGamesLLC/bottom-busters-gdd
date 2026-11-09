@@ -1,0 +1,163 @@
+{
+  "kind": "character",
+  "name": "Clay (player14)",
+  "agent": "Character Artist",
+  "slot": 14,
+  "skin": "player14",
+  "first_name": "Clay",
+  "set": "African American",
+  "face": {
+    "eyes": [
+      [
+        479,
+        210
+      ],
+      [
+        568,
+        212
+      ]
+    ],
+    "mouth": [
+      543,
+      269
+    ],
+    "eye_boxes": [
+      [
+        456,
+        502,
+        189,
+        231
+      ],
+      [
+        542,
+        595,
+        190,
+        234
+      ]
+    ],
+    "mouth_box": [
+      503,
+      583,
+      246,
+      292
+    ]
+  },
+  "concept": {
+    "first_name": "Clay",
+    "hair": "Short, textured bob with a slight wave, unevenly layered",
+    "hair_color": "black",
+    "beard": true,
+    "beard_desc": "full, rounded beard with a defined jawline",
+    "face": "large round eyes, thin arched brows, surprised expression",
+    "skin_tone": "espresso",
+    "why_distinct": "his uneven, textured bob and round-eyed, surprised expression with thin brows make him visually distinct from the set\u2019s cornrows, afros, and high-top fades",
+    "set": "African American",
+    "name": "Clay"
+  },
+  "seed": 21355300,
+  "rect": {
+    "x": 237,
+    "y": 54,
+    "width": 503,
+    "height": 945
+  },
+  "files": [
+    "Resources/CharacterIdle/player14_idle_00.png",
+    "Resources/CharacterIdle/player14_idle_00.png.meta",
+    "Resources/CharacterIdle/player14_idle_01.png",
+    "Resources/CharacterIdle/player14_idle_01.png.meta",
+    "Resources/CharacterIdle/player14_idle_02.png",
+    "Resources/CharacterIdle/player14_idle_02.png.meta",
+    "Resources/DeathFlail/player14_flail_00.png",
+    "Resources/DeathFlail/player14_flail_00.png.meta",
+    "Resources/DeathFlail/player14_flail_01.png",
+    "Resources/DeathFlail/player14_flail_01.png.meta",
+    "Resources/DeathFlail/player14_flail_02.png",
+    "Resources/DeathFlail/player14_flail_02.png.meta",
+    "Resources/DeathFlail/player14_flail_03.png",
+    "Resources/DeathFlail/player14_flail_03.png.meta",
+    "Resources/DeathFlail/player14_flail_04.png",
+    "Resources/DeathFlail/player14_flail_04.png.meta",
+    "Resources/DeathFlail/player14_flail_05.png",
+    "Resources/DeathFlail/player14_flail_05.png.meta",
+    "Resources/DeathFlail/player14_flail_06.png",
+    "Resources/DeathFlail/player14_flail_06.png.meta",
+    "Resources/DeathFlail/player14_flail_07.png",
+    "Resources/DeathFlail/player14_flail_07.png.meta",
+    "Resources/DeathFlail/player14_flail_08.png",
+    "Resources/DeathFlail/player14_flail_08.png.meta",
+    "Resources/DeathFlail/player14_flail_09.png",
+    "Resources/DeathFlail/player14_flail_09.png.meta",
+    "Resources/DeathFlail/player14_flail_10.png",
+    "Resources/DeathFlail/player14_flail_10.png.meta",
+    "Resources/DeathFlail/player14_flail_11.png",
+    "Resources/DeathFlail/player14_flail_11.png.meta",
+    "Resources/DeathSplat/player14_splat.png",
+    "Resources/DeathSplat/player14_splat.png.meta",
+    "Resources/DeathSplat/player14_splatchar.png",
+    "Resources/DeathSplat/player14_splatchar.png.meta",
+    "Resources/FartFlap/player14_flap_00.png",
+    "Resources/FartFlap/player14_flap_00.png.meta",
+    "Resources/FartFlap/player14_flap_01.png",
+    "Resources/FartFlap/player14_flap_01.png.meta",
+    "Resources/FartFlap/player14_flap_02.png",
+    "Resources/FartFlap/player14_flap_02.png.meta",
+    "Resources/FartFlap/player14_flap_03.png",
+    "Resources/FartFlap/player14_flap_03.png.meta",
+    "Resources/FartFlap/player14_flap_04.png",
+    "Resources/FartFlap/player14_flap_04.png.meta",
+    "Resources/FartFlap/player14_flap_05.png",
+    "Resources/FartFlap/player14_flap_05.png.meta",
+    "Resources/FartFlap/player14_flap_06.png",
+    "Resources/FartFlap/player14_flap_06.png.meta",
+    "Resources/FartFlap/player14_flap_07.png",
+    "Resources/FartFlap/player14_flap_07.png.meta",
+    "Sprites/Characters/player14.png",
+    "Sprites/Characters/player14.png.meta"
+  ],
+  "pixellab": {
+    "calls": 1,
+    "usd": 0.0,
+    "generations": 5.0
+  },
+  "previews": [
+    "preview_lineup.png",
+    "preview_body.png",
+    "preview_head.png",
+    "preview_splat.png",
+    "preview_strip_flail.png",
+    "preview_strip_idle.png",
+    "preview_strip_flap.png"
+  ],
+  "card": "1e020801-70d8-4a4c-bf21-d986491f98ef",
+  "card_name": "[Character Artist] First set: the other 8 characters, made again",
+  "run": "20261108-213543-character-artist",
+  "bridge": {
+    "nearest_roster": "player11",
+    "difference_from_nearest": 25.4,
+    "hair_distance": 16.7,
+    "nearest_hair": "player11",
+    "face_distance": 53.1,
+    "nearest_face": "player13",
+    "skin_distance": 29.7,
+    "nearest_skin": "player11",
+    "size_mb": 5.12,
+    "running_total_mb": 22.93
+  },
+  "critic": {
+    "what_i_see": "Dark skin, curly hair, beard, and mustache.",
+    "tell_apart": true,
+    "problems": [
+      "dark skin"
+    ],
+    "verdict": "pass",
+    "note_for_artist": ""
+  },
+  "gdd_check": {
+    "verdict": "pass",
+    "problems": [],
+    "note_for_maker": "",
+    "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1",
+    "dropped": []
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "n": 43,
+  "at": "2026-11-08T21:42:42",
+  "from": "character-artist",
+  "to": "critic",
+  "kind": "design",
+  "payload": {
+    "task": "t7",
+    "design": {
+      "first_name": "Troy",
+      "set": "African American",
+      "skin_tone": "bronze",
+      "hair": "Sleek, flat-top with a deep side part and tapered sides (black)",
+      "beard": "full, rounded, and slightly bushy",
+      "face": "medium eyes, thick arched brows, calm expression"
+    }
+  }
+}

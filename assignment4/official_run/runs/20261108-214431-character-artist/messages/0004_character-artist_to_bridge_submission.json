@@ -1,0 +1,23 @@
+{
+  "n": 4,
+  "at": "2026-11-08T21:45:16",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t1",
+    "folder": "C:\\cluster\\crew\\work\\player19_t1",
+    "concept": {
+      "first_name": "Tyrone",
+      "hair": "Short, tightly coiled hair with a flat, wide crown and tapered sides",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "thick, full, and sharply defined in a square shape",
+      "face": "small eyes, thin straight brows, neutral expression",
+      "skin_tone": "chestnut",
+      "why_distinct": "Its flat, wide crown hairstyle and square beard are unlike any other in the set, with no matching silhouette or facial structure.",
+      "set": "African American",
+      "name": "Tyrone"
+    }
+  }
+}

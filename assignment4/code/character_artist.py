@@ -102,11 +102,40 @@ def check_first_name(first):
     return first.capitalize() if first.islower() else first
 
 
+# Hair style families, most specific first; the first that matches names the style. DAVID, 2026-11-08: the eight made on
+# 2026-11-07 came out as five afros and three cornrows, copies of Darnell's and Marvin's, because nothing stopped a style
+# the set already had.
+HAIR_STYLES = [("high-top fade", r"high[- ]?top"), ("flat-top", r"flat[- ]?top"), ("cornrows", r"corn ?rows?"),
+               ("braids", r"braid"), ("locs", r"\blocs?\b|dread"), ("twists", r"twist"), ("afro", r"\bafro|\bfro\b"),
+               ("puffs", r"\bpuffs?\b"), ("mohawk", r"mohawk|frohawk|faux ?hawk"), ("waves", r"\bwav(es|y)\b"),
+               ("bald", r"\bbald|shaved"), ("buzz cut", r"buzz|crew ?cut"), ("fade", r"\bfade"), ("curly top", r"curl"),
+               ("spikes", r"spik"), ("side part", r"\bpart(ed)?\b"), ("slicked back", r"slick"), ("bun", r"\bbun\b|top ?knot"),
+               ("ponytail", r"ponytail")]
+
+
+def hair_style(hair):
+    """The style family a hair description names, or None when it names none of them."""
+    text = str(hair or "").lower()
+    return next((style for style, pattern in HAIR_STYLES if re.search(pattern, text)), None)
+
+
+def set_so_far(set_name):
+    """(first name, concept) for every character in this set David hasn't rejected, the ones waiting for him included."""
+    return [(m["concept"].get("first_name") or m.get("first_name") or m["skin"], m["concept"])
+            for folder, m in bridge.submissions()
+            if m.get("kind") == "character" and m.get("set") == set_name and m.get("concept") and not bridge._is_rejected(folder)]
+
+
 def check_concept(data, the_set):
     """Plain code holds the rules the model can't be trusted with. Returns the concept, cleaned up."""
     data["first_name"] = check_first_name(data.get("first_name"))
     if data["first_name"].lower() in bridge.taken_names():
         raise common.MalformedOutput(f"the first name {data['first_name']} is already on the list: pick another")
+    style = hair_style(data.get("hair"))
+    same = [name for name, c in set_so_far(the_set["name"]) if style and hair_style(c.get("hair")) == style]
+    if same:
+        raise common.MalformedOutput(f"{style} hair is already in this set ({', '.join(same)}): pick a hair style nobody in "
+                                     f"this set has")
     data["beard"] = data.get("beard") in (True, "true", "True", "yes")
     if "green" in str(data.get("hair_color")).lower():
         raise common.MalformedOutput("green hair is against the rules: the art step keys out a green background")
@@ -192,8 +221,17 @@ def concept(brief, taken, notes, the_set, slot=0):
     names = ", ".join(sorted(bridge.taken_names())) or "none yet"
     text = (f"{gdd.prompt_block('character-artist')}\n\n"
             f"The roster today:\n{roster}\n\nFirst names already taken: {names}\n\nThis character's set: {the_set['name']}.\n"
-            f"Skin tones for this set: {', '.join(the_set['tones'])}.\nHair for this set: {the_set['hair_notes']}\n\n"
-            f"Your task: {brief}\nDesign one character nobody could mistake for any of those.")
+            f"Skin tones for this set: {', '.join(the_set['tones'])}.\nHair for this set: {the_set['hair_notes']}\n\n")
+    so_far = set_so_far(the_set["name"])
+    if so_far:
+        def look(c):
+            beard = f"beard {c.get('beard_desc')}" if c.get("beard") else "no beard"
+            return f"{c.get('hair')}, {c.get('hair_color')} hair; {beard}; face: {c.get('face')}"
+        styles = sorted({s for s in (hair_style(c.get("hair")) for _, c in so_far) if s})
+        text += ("Already in this set:\n" + "\n".join(f"- {name}: {look(c)}" for name, c in so_far) +
+                 f"\nHair styles this set already has: {', '.join(styles) or 'none'}. Use a hair style none of them has, "
+                 f"and make the beard and face different from theirs too.\n\n")
+    text += f"Your task: {brief}\nDesign one character nobody could mistake for any of those."
     if notes:
         text += (f"\nThe last attempt was sent back: {explain(notes)}\nChange the design to fix that: make its hair, beard and "
                  f"face clearly different from that character's.")
@@ -584,10 +622,35 @@ def make_flap(name, layer, tone, out):
     return frames
 
 
+def splat_eye_boxes(light_body, boxes, keep):
+    """Each eye's box for the splat's X, grown to every eye-white pixel near it and the outline just around them. The face
+    finder's own boxes left eye whites and outline showing beside the X on all seven characters made 2026-11-08, and on
+    Clayton they held the brows, so the X landed on his brows (DAVID: "his splat drawing his face is not normal looking at
+    all"). keep is hair and face paint that isn't eye."""
+    L = lum(light_body[..., :3].astype(float))
+    spread = light_body[..., :3].max(axis=-1).astype(int) - light_body[..., :3].min(axis=-1).astype(int)
+    white = (L > 200) & (spread < 45) & (light_body[..., 3] > 200)
+    grown = []
+    for (x0, x1, y0, y1) in boxes:
+        wx0, wy0 = x0 - 14, y0 - 8
+        win = white[wy0:y1 + 31, wx0:x1 + 15]
+        lab, n = ndimage.label(win)
+        found = [k + 1 for k, s in enumerate(ndimage.sum(win, lab, range(1, n + 1))) if s >= 6] if n else []
+        if found:
+            ys, xs = np.nonzero(np.isin(lab, found))
+            wb = (xs.min() + wx0, xs.max() + wx0, ys.min() + wy0, ys.max() + wy0)
+            if abs((wb[2] + wb[3]) / 2 - (y0 + y1) / 2) > (y1 - y0) / 2:
+                x0, x1, y0, y1 = wb   # the box held something else, the brows on Clayton: the whites are the eye
+            else:
+                x0, x1, y0, y1 = min(x0, wb[0]), max(x1, wb[1]), min(y0, wb[2]), max(y1, wb[3])
+        grown.append((int(x0) - 4, int(x1) + 4, int(y0) - 1, int(y1) + 4))
+    return grown
+
+
 def make_splat(name, light_body, layer, tone, out, where):
     """splat_faces.py's own steps on this character's own eyes and mouth, with the skin moved to its tone at the end."""
     sf = splat_faces
-    sf.EYES[name] = tuple(tuple(b) for b in where["eye_boxes"])
+    sf.EYES[name] = tuple(splat_eye_boxes(light_body, where["eye_boxes"], layer.hair_px))
     sf.MOUTHS[name] = (tuple(where["mouth_box"]), tuple(where["mouth"]), None)
     sf.GAME_OUT = str(out / "Resources" / "DeathSplat")
     splatchar, splat, base = sf.load(sf.SPLATCHAR), sf.load(sf.SPLAT), sf.load(sf.SPLATBASE)
@@ -603,7 +666,10 @@ def make_splat(name, light_body, layer, tone, out, where):
     head = sf.shift(head, dx, dy)
     for side, (mx, my) in zip("LR", mids):
         sf.stamp(head, marks[side], mx + dx, my + dy, tuple(x_color) + (255,))
-    hair = (sf.shift(layer.hair_px[..., None].astype(np.uint8), dx, dy)[..., 0] > 0) & (head[..., 3] > 0)   # never the splat's own chest under it
+    kept = layer.hair_px.copy()
+    for (x0, x1, y0, y1) in list(sf.EYES[name]) + [sf.MOUTHS[name][0]]:
+        kept[y0:y1 + 1, x0:x1 + 1] = False   # painted over with skin, so it takes the tone; left light on Daniel and Derrick
+    hair = (sf.shift(kept[..., None].astype(np.uint8), dx, dy)[..., 0] > 0) & (head[..., 3] > 0)   # never the splat's own chest under it
 
     old_head = np.zeros(splatchar.shape[:2], bool)
     old_head[:sf.HEAD_CUT_Y, sf.HEAD_X[0]:sf.HEAD_X[1]] = splatchar[:sf.HEAD_CUT_Y, sf.HEAD_X[0]:sf.HEAD_X[1], 3] > 0
@@ -621,6 +687,32 @@ def make_splat(name, light_body, layer, tone, out, where):
     flying = sf.over(sf.over(fill, brown), body)
     sf.export_game(name, body, flying)
     return body, flying
+
+
+def rebuild_splat(folder):
+    """A character's splat made again from its saved body, for one made before the splat fix (2026-11-08). The body's skin is
+    scaled back to the light shades it was painted in; what recolor never touched (hair, face paint, outline, briefs) stays
+    as it is. Rewrites the submission's DeathSplat files and preview_splat.png."""
+    folder = Path(folder)
+    m = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
+    name, tone = m["skin"], m["concept"]["skin_tone"]
+    body = np.array(Image.open(folder / "Sprites" / "Characters" / f"{name}.png").convert("RGBA"))
+    r, g, b = (body[..., k].astype(float) for k in range(3))
+    is_skin = (body[..., 3] > 0) & (r - b > 18) & (r >= g) & (lum(body[..., :3].astype(float)) > 50)
+    factor = np.array(TONES[tone], float) / np.array(SKIN_BASE, float)
+    light = body.copy()
+    light[..., :3][is_skin] = np.clip(body[..., :3][is_skin] / factor, 0, 255).astype(np.uint8)
+
+    class Kept:
+        hair_px = (body[..., 3] > 0) & ~is_skin
+
+    splat_body, _ = make_splat(name, light, Kept, tone, folder, m["face"])
+    (folder / "Resources" / "DeathSplat.meta").unlink(missing_ok=True)
+    im = Image.fromarray(splat_body)
+    bg = Image.new("RGBA", im.size, (150, 200, 240, 255))
+    bg.alpha_composite(im)
+    bg.convert("RGB").save(folder / "preview_splat.png")
+    return splat_body
 
 
 def previews(folder, name, body, animations, splat_body):

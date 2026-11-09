@@ -1,0 +1,23 @@
+{
+  "n": 27,
+  "at": "2026-11-08T21:40:10",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t4",
+    "folder": "C:\\cluster\\crew\\work\\player16_t4",
+    "concept": {
+      "first_name": "Daniel",
+      "hair": "Side-parted with a sharp fade on the left, short on the right, black hair",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "thin, straight, neatly trimmed",
+      "face": "small eyes, thick straight brows, slight frown",
+      "skin_tone": "chestnut",
+      "why_distinct": "Unique side-parted fade with a sharp asymmetrical fade and straight beard, differing from all others in the African American set by its clean, angular contrast and neutral frown expression",
+      "set": "African American",
+      "name": "Daniel"
+    }
+  }
+}

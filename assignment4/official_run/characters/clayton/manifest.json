@@ -1,0 +1,172 @@
+{
+  "kind": "character",
+  "name": "Clayton (player19)",
+  "agent": "Character Artist",
+  "slot": 19,
+  "skin": "player19",
+  "first_name": "Clayton",
+  "set": "African American",
+  "face": {
+    "eyes": [
+      [
+        474,
+        182
+      ],
+      [
+        566,
+        182
+      ]
+    ],
+    "mouth": [
+      543,
+      269
+    ],
+    "eye_boxes": [
+      [
+        445,
+        502,
+        177,
+        188
+      ],
+      [
+        538,
+        595,
+        177,
+        188
+      ]
+    ],
+    "mouth_box": [
+      503,
+      583,
+      246,
+      292
+    ]
+  },
+  "concept": {
+    "first_name": "Clayton",
+    "hair": "Neat, short flat-top with a sharp center part and tapered sides",
+    "hair_color": "black",
+    "beard": true,
+    "beard_desc": "full, rounded, with a defined jawline",
+    "face": "small eyes, thin upward-curving brows, calm expression",
+    "skin_tone": "chestnut",
+    "why_distinct": "Its flat-top with sharp center part and tapered sides is unique in the set, differing from Darnell\u2019s afro and all other styles; the rounded beard and calm expression contrast Darnell\u2019s subtle smirk and full, trimmed beard.",
+    "set": "African American",
+    "name": "Clayton"
+  },
+  "seed": 21453710,
+  "rect": {
+    "x": 237,
+    "y": 54,
+    "width": 503,
+    "height": 922
+  },
+  "files": [
+    "Resources/CharacterIdle/player19_idle_00.png",
+    "Resources/CharacterIdle/player19_idle_00.png.meta",
+    "Resources/CharacterIdle/player19_idle_01.png",
+    "Resources/CharacterIdle/player19_idle_01.png.meta",
+    "Resources/CharacterIdle/player19_idle_02.png",
+    "Resources/CharacterIdle/player19_idle_02.png.meta",
+    "Resources/DeathFlail/player19_flail_00.png",
+    "Resources/DeathFlail/player19_flail_00.png.meta",
+    "Resources/DeathFlail/player19_flail_01.png",
+    "Resources/DeathFlail/player19_flail_01.png.meta",
+    "Resources/DeathFlail/player19_flail_02.png",
+    "Resources/DeathFlail/player19_flail_02.png.meta",
+    "Resources/DeathFlail/player19_flail_03.png",
+    "Resources/DeathFlail/player19_flail_03.png.meta",
+    "Resources/DeathFlail/player19_flail_04.png",
+    "Resources/DeathFlail/player19_flail_04.png.meta",
+    "Resources/DeathFlail/player19_flail_05.png",
+    "Resources/DeathFlail/player19_flail_05.png.meta",
+    "Resources/DeathFlail/player19_flail_06.png",
+    "Resources/DeathFlail/player19_flail_06.png.meta",
+    "Resources/DeathFlail/player19_flail_07.png",
+    "Resources/DeathFlail/player19_flail_07.png.meta",
+    "Resources/DeathFlail/player19_flail_08.png",
+    "Resources/DeathFlail/player19_flail_08.png.meta",
+    "Resources/DeathFlail/player19_flail_09.png",
+    "Resources/DeathFlail/player19_flail_09.png.meta",
+    "Resources/DeathFlail/player19_flail_10.png",
+    "Resources/DeathFlail/player19_flail_10.png.meta",
+    "Resources/DeathFlail/player19_flail_11.png",
+    "Resources/DeathFlail/player19_flail_11.png.meta",
+    "Resources/DeathSplat/player19_splat.png",
+    "Resources/DeathSplat/player19_splat.png.meta",
+    "Resources/DeathSplat/player19_splatchar.png",
+    "Resources/DeathSplat/player19_splatchar.png.meta",
+    "Resources/FartFlap/player19_flap_00.png",
+    "Resources/FartFlap/player19_flap_00.png.meta",
+    "Resources/FartFlap/player19_flap_01.png",
+    "Resources/FartFlap/player19_flap_01.png.meta",
+    "Resources/FartFlap/player19_flap_02.png",
+    "Resources/FartFlap/player19_flap_02.png.meta",
+    "Resources/FartFlap/player19_flap_03.png",
+    "Resources/FartFlap/player19_flap_03.png.meta",
+    "Resources/FartFlap/player19_flap_04.png",
+    "Resources/FartFlap/player19_flap_04.png.meta",
+    "Resources/FartFlap/player19_flap_05.png",
+    "Resources/FartFlap/player19_flap_05.png.meta",
+    "Resources/FartFlap/player19_flap_06.png",
+    "Resources/FartFlap/player19_flap_06.png.meta",
+    "Resources/FartFlap/player19_flap_07.png",
+    "Resources/FartFlap/player19_flap_07.png.meta",
+    "Sprites/Characters/player19.png",
+    "Sprites/Characters/player19.png.meta"
+  ],
+  "pixellab": {
+    "calls": 1,
+    "usd": 0.0,
+    "generations": 5.0
+  },
+  "previews": [
+    "preview_lineup.png",
+    "preview_body.png",
+    "preview_head.png",
+    "preview_splat.png",
+    "preview_strip_flail.png",
+    "preview_strip_idle.png",
+    "preview_strip_flap.png"
+  ],
+  "card": "1e020801-70d8-4a4c-bf21-d986491f98ef",
+  "card_name": "[Character Artist] First set: the other 8 characters, made again",
+  "run": "20261108-214537-character-artist",
+  "bridge": {
+    "nearest_roster": "player16",
+    "difference_from_nearest": 16.7,
+    "hair_distance": 11.6,
+    "nearest_hair": "player16",
+    "face_distance": 31.0,
+    "nearest_face": "player11",
+    "skin_distance": 0.0,
+    "nearest_skin": "player11",
+    "size_mb": 5.92,
+    "running_total_mb": 52.05
+  },
+  "critic": {
+    "what_i_see": "Dark skin, short hair, simple face with two eyes and a mouth.",
+    "tell_apart": true,
+    "problems": [
+      "dark skin"
+    ],
+    "verdict": "pass",
+    "note_for_artist": ""
+  },
+  "gdd_check": {
+    "verdict": "pass",
+    "problems": [],
+    "note_for_maker": "",
+    "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1",
+    "dropped": [
+      {
+        "finding": {
+          "rule": "No hats, glasses, masks or held objects.",
+          "words": "beard: full, rounded, with a defined jawline",
+          "why": "The description includes a beard, which is not allowed as it is a facial feature that alters the face beyond the permitted elements."
+        },
+        "dropped": "the second look found no break: A beard is not a hat, glasses, mask, or held object."
+      }
+    ]
+  }
+}

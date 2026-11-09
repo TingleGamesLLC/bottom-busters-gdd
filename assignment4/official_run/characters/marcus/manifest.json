@@ -1,20 +1,20 @@
 {
   "kind": "character",
-  "name": "Marcus (player18)",
+  "name": "Marcus (player15). Critic's note: Reconnect the hair to the head for a more cohesive look.",
   "agent": "Character Artist",
-  "slot": 18,
-  "skin": "player18",
+  "slot": 15,
+  "skin": "player15",
   "first_name": "Marcus",
   "set": "African American",
   "face": {
     "eyes": [
       [
-        484,
-        200
+        496,
+        223
       ],
       [
-        584,
-        200
+        578,
+        223
       ]
     ],
     "mouth": [
@@ -23,16 +23,16 @@
     ],
     "eye_boxes": [
       [
-        466,
-        502,
-        189,
-        211
+        478,
+        513,
+        212,
+        234
       ],
       [
         561,
-        606,
-        189,
-        211
+        595,
+        212,
+        234
       ]
     ],
     "mouth_box": [
@@ -44,76 +44,76 @@
   },
   "concept": {
     "first_name": "Marcus",
-    "hair": "Tall, rigid cornrows forming a geometric crown, slightly asymmetrical",
+    "hair": "Short, tightly coiled twists forming a textured crown",
     "hair_color": "black",
     "beard": true,
-    "beard_desc": "thick, full, and neatly trimmed",
-    "face": "thin, arched brows, narrow eyes, calm expression",
-    "skin_tone": "chestnut",
-    "why_distinct": "The geometric cornrow crown with a full, neatly trimmed beard and narrow, calm eyes sets it apart from the roster's similar cornrow styles and broader facial features.",
+    "beard_desc": "thin, straight, and neatly trimmed",
+    "face": "small eyes, thin upward-curving brows, soft smile",
+    "skin_tone": "bronze",
+    "why_distinct": "His tightly coiled twist crown and upward-curving brows with a soft smile distinguish him from David\u2019s high-top fade and neutral expression, with a unique facial structure and beard style.",
     "set": "African American",
     "name": "Marcus"
   },
-  "seed": 17154210,
+  "seed": 21356310,
   "rect": {
     "x": 237,
     "y": 54,
     "width": 503,
-    "height": 945
+    "height": 922
   },
   "files": [
-    "Resources/CharacterIdle/player18_idle_00.png",
-    "Resources/CharacterIdle/player18_idle_00.png.meta",
-    "Resources/CharacterIdle/player18_idle_01.png",
-    "Resources/CharacterIdle/player18_idle_01.png.meta",
-    "Resources/CharacterIdle/player18_idle_02.png",
-    "Resources/CharacterIdle/player18_idle_02.png.meta",
-    "Resources/DeathFlail/player18_flail_00.png",
-    "Resources/DeathFlail/player18_flail_00.png.meta",
-    "Resources/DeathFlail/player18_flail_01.png",
-    "Resources/DeathFlail/player18_flail_01.png.meta",
-    "Resources/DeathFlail/player18_flail_02.png",
-    "Resources/DeathFlail/player18_flail_02.png.meta",
-    "Resources/DeathFlail/player18_flail_03.png",
-    "Resources/DeathFlail/player18_flail_03.png.meta",
-    "Resources/DeathFlail/player18_flail_04.png",
-    "Resources/DeathFlail/player18_flail_04.png.meta",
-    "Resources/DeathFlail/player18_flail_05.png",
-    "Resources/DeathFlail/player18_flail_05.png.meta",
-    "Resources/DeathFlail/player18_flail_06.png",
-    "Resources/DeathFlail/player18_flail_06.png.meta",
-    "Resources/DeathFlail/player18_flail_07.png",
-    "Resources/DeathFlail/player18_flail_07.png.meta",
-    "Resources/DeathFlail/player18_flail_08.png",
-    "Resources/DeathFlail/player18_flail_08.png.meta",
-    "Resources/DeathFlail/player18_flail_09.png",
-    "Resources/DeathFlail/player18_flail_09.png.meta",
-    "Resources/DeathFlail/player18_flail_10.png",
-    "Resources/DeathFlail/player18_flail_10.png.meta",
-    "Resources/DeathFlail/player18_flail_11.png",
-    "Resources/DeathFlail/player18_flail_11.png.meta",
-    "Resources/DeathSplat/player18_splat.png",
-    "Resources/DeathSplat/player18_splat.png.meta",
-    "Resources/DeathSplat/player18_splatchar.png",
-    "Resources/DeathSplat/player18_splatchar.png.meta",
-    "Resources/FartFlap/player18_flap_00.png",
-    "Resources/FartFlap/player18_flap_00.png.meta",
-    "Resources/FartFlap/player18_flap_01.png",
-    "Resources/FartFlap/player18_flap_01.png.meta",
-    "Resources/FartFlap/player18_flap_02.png",
-    "Resources/FartFlap/player18_flap_02.png.meta",
-    "Resources/FartFlap/player18_flap_03.png",
-    "Resources/FartFlap/player18_flap_03.png.meta",
-    "Resources/FartFlap/player18_flap_04.png",
-    "Resources/FartFlap/player18_flap_04.png.meta",
-    "Resources/FartFlap/player18_flap_05.png",
-    "Resources/FartFlap/player18_flap_05.png.meta",
-    "Resources/FartFlap/player18_flap_06.png",
-    "Resources/FartFlap/player18_flap_06.png.meta",
-    "Resources/FartFlap/player18_flap_07.png",
-    "Resources/FartFlap/player18_flap_07.png.meta",
-    "Sprites/Characters/player18.png",
-    "Sprites/Characters/player18.png.meta"
+    "Resources/CharacterIdle/player15_idle_00.png",
+    "Resources/CharacterIdle/player15_idle_00.png.meta",
+    "Resources/CharacterIdle/player15_idle_01.png",
+    "Resources/CharacterIdle/player15_idle_01.png.meta",
+    "Resources/CharacterIdle/player15_idle_02.png",
+    "Resources/CharacterIdle/player15_idle_02.png.meta",
+    "Resources/DeathFlail/player15_flail_00.png",
+    "Resources/DeathFlail/player15_flail_00.png.meta",
+    "Resources/DeathFlail/player15_flail_01.png",
+    "Resources/DeathFlail/player15_flail_01.png.meta",
+    "Resources/DeathFlail/player15_flail_02.png",
+    "Resources/DeathFlail/player15_flail_02.png.meta",
+    "Resources/DeathFlail/player15_flail_03.png",
+    "Resources/DeathFlail/player15_flail_03.png.meta",
+    "Resources/DeathFlail/player15_flail_04.png",
+    "Resources/DeathFlail/player15_flail_04.png.meta",
+    "Resources/DeathFlail/player15_flail_05.png",
+    "Resources/DeathFlail/player15_flail_05.png.meta",
+    "Resources/DeathFlail/player15_flail_06.png",
+    "Resources/DeathFlail/player15_flail_06.png.meta",
+    "Resources/DeathFlail/player15_flail_07.png",
+    "Resources/DeathFlail/player15_flail_07.png.meta",
+    "Resources/DeathFlail/player15_flail_08.png",
+    "Resources/DeathFlail/player15_flail_08.png.meta",
+    "Resources/DeathFlail/player15_flail_09.png",
+    "Resources/DeathFlail/player15_flail_09.png.meta",
+    "Resources/DeathFlail/player15_flail_10.png",
+    "Resources/DeathFlail/player15_flail_10.png.meta",
+    "Resources/DeathFlail/player15_flail_11.png",
+    "Resources/DeathFlail/player15_flail_11.png.meta",
+    "Resources/DeathSplat/player15_splat.png",
+    "Resources/DeathSplat/player15_splat.png.meta",
+    "Resources/DeathSplat/player15_splatchar.png",
+    "Resources/DeathSplat/player15_splatchar.png.meta",
+    "Resources/FartFlap/player15_flap_00.png",
+    "Resources/FartFlap/player15_flap_00.png.meta",
+    "Resources/FartFlap/player15_flap_01.png",
+    "Resources/FartFlap/player15_flap_01.png.meta",
+    "Resources/FartFlap/player15_flap_02.png",
+    "Resources/FartFlap/player15_flap_02.png.meta",
+    "Resources/FartFlap/player15_flap_03.png",
+    "Resources/FartFlap/player15_flap_03.png.meta",
+    "Resources/FartFlap/player15_flap_04.png",
+    "Resources/FartFlap/player15_flap_04.png.meta",
+    "Resources/FartFlap/player15_flap_05.png",
+    "Resources/FartFlap/player15_flap_05.png.meta",
+    "Resources/FartFlap/player15_flap_06.png",
+    "Resources/FartFlap/player15_flap_06.png.meta",
+    "Resources/FartFlap/player15_flap_07.png",
+    "Resources/FartFlap/player15_flap_07.png.meta",
+    "Sprites/Characters/player15.png",
+    "Sprites/Characters/player15.png.meta"
   ],
   "pixellab": {
     "calls": 1,
@@ -129,52 +129,35 @@
     "preview_strip_idle.png",
     "preview_strip_flap.png"
   ],
-  "card": "77b8be0a-9999-4c82-976a-e88c72a3ad05",
-  "card_name": "[Character Artist] First set: the other 8 characters",
-  "run": "20261107-171522-character-artist",
+  "card": "1e020801-70d8-4a4c-bf21-d986491f98ef",
+  "card_name": "[Character Artist] First set: the other 8 characters, made again",
+  "run": "20261108-213543-character-artist",
   "bridge": {
     "nearest_roster": "player12",
-    "difference_from_nearest": 18.1,
-    "hair_distance": 15.4,
+    "difference_from_nearest": 19.1,
+    "hair_distance": 12.7,
     "nearest_hair": "player12",
-    "face_distance": 34.4,
-    "nearest_face": "player3",
-    "skin_distance": 0.0,
+    "face_distance": 29.9,
+    "nearest_face": "player12",
+    "skin_distance": 23.7,
     "nearest_skin": "player11",
-    "size_mb": 5.92,
-    "running_total_mb": 47.56
+    "size_mb": 6.26,
+    "running_total_mb": 29.19
   },
   "critic": {
-    "what_i_see": "Dark skin, short hair, neutral expression.",
+    "what_i_see": "Smiling, brown-skinned character with short hair.",
     "tell_apart": true,
     "problems": [
-      "dark skin"
+      "hair looks detached from the head"
     ],
-    "verdict": "pass",
-    "note_for_artist": ""
+    "verdict": "fail",
+    "note_for_artist": "Reconnect the hair to the head for a more cohesive look."
   },
   "gdd_check": {
     "verdict": "pass",
     "problems": [],
     "note_for_maker": "",
     "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1",
-    "dropped": [
-      {
-        "finding": {
-          "rule": "Hair uses bold silhouettes. Never green hair.",
-          "words": "Tall, rigid cornrows forming a geometric crown, slightly asymmetrical (black)",
-          "why": "The description includes 'geometric crown' and 'asymmetrical', which imply exaggerated or stylized features that could make the character visually distinguishable in a way that may cross into caricature, violating the rule against exaggerated features."
-        },
-        "dropped": "a maybe, not a break (\"imply\")"
-      },
-      {
-        "finding": {
-          "rule": "A character can't be mistakable for anyone already on the roster.",
-          "words": "Tall, rigid cornrows forming a geometric crown, slightly asymmetrical (black)",
-          "why": "The specific description of 'geometric crown' and 'asymmetrical' cornrows is overly detailed and unique, increasing the risk of visual confusion with existing characters, especially if similar stylization exists elsewhere."
-        },
-        "dropped": "a maybe, not a break (\"risk\")"
-      }
-    ]
+    "dropped": []
   }
 }

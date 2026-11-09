@@ -70,6 +70,9 @@ PICTURE_RULES = [
     "An object split across layers.",
     "Holes inside objects.",
     "Key color left behind.",
+    # DAVID, 2026-11-08: Derrick's face is fine, though the Critic failed the same words ("wide-set eyes, thick bushy brows")
+    # three runs in a row. Whether a face looks exaggerated shows on the picture, not in the words.
+    "Every face gets the same cartoon treatment, with no exaggerated features.",
 ]
 
 

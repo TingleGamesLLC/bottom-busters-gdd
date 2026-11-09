@@ -1,0 +1,18 @@
+{
+  "n": 7,
+  "at": "2026-11-08T21:46:34",
+  "from": "character-artist",
+  "to": "critic",
+  "kind": "design",
+  "payload": {
+    "task": "t1",
+    "design": {
+      "first_name": "Clayton",
+      "set": "African American",
+      "skin_tone": "chestnut",
+      "hair": "Neat, short flat-top with a sharp center part and tapered sides (black)",
+      "beard": "full, rounded, with a defined jawline",
+      "face": "small eyes, thin upward-curving brows, calm expression"
+    }
+  }
+}

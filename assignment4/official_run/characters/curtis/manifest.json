@@ -1,20 +1,20 @@
 {
   "kind": "character",
-  "name": "Curtis (player13)",
+  "name": "Curtis (player18)",
   "agent": "Character Artist",
-  "slot": 13,
-  "skin": "player13",
+  "slot": 18,
+  "skin": "player18",
   "first_name": "Curtis",
   "set": "African American",
   "face": {
     "eyes": [
       [
-        462,
-        206
+        473,
+        217
       ],
       [
         550,
-        206
+        223
       ]
     ],
     "mouth": [
@@ -23,16 +23,16 @@
     ],
     "eye_boxes": [
       [
-        445,
-        478,
-        200,
-        211
+        456,
+        490,
+        212,
+        222
       ],
       [
-        530,
-        571,
-        200,
-        211
+        526,
+        573,
+        212,
+        234
       ]
     ],
     "mouth_box": [
@@ -44,17 +44,17 @@
   },
   "concept": {
     "first_name": "Curtis",
-    "hair": "Tall, rigid cornrows forming a geometric crown",
+    "hair": "Short, tightly curled hair with a high, rounded crown and tapered sides",
     "hair_color": "black",
     "beard": true,
-    "beard_desc": "sharp, angular, trimmed close",
-    "face": "thin brows, narrow eyes, neutral expression",
-    "skin_tone": "chestnut",
-    "why_distinct": "The geometric cornrow crown and sharp, angular beard create a starkly different silhouette from the roster's softer or more symmetrical styles",
+    "beard_desc": "full, rounded beard with a defined jawline",
+    "face": "small eyes, thin upward-curving brows, calm expression",
+    "skin_tone": "espresso",
+    "why_distinct": "his high, rounded crown of tightly curled hair and full rounded beard are unique among the set\u2019s existing styles, avoiding afros, cornrows, fades, and locs",
     "set": "African American",
     "name": "Curtis"
   },
-  "seed": 17012310,
+  "seed": 21359300,
   "rect": {
     "x": 237,
     "y": 54,
@@ -62,58 +62,58 @@
     "height": 922
   },
   "files": [
-    "Resources/CharacterIdle/player13_idle_00.png",
-    "Resources/CharacterIdle/player13_idle_00.png.meta",
-    "Resources/CharacterIdle/player13_idle_01.png",
-    "Resources/CharacterIdle/player13_idle_01.png.meta",
-    "Resources/CharacterIdle/player13_idle_02.png",
-    "Resources/CharacterIdle/player13_idle_02.png.meta",
-    "Resources/DeathFlail/player13_flail_00.png",
-    "Resources/DeathFlail/player13_flail_00.png.meta",
-    "Resources/DeathFlail/player13_flail_01.png",
-    "Resources/DeathFlail/player13_flail_01.png.meta",
-    "Resources/DeathFlail/player13_flail_02.png",
-    "Resources/DeathFlail/player13_flail_02.png.meta",
-    "Resources/DeathFlail/player13_flail_03.png",
-    "Resources/DeathFlail/player13_flail_03.png.meta",
-    "Resources/DeathFlail/player13_flail_04.png",
-    "Resources/DeathFlail/player13_flail_04.png.meta",
-    "Resources/DeathFlail/player13_flail_05.png",
-    "Resources/DeathFlail/player13_flail_05.png.meta",
-    "Resources/DeathFlail/player13_flail_06.png",
-    "Resources/DeathFlail/player13_flail_06.png.meta",
-    "Resources/DeathFlail/player13_flail_07.png",
-    "Resources/DeathFlail/player13_flail_07.png.meta",
-    "Resources/DeathFlail/player13_flail_08.png",
-    "Resources/DeathFlail/player13_flail_08.png.meta",
-    "Resources/DeathFlail/player13_flail_09.png",
-    "Resources/DeathFlail/player13_flail_09.png.meta",
-    "Resources/DeathFlail/player13_flail_10.png",
-    "Resources/DeathFlail/player13_flail_10.png.meta",
-    "Resources/DeathFlail/player13_flail_11.png",
-    "Resources/DeathFlail/player13_flail_11.png.meta",
-    "Resources/DeathSplat/player13_splat.png",
-    "Resources/DeathSplat/player13_splat.png.meta",
-    "Resources/DeathSplat/player13_splatchar.png",
-    "Resources/DeathSplat/player13_splatchar.png.meta",
-    "Resources/FartFlap/player13_flap_00.png",
-    "Resources/FartFlap/player13_flap_00.png.meta",
-    "Resources/FartFlap/player13_flap_01.png",
-    "Resources/FartFlap/player13_flap_01.png.meta",
-    "Resources/FartFlap/player13_flap_02.png",
-    "Resources/FartFlap/player13_flap_02.png.meta",
-    "Resources/FartFlap/player13_flap_03.png",
-    "Resources/FartFlap/player13_flap_03.png.meta",
-    "Resources/FartFlap/player13_flap_04.png",
-    "Resources/FartFlap/player13_flap_04.png.meta",
-    "Resources/FartFlap/player13_flap_05.png",
-    "Resources/FartFlap/player13_flap_05.png.meta",
-    "Resources/FartFlap/player13_flap_06.png",
-    "Resources/FartFlap/player13_flap_06.png.meta",
-    "Resources/FartFlap/player13_flap_07.png",
-    "Resources/FartFlap/player13_flap_07.png.meta",
-    "Sprites/Characters/player13.png",
-    "Sprites/Characters/player13.png.meta"
+    "Resources/CharacterIdle/player18_idle_00.png",
+    "Resources/CharacterIdle/player18_idle_00.png.meta",
+    "Resources/CharacterIdle/player18_idle_01.png",
+    "Resources/CharacterIdle/player18_idle_01.png.meta",
+    "Resources/CharacterIdle/player18_idle_02.png",
+    "Resources/CharacterIdle/player18_idle_02.png.meta",
+    "Resources/DeathFlail/player18_flail_00.png",
+    "Resources/DeathFlail/player18_flail_00.png.meta",
+    "Resources/DeathFlail/player18_flail_01.png",
+    "Resources/DeathFlail/player18_flail_01.png.meta",
+    "Resources/DeathFlail/player18_flail_02.png",
+    "Resources/DeathFlail/player18_flail_02.png.meta",
+    "Resources/DeathFlail/player18_flail_03.png",
+    "Resources/DeathFlail/player18_flail_03.png.meta",
+    "Resources/DeathFlail/player18_flail_04.png",
+    "Resources/DeathFlail/player18_flail_04.png.meta",
+    "Resources/DeathFlail/player18_flail_05.png",
+    "Resources/DeathFlail/player18_flail_05.png.meta",
+    "Resources/DeathFlail/player18_flail_06.png",
+    "Resources/DeathFlail/player18_flail_06.png.meta",
+    "Resources/DeathFlail/player18_flail_07.png",
+    "Resources/DeathFlail/player18_flail_07.png.meta",
+    "Resources/DeathFlail/player18_flail_08.png",
+    "Resources/DeathFlail/player18_flail_08.png.meta",
+    "Resources/DeathFlail/player18_flail_09.png",
+    "Resources/DeathFlail/player18_flail_09.png.meta",
+    "Resources/DeathFlail/player18_flail_10.png",
+    "Resources/DeathFlail/player18_flail_10.png.meta",
+    "Resources/DeathFlail/player18_flail_11.png",
+    "Resources/DeathFlail/player18_flail_11.png.meta",
+    "Resources/DeathSplat/player18_splat.png",
+    "Resources/DeathSplat/player18_splat.png.meta",
+    "Resources/DeathSplat/player18_splatchar.png",
+    "Resources/DeathSplat/player18_splatchar.png.meta",
+    "Resources/FartFlap/player18_flap_00.png",
+    "Resources/FartFlap/player18_flap_00.png.meta",
+    "Resources/FartFlap/player18_flap_01.png",
+    "Resources/FartFlap/player18_flap_01.png.meta",
+    "Resources/FartFlap/player18_flap_02.png",
+    "Resources/FartFlap/player18_flap_02.png.meta",
+    "Resources/FartFlap/player18_flap_03.png",
+    "Resources/FartFlap/player18_flap_03.png.meta",
+    "Resources/FartFlap/player18_flap_04.png",
+    "Resources/FartFlap/player18_flap_04.png.meta",
+    "Resources/FartFlap/player18_flap_05.png",
+    "Resources/FartFlap/player18_flap_05.png.meta",
+    "Resources/FartFlap/player18_flap_06.png",
+    "Resources/FartFlap/player18_flap_06.png.meta",
+    "Resources/FartFlap/player18_flap_07.png",
+    "Resources/FartFlap/player18_flap_07.png.meta",
+    "Sprites/Characters/player18.png",
+    "Sprites/Characters/player18.png.meta"
   ],
   "pixellab": {
     "calls": 1,
@@ -129,23 +129,23 @@
     "preview_strip_idle.png",
     "preview_strip_flap.png"
   ],
-  "card": "77b8be0a-9999-4c82-976a-e88c72a3ad05",
-  "card_name": "[Character Artist] First set: the other 8 characters",
-  "run": "20261107-170123-character-artist",
+  "card": "1e020801-70d8-4a4c-bf21-d986491f98ef",
+  "card_name": "[Character Artist] First set: the other 8 characters, made again",
+  "run": "20261108-213543-character-artist",
   "bridge": {
-    "nearest_roster": "player2",
-    "difference_from_nearest": 24.9,
-    "hair_distance": 12.9,
-    "nearest_hair": "player6",
-    "face_distance": 37.7,
-    "nearest_face": "player11",
+    "nearest_roster": "player13",
+    "difference_from_nearest": 18.6,
+    "hair_distance": 11.7,
+    "nearest_hair": "player13",
+    "face_distance": 38.6,
+    "nearest_face": "player14",
     "skin_distance": 0.0,
-    "nearest_skin": "player11",
-    "size_mb": 5.97,
-    "running_total_mb": 17.86
+    "nearest_skin": "player14",
+    "size_mb": 5.1,
+    "running_total_mb": 46.13
   },
   "critic": {
-    "what_i_see": "Dark skin, short hair, serious expression.",
+    "what_i_see": "Dark skin, short hair, beard, and mustache.",
     "tell_apart": true,
     "problems": [
       "dark skin"
@@ -158,23 +158,6 @@
     "problems": [],
     "note_for_maker": "",
     "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1",
-    "dropped": [
-      {
-        "finding": {
-          "rule": "Hair uses bold silhouettes. Never green hair.",
-          "words": "Tall, rigid cornrows forming a geometric crown (black)",
-          "why": "The description implies a specific, possibly intricate hairstyle that may not form a bold silhouette at game size, violating the requirement for bold silhouettes."
-        },
-        "dropped": "a maybe, not a break (\"implies\")"
-      },
-      {
-        "finding": {
-          "rule": "A new character can't be mistakable for anyone already on the roster.",
-          "words": "Curtis",
-          "why": "The name 'Curtis' is not in the original ten names list (Larry, Doug, Norm, Greg, Carl, Steve, Barry, Terry, Kevin, Phil), but the GDD requires that every character have one real first name from the original roster or be newly approved; since 'Curtis' is not among the original ten and no indication of approval is given, it violates the naming rule."
-        },
-        "dropped": "the second look found no break: Curtis is not a name already on the roster."
-      }
-    ]
+    "dropped": []
   }
 }

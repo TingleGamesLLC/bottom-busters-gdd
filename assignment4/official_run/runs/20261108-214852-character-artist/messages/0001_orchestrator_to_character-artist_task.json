@@ -1,0 +1,14 @@
+{
+  "n": 1,
+  "at": "2026-11-08T21:48:56",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t1",
+    "brief": "Create 8 new African American character designs with distinct, non-repeating hairstyles (e.g., afros, cornrows, braids, twists, shaved patterns) to ensure no two characters share the same hair style.",
+    "set": "African American",
+    "slot": 20,
+    "notes": null
+  }
+}

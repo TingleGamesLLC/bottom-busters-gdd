@@ -1,0 +1,26 @@
+{
+  "n": 49,
+  "at": "2026-11-08T21:43:27",
+  "from": "critic",
+  "to": "orchestrator",
+  "kind": "gdd_check",
+  "payload": {
+    "task": "t7",
+    "verdict": "fail",
+    "problems": [
+      "The combination of 'wide-set eyes' and 'thick bushy brows' constitutes exaggerated facial features, which breaks the rule against exaggerated features. (GDD: \"The face. Every face gets the same cartoon treatment, with no exaggerated features.\")"
+    ],
+    "note_for_maker": "Remove exaggerated facial features such as 'wide-set eyes' and 'thick bushy brows'; adjust the face to use only standard cartoon features with no exaggeration.",
+    "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1",
+    "dropped": [
+      {
+        "finding": {
+          "rule": "No hats, glasses, masks or held objects.",
+          "words": "beard: thick, full, and slightly uneven",
+          "why": "The beard is not a prohibited feature, but the description implies a facial hair style that may be considered a caricature or exaggerated feature, which violates the rule against exaggerated features."
+        },
+        "dropped": "a maybe, not a break (\"implies\")"
+      }
+    ]
+  }
+}

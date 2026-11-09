@@ -1,0 +1,18 @@
+{
+  "n": 2,
+  "at": "2026-11-08T21:45:53",
+  "from": "character-artist",
+  "to": "critic",
+  "kind": "design",
+  "payload": {
+    "task": "t1",
+    "design": {
+      "first_name": "Curt",
+      "set": "African American",
+      "skin_tone": "bronze",
+      "hair": "Short, spiky faux hawk with a high fade on the sides, black hair (black)",
+      "beard": "thin, neatly trimmed, follows jawline",
+      "face": "narrow eyes, thin arched brows, subtle smirk"
+    }
+  }
+}

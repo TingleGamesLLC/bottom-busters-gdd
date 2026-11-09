@@ -1,0 +1,23 @@
+{
+  "n": 33,
+  "at": "2026-11-08T21:41:17",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t5",
+    "folder": "C:\\cluster\\crew\\work\\player17_t5",
+    "concept": {
+      "first_name": "Derrick",
+      "hair": "Long, thick dreadlocks coiled tightly in a spiral pattern down the back",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "neatly trimmed, full sideburns and chin",
+      "face": "wide-set eyes, thick bushy brows, calm expression",
+      "skin_tone": "chestnut",
+      "why_distinct": "his spiral dreadlocks and full, structured beard set him apart from the afro, cornrows, and fades already in the set, with a calm, open expression contrasting the subtle smirks and frowns of others",
+      "set": "African American",
+      "name": "Derrick"
+    }
+  }
+}

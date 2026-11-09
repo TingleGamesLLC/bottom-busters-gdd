@@ -1,0 +1,14 @@
+{
+  "n": 1,
+  "at": "2026-11-08T21:47:47",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t1",
+    "brief": "Generate 8 new African American characters with unique, non-repeating hairstyles, ensuring no afro or cornrow styles are reused from the previous failed batch.",
+    "set": "African American",
+    "slot": 20,
+    "notes": null
+  }
+}

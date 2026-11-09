@@ -1,0 +1,17 @@
+{
+  "n": 12,
+  "at": "2026-11-08T21:38:02",
+  "from": "critic",
+  "to": "orchestrator",
+  "kind": "verdict",
+  "payload": {
+    "task": "t2",
+    "what_i_see": "Dark skin, curly hair, beard, and mustache.",
+    "tell_apart": true,
+    "problems": [
+      "dark skin"
+    ],
+    "verdict": "pass",
+    "note_for_artist": ""
+  }
+}

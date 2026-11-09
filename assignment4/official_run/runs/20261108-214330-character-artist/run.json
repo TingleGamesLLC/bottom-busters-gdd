@@ -1,0 +1,91 @@
+{
+  "id": "20261108-214330-character-artist",
+  "started": "2026-11-08T21:43:30",
+  "status": "stopped: character-artist lost both cheeks on t1: the Critic sent it back against the GDD: The description includes exaggerated facial features such as 'wide-set eyes', 'thick bushy brows', and 'surprised grimace', which violate the rule against exaggerated features. (GDD: \"The face. Every face gets the same cartoon treatment, with no exaggerated features.\")",
+  "card": "[Character Artist] First set: the other 8 characters, made again",
+  "tasks": [
+    {
+      "id": "t1",
+      "brief": "Modify the character designer to enforce uniqueness in hairstyle across the set, ensuring no two characters share the same hair style, particularly avoiding afros and cornrows.",
+      "set": "African American"
+    },
+    {
+      "id": "t2",
+      "brief": "Generate the revised set of 8 characters with distinct hairstyles, skin tones, and facial features, ensuring each character differs significantly from the others and meets approval criteria.",
+      "set": "African American"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-11-08T21:43:30",
+      "agent": "orchestrator",
+      "text": "no runner yet for wardrobe-stylist: [Wardrobe Stylist] 40 new hats and shades"
+    },
+    {
+      "at": "2026-11-08T21:43:30",
+      "agent": "orchestrator",
+      "text": "no runner yet for roast-writer: [Roast Writer] 250 new roast lines"
+    },
+    {
+      "at": "2026-11-08T21:43:30",
+      "agent": "orchestrator",
+      "text": "PixelLab balance before: {'usd': 0.0, 'generations': 1870.0}"
+    },
+    {
+      "at": "2026-11-08T21:43:33",
+      "agent": "orchestrator",
+      "text": "plan for [Character Artist] First set: the other 8 characters, made again: 2 tasks"
+    },
+    {
+      "at": "2026-11-08T21:43:44",
+      "agent": "critic",
+      "text": "GDD check on t1 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): pass"
+    },
+    {
+      "at": "2026-11-08T21:43:44",
+      "agent": "critic",
+      "text": "GDD check on t1: a finding was dropped, the second look found no break: The words do not violate the rule against green hair or bold silhouettes.: The description of the hair includes 'jagged zigzag pattern with sharp angles', which creates a stylized, non-bold silhouette that violates the requirement for bold silhouettes."
+    },
+    {
+      "at": "2026-11-08T21:43:44",
+      "agent": "critic",
+      "text": "GDD check on t1: a finding was dropped, the second look found no break: The name 'Tyrone' does not violate the rule against being mistakable for existing characters.: The name 'Tyrone' is already used by a character on the roster (Larry, Doug, Norm, Greg, Carl, Steve, Barry, Terry, Kevin, Phil), and no character with that name exists in the current roster, making it a duplicate name."
+    },
+    {
+      "at": "2026-11-08T21:44:14",
+      "agent": "bridge",
+      "text": "sent back t1: Make the hair look less like player15's: difference 9.1, needs at least 9.8. Make the face look less like player11's: difference 28.3, needs at least 29.7."
+    },
+    {
+      "at": "2026-11-08T21:44:28",
+      "agent": "critic",
+      "text": "GDD check on t1 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): fail: The description includes exaggerated facial features such as 'wide-set eyes', 'thick bushy brows', and 'surprised grimace', which violate the rule against exaggerated features. (GDD: \"The face. Every face gets the same cartoon treatment, with no exaggerated features.\")"
+    },
+    {
+      "at": "2026-11-08T21:44:28",
+      "agent": "critic",
+      "text": "GDD check on t1: a finding was dropped, the second look found no break: A beard is not a hat, glasses, mask, or held object.: The description includes facial hair that is not allowed, as it is not part of the character's face design but rather a feature that could be mistaken for a mask or disguise."
+    },
+    {
+      "at": "2026-11-08T21:44:28",
+      "agent": "critic",
+      "text": "GDD check on t1: a finding was dropped, a maybe, not a break (\"potentially\"): The beard description, especially 'thick, uneven stubble, wild edges', is similar in style and presentation to Carl's black bandit mask, making the character potentially mistaken for him at game size."
+    },
+    {
+      "at": "2026-11-08T21:44:28",
+      "agent": "orchestrator",
+      "text": "stopped: character-artist lost both cheeks on t1: the Critic sent it back against the GDD: The description includes exaggerated facial features such as 'wide-set eyes', 'thick bushy brows', and 'surprised grimace', which violate the rule against exaggerated features. (GDD: \"The face. Every face gets the same cartoon treatment, with no exaggerated features.\")"
+    },
+    {
+      "at": "2026-11-08T21:44:29",
+      "agent": "orchestrator",
+      "text": "PixelLab this run: {'calls': 1, 'usd': 0.0, 'generations': 5.0}"
+    }
+  ],
+  "objective": "Recreate the first set's other 8 characters with distinct hairstyles and appearances to avoid repetition and ensure each character is unique within the set.",
+  "pixellab": {
+    "calls": 1,
+    "usd": 0.0,
+    "generations": 5.0
+  }
+}

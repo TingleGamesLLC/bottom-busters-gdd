@@ -1,0 +1,24 @@
+{
+  "n": 4,
+  "at": "2026-11-08T21:49:15",
+  "from": "critic",
+  "to": "orchestrator",
+  "kind": "gdd_check",
+  "payload": {
+    "task": "t1",
+    "verdict": "pass",
+    "problems": [],
+    "note_for_maker": "",
+    "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1",
+    "dropped": [
+      {
+        "finding": {
+          "rule": "No hats, glasses, masks or held objects.",
+          "words": "beard: neatly trimmed, sharp angular lines",
+          "why": "The description of the beard as 'sharp angular lines' implies a stylized, exaggerated facial feature that could be considered a caricature, violating the rule against exaggerated features."
+        },
+        "dropped": "a maybe, not a break (\"implies\")"
+      }
+    ]
+  }
+}

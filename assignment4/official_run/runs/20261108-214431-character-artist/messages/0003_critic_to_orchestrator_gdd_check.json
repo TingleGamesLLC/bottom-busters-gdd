@@ -1,0 +1,24 @@
+{
+  "n": 3,
+  "at": "2026-11-08T21:44:43",
+  "from": "critic",
+  "to": "orchestrator",
+  "kind": "gdd_check",
+  "payload": {
+    "task": "t1",
+    "verdict": "pass",
+    "problems": [],
+    "note_for_maker": "",
+    "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1",
+    "dropped": [
+      {
+        "finding": {
+          "rule": "A character can't be mistakable for one on the roster at game size.",
+          "words": "Tyrone",
+          "why": "Tyrone is already a name on the roster (Larry, Doug, Norm, Greg, Carl, Steve, Barry, Terry, Kevin, Phil), making it a name that's already taken."
+        },
+        "dropped": "the second look found no break: Tyrone is a valid first name and not a duplicate or offensive name."
+      }
+    ]
+  }
+}

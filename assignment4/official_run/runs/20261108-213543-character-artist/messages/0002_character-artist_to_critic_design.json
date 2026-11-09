@@ -1,0 +1,18 @@
+{
+  "n": 2,
+  "at": "2026-11-08T21:36:35",
+  "from": "character-artist",
+  "to": "critic",
+  "kind": "design",
+  "payload": {
+    "task": "t1",
+    "design": {
+      "first_name": "David",
+      "set": "African American",
+      "skin_tone": "chestnut",
+      "hair": "Shaved sides with a high-top fade, center ridge of short black hair (black)",
+      "beard": "thin, neatly trimmed, follows jawline",
+      "face": "wide-set eyes, thick straight brows, neutral expression"
+    }
+  }
+}

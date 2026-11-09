@@ -1,0 +1,17 @@
+{
+  "n": 23,
+  "at": "2026-11-08T21:39:25",
+  "from": "critic",
+  "to": "orchestrator",
+  "kind": "verdict",
+  "payload": {
+    "task": "t3",
+    "what_i_see": "Smiling, brown-skinned character with short hair.",
+    "tell_apart": true,
+    "problems": [
+      "hair looks detached from the head"
+    ],
+    "verdict": "fail",
+    "note_for_artist": "Reconnect the hair to the head for a more cohesive look."
+  }
+}

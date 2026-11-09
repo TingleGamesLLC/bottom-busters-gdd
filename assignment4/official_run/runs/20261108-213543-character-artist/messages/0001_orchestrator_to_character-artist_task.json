@@ -1,0 +1,14 @@
+{
+  "n": 1,
+  "at": "2026-11-08T21:36:32",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t1",
+    "brief": "Generate character David with a distinct, non-repeating hairstyle (e.g., braids, shaved sides, or a unique fade) and a unique facial structure to differentiate from the previous set.",
+    "set": "African American",
+    "slot": 13,
+    "notes": null
+  }
+}

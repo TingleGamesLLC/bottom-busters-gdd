@@ -1,0 +1,18 @@
+{
+  "n": 8,
+  "at": "2026-11-08T21:37:26",
+  "from": "character-artist",
+  "to": "critic",
+  "kind": "design",
+  "payload": {
+    "task": "t2",
+    "design": {
+      "first_name": "Clay",
+      "set": "African American",
+      "skin_tone": "espresso",
+      "hair": "Short, textured bob with a slight wave, unevenly layered (black)",
+      "beard": "full, rounded beard with a defined jawline",
+      "face": "large round eyes, thin arched brows, surprised expression"
+    }
+  }
+}

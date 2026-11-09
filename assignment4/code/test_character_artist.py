@@ -171,7 +171,9 @@ def main():
             PAINT["skin"] = painted_color
             common.ask_json = stand_in_ask(dict(REPLY, first_name=first, skin_tone=tone))
             painted, _ = ca.make({"id": f"s{k}", "brief": "x"}, limit - 8 + k, [], None, 20 + k)
-            problems = bridge.check_character(painted)
+            # The stand-in paints every head alike, so each looks like the one published above, which the Bridge now
+            # compares against while it waits for David. The skin is what this checks.
+            problems = [x for x in bridge.check_character(painted) if "look less like" not in x]
             assert problems == [], (painted_color, problems)
             made = bridge._rgba(painted / "Sprites" / "Characters" / f"player{limit - 8 + k}.png")
             p = parts.of(made)
@@ -220,6 +222,29 @@ def main():
         must_be_malformed(dict(REPLY, hair_color="green"), first)
         assert must_be_malformed(dict(REPLY), first).startswith("the first name Darnell")   # already on the list
         print("Names and looks against the rules go back to the maker")
+
+        # A hair style the set already has goes back before it costs a cheek, and the prompt lists the set's looks
+        # (DAVID, 2026-11-08: five afros and three cornrows in one set).
+        assert ca.hair_style("Tight, coiled afro with a slight lift") == "afro" and ca.hair_style("high-top fade") == "high-top fade"
+        assert ca.hair_style("Tall, rigid cornrows forming a crown") == "cornrows" and ca.hair_style("tall crest") is None
+        afro = common.SUBMISSIONS / "characters" / "player90_t1"
+        afro.mkdir(parents=True)
+        (afro / "manifest.json").write_text(json.dumps({"kind": "character", "skin": "player90", "slot": 90, "set": first["name"],
+                                                        "first_name": "Afroguy", "concept": dict(REPLY, first_name="Afroguy", hair="round afro")}),
+                                            encoding="utf-8")
+        assert "afro hair is already in this set (Afroguy)" in must_be_malformed(dict(REPLY, first_name="Newname", hair="big round afro"), first)
+        assert ca.check_concept(dict(REPLY, first_name="Newname", hair="short twists"), first)["hair"] == "short twists"
+        seen_set = []
+        common.ask_json = stand_in_ask(dict(REPLY, first_name="Newname", hair="short twists"), seen_set)
+        ca.concept("x", [], None, first, 1)
+        prompt = seen_set[0][1]["content"]
+        assert "Already in this set" in prompt and "Afroguy: round afro" in prompt and "Hair styles this set already has: afro" in prompt, prompt
+        (afro / "decision.json").write_text('{"decision": "reject"}', encoding="utf-8")
+        assert ca.check_concept(dict(REPLY, first_name="Newname", hair="big round afro"), first)
+        import shutil
+        shutil.rmtree(afro)
+        common.ask_json = stand_in_ask(REPLY, seen)
+        print("A hair style already in the set goes back to the maker, and the prompt lists the set's looks")
         assert ca.check_first_name("Jean-Luc") == "Jean-Luc" and ca.check_first_name("José") == "José" and ca.check_first_name("darnell") == "Darnell"
 
         # A tone from outside the set is replaced from the set.

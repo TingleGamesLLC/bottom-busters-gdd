@@ -1,0 +1,23 @@
+{
+  "n": 4,
+  "at": "2026-11-08T21:46:22",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t1",
+    "folder": "C:\\cluster\\crew\\work\\player19_t1",
+    "concept": {
+      "first_name": "Curt",
+      "hair": "Short, spiky faux hawk with a high fade on the sides, black hair",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "thin, neatly trimmed, follows jawline",
+      "face": "narrow eyes, thin arched brows, subtle smirk",
+      "skin_tone": "bronze",
+      "why_distinct": "its spiky faux hawk with a high fade is unique in the set, avoiding afros, cornrows, twists, locs, and straight fades",
+      "set": "African American",
+      "name": "Curt"
+    }
+  }
+}

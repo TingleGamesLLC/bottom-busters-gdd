@@ -1,0 +1,14 @@
+{
+  "n": 30,
+  "at": "2026-11-08T21:40:17",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t5",
+    "brief": "Generate character Derrick with a distinct hair style (e.g., dreadlocks, shaved sides with a center ridge, or a textured fringe) and a unique body proportion (e.g., taller, broader shoulders) to differentiate from previous characters.",
+    "set": "African American",
+    "slot": 17,
+    "notes": null
+  }
+}

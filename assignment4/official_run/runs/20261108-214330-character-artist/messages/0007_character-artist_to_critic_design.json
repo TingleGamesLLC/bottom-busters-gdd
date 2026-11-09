@@ -1,0 +1,18 @@
+{
+  "n": 7,
+  "at": "2026-11-08T21:44:20",
+  "from": "character-artist",
+  "to": "critic",
+  "kind": "design",
+  "payload": {
+    "task": "t1",
+    "design": {
+      "first_name": "Jamal",
+      "set": "African American",
+      "skin_tone": "espresso",
+      "hair": "Short, spiky, uneven tufts forming a jagged crown, black hair (black)",
+      "beard": "thick, uneven stubble, wild edges",
+      "face": "wide-set eyes, thick bushy brows, surprised grimace"
+    }
+  }
+}

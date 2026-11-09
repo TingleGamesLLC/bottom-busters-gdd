@@ -1,0 +1,14 @@
+{
+  "n": 36,
+  "at": "2026-11-08T21:41:25",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t6",
+    "brief": "Generate character Elijah with a completely different hair style (e.g., straightened, low fade, or a full beard with styled hair) and a unique accessory (e.g., earrings, glasses, or a necklace) not used in prior characters.",
+    "set": "African American",
+    "slot": 18,
+    "notes": null
+  }
+}

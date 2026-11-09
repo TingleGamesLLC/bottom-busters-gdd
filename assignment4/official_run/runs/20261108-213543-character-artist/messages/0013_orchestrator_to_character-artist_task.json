@@ -1,0 +1,14 @@
+{
+  "n": 13,
+  "at": "2026-11-08T21:38:02",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t3",
+    "brief": "Generate character Marcus with a unique hair style (e.g., natural waves, cornrows with geometric patterns, or a high-top fade) and a distinct skin tone variation (e.g., medium-dark) to avoid similarity to prior characters.",
+    "set": "African American",
+    "slot": 15,
+    "notes": null
+  }
+}

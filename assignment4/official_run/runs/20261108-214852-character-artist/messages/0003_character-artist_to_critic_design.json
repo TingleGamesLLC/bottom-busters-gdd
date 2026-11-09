@@ -1,0 +1,18 @@
+{
+  "n": 3,
+  "at": "2026-11-08T21:49:12",
+  "from": "character-artist",
+  "to": "critic",
+  "kind": "design",
+  "payload": {
+    "task": "t1",
+    "design": {
+      "first_name": "James",
+      "set": "African American",
+      "skin_tone": "chestnut",
+      "hair": "Short, spiky, asymmetrical undercut with a jagged side part (black)",
+      "beard": "neatly trimmed, sharp angular lines",
+      "face": "small eyes, thick bushy brows, slightly scowling expression"
+    }
+  }
+}

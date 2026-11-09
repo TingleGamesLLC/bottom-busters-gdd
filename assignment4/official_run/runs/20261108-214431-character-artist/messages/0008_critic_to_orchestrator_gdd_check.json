@@ -1,0 +1,34 @@
+{
+  "n": 8,
+  "at": "2026-11-08T21:45:35",
+  "from": "critic",
+  "to": "orchestrator",
+  "kind": "gdd_check",
+  "payload": {
+    "task": "t1",
+    "verdict": "fail",
+    "problems": [
+      "The combination of 'wide eyes' and 'startled expression' constitutes an exaggerated facial feature, which violates the rule against exaggerated features. (GDD: \"The face. Every face gets the same cartoon treatment, with no exaggerated features.\")"
+    ],
+    "note_for_maker": "Revise the hair to use a bold silhouette, remove the 'broken glass' metaphor, adjust the beard to avoid resemblance to existing characters, and tone down the face to a neutral cartoon expression without exaggeration.",
+    "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1",
+    "dropped": [
+      {
+        "finding": {
+          "rule": "Hair uses bold silhouettes. Never green hair.",
+          "words": "Short, jagged spikes rising in uneven clusters like broken glass (black)",
+          "why": "The description 'jagged spikes rising in uneven clusters like broken glass' implies a stylized, non-bold silhouette, violating the requirement for bold silhouettes."
+        },
+        "dropped": "a maybe, not a break (\"implies\")"
+      },
+      {
+        "finding": {
+          "rule": "A new character can't be mistakable for anyone already on the roster.",
+          "words": "beard: patchy, irregular, with missing sections",
+          "why": "The description of the beard as 'patchy, irregular, with missing sections' could make the character visually resemble existing characters with similar facial hair patterns, risking confusion at game size."
+        },
+        "dropped": "a maybe, not a break (\"risking\")"
+      }
+    ]
+  }
+}

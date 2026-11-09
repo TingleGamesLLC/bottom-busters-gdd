@@ -1,0 +1,18 @@
+{
+  "n": 7,
+  "at": "2026-11-08T21:45:27",
+  "from": "character-artist",
+  "to": "critic",
+  "kind": "design",
+  "payload": {
+    "task": "t1",
+    "design": {
+      "first_name": "Jamal",
+      "set": "African American",
+      "skin_tone": "bronze",
+      "hair": "Short, jagged spikes rising in uneven clusters like broken glass (black)",
+      "beard": "patchy, irregular, with missing sections",
+      "face": "wide eyes, thick brows, startled expression"
+    }
+  }
+}

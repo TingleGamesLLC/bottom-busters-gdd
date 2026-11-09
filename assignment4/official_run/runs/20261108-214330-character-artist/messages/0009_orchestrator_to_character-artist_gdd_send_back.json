@@ -1,0 +1,11 @@
+{
+  "n": 9,
+  "at": "2026-11-08T21:44:28",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "gdd_send_back",
+  "payload": {
+    "task": "t1",
+    "notes": "The Critic checked it against the GDD and sent it back: The description includes exaggerated facial features such as 'wide-set eyes', 'thick bushy brows', and 'surprised grimace', which violate the rule against exaggerated features. (GDD: \"The face. Every face gets the same cartoon treatment, with no exaggerated features.\"). Remove all facial hair, avoid exaggerated features, and ensure the face design does not resemble any existing character. Use only standard cartoon facial features with no caricature."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "n": 12,
+  "at": "2026-11-08T21:47:19",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t2",
+    "brief": "Generate the 8 revised characters in a single run, each with distinct facial features, skin tones, and non-repeating hairstyles, and submit them for review with clear documentation of differences from the previous batch.",
+    "set": "African American",
+    "slot": 20,
+    "notes": null
+  }
+}

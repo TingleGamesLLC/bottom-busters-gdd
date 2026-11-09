@@ -67,10 +67,15 @@ def _is_rejected(folder):
     return (_load(Path(folder) / "decision.json", {}) or {}).get("decision") == "reject"
 
 
-def character_list(skip=None):
-    """Every character a new one has to differ from: the game's own, then the submissions David approved."""
+def character_list(skip=None, waiting=True):
+    """Every character a new one has to differ from: the game's own, then every submission David hasn't rejected, the ones
+    still waiting for him included, so a batch is checked against itself. DAVID, 2026-11-08, on checking only the roster and
+    his approvals: "this is so wrong"; five of the eight made on 2026-11-07 had the same afro. waiting=False is the old list,
+    the game's and his approvals only, which set_limits needs."""
     found = {p.stem: p for p in sorted(SPRITES.glob("player*.png")) if re.fullmatch(r"player\d*", p.stem)}
-    for folder, m in submissions("approve"):
+    for folder, m in (submissions() if waiting else submissions("approve")):
+        if waiting and _is_rejected(folder):
+            continue
         if m.get("kind") == "character" and Path(folder) != skip and m["skin"] not in found:
             found[m["skin"]] = Path(folder) / "Sprites" / "Characters" / f"{m['skin']}.png"
     return found
@@ -86,11 +91,11 @@ def _measure(path):
     return _measures[key]
 
 
-def nearest(body, skip=None, skin=None):
+def nearest(body, skip=None, skin=None, waiting=True):
     """How close this body comes to everyone on the list, part by part: {part: (distance, who)}."""
     mine = parts.measure(body)
     closest = {}
-    for name, path in character_list(skip).items():
+    for name, path in character_list(skip, waiting).items():
         if name == skin:
             continue
         for part, d in parts.differences(mine, _measure(path)).items():
@@ -121,7 +126,8 @@ def set_limits():
     for folder, m in submissions("approve"):
         if m.get("kind") != "character":
             continue
-        closest = nearest(_rgba(Path(folder) / "Sprites" / "Characters" / f"{m['skin']}.png"), Path(folder), m["skin"])
+        closest = nearest(_rgba(Path(folder) / "Sprites" / "Characters" / f"{m['skin']}.png"), Path(folder), m["skin"],
+                          waiting=False)
         for part in ("hair", "face"):
             if part in closest:
                 new[part] = min(new[part], round(closest[part][0], 1))

@@ -181,6 +181,8 @@ def main():
         taken = copy_of(good, tmp)
         shutil.copytree(taken, common.SUBMISSIONS / "characters" / "player12_t1")
         edit_manifest(common.SUBMISSIONS / "characters" / "player12_t1", first_name="Sameguy", skin="player12", slot=12)
+        for path in (common.SUBMISSIONS / "characters" / "player12_t1").rglob("player11*"):
+            path.rename(path.with_name(path.name.replace("player11", "player12")))
         assert any("already" in x for x in bridge.check_character(edit_manifest(copy_of(good, tmp), first_name="sameguy")))
         print("A repeated first name is caught")
         (common.SUBMISSIONS / "characters" / "player12_t1" / "decision.json").write_text('{"decision": "reject"}', encoding="utf-8")
@@ -244,6 +246,20 @@ def main():
         assert bridge.check_chunk_plan(["not a task"], {"units": 1}, rule)
         assert bridge.check_chunk_plan([{"brief": "a"}, {"brief": "b"}], {"units": 2}, rule) == []
         print("Chunk plans are checked")
+
+        # The list has the ones still waiting for David, so a batch is checked against itself (DAVID, 2026-11-08).
+        waiting = common.SUBMISSIONS / "characters" / "player13_w"
+        shutil.copytree(good, waiting)
+        edit_manifest(waiting, skin="player13", slot=13, first_name="Waiter")
+        for path in waiting.rglob("player11*"):
+            path.rename(path.with_name(path.name.replace("player11", "player13")))
+        assert "player13" in bridge.character_list() and "player13" not in bridge.character_list(waiting=False)
+        problems = bridge.check_character(edit_manifest(copy_of(good, tmp), first_name="Newguy"))
+        assert any("look less like player13" in x for x in problems), problems
+        (waiting / "decision.json").write_text('{"decision": "reject"}', encoding="utf-8")
+        assert "player13" not in bridge.character_list()
+        shutil.rmtree(waiting)
+        print("A face too close to one still waiting for David is caught; a rejected one is off the list")
 
         facts = bridge.character_facts(good)
         for key in ("nearest_roster", "difference_from_nearest", "hair_distance", "face_distance", "size_mb", "running_total_mb"):

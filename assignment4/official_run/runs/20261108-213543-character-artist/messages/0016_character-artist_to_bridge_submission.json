@@ -1,0 +1,23 @@
+{
+  "n": 16,
+  "at": "2026-11-08T21:38:44",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t3",
+    "folder": "C:\\cluster\\crew\\work\\player15_t3",
+    "concept": {
+      "first_name": "Marcus",
+      "hair": "Short, tightly coiled twists in a symmetrical spiral pattern",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "thin, neatly trimmed, follows jawline",
+      "face": "small eyes, thin arched brows, calm neutral expression",
+      "skin_tone": "chestnut",
+      "why_distinct": "Unique spiral twist hairstyle and calm expression distinguish him from the roster's afros, cornrows, and high-top fades.",
+      "set": "African American",
+      "name": "Marcus"
+    }
+  }
+}

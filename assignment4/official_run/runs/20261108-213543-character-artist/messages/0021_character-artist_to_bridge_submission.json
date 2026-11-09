@@ -1,0 +1,23 @@
+{
+  "n": 21,
+  "at": "2026-11-08T21:39:18",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t3",
+    "folder": "C:\\cluster\\crew\\work\\player15_t3",
+    "concept": {
+      "first_name": "Marcus",
+      "hair": "Short, tightly coiled twists forming a textured crown",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "thin, straight, and neatly trimmed",
+      "face": "small eyes, thin upward-curving brows, soft smile",
+      "skin_tone": "bronze",
+      "why_distinct": "His tightly coiled twist crown and upward-curving brows with a soft smile distinguish him from David\u2019s high-top fade and neutral expression, with a unique facial structure and beard style.",
+      "set": "African American",
+      "name": "Marcus"
+    }
+  }
+}

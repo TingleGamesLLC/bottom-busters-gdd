@@ -1,0 +1,23 @@
+{
+  "n": 5,
+  "at": "2026-11-08T21:49:48",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t1",
+    "folder": "C:\\cluster\\crew\\work\\player20_t1",
+    "concept": {
+      "first_name": "James",
+      "hair": "Short, spiky, asymmetrical undercut with a jagged side part",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "neatly trimmed, sharp angular lines",
+      "face": "small eyes, thick bushy brows, slightly scowling expression",
+      "skin_tone": "chestnut",
+      "why_distinct": "its jagged, asymmetrical undercut and sharp beard contrast sharply with Marcus's symmetrical twists and soft features",
+      "set": "African American",
+      "name": "James"
+    }
+  }
+}

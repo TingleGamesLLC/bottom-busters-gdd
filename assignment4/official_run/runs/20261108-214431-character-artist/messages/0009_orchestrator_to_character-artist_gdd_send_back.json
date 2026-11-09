@@ -1,0 +1,11 @@
+{
+  "n": 9,
+  "at": "2026-11-08T21:45:35",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "gdd_send_back",
+  "payload": {
+    "task": "t1",
+    "notes": "The Critic checked it against the GDD and sent it back: The combination of 'wide eyes' and 'startled expression' constitutes an exaggerated facial feature, which violates the rule against exaggerated features. (GDD: \"The face. Every face gets the same cartoon treatment, with no exaggerated features.\"). Revise the hair to use a bold silhouette, remove the 'broken glass' metaphor, adjust the beard to avoid resemblance to existing characters, and tone down the face to a neutral cartoon expression without exaggeration."
+  }
+}

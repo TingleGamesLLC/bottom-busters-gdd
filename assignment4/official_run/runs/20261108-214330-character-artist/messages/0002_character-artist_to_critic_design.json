@@ -1,0 +1,18 @@
+{
+  "n": 2,
+  "at": "2026-11-08T21:43:37",
+  "from": "character-artist",
+  "to": "critic",
+  "kind": "design",
+  "payload": {
+    "task": "t1",
+    "design": {
+      "first_name": "Tyrone",
+      "set": "African American",
+      "skin_tone": "chestnut",
+      "hair": "Short, jagged zigzag pattern with sharp angles, black hair (black)",
+      "beard": "thin, sharply angled, follows jawline",
+      "face": "small eyes, thin straight brows, neutral expression"
+    }
+  }
+}

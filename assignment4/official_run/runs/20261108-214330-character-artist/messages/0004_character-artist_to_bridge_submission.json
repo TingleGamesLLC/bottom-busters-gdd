@@ -1,0 +1,23 @@
+{
+  "n": 4,
+  "at": "2026-11-08T21:44:12",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t1",
+    "folder": "C:\\cluster\\crew\\work\\player19_t1",
+    "concept": {
+      "first_name": "Tyrone",
+      "hair": "Short, jagged zigzag pattern with sharp angles, black hair",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "thin, sharply angled, follows jawline",
+      "face": "small eyes, thin straight brows, neutral expression",
+      "skin_tone": "chestnut",
+      "why_distinct": "Its jagged, geometric zigzag hair pattern and sharply angled beard are completely unique to the set, avoiding afros, cornrows, and all other existing styles.",
+      "set": "African American",
+      "name": "Tyrone"
+    }
+  }
+}

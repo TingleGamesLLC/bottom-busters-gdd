@@ -1,20 +1,20 @@
 {
   "kind": "character",
-  "name": "James (player17). Critic's note: Reconnect the hair to the head for a more cohesive look.",
+  "name": "James (player20)",
   "agent": "Character Artist",
-  "slot": 17,
-  "skin": "player17",
+  "slot": 20,
+  "skin": "player20",
   "first_name": "James",
   "set": "African American",
   "face": {
     "eyes": [
       [
-        473,
-        234
+        513,
+        220
       ],
       [
-        566,
-        234
+        590,
+        220
       ]
     ],
     "mouth": [
@@ -23,16 +23,16 @@
     ],
     "eye_boxes": [
       [
-        456,
-        490,
-        223,
-        245
+        489,
+        537,
+        206,
+        234
       ],
       [
-        549,
-        583,
-        223,
-        245
+        572,
+        607,
+        206,
+        234
       ]
     ],
     "mouth_box": [
@@ -44,76 +44,76 @@
   },
   "concept": {
     "first_name": "James",
-    "hair": "Tight, coiled afro with a slight asymmetrical lift on one side",
+    "hair": "Short, spiky, asymmetrical undercut with a jagged side part",
     "hair_color": "black",
     "beard": true,
-    "beard_desc": "neat, full, and slightly asymmetrical",
-    "face": "thin eyebrows, small eyes, neutral expression",
+    "beard_desc": "neatly trimmed, sharp angular lines",
+    "face": "small eyes, thick bushy brows, slightly scowling expression",
     "skin_tone": "chestnut",
-    "why_distinct": "The combination of a uniquely asymmetrical afro and a full, asymmetrical beard sets Curtis apart from the roster\u2019s similar afros and beards.",
+    "why_distinct": "its jagged, asymmetrical undercut and sharp beard contrast sharply with Marcus's symmetrical twists and soft features",
     "set": "African American",
     "name": "James"
   },
-  "seed": 17153200,
+  "seed": 21485210,
   "rect": {
     "x": 237,
     "y": 54,
     "width": 503,
-    "height": 956
+    "height": 945
   },
   "files": [
-    "Resources/CharacterIdle/player17_idle_00.png",
-    "Resources/CharacterIdle/player17_idle_00.png.meta",
-    "Resources/CharacterIdle/player17_idle_01.png",
-    "Resources/CharacterIdle/player17_idle_01.png.meta",
-    "Resources/CharacterIdle/player17_idle_02.png",
-    "Resources/CharacterIdle/player17_idle_02.png.meta",
-    "Resources/DeathFlail/player17_flail_00.png",
-    "Resources/DeathFlail/player17_flail_00.png.meta",
-    "Resources/DeathFlail/player17_flail_01.png",
-    "Resources/DeathFlail/player17_flail_01.png.meta",
-    "Resources/DeathFlail/player17_flail_02.png",
-    "Resources/DeathFlail/player17_flail_02.png.meta",
-    "Resources/DeathFlail/player17_flail_03.png",
-    "Resources/DeathFlail/player17_flail_03.png.meta",
-    "Resources/DeathFlail/player17_flail_04.png",
-    "Resources/DeathFlail/player17_flail_04.png.meta",
-    "Resources/DeathFlail/player17_flail_05.png",
-    "Resources/DeathFlail/player17_flail_05.png.meta",
-    "Resources/DeathFlail/player17_flail_06.png",
-    "Resources/DeathFlail/player17_flail_06.png.meta",
-    "Resources/DeathFlail/player17_flail_07.png",
-    "Resources/DeathFlail/player17_flail_07.png.meta",
-    "Resources/DeathFlail/player17_flail_08.png",
-    "Resources/DeathFlail/player17_flail_08.png.meta",
-    "Resources/DeathFlail/player17_flail_09.png",
-    "Resources/DeathFlail/player17_flail_09.png.meta",
-    "Resources/DeathFlail/player17_flail_10.png",
-    "Resources/DeathFlail/player17_flail_10.png.meta",
-    "Resources/DeathFlail/player17_flail_11.png",
-    "Resources/DeathFlail/player17_flail_11.png.meta",
-    "Resources/DeathSplat/player17_splat.png",
-    "Resources/DeathSplat/player17_splat.png.meta",
-    "Resources/DeathSplat/player17_splatchar.png",
-    "Resources/DeathSplat/player17_splatchar.png.meta",
-    "Resources/FartFlap/player17_flap_00.png",
-    "Resources/FartFlap/player17_flap_00.png.meta",
-    "Resources/FartFlap/player17_flap_01.png",
-    "Resources/FartFlap/player17_flap_01.png.meta",
-    "Resources/FartFlap/player17_flap_02.png",
-    "Resources/FartFlap/player17_flap_02.png.meta",
-    "Resources/FartFlap/player17_flap_03.png",
-    "Resources/FartFlap/player17_flap_03.png.meta",
-    "Resources/FartFlap/player17_flap_04.png",
-    "Resources/FartFlap/player17_flap_04.png.meta",
-    "Resources/FartFlap/player17_flap_05.png",
-    "Resources/FartFlap/player17_flap_05.png.meta",
-    "Resources/FartFlap/player17_flap_06.png",
-    "Resources/FartFlap/player17_flap_06.png.meta",
-    "Resources/FartFlap/player17_flap_07.png",
-    "Resources/FartFlap/player17_flap_07.png.meta",
-    "Sprites/Characters/player17.png",
-    "Sprites/Characters/player17.png.meta"
+    "Resources/CharacterIdle/player20_idle_00.png",
+    "Resources/CharacterIdle/player20_idle_00.png.meta",
+    "Resources/CharacterIdle/player20_idle_01.png",
+    "Resources/CharacterIdle/player20_idle_01.png.meta",
+    "Resources/CharacterIdle/player20_idle_02.png",
+    "Resources/CharacterIdle/player20_idle_02.png.meta",
+    "Resources/DeathFlail/player20_flail_00.png",
+    "Resources/DeathFlail/player20_flail_00.png.meta",
+    "Resources/DeathFlail/player20_flail_01.png",
+    "Resources/DeathFlail/player20_flail_01.png.meta",
+    "Resources/DeathFlail/player20_flail_02.png",
+    "Resources/DeathFlail/player20_flail_02.png.meta",
+    "Resources/DeathFlail/player20_flail_03.png",
+    "Resources/DeathFlail/player20_flail_03.png.meta",
+    "Resources/DeathFlail/player20_flail_04.png",
+    "Resources/DeathFlail/player20_flail_04.png.meta",
+    "Resources/DeathFlail/player20_flail_05.png",
+    "Resources/DeathFlail/player20_flail_05.png.meta",
+    "Resources/DeathFlail/player20_flail_06.png",
+    "Resources/DeathFlail/player20_flail_06.png.meta",
+    "Resources/DeathFlail/player20_flail_07.png",
+    "Resources/DeathFlail/player20_flail_07.png.meta",
+    "Resources/DeathFlail/player20_flail_08.png",
+    "Resources/DeathFlail/player20_flail_08.png.meta",
+    "Resources/DeathFlail/player20_flail_09.png",
+    "Resources/DeathFlail/player20_flail_09.png.meta",
+    "Resources/DeathFlail/player20_flail_10.png",
+    "Resources/DeathFlail/player20_flail_10.png.meta",
+    "Resources/DeathFlail/player20_flail_11.png",
+    "Resources/DeathFlail/player20_flail_11.png.meta",
+    "Resources/DeathSplat/player20_splat.png",
+    "Resources/DeathSplat/player20_splat.png.meta",
+    "Resources/DeathSplat/player20_splatchar.png",
+    "Resources/DeathSplat/player20_splatchar.png.meta",
+    "Resources/FartFlap/player20_flap_00.png",
+    "Resources/FartFlap/player20_flap_00.png.meta",
+    "Resources/FartFlap/player20_flap_01.png",
+    "Resources/FartFlap/player20_flap_01.png.meta",
+    "Resources/FartFlap/player20_flap_02.png",
+    "Resources/FartFlap/player20_flap_02.png.meta",
+    "Resources/FartFlap/player20_flap_03.png",
+    "Resources/FartFlap/player20_flap_03.png.meta",
+    "Resources/FartFlap/player20_flap_04.png",
+    "Resources/FartFlap/player20_flap_04.png.meta",
+    "Resources/FartFlap/player20_flap_05.png",
+    "Resources/FartFlap/player20_flap_05.png.meta",
+    "Resources/FartFlap/player20_flap_06.png",
+    "Resources/FartFlap/player20_flap_06.png.meta",
+    "Resources/FartFlap/player20_flap_07.png",
+    "Resources/FartFlap/player20_flap_07.png.meta",
+    "Sprites/Characters/player20.png",
+    "Sprites/Characters/player20.png.meta"
   ],
   "pixellab": {
     "calls": 1,
@@ -129,29 +129,29 @@
     "preview_strip_idle.png",
     "preview_strip_flap.png"
   ],
-  "card": "77b8be0a-9999-4c82-976a-e88c72a3ad05",
-  "card_name": "[Character Artist] First set: the other 8 characters",
-  "run": "20261107-171522-character-artist",
+  "card": "1e020801-70d8-4a4c-bf21-d986491f98ef",
+  "card_name": "[Character Artist] First set: the other 8 characters, made again",
+  "run": "20261108-214852-character-artist",
   "bridge": {
-    "nearest_roster": "player11",
-    "difference_from_nearest": 20.7,
-    "hair_distance": 14.4,
-    "nearest_hair": "player11",
-    "face_distance": 31.6,
-    "nearest_face": "player11",
+    "nearest_roster": "player19",
+    "difference_from_nearest": 16.1,
+    "hair_distance": 11.5,
+    "nearest_hair": "player19",
+    "face_distance": 35.0,
+    "nearest_face": "player12",
     "skin_distance": 0.0,
     "nearest_skin": "player11",
-    "size_mb": 5.95,
-    "running_total_mb": 41.64
+    "size_mb": 5.93,
+    "running_total_mb": 57.98
   },
   "critic": {
-    "what_i_see": "Afro hair, brown skin, no beard, simple face.",
+    "what_i_see": "Dark skin, short hair, neutral expression.",
     "tell_apart": true,
     "problems": [
-      "hair looks detached from head"
+      "dark skin"
     ],
-    "verdict": "fail",
-    "note_for_artist": "Reconnect the hair to the head for a more cohesive look."
+    "verdict": "pass",
+    "note_for_artist": ""
   },
   "gdd_check": {
     "verdict": "pass",
@@ -162,18 +162,10 @@
       {
         "finding": {
           "rule": "No hats, glasses, masks or held objects.",
-          "words": "beard: neat, full, and slightly asymmetrical",
-          "why": "The rule forbids facial features that are exaggerated or caricatured, and 'neat, full, and slightly asymmetrical' beard is a stylistic detail that could imply a caricatured or overly specific feature beyond the allowed cartoon treatment."
+          "words": "beard: neatly trimmed, sharp angular lines",
+          "why": "The description of the beard as 'sharp angular lines' implies a stylized, exaggerated facial feature that could be considered a caricature, violating the rule against exaggerated features."
         },
-        "dropped": "a maybe, not a break (\"imply\")"
-      },
-      {
-        "finding": {
-          "rule": "Every face gets the same cartoon treatment, with no exaggerated features.",
-          "words": "thin eyebrows, small eyes, neutral expression",
-          "why": "The combination of 'thin eyebrows' and 'small eyes' constitutes an exaggerated facial feature that deviates from the standard cartoon treatment and risks caricature."
-        },
-        "dropped": "a maybe, not a break (\"risks\")"
+        "dropped": "a maybe, not a break (\"implies\")"
       }
     ]
   }

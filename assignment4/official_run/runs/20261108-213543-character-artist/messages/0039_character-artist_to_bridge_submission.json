@@ -1,0 +1,23 @@
+{
+  "n": 39,
+  "at": "2026-11-08T21:42:21",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t6",
+    "folder": "C:\\cluster\\crew\\work\\player18_t6",
+    "concept": {
+      "first_name": "Curtis",
+      "hair": "Short, tightly curled hair with a high, rounded crown and tapered sides",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "full, rounded beard with a defined jawline",
+      "face": "small eyes, thin upward-curving brows, calm expression",
+      "skin_tone": "espresso",
+      "why_distinct": "his high, rounded crown of tightly curled hair and full rounded beard are unique among the set\u2019s existing styles, avoiding afros, cornrows, fades, and locs",
+      "set": "African American",
+      "name": "Curtis"
+    }
+  }
+}

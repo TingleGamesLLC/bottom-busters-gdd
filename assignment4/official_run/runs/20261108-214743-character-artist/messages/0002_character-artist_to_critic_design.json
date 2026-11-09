@@ -1,0 +1,18 @@
+{
+  "n": 2,
+  "at": "2026-11-08T21:47:59",
+  "from": "character-artist",
+  "to": "critic",
+  "kind": "design",
+  "payload": {
+    "task": "t1",
+    "design": {
+      "first_name": "Troy",
+      "set": "African American",
+      "skin_tone": "bronze",
+      "hair": "Short, straight, with a deep side part and a single, sharp ridge of hair combed upward on the left temple (black)",
+      "beard": "thin, clipped close, only on the jawline",
+      "face": "narrow eyes, thin straight brows, neutral stare"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "n": 45,
+  "at": "2026-11-08T21:43:16",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t7",
+    "folder": "C:\\cluster\\crew\\work\\player19_t7",
+    "concept": {
+      "first_name": "Troy",
+      "hair": "Sleek, flat-top with a deep side part and tapered sides",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "full, rounded, and slightly bushy",
+      "face": "medium eyes, thick arched brows, calm expression",
+      "skin_tone": "bronze",
+      "why_distinct": "flat-top with deep side part and rounded full beard is unique in the African American set, avoiding all existing styles and facial patterns",
+      "set": "African American",
+      "name": "Troy"
+    }
+  }
+}

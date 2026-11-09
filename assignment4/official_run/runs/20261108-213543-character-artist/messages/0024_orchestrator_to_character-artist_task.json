@@ -1,0 +1,14 @@
+{
+  "n": 24,
+  "at": "2026-11-08T21:39:25",
+  "from": "orchestrator",
+  "to": "character-artist",
+  "kind": "task",
+  "payload": {
+    "id": "t4",
+    "brief": "Generate character Daniel with a non-repeating hairstyle (e.g., undercut, afro with asymmetry, or a side-parted style) and a unique facial expression or feature (e.g., freckles, scar, or eye shape).",
+    "set": "African American",
+    "slot": 16,
+    "notes": null
+  }
+}

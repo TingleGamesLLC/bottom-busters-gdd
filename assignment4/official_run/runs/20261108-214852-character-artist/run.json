@@ -1,0 +1,71 @@
+{
+  "id": "20261108-214852-character-artist",
+  "started": "2026-11-08T21:48:52",
+  "status": "waiting on David",
+  "card": "[Character Artist] First set: the other 8 characters, made again",
+  "tasks": [
+    {
+      "id": "t1",
+      "brief": "Create 8 new African American character designs with distinct, non-repeating hairstyles (e.g., afros, cornrows, braids, twists, shaved patterns) to ensure no two characters share the same hair style.",
+      "set": "African American"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-11-08T21:48:52",
+      "agent": "orchestrator",
+      "text": "no runner yet for wardrobe-stylist: [Wardrobe Stylist] 40 new hats and shades"
+    },
+    {
+      "at": "2026-11-08T21:48:52",
+      "agent": "orchestrator",
+      "text": "no runner yet for roast-writer: [Roast Writer] 250 new roast lines"
+    },
+    {
+      "at": "2026-11-08T21:48:53",
+      "agent": "orchestrator",
+      "text": "PixelLab balance before: {'usd': 0.0, 'generations': 1845.0}"
+    },
+    {
+      "at": "2026-11-08T21:48:56",
+      "agent": "orchestrator",
+      "text": "plan for [Character Artist] First set: the other 8 characters, made again: 1 tasks"
+    },
+    {
+      "at": "2026-11-08T21:49:08",
+      "agent": "character-artist",
+      "text": "sent back: twists hair is already in this set (Marcus): pick a hair style nobody in this set has"
+    },
+    {
+      "at": "2026-11-08T21:49:15",
+      "agent": "critic",
+      "text": "GDD check on t1 (BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1): pass"
+    },
+    {
+      "at": "2026-11-08T21:49:15",
+      "agent": "critic",
+      "text": "GDD check on t1: a finding was dropped, a maybe, not a break (\"implies\"): The description of the beard as 'sharp angular lines' implies a stylized, exaggerated facial feature that could be considered a caricature, violating the rule against exaggerated features."
+    },
+    {
+      "at": "2026-11-08T21:49:57",
+      "agent": "critic",
+      "text": "t1 pass: Dark skin, short hair, neutral expression."
+    },
+    {
+      "at": "2026-11-08T21:49:57",
+      "agent": "character-artist",
+      "text": "t1 done: James (player20)"
+    },
+    {
+      "at": "2026-11-08T21:50:04",
+      "agent": "orchestrator",
+      "text": "PixelLab this run: {'calls': 1, 'usd': 0.0, 'generations': 5.0}"
+    }
+  ],
+  "objective": "Generate a new set of 8 distinct African American characters with unique hairstyles and appearances, ensuring no repetition of hair styles or facial features across the set, following the feedback from the failed 2026-11-07 run.",
+  "pixellab": {
+    "calls": 1,
+    "usd": 0.0,
+    "generations": 5.0
+  }
+}

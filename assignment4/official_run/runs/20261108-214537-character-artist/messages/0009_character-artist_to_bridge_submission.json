@@ -1,0 +1,23 @@
+{
+  "n": 9,
+  "at": "2026-11-08T21:47:12",
+  "from": "character-artist",
+  "to": "bridge",
+  "kind": "submission",
+  "payload": {
+    "task": "t1",
+    "folder": "C:\\cluster\\crew\\work\\player19_t1",
+    "concept": {
+      "first_name": "Clayton",
+      "hair": "Neat, short flat-top with a sharp center part and tapered sides",
+      "hair_color": "black",
+      "beard": true,
+      "beard_desc": "full, rounded, with a defined jawline",
+      "face": "small eyes, thin upward-curving brows, calm expression",
+      "skin_tone": "chestnut",
+      "why_distinct": "Its flat-top with sharp center part and tapered sides is unique in the set, differing from Darnell\u2019s afro and all other styles; the rounded beard and calm expression contrast Darnell\u2019s subtle smirk and full, trimmed beard.",
+      "set": "African American",
+      "name": "Clayton"
+    }
+  }
+}

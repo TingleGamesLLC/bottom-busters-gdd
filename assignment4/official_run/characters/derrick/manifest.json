@@ -1,20 +1,20 @@
 {
   "kind": "character",
-  "name": "Derrick (player20)",
+  "name": "Derrick (player17). Critic's note: Reconnect the hair to the head for a more cohesive look.",
   "agent": "Character Artist",
-  "slot": 20,
-  "skin": "player20",
+  "slot": 17,
+  "skin": "player17",
   "first_name": "Derrick",
   "set": "African American",
   "face": {
     "eyes": [
       [
-        473,
-        223
+        526,
+        202
       ],
       [
-        566,
-        223
+        601,
+        202
       ]
     ],
     "mouth": [
@@ -23,16 +23,16 @@
     ],
     "eye_boxes": [
       [
-        456,
-        490,
-        212,
-        234
+        503,
+        549,
+        183,
+        222
       ],
       [
-        549,
-        583,
-        212,
-        234
+        584,
+        618,
+        183,
+        222
       ]
     ],
     "mouth_box": [
@@ -44,76 +44,76 @@
   },
   "concept": {
     "first_name": "Derrick",
-    "hair": "Tight, coiled afro with a slight asymmetrical lift on one side",
+    "hair": "Long, thick dreadlocks coiled tightly in a spiral pattern down the back",
     "hair_color": "black",
     "beard": true,
-    "beard_desc": "neat, full, and slightly tapered",
-    "face": "thin eyebrows, narrow eyes, neutral expression",
+    "beard_desc": "neatly trimmed, full sideburns and chin",
+    "face": "wide-set eyes, thick bushy brows, calm expression",
     "skin_tone": "chestnut",
-    "why_distinct": "The combination of a tightly coiled afro with asymmetry and a full, tapered beard sets it apart from the other afro and beard styles on the roster.",
+    "why_distinct": "his spiral dreadlocks and full, structured beard set him apart from the afro, cornrows, and fades already in the set, with a calm, open expression contrasting the subtle smirks and frowns of others",
     "set": "African American",
     "name": "Derrick"
   },
-  "seed": 17156200,
+  "seed": 21358300,
   "rect": {
     "x": 237,
     "y": 54,
     "width": 503,
-    "height": 956
+    "height": 922
   },
   "files": [
-    "Resources/CharacterIdle/player20_idle_00.png",
-    "Resources/CharacterIdle/player20_idle_00.png.meta",
-    "Resources/CharacterIdle/player20_idle_01.png",
-    "Resources/CharacterIdle/player20_idle_01.png.meta",
-    "Resources/CharacterIdle/player20_idle_02.png",
-    "Resources/CharacterIdle/player20_idle_02.png.meta",
-    "Resources/DeathFlail/player20_flail_00.png",
-    "Resources/DeathFlail/player20_flail_00.png.meta",
-    "Resources/DeathFlail/player20_flail_01.png",
-    "Resources/DeathFlail/player20_flail_01.png.meta",
-    "Resources/DeathFlail/player20_flail_02.png",
-    "Resources/DeathFlail/player20_flail_02.png.meta",
-    "Resources/DeathFlail/player20_flail_03.png",
-    "Resources/DeathFlail/player20_flail_03.png.meta",
-    "Resources/DeathFlail/player20_flail_04.png",
-    "Resources/DeathFlail/player20_flail_04.png.meta",
-    "Resources/DeathFlail/player20_flail_05.png",
-    "Resources/DeathFlail/player20_flail_05.png.meta",
-    "Resources/DeathFlail/player20_flail_06.png",
-    "Resources/DeathFlail/player20_flail_06.png.meta",
-    "Resources/DeathFlail/player20_flail_07.png",
-    "Resources/DeathFlail/player20_flail_07.png.meta",
-    "Resources/DeathFlail/player20_flail_08.png",
-    "Resources/DeathFlail/player20_flail_08.png.meta",
-    "Resources/DeathFlail/player20_flail_09.png",
-    "Resources/DeathFlail/player20_flail_09.png.meta",
-    "Resources/DeathFlail/player20_flail_10.png",
-    "Resources/DeathFlail/player20_flail_10.png.meta",
-    "Resources/DeathFlail/player20_flail_11.png",
-    "Resources/DeathFlail/player20_flail_11.png.meta",
-    "Resources/DeathSplat/player20_splat.png",
-    "Resources/DeathSplat/player20_splat.png.meta",
-    "Resources/DeathSplat/player20_splatchar.png",
-    "Resources/DeathSplat/player20_splatchar.png.meta",
-    "Resources/FartFlap/player20_flap_00.png",
-    "Resources/FartFlap/player20_flap_00.png.meta",
-    "Resources/FartFlap/player20_flap_01.png",
-    "Resources/FartFlap/player20_flap_01.png.meta",
-    "Resources/FartFlap/player20_flap_02.png",
-    "Resources/FartFlap/player20_flap_02.png.meta",
-    "Resources/FartFlap/player20_flap_03.png",
-    "Resources/FartFlap/player20_flap_03.png.meta",
-    "Resources/FartFlap/player20_flap_04.png",
-    "Resources/FartFlap/player20_flap_04.png.meta",
-    "Resources/FartFlap/player20_flap_05.png",
-    "Resources/FartFlap/player20_flap_05.png.meta",
-    "Resources/FartFlap/player20_flap_06.png",
-    "Resources/FartFlap/player20_flap_06.png.meta",
-    "Resources/FartFlap/player20_flap_07.png",
-    "Resources/FartFlap/player20_flap_07.png.meta",
-    "Sprites/Characters/player20.png",
-    "Sprites/Characters/player20.png.meta"
+    "Resources/CharacterIdle/player17_idle_00.png",
+    "Resources/CharacterIdle/player17_idle_00.png.meta",
+    "Resources/CharacterIdle/player17_idle_01.png",
+    "Resources/CharacterIdle/player17_idle_01.png.meta",
+    "Resources/CharacterIdle/player17_idle_02.png",
+    "Resources/CharacterIdle/player17_idle_02.png.meta",
+    "Resources/DeathFlail/player17_flail_00.png",
+    "Resources/DeathFlail/player17_flail_00.png.meta",
+    "Resources/DeathFlail/player17_flail_01.png",
+    "Resources/DeathFlail/player17_flail_01.png.meta",
+    "Resources/DeathFlail/player17_flail_02.png",
+    "Resources/DeathFlail/player17_flail_02.png.meta",
+    "Resources/DeathFlail/player17_flail_03.png",
+    "Resources/DeathFlail/player17_flail_03.png.meta",
+    "Resources/DeathFlail/player17_flail_04.png",
+    "Resources/DeathFlail/player17_flail_04.png.meta",
+    "Resources/DeathFlail/player17_flail_05.png",
+    "Resources/DeathFlail/player17_flail_05.png.meta",
+    "Resources/DeathFlail/player17_flail_06.png",
+    "Resources/DeathFlail/player17_flail_06.png.meta",
+    "Resources/DeathFlail/player17_flail_07.png",
+    "Resources/DeathFlail/player17_flail_07.png.meta",
+    "Resources/DeathFlail/player17_flail_08.png",
+    "Resources/DeathFlail/player17_flail_08.png.meta",
+    "Resources/DeathFlail/player17_flail_09.png",
+    "Resources/DeathFlail/player17_flail_09.png.meta",
+    "Resources/DeathFlail/player17_flail_10.png",
+    "Resources/DeathFlail/player17_flail_10.png.meta",
+    "Resources/DeathFlail/player17_flail_11.png",
+    "Resources/DeathFlail/player17_flail_11.png.meta",
+    "Resources/DeathSplat/player17_splat.png",
+    "Resources/DeathSplat/player17_splat.png.meta",
+    "Resources/DeathSplat/player17_splatchar.png",
+    "Resources/DeathSplat/player17_splatchar.png.meta",
+    "Resources/FartFlap/player17_flap_00.png",
+    "Resources/FartFlap/player17_flap_00.png.meta",
+    "Resources/FartFlap/player17_flap_01.png",
+    "Resources/FartFlap/player17_flap_01.png.meta",
+    "Resources/FartFlap/player17_flap_02.png",
+    "Resources/FartFlap/player17_flap_02.png.meta",
+    "Resources/FartFlap/player17_flap_03.png",
+    "Resources/FartFlap/player17_flap_03.png.meta",
+    "Resources/FartFlap/player17_flap_04.png",
+    "Resources/FartFlap/player17_flap_04.png.meta",
+    "Resources/FartFlap/player17_flap_05.png",
+    "Resources/FartFlap/player17_flap_05.png.meta",
+    "Resources/FartFlap/player17_flap_06.png",
+    "Resources/FartFlap/player17_flap_06.png.meta",
+    "Resources/FartFlap/player17_flap_07.png",
+    "Resources/FartFlap/player17_flap_07.png.meta",
+    "Sprites/Characters/player17.png",
+    "Sprites/Characters/player17.png.meta"
   ],
   "pixellab": {
     "calls": 1,
@@ -129,35 +129,44 @@
     "preview_strip_idle.png",
     "preview_strip_flap.png"
   ],
-  "card": "77b8be0a-9999-4c82-976a-e88c72a3ad05",
-  "card_name": "[Character Artist] First set: the other 8 characters",
-  "run": "20261107-171522-character-artist",
+  "card": "1e020801-70d8-4a4c-bf21-d986491f98ef",
+  "card_name": "[Character Artist] First set: the other 8 characters, made again",
+  "run": "20261108-213543-character-artist",
   "bridge": {
-    "nearest_roster": "player12",
-    "difference_from_nearest": 21.5,
-    "hair_distance": 16.9,
-    "nearest_hair": "player12",
-    "face_distance": 35.4,
-    "nearest_face": "player11",
+    "nearest_roster": "player16",
+    "difference_from_nearest": 19.7,
+    "hair_distance": 14.4,
+    "nearest_hair": "player16",
+    "face_distance": 55.8,
+    "nearest_face": "player12",
     "skin_distance": 0.0,
     "nearest_skin": "player11",
-    "size_mb": 6.0,
-    "running_total_mb": 59.49
+    "size_mb": 5.93,
+    "running_total_mb": 41.04
   },
   "critic": {
-    "what_i_see": "The character has a large afro and a neutral expression.",
+    "what_i_see": "Dark hair, brown skin, simple facial features.",
     "tell_apart": true,
     "problems": [
-      "afro is large and prominent"
+      "dark hair looks detached from head"
     ],
-    "verdict": "pass",
-    "note_for_artist": ""
+    "verdict": "fail",
+    "note_for_artist": "Reconnect the hair to the head for a more cohesive look."
   },
   "gdd_check": {
     "verdict": "pass",
     "problems": [],
     "note_for_maker": "",
     "gdd": "BOTTOM_BUSTERS_GDD.md, Sections 21 and 21.1",
-    "dropped": []
+    "dropped": [
+      {
+        "finding": {
+          "rule": "No ethnic or religious caricature, and no feathers, headdresses or face paint.",
+          "words": "Long, thick dreadlocks coiled tightly in a spiral pattern down the back (black)",
+          "why": "Dreadlocks are a culturally specific hairstyle that could be perceived as a stereotypical marker, violating the rule against ethnic caricature."
+        },
+        "dropped": "the second look found no break: Dreadlocks are not a caricature or prohibited accessory under the rule."
+      }
+    ]
   }
 }
