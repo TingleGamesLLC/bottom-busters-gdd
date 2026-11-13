@@ -135,7 +135,7 @@ Survival, Gauntlet and versus Burrito Arena end cards have a PLAY AGAIN button. 
 - **Every other level:** 3 enemies.
 - **Enemy difficulty by world (2026-10-22):** every High Score enemy, in 1P, 2P co-op and 2P versus, uses its world's value: 1.0 in world 1, then 1.2, 1.4, 1.6, 1.8 and 2.0 in world 6.
 - **Lava:** replaces water on levels 84–99.
-- **Powerup odds:** Burrito and Green Burrito are 25% more likely in levels 1–15, which is the demo's range.
+- **Powerup odds:** Burrito and Green Burrito are 25% more likely in levels 1–15, a boost left from the old 15-level demo. The demo has been all 99 levels since 2026-10-14.
 - **As built, enemy count does not ramp across levels 8–99, and difficulty steps only once per world.** This is the board's top finding and it is now a planned deliverable with a mechanism: enemy count and the per-level difficulty number move out of the level files into one tuning table. The table is produced by the Difficulty Tuner agent (Section 16) from the per-run event logs of itch.io playtests, and nothing in it ships without a human playtest. The first target curve: 3 enemies at 1.0 through level 12, then +1 enemy every 25 levels and +0.05 difficulty every 10 levels, so that level 99 runs 6 enemies at about 1.5 and level 200 runs 10 enemies at about 2.0, with the lava world (levels 185–200) as the finale. Those numbers are a starting point for the first playtest round, not a promise.
 - **The run has an end.** The demo ends on the end card after Bonus Round 33 (level 99). The full game ends the same way after level 200's bonus round, with a VICTORY card. Players who want no end play Endless (Section 5).
 
