@@ -1,0 +1,239 @@
+{
+  "gaps": [
+    {
+      "id": "11-1",
+      "feature": "Best score display",
+      "section": "11",
+      "files": [
+        "Assets/Scripts/UI/MainMenu.cs",
+        "Assets/Scripts/Core/BestScoreManager.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "2 file(s), about 10 lines",
+      "score": 3,
+      "math": "3x0 + 2x0 + 2x1 + 1 = 3"
+    },
+    {
+      "id": "11-4",
+      "feature": "Best score label",
+      "section": "11",
+      "files": [
+        "Assets/Scripts/UI/MainMenu.cs",
+        "Assets/Scripts/Core/ScoreKeeper.cs",
+        "Assets/Scripts/Core/BestScoreManager.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "3 file(s), about 10 lines",
+      "score": 3,
+      "math": "3x0 + 2x0 + 2x1 + 1 = 3"
+    },
+    {
+      "id": "11-7",
+      "feature": "Score display on main menu",
+      "section": "11",
+      "files": [
+        "Assets/Scripts/UI/MainMenu.cs",
+        "Assets/Scripts/Core/BestScoreManager.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "2 file(s), about 15 lines",
+      "score": 3,
+      "math": "3x0 + 2x0 + 2x1 + 1 = 3"
+    },
+    {
+      "id": "1-4",
+      "feature": "Game Mode: Practice",
+      "section": "1",
+      "files": [
+        "Assets/Scripts/GameMode/PracticeGameMode.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "1 file(s), about 30 lines",
+      "score": 2,
+      "math": "3x0 + 2x0 + 2x0 + 2 = 2"
+    },
+    {
+      "id": "1-8",
+      "feature": "Agent Mode Assignment",
+      "section": "1",
+      "files": [
+        "Assets/Scripts/Agents/BuilderAgentPracticeGame.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "1 file(s), about 30 lines",
+      "score": 2,
+      "math": "3x0 + 2x0 + 2x0 + 2 = 2"
+    },
+    {
+      "id": "11-2",
+      "feature": "Score persistence",
+      "section": "11",
+      "files": [
+        "Assets/Scripts/Core/ScoreKeeper.cs",
+        "Assets/Scripts/UI/MainMenu.cs",
+        "Assets/Scripts/Core/BestScoreManager.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "3 file(s), about 15 lines",
+      "score": 1,
+      "math": "3x0 + 2x0 + 2x0 + 1 = 1"
+    },
+    {
+      "id": "11-3",
+      "feature": "Score tracking system",
+      "section": "11",
+      "files": [
+        "Assets/Scripts/Core/ScoreKeeper.cs",
+        "Assets/Scripts/UI/MainMenu.cs",
+        "Assets/Scripts/Core/BestScoreManager.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "3 file(s), about 15 lines",
+      "score": 1,
+      "math": "3x0 + 2x0 + 2x0 + 1 = 1"
+    },
+    {
+      "id": "11-5",
+      "feature": "Score reset on new session",
+      "section": "11",
+      "files": [
+        "Assets/Scripts/Core/ScoreKeeper.cs",
+        "Assets/Scripts/UI/MainMenu.cs",
+        "Assets/Scripts/Core/BestScoreManager.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "3 file(s), about 15 lines",
+      "score": 1,
+      "math": "3x0 + 2x0 + 2x0 + 1 = 1"
+    },
+    {
+      "id": "11-6",
+      "feature": "Score update trigger",
+      "section": "11",
+      "files": [
+        "Assets/Scripts/Core/ScoreKeeper.cs",
+        "Assets/Scripts/UI/MainMenu.cs",
+        "Assets/Scripts/Core/BestScoreManager.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "3 file(s), about 15 lines",
+      "score": 1,
+      "math": "3x0 + 2x0 + 2x0 + 1 = 1"
+    },
+    {
+      "id": "11-8",
+      "feature": "Score saving mechanism",
+      "section": "11",
+      "files": [
+        "Assets/Scripts/Core/ScoreKeeper.cs",
+        "Assets/Scripts/UI/MainMenu.cs",
+        "Assets/Scripts/Core/BestScoreManager.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "3 file(s), about 15 lines",
+      "score": 1,
+      "math": "3x0 + 2x0 + 2x0 + 1 = 1"
+    }
+  ],
+  "present": [
+    {
+      "id": "1-1",
+      "feature": "Main Menu Screen",
+      "how": "2 of 3 evidence names in the code, \"PLAY\" among them"
+    },
+    {
+      "id": "1-2",
+      "feature": "Play Button Mechanic",
+      "how": "2 of 3 evidence names in the code, StartRun among them"
+    },
+    {
+      "id": "1-3",
+      "feature": "Run Start System",
+      "how": "2 of 3 evidence names in the code, StartRun among them"
+    },
+    {
+      "id": "1-6",
+      "feature": "Run Lifecycle System",
+      "how": "2 of 3 evidence names in the code, StartRun among them"
+    },
+    {
+      "id": "1-7",
+      "feature": "Menu Navigation System",
+      "how": "2 of 3 evidence names in the code, StartRun among them"
+    },
+    {
+      "id": "7-5",
+      "feature": "Multiplayer Player Identity",
+      "how": "2 of 3 evidence names in the code, player2 among them"
+    },
+    {
+      "id": "1-5",
+      "feature": "Score Keeping System",
+      "how": "second look quoted Assets/Scripts/Core/ScoreKeeper.cs"
+    },
+    {
+      "id": "7-1",
+      "feature": "Character Select Screen",
+      "how": "second look quoted Assets/Scripts/UI/CharacterSelect.cs"
+    },
+    {
+      "id": "7-2",
+      "feature": "Character Name Display",
+      "how": "second look quoted Assets/Scripts/UI/CharacterNameDisplay.cs"
+    },
+    {
+      "id": "7-3",
+      "feature": "Player Name Assignment",
+      "how": "second look quoted Assets/Scripts/UI/CharacterNameDisplay.cs"
+    },
+    {
+      "id": "7-4",
+      "feature": "Character Skin Management",
+      "how": "second look quoted Assets/Scripts/UI/CharacterSelect.cs"
+    },
+    {
+      "id": "7-6",
+      "feature": "Character Tile Rendering",
+      "how": "second look quoted Assets/Scripts/UI/CharacterSelect.cs"
+    },
+    {
+      "id": "7-7",
+      "feature": "Character Name Persistence",
+      "how": "second look quoted Assets/Scripts/UI/CharacterSelect.cs"
+    },
+    {
+      "id": "7-8",
+      "feature": "Character Selection System",
+      "how": "second look quoted Assets/Scripts/UI/CharacterSelect.cs"
+    }
+  ],
+  "dirty": [
+    "Assets/Scripts/UI/CharacterNameDisplay.cs.meta"
+  ],
+  "waiting": {
+    "roast_lines": 0,
+    "characters": 1,
+    "wardrobe": 0,
+    "backgrounds": 0
+  }
+}

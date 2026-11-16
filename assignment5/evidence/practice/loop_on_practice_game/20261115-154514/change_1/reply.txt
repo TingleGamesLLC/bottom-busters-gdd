@@ -1,0 +1,54 @@
+=== NEW FILE: Assets/Scripts/UI/CharacterNameDisplay.cs
+using System.Collections.Generic;
+using UnityEngine;
+
+/// <summary>
+/// GDD Section 7: every character shows its first name under its tile on Character Select.
+/// player is Larry, player2 is Doug and player3 is Norm.
+/// Call DrawUnder from OnGUI right after drawing a tile.
+/// </summary>
+public static class CharacterNameDisplay
+{
+    private static readonly Dictionary<string, string> FirstNames = new Dictionary<string, string>
+    {
+        { "player", "Larry" },
+        { "player2", "Doug" },
+        { "player3", "Norm" },
+    };
+
+    private const float Gap = 4f;
+    private const float LabelHeight = 22f;
+
+    private static GUIStyle style;
+
+    /// <summary>The character's first name, or the skin id if it has no name yet.</summary>
+    public static string FirstNameFor(string skin)
+    {
+        if (skin != null && FirstNames.TryGetValue(skin, out string name)) return name;
+        return skin;
+    }
+
+    /// <summary>Draws the first name centered under the given tile. Must be called from OnGUI.</summary>
+    public static void DrawUnder(Rect tile, string skin)
+    {
+        if (style == null)
+        {
+            style = new GUIStyle(GUI.skin.label)
+            {
+                alignment = TextAnchor.UpperCenter,
+                fontStyle = FontStyle.Bold
+            };
+        }
+
+        Rect label = new Rect(tile.x, tile.yMax + Gap, tile.width, LabelHeight);
+        GUI.Label(label, FirstNameFor(skin), style);
+    }
+}
+=== EDIT: Assets/Scripts/UI/CharacterSelect.cs
+<<<<<<< FIND
+            if (GUI.Button(tile, skins[i])) picked = i;
+=======
+            if (GUI.Button(tile, skins[i])) picked = i;
+            CharacterNameDisplay.DrawUnder(tile, skins[i]);
+>>>>>>> REPLACE
+=== END

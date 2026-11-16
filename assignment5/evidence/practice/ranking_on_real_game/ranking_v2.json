@@ -1,0 +1,1601 @@
+{
+  "gaps": [
+    {
+      "id": "6.1-5",
+      "feature": "Platform Heights",
+      "section": "6.1",
+      "files": [
+        "Assets/Scripts/Level/PlatformHeightManager.cs"
+      ],
+      "unblocks": "13 backgrounds waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "1 file(s), about 20 lines",
+      "score": 7,
+      "math": "3x1 + 2x0 + 2x1 + 2 = 7"
+    },
+    {
+      "id": "4.3-4",
+      "feature": "Arm flailing during death",
+      "section": "4.3",
+      "files": [
+        "Assets/Scripts/Characters/CharacterBase.cs",
+        "Assets/Scripts/Characters/CharacterIdle.cs",
+        "Assets/Scripts/Characters/DeathFlightController.cs"
+      ],
+      "unblocks": "31 characters waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "3 file(s), about 25 lines",
+      "score": 6,
+      "math": "3x1 + 2x0 + 2x1 + 1 = 6"
+    },
+    {
+      "id": "4.4-4",
+      "feature": "Respawn with invincibility",
+      "section": "4.4",
+      "files": [
+        "Assets/Scripts/Characters/CharacterBase.cs",
+        "Assets/Scripts/Player/InvincibilityRespawn.cs"
+      ],
+      "unblocks": "31 characters waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "2 file(s), about 20 lines",
+      "score": 6,
+      "math": "3x1 + 2x0 + 2x1 + 1 = 6"
+    },
+    {
+      "id": "14-8",
+      "feature": "bonus round chefs",
+      "section": "14",
+      "files": [
+        "Assets/Scripts/Core/LevelSetup.cs",
+        "Assets/Scripts/Characters/ChefAnimal.cs"
+      ],
+      "unblocks": "31 characters waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "2 file(s), about 50 lines",
+      "score": 6,
+      "math": "3x1 + 2x0 + 2x1 + 1 = 6"
+    },
+    {
+      "id": "21-6",
+      "feature": "White underwear lives",
+      "section": "21",
+      "files": [
+        "Assets/Scripts/Characters/CharacterBase.cs",
+        "Assets/Scripts/Characters/AIController.cs",
+        "Assets/Scripts/Characters/UnderwearLivesManager.cs"
+      ],
+      "unblocks": "31 characters waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "3 file(s), about 30 lines",
+      "score": 6,
+      "math": "3x1 + 2x0 + 2x1 + 1 = 6"
+    },
+    {
+      "id": "2-1",
+      "feature": "Height-based combat",
+      "section": "2",
+      "files": [
+        "Assets/Scripts/Characters/AIController.cs",
+        "Assets/Scripts/Characters/PlayerController.cs",
+        "Assets/Scripts/Characters/CharacterBase.cs",
+        "Assets/Scripts/Combat/HeightCombatSystem.cs"
+      ],
+      "unblocks": "31 characters waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "4 file(s), about 20 lines",
+      "score": 5,
+      "math": "3x1 + 2x0 + 2x1 + 0 = 5"
+    },
+    {
+      "id": "4.4-1",
+      "feature": "Lives display system",
+      "section": "4.4",
+      "files": [
+        "Assets/Scripts/Characters/PlayerController.cs",
+        "Assets/Scripts/Replay/ReplayPlayer.cs",
+        "Assets/Scripts/Replay/ReplayPreviewStage.cs",
+        "Assets/Scripts/HUD/LivesDisplay.cs"
+      ],
+      "unblocks": "31 characters waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "4 file(s), about 30 lines",
+      "score": 5,
+      "math": "3x1 + 2x0 + 2x1 + 0 = 5"
+    },
+    {
+      "id": "4.4-5",
+      "feature": "Co-op 1UP revival",
+      "section": "4.4",
+      "files": [
+        "Assets/Scripts/Characters/PlayerController.cs",
+        "Assets/Scripts/Replay/ReplayPlayer.cs",
+        "Assets/Scripts/Replay/ReplayPreviewStage.cs",
+        "Assets/Scripts/Coop/CoopReviveSystem.cs"
+      ],
+      "unblocks": "31 characters waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "4 file(s), about 30 lines",
+      "score": 5,
+      "math": "3x1 + 2x0 + 2x1 + 0 = 5"
+    },
+    {
+      "id": "6.1-2",
+      "feature": "Ground with Water Gaps",
+      "section": "6.1",
+      "files": [
+        "Assets/Scripts/Core/LevelSetup.cs",
+        "Assets/Scripts/Characters/GroundSnagTracker.cs",
+        "Assets/Scripts/Characters/CharacterBase.cs",
+        "Assets/Scripts/Level/GroundWithWaterGaps.cs"
+      ],
+      "unblocks": "13 backgrounds waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "4 file(s), about 20 lines",
+      "score": 5,
+      "math": "3x1 + 2x0 + 2x1 + 0 = 5"
+    },
+    {
+      "id": "7-5",
+      "feature": "Character Animation System",
+      "section": "7",
+      "files": [
+        "Assets/Scripts/Characters/CharacterIdle.cs"
+      ],
+      "unblocks": "31 characters waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "1 file(s), about 0 lines",
+      "score": 5,
+      "math": "3x1 + 2x0 + 2x1 + 0 = 5"
+    },
+    {
+      "id": "14-2",
+      "feature": "terrain tile art",
+      "section": "14",
+      "files": [
+        "Assets/Scripts/Core/LevelSetup.cs"
+      ],
+      "unblocks": "13 backgrounds waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "1 file(s), about 0 lines",
+      "score": 5,
+      "math": "3x1 + 2x0 + 2x1 + 0 = 5"
+    },
+    {
+      "id": "16-3",
+      "feature": "Roast Event Triggering",
+      "section": "16",
+      "files": [
+        "Assets/Scripts/Level/BonusLevel.cs",
+        "Assets/Scripts/Replay/ReplayFormat.cs",
+        "Assets/Scripts/Replay/ReplayPlayer.cs",
+        "Assets/Scripts/Events/RoastEventTrigger.cs"
+      ],
+      "unblocks": "22 roast_lines waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "4 file(s), about 15 lines",
+      "score": 5,
+      "math": "3x1 + 2x0 + 2x1 + 0 = 5"
+    },
+    {
+      "id": "4.3-8",
+      "feature": "Damage source tracking",
+      "section": "4.3",
+      "files": [
+        "Assets/Scripts/DamageSource.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "1 file(s), about 20 lines",
+      "score": 4,
+      "math": "3x0 + 2x0 + 2x1 + 2 = 4"
+    },
+    {
+      "id": "7-8",
+      "feature": "Dynamic Character Unlocking",
+      "section": "7",
+      "files": [
+        "Assets/Scripts/Characters/CharacterBase.cs",
+        "Assets/Scripts/Characters/CharacterUnlockManager.cs"
+      ],
+      "unblocks": "31 characters waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "2 file(s), about 50 lines",
+      "score": 4,
+      "math": "3x1 + 2x0 + 2x0 + 1 = 4"
+    },
+    {
+      "id": "10-2",
+      "feature": "Poo Staining System",
+      "section": "10",
+      "files": [
+        "Assets/Scripts/Powerups/PooPileManager.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "1 file(s), about 20 lines",
+      "score": 4,
+      "math": "3x0 + 2x0 + 2x1 + 2 = 4"
+    },
+    {
+      "id": "21.3-4",
+      "feature": "Shades Positioning",
+      "section": "21.3",
+      "files": [
+        "Assets/Scripts/UI/DressingRoom.cs",
+        "Assets/Scripts/UI/CharacterSelect.cs",
+        "Assets/Scripts/Level/BonusLevel.cs",
+        "Assets/Scripts/Characters/Shades.cs"
+      ],
+      "unblocks": "2 wardrobe waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "4 file(s), about 20 lines",
+      "score": 3,
+      "math": "3x1 + 2x0 + 2x0 + 0 = 3"
+    },
+    {
+      "id": "21.3-6",
+      "feature": "No Shading or Gradients",
+      "section": "21.3",
+      "files": [
+        "Assets/Scripts/Characters/CharacterHalo.cs",
+        "Assets/Scripts/Characters/HatDirtMap.cs",
+        "Assets/Scripts/Characters/Wearables.cs",
+        "Assets/Scripts/Rendering/FlatFillMaterial.cs"
+      ],
+      "unblocks": "2 wardrobe waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "4 file(s), about 20 lines",
+      "score": 3,
+      "math": "3x1 + 2x0 + 2x0 + 0 = 3"
+    },
+    {
+      "id": "2-3",
+      "feature": "Poo physics and dirt system",
+      "section": "2",
+      "files": [
+        "Assets/Scripts/Characters/HatDirtMap.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "1 file(s), about 0 lines",
+      "score": 2,
+      "math": "3x0 + 2x0 + 2x1 + 0 = 2"
+    },
+    {
+      "id": "2-4",
+      "feature": "Run recording and export",
+      "section": "2",
+      "files": [
+        "Assets/Scripts/Replay/ShareExportRun.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "1 file(s), about 0 lines",
+      "score": 2,
+      "math": "3x0 + 2x0 + 2x1 + 0 = 2"
+    },
+    {
+      "id": "4.3-2",
+      "feature": "Stomp Kill mechanic",
+      "section": "4.3",
+      "files": [
+        "Assets/Scripts/Characters/CharacterBase.cs",
+        "Assets/Scripts/Replay/ReplayPlayer.cs",
+        "Assets/Scripts/UI/KillBadge.cs",
+        "Assets/Scripts/Characters/StompKillController.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "4 file(s), about 20 lines",
+      "score": 2,
+      "math": "3x0 + 2x0 + 2x1 + 0 = 2"
+    },
+    {
+      "id": "4.3-5",
+      "feature": "Instant death hazards",
+      "section": "4.3",
+      "files": [
+        "Assets/Scripts/Characters/CharacterBase.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "1 file(s), about 0 lines",
+      "score": 2,
+      "math": "3x0 + 2x0 + 2x1 + 0 = 2"
+    },
+    {
+      "id": "6.2-5",
+      "feature": "Ground Tile Matching",
+      "section": "6.2",
+      "files": [
+        "Assets/Scripts/Level/ArenaModeManager.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "1 file(s), about 50 lines",
+      "score": 2,
+      "math": "3x0 + 2x0 + 2x0 + 2 = 2"
+    },
+    {
+      "id": "9-3",
+      "feature": "Green Burrito Chaos Mode",
+      "section": "9",
+      "files": [
+        "Assets/Scripts/Replay/ReplayPlayer.cs",
+        "Assets/Scripts/Replay/ReplayPreviewStage.cs",
+        "Assets/Scripts/Audio/PickupSounds.cs",
+        "Assets/Scripts/Characters/GreenBurritoChaosMode.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "4 file(s), about 30 lines",
+      "score": 2,
+      "math": "3x0 + 2x0 + 2x1 + 0 = 2"
+    },
+    {
+      "id": "10-4",
+      "feature": "Permanent Base Coat",
+      "section": "10",
+      "files": [
+        "Assets/Scripts/Powerups/PooPileManager.cs",
+        "Assets/Scripts/Characters/CharacterBase.cs",
+        "Assets/Scripts/Powerups/ChiliPowerUp.cs",
+        "Assets/Scripts/Powerups/BaseCoatManager.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "4 file(s), about 30 lines",
+      "score": 2,
+      "math": "3x0 + 2x0 + 2x1 + 0 = 2"
+    },
+    {
+      "id": "16-4",
+      "feature": "Announcer Voice System",
+      "section": "16",
+      "files": [
+        "Assets/Scripts/UI/AnnouncerVoice.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "1 file(s), about 0 lines",
+      "score": 2,
+      "math": "3x0 + 2x0 + 2x1 + 0 = 2"
+    },
+    {
+      "id": "18-3",
+      "feature": "custom game builder",
+      "section": "18",
+      "files": [
+        "Assets/Scripts/UI/CustomGameBuilderPage.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "1 file(s), about 0 lines",
+      "score": 2,
+      "math": "3x0 + 2x0 + 2x1 + 0 = 2"
+    },
+    {
+      "id": "21-5",
+      "feature": "Dirt persistence",
+      "section": "21",
+      "files": [
+        "Assets/Scripts/Characters/HatDirtMap.cs",
+        "Assets/Scripts/Powerups/PooPileManager.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "2 file(s), about 0 lines",
+      "score": 2,
+      "math": "3x0 + 2x0 + 2x1 + 0 = 2"
+    },
+    {
+      "id": "4.4-3",
+      "feature": "Lives persist across levels",
+      "section": "4.4",
+      "files": [
+        "Assets/Scripts/Core/LevelSetup.cs",
+        "Assets/Scripts/Level/BonusLevel.cs",
+        "Assets/Scripts/Core/LifeManager.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "3 file(s), about 20 lines",
+      "score": 1,
+      "math": "3x0 + 2x0 + 2x0 + 1 = 1"
+    },
+    {
+      "id": "4.4-6",
+      "feature": "Survival mode invincibility duration",
+      "section": "4.4",
+      "files": [
+        "Assets/Scripts/Characters/PlayerController.cs",
+        "Assets/Scripts/Managers/CoopReviveManager.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "2 file(s), about 50 lines",
+      "score": 1,
+      "math": "3x0 + 2x0 + 2x0 + 1 = 1"
+    },
+    {
+      "id": "4.4-7",
+      "feature": "Spawn point system",
+      "section": "4.4",
+      "files": [
+        "Assets/Scripts/Core/SpawnPoint.cs",
+        "Assets/Scripts/Player/PlayerRespawnManager.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "2 file(s), about 30 lines",
+      "score": 1,
+      "math": "3x0 + 2x0 + 2x0 + 1 = 1"
+    },
+    {
+      "id": "8-3",
+      "feature": "Water Avoidance Logic",
+      "section": "8",
+      "files": [
+        "Assets/Scripts/Characters/AIController.cs",
+        "Assets/Scripts/Characters/CharacterBase.cs",
+        "Assets/Scripts/Characters/AIWaterAvoidanceChecker.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "3 file(s), about 20 lines",
+      "score": 1,
+      "math": "3x0 + 2x0 + 2x0 + 1 = 1"
+    },
+    {
+      "id": "11-8",
+      "feature": "No-Scoring Actions",
+      "section": "11",
+      "files": [
+        "Assets/Scripts/Characters/CharacterBase.cs",
+        "Assets/Scripts/Core/ScoreTable.cs",
+        "Assets/Scripts/Characters/NoScoringKillHandler.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "3 file(s), about 30 lines",
+      "score": 1,
+      "math": "3x0 + 2x0 + 2x0 + 1 = 1"
+    },
+    {
+      "id": "21.1-3",
+      "feature": "Character Appearance Rules",
+      "section": "21.1",
+      "files": [
+        "Assets/Scripts/Characters/Wearables.cs",
+        "Assets/Scripts/Characters/HairAppearanceValidator.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "2 file(s), about 10 lines",
+      "score": 1,
+      "math": "3x0 + 2x0 + 2x0 + 1 = 1"
+    },
+    {
+      "id": "21.1-7",
+      "feature": "Character Identity System",
+      "section": "21.1",
+      "files": [
+        "Assets/Scripts/Characters/CharacterIdle.cs",
+        "Assets/Scripts/UI/CharacterSelect.cs",
+        "Assets/Scripts/Characters/CharacterIdentitySystem.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "3 file(s), about 30 lines",
+      "score": 1,
+      "math": "3x0 + 2x0 + 2x0 + 1 = 1"
+    },
+    {
+      "id": "15-5",
+      "feature": "Shared audio library",
+      "section": "15",
+      "files": [
+        "Assets/Scripts/Audio/AudioBus.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "1 file(s), about 0 lines",
+      "score": 0,
+      "math": "3x0 + 2x0 + 2x0 + 0 = 0"
+    },
+    {
+      "id": "15-6",
+      "feature": "Audio tuning system",
+      "section": "15",
+      "files": [
+        "Assets/Scripts/Audio/AudioBus.cs",
+        "Assets/Scripts/Audio/DeathAudioLibrary.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "2 file(s), about 0 lines",
+      "score": 0,
+      "math": "3x0 + 2x0 + 2x0 + 0 = 0"
+    },
+    {
+      "id": "17-6",
+      "feature": "Replay File Storage",
+      "section": "17",
+      "files": [
+        "Assets/Scripts/Replay/ReplayFormat.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "1 file(s), about 0 lines",
+      "score": 0,
+      "math": "3x0 + 2x0 + 2x0 + 0 = 0"
+    },
+    {
+      "id": "19-8",
+      "feature": "Playtest telemetry",
+      "section": "19",
+      "files": [
+        "Assets/Scripts/Replay/GameStats.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "1 file(s), about 0 lines",
+      "score": 0,
+      "math": "3x0 + 2x0 + 2x0 + 0 = 0"
+    },
+    {
+      "id": "3-1",
+      "feature": "High Score Mode",
+      "section": "3",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "4.1-6",
+      "feature": "level progression",
+      "section": "4.1",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/Core/LevelSetup.cs",
+        "Assets/Scripts/Core/LevelProgressionManager.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "4.2-4",
+      "feature": "Ceiling bounce",
+      "section": "4.2",
+      "files": [
+        "Assets/Scripts/Characters/AIController.cs",
+        "Assets/Scripts/Core/CeilingPositioner.cs",
+        "Assets/Scripts/Core/AutoCameraSizer.cs",
+        "Assets/Scripts/Characters/CharacterCeilingBounce.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/CeilingPositioner.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "4.2-6",
+      "feature": "Input remapping",
+      "section": "4.2",
+      "files": [
+        "Assets/Scripts/UI/RebindPage.cs",
+        "Assets/Scripts/Core/GameSettings.cs",
+        "Assets/Scripts/Characters/PlayerController.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameSettings.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "6.1-1",
+      "feature": "Static Level Design",
+      "section": "6.1",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "6.1-4",
+      "feature": "All-Water Levels",
+      "section": "6.1",
+      "files": [
+        "Assets/Scripts/Level/Backdrop3D.cs",
+        "Assets/Scripts/Effects/BackdropInvert.cs",
+        "Assets/Scripts/Level/AllWaterLevelManager.cs"
+      ],
+      "skipped": "Assets/Scripts/Level/Backdrop3D.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "6.2-6",
+      "feature": "Unique Backdrop Rule",
+      "section": "6.2",
+      "files": [
+        "Assets/Scripts/Level/BackdropCatalog.cs",
+        "Assets/Scripts/Level/Backdrop3D.cs",
+        "Assets/Scripts/Level/BackdropManager.cs"
+      ],
+      "skipped": "Assets/Scripts/Level/Backdrop3D.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "6.2-7",
+      "feature": "World Transition Logic",
+      "section": "6.2",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/UI/StatsPage.cs",
+        "Assets/Scripts/LevelTransitionManager.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "6.3-1",
+      "feature": "Enemy count progression",
+      "section": "6.3",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/Difficulty/EnemyCountTable.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "6.3-6",
+      "feature": "Difficulty tuning table",
+      "section": "6.3",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/Core/DifficultyTuningTable.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "7-6",
+      "feature": "AI Wear Hats Setting",
+      "section": "7",
+      "files": [
+        "Assets/Scripts/Core/GameSettings.cs",
+        "Assets/Scripts/Characters/AIController.cs",
+        "Assets/Scripts/Characters/AIHatController.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameSettings.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "9-8",
+      "feature": "Whoopee Cushion Trap",
+      "section": "9",
+      "files": [
+        "Assets/Scripts/Core/CeilingPositioner.cs",
+        "Assets/Scripts/Replay/ReplayPreviewStage.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/CeilingPositioner.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "11-5",
+      "feature": "End Card Combo Display",
+      "section": "11",
+      "files": [
+        "Assets/Scripts/Replay/ReplayFormat.cs",
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/UI/EndCardComboDisplay.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "11-7",
+      "feature": "Kill Chain Multiplier",
+      "section": "11",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/UI/KillBadge.cs",
+        "Assets/Scripts/Characters/KillChainController.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "12-3",
+      "feature": "Announcer voice system",
+      "section": "12",
+      "files": [
+        "Assets/Scripts/UI/AnnouncerVoice.cs",
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/Settings/AnnouncerSettings.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "12-5",
+      "feature": "HUD with dynamic text boxes",
+      "section": "12",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/HUD/HudTextWithBox.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "13-6",
+      "feature": "Anti-Cheat Validation",
+      "section": "13",
+      "files": [
+        "Assets/Scripts/Services/ItchOnline.cs"
+      ],
+      "skipped": "Assets/Scripts/Services/ItchOnline.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "15-8",
+      "feature": "Music composition agreement",
+      "section": "15",
+      "files": [
+        "Assets/Scripts/Audio/LevelMusic.cs",
+        "Assets/Scripts/UI/ReplayLibraryPage.cs",
+        "Assets/Scripts/Agreements/MusicCompositionAgreement.cs"
+      ],
+      "skipped": "Assets/Scripts/UI/ReplayLibraryPage.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "17-4",
+      "feature": "Demo and Test Build Separation",
+      "section": "17",
+      "files": [
+        "Assets/Scripts/Core/BuildInfo.cs",
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/Core/BuildType.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/BuildInfo.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "18-2",
+      "feature": "endless mode",
+      "section": "18",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/UI/CustomGameBuilderPage.cs",
+        "Assets/Scripts/Mode/EndlessMode.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "18-4",
+      "feature": "multiplayer 2P",
+      "section": "18",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "18-8",
+      "feature": "settings system",
+      "section": "18",
+      "files": [
+        "Assets/Scripts/Core/GameSettings.cs",
+        "Assets/Scripts/UI/SettingsPage.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameSettings.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "19-3",
+      "feature": "Remote Play Together",
+      "section": "19",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/Services/ItchOnline.cs",
+        "Assets/Scripts/Online/RemotePlayTogetherManager.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "19-4",
+      "feature": "Couch Co-Op Fest eligibility",
+      "section": "19",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/Steam/SteamCouchCoOpFest.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "21.1-1",
+      "feature": "Character Roster System",
+      "section": "21.1",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/Characters/CharacterBase.cs",
+        "Assets/Scripts/Characters/CharacterRoster.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "21.1-2",
+      "feature": "Character Set Order",
+      "section": "21.1",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/UI/CharSelectTest.cs",
+        "Assets/Scripts/Characters/CharacterBase.cs",
+        "Assets/Scripts/Characters/CharacterSetOrder.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "21.1-4",
+      "feature": "Character Name Validation",
+      "section": "21.1",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/Characters/CharacterBase.cs",
+        "Assets/Scripts/Characters/CharacterValidator.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "21.1-8",
+      "feature": "Character Name Approval",
+      "section": "21.1",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/Characters/CharacterBase.cs",
+        "Assets/Scripts/Characters/NameApprovalManager.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "21.2-2",
+      "feature": "Event-Driven Roast Lines",
+      "section": "21.2",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/Events/RoastLineManager.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "21.4-8",
+      "feature": "Backdrop Generation Rules",
+      "section": "21.4",
+      "files": [
+        "Assets/Scripts/Level/Backdrop3D.cs",
+        "Assets/Scripts/Effects/ProceduralArt.cs",
+        "Assets/Scripts/Level/BackdropFlawCopier.cs"
+      ],
+      "skipped": "Assets/Scripts/Level/Backdrop3D.cs has uncommitted changes (another session's work)"
+    }
+  ],
+  "present": [
+    {
+      "id": "1-1",
+      "feature": "Fart propulsion",
+      "how": "4 of 4 evidence names in the code, \"fart\" among them"
+    },
+    {
+      "id": "1-2",
+      "feature": "Cheek-based health",
+      "how": "4 of 4 evidence names in the code, \"cheek\" among them"
+    },
+    {
+      "id": "1-3",
+      "feature": "Pop from above mechanic",
+      "how": "4 of 4 evidence names in the code, \"pop\" among them"
+    },
+    {
+      "id": "1-4",
+      "feature": "Poo pile system",
+      "how": "4 of 4 evidence names in the code, \"poo\" among them"
+    },
+    {
+      "id": "1-5",
+      "feature": "Burrito Arena mode",
+      "how": "4 of 4 evidence names in the code, \"Arena\" among them"
+    },
+    {
+      "id": "1-6",
+      "feature": "Powerup system",
+      "how": "4 of 4 evidence names in the code, \"powerup\" among them"
+    },
+    {
+      "id": "1-7",
+      "feature": "Replay system",
+      "how": "4 of 4 evidence names in the code, \"replay\" among them"
+    },
+    {
+      "id": "1-8",
+      "feature": "Local co-op and versus",
+      "how": "4 of 4 evidence names in the code, \"co-op\" among them"
+    },
+    {
+      "id": "4.2-1",
+      "feature": "Flap mechanic",
+      "how": "2 of 3 evidence names in the code, Flap among them"
+    },
+    {
+      "id": "4.2-3",
+      "feature": "Gravity system",
+      "how": "2 of 3 evidence names in the code, IsGrounded among them"
+    },
+    {
+      "id": "4.3-3",
+      "feature": "Death flight animation",
+      "how": "3 of 3 evidence names in the code, 5-second among them"
+    },
+    {
+      "id": "4.3-6",
+      "feature": "Water death trigger",
+      "how": "2 of 3 evidence names in the code, ledge among them"
+    },
+    {
+      "id": "4.3-7",
+      "feature": "Screen-wrap hit propagation",
+      "how": "3 of 3 evidence names in the code, edge copies among them"
+    },
+    {
+      "id": "5-1",
+      "feature": "High Score Mode",
+      "how": "2 of 3 evidence names in the code, GameMode.HighScore among them"
+    },
+    {
+      "id": "5-2",
+      "feature": "Burrito Arena Mode",
+      "how": "3 of 3 evidence names in the code, \"Burrito Arena\" among them"
+    },
+    {
+      "id": "5-3",
+      "feature": "Gauntlet Mode",
+      "how": "3 of 3 evidence names in the code, GameMode.Gauntlet among them"
+    },
+    {
+      "id": "5-5",
+      "feature": "Victory & Game Over Screens",
+      "how": "3 of 3 evidence names in the code, \"PLAY AGAIN\" among them"
+    },
+    {
+      "id": "6.1-3",
+      "feature": "Ceiling Drop Indicators",
+      "how": "3 of 3 evidence names in the code, red triangle among them"
+    },
+    {
+      "id": "6.2-4",
+      "feature": "Random Backdrop Selection",
+      "how": "3 of 3 evidence names in the code, Random among them"
+    },
+    {
+      "id": "6.3-2",
+      "feature": "World-based enemy difficulty",
+      "how": "5 of 5 evidence names in the code, 1.0 among them"
+    },
+    {
+      "id": "6.3-5",
+      "feature": "Powerup spawn odds",
+      "how": "5 of 5 evidence names in the code, 15 among them"
+    },
+    {
+      "id": "6.3-8",
+      "feature": "Endless mode",
+      "how": "5 of 5 evidence names in the code, Endless among them"
+    },
+    {
+      "id": "7-1",
+      "feature": "Random Character Mode",
+      "how": "3 of 3 evidence names in the code, Random among them"
+    },
+    {
+      "id": "7-2",
+      "feature": "Character Select Screen",
+      "how": "3 of 3 evidence names in the code, READY among them"
+    },
+    {
+      "id": "8-1",
+      "feature": "Enemy AI State Machine",
+      "how": "6 of 6 evidence names in the code, \"Flying\" among them"
+    },
+    {
+      "id": "8-2",
+      "feature": "Difficulty Scaling System",
+      "how": "6 of 6 evidence names in the code, \"world\" among them"
+    },
+    {
+      "id": "8-4",
+      "feature": "Survival Height Cap",
+      "how": "3 of 5 evidence names in the code, \"height cap\" among them"
+    },
+    {
+      "id": "8-5",
+      "feature": "Difficulty by World",
+      "how": "5 of 6 evidence names in the code, \"world 1\" among them"
+    },
+    {
+      "id": "8-6",
+      "feature": "Difficulty by Survival Tier",
+      "how": "4 of 5 evidence names in the code, \"1.4\" among them"
+    },
+    {
+      "id": "8-7",
+      "feature": "Gauntlet Difficulty Progression",
+      "how": "4 of 5 evidence names in the code, \"0.1\" among them"
+    },
+    {
+      "id": "8-8",
+      "feature": "Enemy State Transitions",
+      "how": "4 of 6 evidence names in the code, \"Flying\" among them"
+    },
+    {
+      "id": "9-1",
+      "feature": "Powerup Pickup System",
+      "how": "4 of 4 evidence names in the code, 50 among them"
+    },
+    {
+      "id": "9-2",
+      "feature": "Burrito Speed Boost",
+      "how": "3 of 4 evidence names in the code, 2.5x among them"
+    },
+    {
+      "id": "9-4",
+      "feature": "Gum Bubble Defense",
+      "how": "4 of 4 evidence names in the code, absorbs one pop among them"
+    },
+    {
+      "id": "9-7",
+      "feature": "Cork Delayed Pop",
+      "how": "2 of 4 evidence names in the code, 4 seconds among them"
+    },
+    {
+      "id": "13-3",
+      "feature": "Clip Rendering Shape Switch",
+      "how": "3 of 3 evidence names in the code, 9:16 among them"
+    },
+    {
+      "id": "13-7",
+      "feature": "Online 2P via Parsec",
+      "how": "3 of 3 evidence names in the code, Parsec among them"
+    },
+    {
+      "id": "14-1",
+      "feature": "parallax backdrops",
+      "how": "4 of 4 evidence names in the code, Backdrops among them"
+    },
+    {
+      "id": "14-3",
+      "feature": "post-processing effects",
+      "how": "5 of 5 evidence names in the code, bloom among them"
+    },
+    {
+      "id": "14-5",
+      "feature": "splat bat throw mechanic",
+      "how": "4 of 4 evidence names in the code, X eyes among them"
+    },
+    {
+      "id": "14-7",
+      "feature": "sprite import standard",
+      "how": "3 of 3 evidence names in the code, 4K screen among them"
+    },
+    {
+      "id": "15-2",
+      "feature": "Shuffled level music",
+      "how": "2 of 3 evidence names in the code, Shuffle among them"
+    },
+    {
+      "id": "18-1",
+      "feature": "demo mode",
+      "how": "3 of 3 evidence names in the code, \"Bottom Busters Demo.exe\" among them"
+    },
+    {
+      "id": "21.4-1",
+      "feature": "Parallax Backdrop System",
+      "how": "6 of 6 evidence names in the code, \"backdrop\" among them"
+    },
+    {
+      "id": "21.4-2",
+      "feature": "Dynamic Sky Layer",
+      "how": "3 of 5 evidence names in the code, \"sky\" among them"
+    },
+    {
+      "id": "21.4-3",
+      "feature": "Haze Band System",
+      "how": "2 of 5 evidence names in the code, \"soft\" among them"
+    },
+    {
+      "id": "21.4-4",
+      "feature": "Object Layer Management",
+      "how": "4 of 6 evidence names in the code, \"object\" among them"
+    },
+    {
+      "id": "21.4-5",
+      "feature": "Backdrop Looping",
+      "how": "4 of 5 evidence names in the code, \"loop\" among them"
+    },
+    {
+      "id": "21.4-6",
+      "feature": "Backdrop Theme System",
+      "how": "4 of 5 evidence names in the code, \"blue stone\" among them"
+    },
+    {
+      "id": "21.4-7",
+      "feature": "Backdrop Uniqueness Enforcement",
+      "how": "3 of 5 evidence names in the code, \"99\" among them"
+    },
+    {
+      "id": "2-2",
+      "feature": "Local 2-player support",
+      "how": "second look quoted Assets/Scripts/Characters/PlayerController.cs"
+    },
+    {
+      "id": "2-5",
+      "feature": "Performance optimization",
+      "how": "second look quoted Assets/Scripts/Characters/AIController.cs"
+    },
+    {
+      "id": "2-6",
+      "feature": "Shared video sharing",
+      "how": "second look quoted Assets/Scripts/Replay/ShareExportRun.cs"
+    },
+    {
+      "id": "2-7",
+      "feature": "Dynamic mode selection",
+      "how": "second look quoted Assets/Scripts/UI/MainMenuController.cs"
+    },
+    {
+      "id": "2-8",
+      "feature": "Persistent dirt layers",
+      "how": "second look quoted Assets/Scripts/Characters/CheekDirtMap.cs"
+    },
+    {
+      "id": "3-2",
+      "feature": "Local Co-op Mode",
+      "how": "second look quoted Assets/Scripts/UI/MainMenuController.cs"
+    },
+    {
+      "id": "3-3",
+      "feature": "Versus Mode",
+      "how": "second look quoted Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "3-4",
+      "feature": "Shareable Clips System",
+      "how": "second look quoted Assets/Scripts/Replay/ShareExportRun.cs"
+    },
+    {
+      "id": "3-5",
+      "feature": "Crude Humor System",
+      "how": "second look quoted Assets/Scripts/UI/RoastBank.cs"
+    },
+    {
+      "id": "4.1-1",
+      "feature": "core game loop",
+      "how": "second look quoted Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "4.1-2",
+      "feature": "score persistence",
+      "how": "second look quoted Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "4.1-3",
+      "feature": "game over screen",
+      "how": "second look quoted Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "4.1-4",
+      "feature": "replay saving",
+      "how": "second look quoted Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "4.1-5",
+      "feature": "enemy stomp mechanic",
+      "how": "second look quoted Assets/Scripts/Characters/CharacterBase.cs"
+    },
+    {
+      "id": "4.1-7",
+      "feature": "life system",
+      "how": "second look quoted Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "4.2-2",
+      "feature": "Move left/right",
+      "how": "second look quoted Assets/Scripts/Characters/PlayerController.cs"
+    },
+    {
+      "id": "4.2-5",
+      "feature": "Screen wrap",
+      "how": "second look quoted Assets/Scripts/Characters/CharacterBase.cs"
+    },
+    {
+      "id": "4.3-1",
+      "feature": "Two-cheek health system",
+      "how": "second look quoted Assets/Scripts/Characters/CharacterBase.cs"
+    },
+    {
+      "id": "4.4-2",
+      "feature": "1UP pickup mechanic",
+      "how": "second look quoted Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "6.1-6",
+      "feature": "Level Completion Rule",
+      "how": "second look quoted Assets/Scripts/Replay/GameStats.cs"
+    },
+    {
+      "id": "6.2-1",
+      "feature": "World Themes",
+      "how": "second look quoted Assets/Scripts/Level/BackdropCatalog.cs"
+    },
+    {
+      "id": "6.2-2",
+      "feature": "Parallax Backdrops",
+      "how": "second look quoted Assets/Scripts/Level/Backdrop3D.cs"
+    },
+    {
+      "id": "6.2-3",
+      "feature": "Arena Mode Backdrop System",
+      "how": "second look quoted Assets/Scripts/UI/MainMenuController.cs"
+    },
+    {
+      "id": "6.3-3",
+      "feature": "Ceiling drop mechanic",
+      "how": "second look quoted Assets/Scripts/Core/LevelSetup.cs"
+    },
+    {
+      "id": "6.3-4",
+      "feature": "Lava world transition",
+      "how": "second look quoted Assets/Scripts/Characters/CharacterBase.cs"
+    },
+    {
+      "id": "6.3-7",
+      "feature": "Level end conditions",
+      "how": "second look quoted Assets/Scripts/Level/BonusLevel.cs"
+    },
+    {
+      "id": "7-3",
+      "feature": "Wearables System",
+      "how": "second look quoted Assets/Scripts/Replay/ReplayPlayer.cs"
+    },
+    {
+      "id": "7-4",
+      "feature": "Cheek Sets System",
+      "how": "second look quoted Assets/Scripts/Characters/CheekSets.cs"
+    },
+    {
+      "id": "7-7",
+      "feature": "Enemy Character Variants",
+      "how": "second look quoted Assets/Scripts/Characters/AIController.cs"
+    },
+    {
+      "id": "9-5",
+      "feature": "Uzi Burst Mechanic",
+      "how": "second look quoted Assets/Scripts/Characters/CharacterBase.cs"
+    },
+    {
+      "id": "9-6",
+      "feature": "Chili Flame Flap",
+      "how": "second look quoted Assets/Scripts/Characters/CharacterBase.cs"
+    },
+    {
+      "id": "10-1",
+      "feature": "Poo Chunk Physics",
+      "how": "second look quoted Assets/Scripts/Characters/SprayPaintController.cs"
+    },
+    {
+      "id": "10-3",
+      "feature": "Squishy Footstep Sounds",
+      "how": "second look quoted Assets/Scripts/Characters/CharacterBase.cs"
+    },
+    {
+      "id": "10-5",
+      "feature": "Poo Count Performance Budget",
+      "how": "second look quoted Assets/Scripts/Powerups/PowerUpSpawner.cs"
+    },
+    {
+      "id": "10-6",
+      "feature": "Toilet Strike Trigger",
+      "how": "second look quoted Assets/Scripts/Powerups/PowerUpSpawner.cs"
+    },
+    {
+      "id": "10-7",
+      "feature": "Dynamic Threshold in Survival",
+      "how": "second look quoted Assets/Scripts/Powerups/PowerUpSpawner.cs"
+    },
+    {
+      "id": "10-8",
+      "feature": "Poo Pile Manager",
+      "how": "second look quoted Assets/Scripts/Powerups/PooPileManager.cs"
+    },
+    {
+      "id": "11-1",
+      "feature": "Global Score Total",
+      "how": "second look quoted Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "11-2",
+      "feature": "Score Pop-ups",
+      "how": "second look quoted Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "11-3",
+      "feature": "Kill Streak Badges",
+      "how": "second look quoted Assets/Scripts/Characters/CharacterBase.cs"
+    },
+    {
+      "id": "11-4",
+      "feature": "Streak Bonus Logic",
+      "how": "second look quoted Assets/Scripts/Core/ScoreTable.cs"
+    },
+    {
+      "id": "11-6",
+      "feature": "Splat-Based Scoring",
+      "how": "second look quoted Assets/Scripts/Characters/SprayPaintController.cs"
+    },
+    {
+      "id": "12-1",
+      "feature": "Main menu wheel",
+      "how": "second look quoted Assets/Scripts/UI/MainMenuController.cs"
+    },
+    {
+      "id": "12-2",
+      "feature": "Colorblind mode filter",
+      "how": "second look quoted Assets/Scripts/Core/LaunchScreenshot.cs"
+    },
+    {
+      "id": "12-4",
+      "feature": "End-of-run result card",
+      "how": "second look quoted Assets/Scripts/UI/VictoryStatsDisplay.cs"
+    },
+    {
+      "id": "12-6",
+      "feature": "Menu background animation",
+      "how": "second look quoted Assets/Scripts/Level/Backdrop3D.cs"
+    },
+    {
+      "id": "12-7",
+      "feature": "Version display system",
+      "how": "second look quoted Assets/Scripts/UI/MainMenuController.cs"
+    },
+    {
+      "id": "12-8",
+      "feature": "Menu pages system",
+      "how": "second look quoted Assets/Scripts/UI/MainMenuController.cs"
+    },
+    {
+      "id": "13-1",
+      "feature": "Replay Library",
+      "how": "second look quoted Assets/Scripts/UI/CreditsPage.cs"
+    },
+    {
+      "id": "13-2",
+      "feature": "Replay Recording System",
+      "how": "second look quoted Assets/Scripts/Replay/ReplayFormat.cs"
+    },
+    {
+      "id": "13-4",
+      "feature": "Clip Page Hosting",
+      "how": "second look quoted Assets/Scripts/UI/MenuHighScores.cs"
+    },
+    {
+      "id": "13-5",
+      "feature": "Leaderboard Service",
+      "how": "second look quoted Assets/Scripts/Services/PlatformServices.cs"
+    },
+    {
+      "id": "14-4",
+      "feature": "splat effect color",
+      "how": "second look quoted Assets/Scripts/Effects/ScreenSplatEffect.cs"
+    },
+    {
+      "id": "14-6",
+      "feature": "humor visuals system",
+      "how": "second look quoted Assets/Scripts/Characters/CheekDirtMap.cs"
+    },
+    {
+      "id": "15-1",
+      "feature": "Fart on flap",
+      "how": "second look quoted Assets/Scripts/Characters/CharacterBase.cs"
+    },
+    {
+      "id": "15-3",
+      "feature": "Bonus round music",
+      "how": "second look quoted Assets/Scripts/Audio/AudioBus.cs"
+    },
+    {
+      "id": "15-4",
+      "feature": "Species-specific sounds",
+      "how": "second look quoted Assets/Scripts/Audio/DeathAudioLibrary.cs"
+    },
+    {
+      "id": "15-7",
+      "feature": "Death sound system",
+      "how": "second look quoted Assets/Scripts/Audio/DeathAudioLibrary.cs"
+    },
+    {
+      "id": "16-1",
+      "feature": "Enemy AI Difficulty",
+      "how": "second look quoted Assets/Scripts/Characters/AIController.cs"
+    },
+    {
+      "id": "16-2",
+      "feature": "Roast Line System",
+      "how": "second look quoted Assets/Scripts/UI/RoastBank.cs"
+    },
+    {
+      "id": "16-5",
+      "feature": "Roast Line Filtering",
+      "how": "second look quoted Assets/Scripts/UI/RoastBank.cs"
+    },
+    {
+      "id": "17-1",
+      "feature": "Replay System",
+      "how": "second look quoted Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "17-2",
+      "feature": "Dynamic Content Discovery",
+      "how": "second look quoted Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "17-3",
+      "feature": "Multi-Platform Build Targeting",
+      "how": "second look quoted Assets/Scripts/Core/BuildInfo.cs"
+    },
+    {
+      "id": "17-5",
+      "feature": "Steam Integration",
+      "how": "second look quoted Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "17-7",
+      "feature": "Event Logging System",
+      "how": "second look quoted Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "17-8",
+      "feature": "Leaderboard Service",
+      "how": "second look quoted Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "18-5",
+      "feature": "level progression system",
+      "how": "second look quoted Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "18-6",
+      "feature": "bonus round system",
+      "how": "second look quoted Assets/Scripts/Replay/ReplayFormat.cs"
+    },
+    {
+      "id": "18-7",
+      "feature": "demo end card",
+      "how": "second look quoted Assets/Scripts/UI/DemoEndCard.cs"
+    },
+    {
+      "id": "19-1",
+      "feature": "itch.io demo release",
+      "how": "second look quoted Assets/Scripts/UI/MenuHighScores.cs"
+    },
+    {
+      "id": "19-2",
+      "feature": "Steam demo release",
+      "how": "second look quoted Assets/Scripts/Services/PlatformServices.cs"
+    },
+    {
+      "id": "19-5",
+      "feature": "DemoEndCard",
+      "how": "second look quoted Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "19-6",
+      "feature": "Leaderboard system",
+      "how": "second look quoted Assets/Scripts/UI/MainMenuController.cs"
+    },
+    {
+      "id": "19-7",
+      "feature": "Replay system",
+      "how": "second look quoted Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "21-1",
+      "feature": "Fart propulsion",
+      "how": "second look quoted Assets/Scripts/Characters/CharacterBase.cs"
+    },
+    {
+      "id": "21-2",
+      "feature": "Cheek health system",
+      "how": "second look quoted Assets/Scripts/Characters/CharacterBase.cs"
+    },
+    {
+      "id": "21-3",
+      "feature": "Poo pile accumulation",
+      "how": "second look quoted Assets/Scripts/Characters/SprayPaintController.cs"
+    },
+    {
+      "id": "21-4",
+      "feature": "Chef animals in bonus rounds",
+      "how": "second look quoted Assets/Scripts/Level/BonusLevel.cs"
+    },
+    {
+      "id": "21-7",
+      "feature": "Bonus round mechanics",
+      "how": "second look quoted Assets/Scripts/Level/BonusLevel.cs"
+    },
+    {
+      "id": "21-8",
+      "feature": "Gross-out visual theme",
+      "how": "second look quoted Assets/Scripts/Characters/SprayPaintController.cs"
+    },
+    {
+      "id": "21.1-5",
+      "feature": "Character Select Menu",
+      "how": "second look quoted Assets/Scripts/UI/CharacterSelect.cs"
+    },
+    {
+      "id": "21.1-6",
+      "feature": "Character Animation System",
+      "how": "second look quoted Assets/Scripts/Characters/DeathFlail.cs"
+    },
+    {
+      "id": "21.2-1",
+      "feature": "Roast Line System",
+      "how": "second look quoted Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "21.3-1",
+      "feature": "Wardrobe Stylist",
+      "how": "second look quoted Assets/Scripts/UI/CharacterSelect.cs"
+    },
+    {
+      "id": "21.3-2",
+      "feature": "Dynamic Hat Coloring",
+      "how": "second look quoted Assets/Scripts/UI/CharacterSelect.cs"
+    },
+    {
+      "id": "21.3-3",
+      "feature": "Hat Fit System",
+      "how": "second look quoted Assets/Scripts/Characters/CharacterHalo.cs"
+    },
+    {
+      "id": "21.3-5",
+      "feature": "Pixel Art Style Enforcement",
+      "how": "second look quoted Assets/Scripts/Characters/CharacterHalo.cs"
+    }
+  ],
+  "waiting": {
+    "wardrobe": 2,
+    "backgrounds": 13,
+    "roast_lines": 22,
+    "characters": 31
+  }
+}

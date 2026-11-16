@@ -1,0 +1,32 @@
+[16:29:56] builder: read the GDD (31 sections) and the code (171 C# files)
+[16:29:56] builder: 346 requirements from the GDD; 51 dropped by the checks
+[16:30:50] builder: pass 4: 60 requirements confirmed in the code, 263 the GDD calls built that the search couldn't confirm, 17 gaps, 11 it can build now
+[16:30:55] builder: building 21.1-14, Character name display (3x1 + 2x0 + 2x1 + 0 = 5)
+[16:31:12] builder: qwen3:30b-instruct, try 1: That answer couldn't be used: Assets/Scripts/UI/CharacterSelectMenu.cs doesn't exist (1 cheek(s) left)
+[16:31:27] builder: qwen3:30b-instruct, try 2: That answer couldn't be used: Assets/Scripts/UI/MenuCanvas.cs doesn't exist (0 cheek(s) left)
+[16:31:27] builder: qwen3:30b-instruct is out of cheeks on 21.1-14
+[16:31:56] builder: claude-code, try 3: That answer couldn't be used: no NEW FILE or EDIT blocks in the reply (1 cheek(s) left)
+[16:32:21] builder: claude-code, try 4: That answer couldn't be used: no NEW FILE or EDIT blocks in the reply (0 cheek(s) left)
+[16:32:21] builder: claude-code is out of cheeks on 21.1-14
+[16:32:21] builder: stopped: 21.1-14 (Character name display): no writer got it to build; everything is put back
+{
+  "run": "20261115-161537",
+  "status": "stopped: 21.1-14 (Character name display): no writer got it to build; everything is put back",
+  "pick": {
+    "id": "21.1-14",
+    "feature": "Character name display",
+    "section": "21.1",
+    "files": [
+      "Assets/Scripts/Characters/Wearables.cs"
+    ],
+    "unblocks": "31 characters waiting",
+    "ruling": "no dated ruling",
+    "visible": true,
+    "size": "1 file(s), about 0 lines",
+    "score": 5,
+    "math": "3x1 + 2x0 + 2x1 + 0 = 5",
+    "approved_by_david": "listed as unconfirmed; David approved building it"
+  },
+  "built": [],
+  "tokens": 202614
+}

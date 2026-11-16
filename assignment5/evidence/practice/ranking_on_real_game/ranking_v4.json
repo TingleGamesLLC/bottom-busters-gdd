@@ -1,0 +1,2175 @@
+{
+  "gaps": [
+    {
+      "id": "18-9",
+      "feature": "Hats 'n Shades store",
+      "section": "18",
+      "files": [
+        "Assets/Scripts/UI/CharacterSelect.cs",
+        "Assets/Scripts/UI/HatsNShadesStore.cs"
+      ],
+      "unblocks": "2 wardrobe waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "2 file(s), about 50 lines",
+      "score": 6,
+      "math": "3x1 + 2x0 + 2x1 + 1 = 6"
+    },
+    {
+      "id": "5-4",
+      "feature": "Custom Game Mode",
+      "section": "5",
+      "files": [
+        "Assets/Scripts/UI/CustomGameBuilderPage.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "1 file(s), about 0 lines",
+      "score": 2,
+      "math": "3x0 + 2x0 + 2x1 + 0 = 2"
+    },
+    {
+      "id": "6.3-5",
+      "feature": "Difficulty tuning table system",
+      "section": "6.3",
+      "files": [
+        "Assets/Scripts/Difficulty/DifficultyTuningTable.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "1 file(s), about 20 lines",
+      "score": 2,
+      "math": "3x0 + 2x0 + 2x0 + 2 = 2"
+    },
+    {
+      "id": "18-8",
+      "feature": "Custom game builder",
+      "section": "18",
+      "files": [
+        "Assets/Scripts/UI/CustomGameBuilderPage.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "1 file(s), about 0 lines",
+      "score": 2,
+      "math": "3x0 + 2x0 + 2x1 + 0 = 2"
+    },
+    {
+      "id": "19-6",
+      "feature": "Global and friends leaderboards",
+      "section": "19",
+      "files": [
+        "Assets/Scripts/Services/PlatformServices.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "1 file(s), about 0 lines",
+      "score": 2,
+      "math": "3x0 + 2x0 + 2x1 + 0 = 2"
+    },
+    {
+      "id": "6.3-6",
+      "feature": "Progressive difficulty curve",
+      "section": "6.3",
+      "files": [
+        "Assets/Scripts/Core/LevelSetup.cs",
+        "Assets/Scripts/Core/DifficultyTuner.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "2 file(s), about 50 lines",
+      "score": 1,
+      "math": "3x0 + 2x0 + 2x0 + 1 = 1"
+    },
+    {
+      "id": "1-12",
+      "feature": "Steam Remote Play Together",
+      "section": "1",
+      "files": [
+        "Assets/Scripts/Services/PlatformServices.cs"
+      ],
+      "unblocks": "nothing waiting",
+      "ruling": "no dated ruling",
+      "visible": false,
+      "size": "1 file(s), about 0 lines",
+      "score": 0,
+      "math": "3x0 + 2x0 + 2x0 + 0 = 0"
+    },
+    {
+      "id": "1-11",
+      "feature": "Local co-op multiplayer",
+      "section": "1",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "18-6",
+      "feature": "Endless mode",
+      "section": "18",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "18-7",
+      "feature": "Full game level count",
+      "section": "18",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/Core/LevelCatalog.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "18-10",
+      "feature": "Steam Cloud sync",
+      "section": "18",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs",
+        "Assets/Scripts/Cloud/SteamCloudManager.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "18-12",
+      "feature": "Remote Play Together",
+      "section": "18",
+      "files": [
+        "Assets/Scripts/UI/MainMenuController.cs",
+        "Assets/Scripts/UI/PlayerCountSelect.cs",
+        "Assets/Scripts/Services/ItchOnline.cs",
+        "Assets/Scripts/Online/RemotePlayTogether.cs"
+      ],
+      "skipped": "Assets/Scripts/UI/MainMenuController.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "id": "18-13",
+      "feature": "Level completion rules",
+      "section": "18",
+      "files": [
+        "Assets/Scripts/Core/GameManager.cs"
+      ],
+      "skipped": "Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    }
+  ],
+  "present": [
+    {
+      "id": "1-1",
+      "feature": "Fart propulsion",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "1-2",
+      "feature": "Cheek health system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "1-3",
+      "feature": "Pop enemy from above",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "1-4",
+      "feature": "Deflation on death",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "1-5",
+      "feature": "Thirteen powerups",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "1-6",
+      "feature": "Green Burrito poo spray",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "1-7",
+      "feature": "99 single-screen levels",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "1-8",
+      "feature": "Burrito Arena mode",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "1-9",
+      "feature": "Survival mode",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "1-10",
+      "feature": "Gauntlet mode",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "1-13",
+      "feature": "Replay system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "1-14",
+      "feature": "Score attack mechanics",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "1-15",
+      "feature": "Poo pile persistence",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "1-16",
+      "feature": "Hat dirt tracking",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "1-17",
+      "feature": "Cork powerup duration",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "1-18",
+      "feature": "Uzi powerup shooting",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "1-19",
+      "feature": "Speed burrito powerup",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "2-1",
+      "feature": "Height-based combat",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "2-2",
+      "feature": "Local two-player mode",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "2-3",
+      "feature": "Poo physics and accumulation",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "2-4",
+      "feature": "Run recording and export",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "2-5",
+      "feature": "Performance optimization",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "2-6",
+      "feature": "Replay library",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "2-7",
+      "feature": "Clip sharing system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "2-8",
+      "feature": "Vertical video export",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "2-9",
+      "feature": "Poo dirt persistence",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "2-10",
+      "feature": "Player height as combat factor",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "2-11",
+      "feature": "Local co-op or competitive play",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "2-12",
+      "feature": "Dynamic dirt mapping",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "2-13",
+      "feature": "Run recording system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "2-14",
+      "feature": "Clip export format",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "2-15",
+      "feature": "Persistent visual dirt",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "3-1",
+      "feature": "High score tracking",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "3-2",
+      "feature": "Local couch co-op mode",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "3-3",
+      "feature": "Versus gameplay mode",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "3-4",
+      "feature": "Crude humor system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "3-5",
+      "feature": "Shareable clip export",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "3-6",
+      "feature": "Short-session game loop",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "3-7",
+      "feature": "Couch co-op menu",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "3-8",
+      "feature": "Versus mode selection",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "3-9",
+      "feature": "Roast line playback system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "3-10",
+      "feature": "Clip export settings",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "3-11",
+      "feature": "High score display",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "3-12",
+      "feature": "Stream-friendly replay system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "3-13",
+      "feature": "Player count selection menu",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "3-14",
+      "feature": "Humor-based game tone",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "3-15",
+      "feature": "Clip length overlay",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.1-1",
+      "feature": "core game loop",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.1-2",
+      "feature": "score persistence",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.1-3",
+      "feature": "lives system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.1-4",
+      "feature": "game over screen",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.1-5",
+      "feature": "replay saving",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.1-6",
+      "feature": "enemy clearing mechanic",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.1-7",
+      "feature": "stomp mechanic",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.1-8",
+      "feature": "roast system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.1-9",
+      "feature": "superlatives system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.1-10",
+      "feature": "replay playback system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.1-11",
+      "feature": "run result recording",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.2-1",
+      "feature": "Flap mechanic",
+      "confirmed": true,
+      "how": "3 of 3 evidence names in the code, Flap among them"
+    },
+    {
+      "id": "4.2-2",
+      "feature": "Flap sound random pitch",
+      "confirmed": true,
+      "how": "2 of 3 evidence names in the code, \"fart\" among them"
+    },
+    {
+      "id": "4.2-3",
+      "feature": "Move left/right",
+      "confirmed": true,
+      "how": "4 of 4 evidence names in the code, Move among them"
+    },
+    {
+      "id": "4.2-4",
+      "feature": "Gravity system",
+      "confirmed": true,
+      "how": "2 of 3 evidence names in the code, \"gravity\" among them"
+    },
+    {
+      "id": "4.2-5",
+      "feature": "Ceiling bounce",
+      "confirmed": true,
+      "how": "2 of 3 evidence names in the code, \"ceiling\" among them"
+    },
+    {
+      "id": "4.2-6",
+      "feature": "Screen wrap",
+      "confirmed": true,
+      "how": "2 of 3 evidence names in the code, \"screen wrap\" among them"
+    },
+    {
+      "id": "4.2-7",
+      "feature": "Remappable controls",
+      "confirmed": true,
+      "how": "4 of 5 evidence names in the code, \"Player 1\" among them"
+    },
+    {
+      "id": "4.2-8",
+      "feature": "Multi-controller support",
+      "confirmed": true,
+      "how": "4 of 4 evidence names in the code, \"connected\" among them"
+    },
+    {
+      "id": "4.2-9",
+      "feature": "Pause system",
+      "confirmed": true,
+      "how": "4 of 4 evidence names in the code, Pause among them"
+    },
+    {
+      "id": "4.3-1",
+      "feature": "Two cheeks health",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.3-2",
+      "feature": "Cheek pop on damage",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.3-3",
+      "feature": "Stomp Kill mechanic",
+      "confirmed": true,
+      "how": "5 of 5 evidence names in the code, StompKill among them"
+    },
+    {
+      "id": "4.3-4",
+      "feature": "Death flight animation",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.3-5",
+      "feature": "Arm flapping during death",
+      "confirmed": true,
+      "how": "5 of 5 evidence names in the code, 2026-10-31 among them"
+    },
+    {
+      "id": "4.3-6",
+      "feature": "Instant death triggers",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.3-7",
+      "feature": "Water death condition",
+      "confirmed": true,
+      "how": "5 of 5 evidence names in the code, center among them"
+    },
+    {
+      "id": "4.3-8",
+      "feature": "Screen-wrap hit propagation",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.4-1",
+      "feature": "Lives display system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.4-2",
+      "feature": "1UP pickup mechanic",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.4-3",
+      "feature": "Uncapped lives display",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.4-4",
+      "feature": "Lives persist across levels",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.4-5",
+      "feature": "Respawn with invincibility",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.4-6",
+      "feature": "Survival mode extended invincibility",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "4.4-7",
+      "feature": "Co-op revival via 1UP",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "5-1",
+      "feature": "High Score Mode",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "5-2",
+      "feature": "Burrito Arena Mode",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "5-3",
+      "feature": "Gauntlet Mode",
+      "confirmed": true,
+      "how": "2 of 4 evidence names in the code, GameMode.Gauntlet among them"
+    },
+    {
+      "id": "5-5",
+      "feature": "Victory Card Display",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "5-6",
+      "feature": "Leaderboard System",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "5-7",
+      "feature": "Level Progression",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "5-8",
+      "feature": "Bonus Round Reset",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "6.1-1",
+      "feature": "Static level layout",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "6.1-2",
+      "feature": "Fixed screen size",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "6.1-3",
+      "feature": "Ground with water gaps",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "6.1-4",
+      "feature": "Three-height platforms",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "6.1-5",
+      "feature": "Ceiling drop indicators",
+      "confirmed": true,
+      "how": "3 of 3 evidence names in the code, red triangle among them"
+    },
+    {
+      "id": "6.1-6",
+      "feature": "All-water levels",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "6.1-7",
+      "feature": "Victory condition",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "6.1-8",
+      "feature": "Hand-retiled terrain",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "6.1-9",
+      "feature": "Player start positions",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "6.2-1",
+      "feature": "6 terrain themes",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "6.2-2",
+      "feature": "Parallax backdrop system",
+      "confirmed": true,
+      "how": "3 of 3 evidence names in the code, Backdrops among them"
+    },
+    {
+      "id": "6.2-3",
+      "feature": "Arena mode backdrop randomization",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "6.2-4",
+      "feature": "Unique backdrop per level",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "6.2-5",
+      "feature": "No adjacent levels from same art pack",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "6.3-1",
+      "feature": "Ceiling-drop level mechanic",
+      "confirmed": true,
+      "how": "4 of 5 evidence names in the code, 5 among them"
+    },
+    {
+      "id": "6.3-2",
+      "feature": "Lava world transition",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "6.3-3",
+      "feature": "Powerup spawn odds adjustment",
+      "confirmed": true,
+      "how": "5 of 5 evidence names in the code, 25% among them"
+    },
+    {
+      "id": "6.3-4",
+      "feature": "Difficulty scaling per world",
+      "confirmed": true,
+      "how": "3 of 5 evidence names in the code, 1.0 among them"
+    },
+    {
+      "id": "6.3-7",
+      "feature": "Game end condition",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "6.3-8",
+      "feature": "Victory card screen",
+      "confirmed": true,
+      "how": "5 of 5 evidence names in the code, VICTORY among them"
+    },
+    {
+      "id": "6.3-9",
+      "feature": "Endless mode selection",
+      "confirmed": true,
+      "how": "4 of 5 evidence names in the code, Endless among them"
+    },
+    {
+      "id": "6.3-10",
+      "feature": "Level progression system",
+      "confirmed": true,
+      "how": "5 of 5 evidence names in the code, 99 among them"
+    },
+    {
+      "id": "7-1",
+      "feature": "Random Character Skin",
+      "confirmed": true,
+      "how": "5 of 5 evidence names in the code, Random among them"
+    },
+    {
+      "id": "7-2",
+      "feature": "Character Select Menu",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "7-3",
+      "feature": "Wearables System",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "7-4",
+      "feature": "Hat Dirt System",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "7-5",
+      "feature": "Cheek Sets System",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "7-6",
+      "feature": "Character Animation System",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "7-7",
+      "feature": "Breathing Animation",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "7-8",
+      "feature": "AI Wear Hats Setting",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "7-10",
+      "feature": "Character Animation Tools",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "7-11",
+      "feature": "Replay Breathing Animation",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "7-12",
+      "feature": "Replay Cheek Sets",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "7-13",
+      "feature": "Enemy AI Variants",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "7-14",
+      "feature": "Enemy Behavior Consistency",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "7-15",
+      "feature": "Dressing Room",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "8-1",
+      "feature": "Enemy AI State Machine",
+      "confirmed": true,
+      "how": "5 of 6 evidence names in the code, \"Flying\" among them"
+    },
+    {
+      "id": "8-2",
+      "feature": "Difficulty Scaling System",
+      "confirmed": true,
+      "how": "3 of 5 evidence names in the code, \"difficulty\" among them"
+    },
+    {
+      "id": "8-3",
+      "feature": "World-Based Difficulty Progression",
+      "confirmed": true,
+      "how": "3 of 5 evidence names in the code, 1.0 among them"
+    },
+    {
+      "id": "8-4",
+      "feature": "Survival Mode Difficulty Tiers",
+      "confirmed": true,
+      "how": "4 of 4 evidence names in the code, 1.4 among them"
+    },
+    {
+      "id": "8-5",
+      "feature": "Gauntlet Wave Difficulty Climb",
+      "confirmed": true,
+      "how": "4 of 4 evidence names in the code, 0.1 among them"
+    },
+    {
+      "id": "8-6",
+      "feature": "Enemy Water Avoidance",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "8-7",
+      "feature": "Survival Height Cap for Falling Enemies",
+      "confirmed": true,
+      "how": "2 of 4 evidence names in the code, 1.0 among them"
+    },
+    {
+      "id": "9-1",
+      "feature": "Powerup pickup scoring",
+      "confirmed": true,
+      "how": "3 of 3 evidence names in the code, 50 among them"
+    },
+    {
+      "id": "9-2",
+      "feature": "High score level roster",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "9-3",
+      "feature": "Burrito speed boost",
+      "confirmed": true,
+      "how": "3 of 3 evidence names in the code, 2.5 among them"
+    },
+    {
+      "id": "9-4",
+      "feature": "Green burrito chaos mode",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "9-5",
+      "feature": "Gum bubble absorb pop",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "9-6",
+      "feature": "1UP extra life",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "9-7",
+      "feature": "Uzi burst fire",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "9-8",
+      "feature": "Chili flame flaps",
+      "confirmed": true,
+      "how": "3 of 3 evidence names in the code, 6 among them"
+    },
+    {
+      "id": "9-9",
+      "feature": "Cork delayed pop",
+      "confirmed": true,
+      "how": "3 of 3 evidence names in the code, 4 among them"
+    },
+    {
+      "id": "9-10",
+      "feature": "Whoopee cushion trap",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "9-11",
+      "feature": "Spinning platform hazard",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "9-12",
+      "feature": "Splat bat trap",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "9-13",
+      "feature": "Bomb trap",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "9-14",
+      "feature": "Toilet flush mechanic",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "10-1",
+      "feature": "Poo chunk physics",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "10-2",
+      "feature": "Poo dirt persistence",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "10-3",
+      "feature": "Squishy footstep sounds",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "10-4",
+      "feature": "Base coat permanence",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "10-5",
+      "feature": "Poo count performance budget",
+      "confirmed": true,
+      "how": "4 of 5 evidence names in the code, threshold among them"
+    },
+    {
+      "id": "11-1",
+      "feature": "Global Score Total",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "11-2",
+      "feature": "Score Pop-ups",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "11-3",
+      "feature": "Uzi Streak Badges",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "11-4",
+      "feature": "Streak Bonus Calculation",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "11-5",
+      "feature": "End Card Combo List",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "11-6",
+      "feature": "Kill Combo Points",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "11-7",
+      "feature": "Chain Kill Multiplier",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "11-8",
+      "feature": "Flawless Clear Bonus",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "11-9",
+      "feature": "Bonus Food Points",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "11-10",
+      "feature": "Splat An Enemy Points",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "11-11",
+      "feature": "Direct Deposit Points",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "11-12",
+      "feature": "Marked For Death Bonus",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "11-13",
+      "feature": "Stomp Kill Points",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "11-14",
+      "feature": "Cheek Pop Points",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "11-15",
+      "feature": "Invalid Kill Scoring",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "12-1",
+      "feature": "Main menu wheel",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "12-2",
+      "feature": "Steam leaderboard display",
+      "confirmed": true,
+      "how": "3 of 3 evidence names in the code, \"Steam leaderboard\" among them"
+    },
+    {
+      "id": "12-3",
+      "feature": "Random 3D menu background",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "12-4",
+      "feature": "Menu character animation",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "12-5",
+      "feature": "Title dance letter by letter",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "12-6",
+      "feature": "Bat splat with character face",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "12-7",
+      "feature": "Random hat and sunglasses",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "12-8",
+      "feature": "Menu pages system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "12-9",
+      "feature": "Colorblind mode filter",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "12-10",
+      "feature": "Colorblind simulation check",
+      "confirmed": true,
+      "how": "2 of 3 evidence names in the code, Tritanopia among them"
+    },
+    {
+      "id": "12-11",
+      "feature": "Version display",
+      "confirmed": true,
+      "how": "2 of 3 evidence names in the code, Player.log among them"
+    },
+    {
+      "id": "12-12",
+      "feature": "HUD layout",
+      "confirmed": true,
+      "how": "3 of 3 evidence names in the code, \"Bottom Busters logo\" among them"
+    },
+    {
+      "id": "12-13",
+      "feature": "HUD text background",
+      "confirmed": true,
+      "how": "3 of 3 evidence names in the code, dark box among them"
+    },
+    {
+      "id": "12-14",
+      "feature": "End of run wind-down",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "12-15",
+      "feature": "Result card display",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "12-16",
+      "feature": "Announcer voice system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "12-17",
+      "feature": "Announcer toggle",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-1",
+      "feature": "Replay Library",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-2",
+      "feature": "Replay Preview",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-3",
+      "feature": "Replay Recording Mode",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-4",
+      "feature": "Gauntlet Replay Full Run",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-5",
+      "feature": "Burrito Arena Rolling Window",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-6",
+      "feature": "Save Replay Button",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-7",
+      "feature": "Clip Length Selector",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-8",
+      "feature": "Clip Shape Switch",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-9",
+      "feature": "Clip Rendering Mode",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-10",
+      "feature": "Clip Export System",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-11",
+      "feature": "FFmpeg Encoder Integration",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-12",
+      "feature": "Clip Page Auto-Upload",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-13",
+      "feature": "Clip Page Public URL",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-14",
+      "feature": "Clip Page Rating System",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-15",
+      "feature": "Clip Page Rank History",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-16",
+      "feature": "Leaderboard Service",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-17",
+      "feature": "Leaderboard Tabs",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-18",
+      "feature": "Gauntlet Leaderboard Split",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-19",
+      "feature": "Top 3 Replay Watch",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-26",
+      "feature": "itch Web Leaderboard Page",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-27",
+      "feature": "itch 2P Player Display",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-28",
+      "feature": "itch Leaderboard Views",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-29",
+      "feature": "Top 3 Clip Link",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-30",
+      "feature": "Longest On Board View",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-31",
+      "feature": "itch Privacy Policy",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "13-32",
+      "feature": "Online 2P via Parsec",
+      "confirmed": true,
+      "how": "3 of 3 evidence names in the code, Parsec among them"
+    },
+    {
+      "id": "13-33",
+      "feature": "Controller Assignment",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "14-1",
+      "feature": "Parallax backdrops",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "14-2",
+      "feature": "Tile-based terrain",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "14-3",
+      "feature": "Post-processing effects",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "14-4",
+      "feature": "Splat effect color",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "14-5",
+      "feature": "Splat bat throw mechanic",
+      "confirmed": true,
+      "how": "3 of 3 evidence names in the code, X eyes among them"
+    },
+    {
+      "id": "14-6",
+      "feature": "Humor-first visuals",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "14-7",
+      "feature": "Sprite import standard",
+      "confirmed": true,
+      "how": "3 of 3 evidence names in the code, 4K screen among them"
+    },
+    {
+      "id": "15-1",
+      "feature": "Random fart sounds",
+      "confirmed": true,
+      "how": "2 of 3 evidence names in the code, \"fart\" among them"
+    },
+    {
+      "id": "15-2",
+      "feature": "Shuffled level music",
+      "confirmed": true,
+      "how": "2 of 3 evidence names in the code, \"level music\" among them"
+    },
+    {
+      "id": "15-3",
+      "feature": "Menu track",
+      "confirmed": true,
+      "how": "2 of 3 evidence names in the code, \"menu track\" among them"
+    },
+    {
+      "id": "15-4",
+      "feature": "Lo-fi bonus round music",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "15-5",
+      "feature": "Species-specific sound effects",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "15-6",
+      "feature": "Death and game over stings",
+      "confirmed": true,
+      "how": "2 of 3 evidence names in the code, \"game over\" among them"
+    },
+    {
+      "id": "15-7",
+      "feature": "Shared audio library",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "15-8",
+      "feature": "Music licensing agreement",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "16-1",
+      "feature": "Enemy AI Difficulty Tuning",
+      "confirmed": true,
+      "how": "4 of 5 evidence names in the code, difficulty among them"
+    },
+    {
+      "id": "16-2",
+      "feature": "Roast Line Bank System",
+      "confirmed": true,
+      "how": "4 of 5 evidence names in the code, string[] among them"
+    },
+    {
+      "id": "16-3",
+      "feature": "Roast Line Trigger Logic",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "16-4",
+      "feature": "Roast Line Exclusion Rule",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "16-5",
+      "feature": "Pre-recorded Announcer Voices",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "16-6",
+      "feature": "Announcer Voice Audio Files",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "16-7",
+      "feature": "Development Agent Crew",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "16-8",
+      "feature": "Level Architect Agent",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "16-9",
+      "feature": "Difficulty Tuner Agent",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "16-10",
+      "feature": "Roast Writer Agent",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "16-11",
+      "feature": "Wardrobe Stylist Agent",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "16-12",
+      "feature": "QA Playtester Agent",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "16-14",
+      "feature": "Technical Writer Agent",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "17-1",
+      "feature": "Steam integration",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "17-2",
+      "feature": "Replay system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "17-3",
+      "feature": "Event log system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "17-4",
+      "feature": "Runtime content discovery",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "17-5",
+      "feature": "Dual build targets",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "17-6",
+      "feature": "Demo build mode",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "17-7",
+      "feature": "Replay playback system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "17-8",
+      "feature": "Score checking system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "17-9",
+      "feature": "Dynamic content loading",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "17-10",
+      "feature": "Diagnostic logging system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "17-11",
+      "feature": "Leaderboard service",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "17-12",
+      "feature": "Workshop replay hosting",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "17-13",
+      "feature": "Friend integration",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "17-14",
+      "feature": "Build configuration system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "17-15",
+      "feature": "Replay file format",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "18-1",
+      "feature": "Demo mode stamp",
+      "confirmed": true,
+      "how": "3 of 3 evidence names in the code, \"DEMO\" among them"
+    },
+    {
+      "id": "18-2",
+      "feature": "Demo end card",
+      "confirmed": true,
+      "how": "2 of 3 evidence names in the code, string among them"
+    },
+    {
+      "id": "18-3",
+      "feature": "Demo level count",
+      "confirmed": true,
+      "how": "3 of 3 evidence names in the code, 99 among them"
+    },
+    {
+      "id": "18-14",
+      "feature": "Bonus round mechanics",
+      "confirmed": true,
+      "how": "3 of 3 evidence names in the code, 33 among them"
+    },
+    {
+      "id": "18-15",
+      "feature": "Music and sound expansion",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "18-16",
+      "feature": "Character expansion",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "18-17",
+      "feature": "Powerup expansion",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "19-2",
+      "feature": "Steam demo release",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "19-3",
+      "feature": "Steam Next Fest participation",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "19-4",
+      "feature": "Couch Co-Op Fest participation",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "19-5",
+      "feature": "Remote Play Together",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "19-9",
+      "feature": "Daily vertical clips marketing",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "19-10",
+      "feature": "Clip exporter",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "19-11",
+      "feature": "YouTube channel",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "19-12",
+      "feature": "Instagram account",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "19-13",
+      "feature": "Simplified Chinese localization",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21-1",
+      "feature": "Fart propulsion",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21-2",
+      "feature": "Cheek-based health",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21-3",
+      "feature": "Poo pile accumulation",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21-4",
+      "feature": "Dirt map system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21-5",
+      "feature": "Base coat persistence",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21-6",
+      "feature": "White underwear lives",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21-7",
+      "feature": "Gross-out physical humor",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21-8",
+      "feature": "Game size readability",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21-9",
+      "feature": "No real-world references",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.1-1",
+      "feature": "Character roster system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.1-2",
+      "feature": "Character set order",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.1-3",
+      "feature": "Character skin tone variation",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.1-4",
+      "feature": "Character hair style variation",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.1-5",
+      "feature": "Character face system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.1-6",
+      "feature": "Character name system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.1-7",
+      "feature": "Character name approval",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.1-8",
+      "feature": "Character identity uniqueness",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.1-9",
+      "feature": "Character visual distinction rules",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.1-10",
+      "feature": "Character hair silhouette rule",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.1-11",
+      "feature": "Character face consistency",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.1-12",
+      "feature": "Character no accessories rule",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.1-13",
+      "feature": "Character select menu",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.1-14",
+      "feature": "Character roster display",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.1-15",
+      "feature": "Character name validity check",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.1-16",
+      "feature": "Character name restriction",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.1-17",
+      "feature": "Character caricature rule",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.2-1",
+      "feature": "Roast line system",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.2-2",
+      "feature": "Event-based roast triggers",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.2-3",
+      "feature": "Roast line selection logic",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.2-4",
+      "feature": "Roast line formatting rules",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.2-5",
+      "feature": "Roast line tone and voice",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.2-6",
+      "feature": "Roast line event exclusions",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.2-7",
+      "feature": "Roast line content filtering",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.2-8",
+      "feature": "Roast line voice output",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.2-9",
+      "feature": "Roast line data storage",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.3-1",
+      "feature": "Wearable Hat System",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.3-2",
+      "feature": "Hat Color Recoloring",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.3-3",
+      "feature": "Wearable Fit System",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.3-4",
+      "feature": "Shades Lens Placement",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.3-5",
+      "feature": "Pixel Art Style Enforcement",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.3-6",
+      "feature": "Style Consistency Check",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.3-7",
+      "feature": "Wearable Failure Detection",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.3-8",
+      "feature": "Hat Floating Prevention",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.3-9",
+      "feature": "Brand Logo Prohibition",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.4-1",
+      "feature": "Parallax Backdrop System",
+      "confirmed": true,
+      "how": "5 of 6 evidence names in the code, drifts among them"
+    },
+    {
+      "id": "21.4-2",
+      "feature": "Dynamic Sky Layer",
+      "confirmed": true,
+      "how": "3 of 5 evidence names in the code, sky among them"
+    },
+    {
+      "id": "21.4-3",
+      "feature": "Haze Band Layer",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "21.4-4",
+      "feature": "Object Layer System",
+      "confirmed": true,
+      "how": "3 of 5 evidence names in the code, one at a time among them"
+    },
+    {
+      "id": "21.4-5",
+      "feature": "Layer Drift and Loop",
+      "confirmed": true,
+      "how": "3 of 5 evidence names in the code, drifts among them"
+    },
+    {
+      "id": "21.4-6",
+      "feature": "Theme-Based Backdrop Palette",
+      "confirmed": true,
+      "how": "3 of 5 evidence names in the code, blue stone among them"
+    },
+    {
+      "id": "21.4-7",
+      "feature": "All-Water Level Backdrop Rule",
+      "confirmed": true,
+      "how": "4 of 5 evidence names in the code, sky among them"
+    },
+    {
+      "id": "21.4-8",
+      "feature": "Backdrop Uniqueness Enforcement",
+      "confirmed": true,
+      "how": "2 of 5 evidence names in the code, unique among them"
+    },
+    {
+      "id": "21.4-9",
+      "feature": "Backdrop Generation Recipe",
+      "confirmed": true,
+      "how": "3 of 5 evidence names in the code, palette among them"
+    },
+    {
+      "id": "21.4-10",
+      "feature": "No Seam or Line Visual Bug",
+      "confirmed": true,
+      "how": "4 of 5 evidence names in the code, seam among them"
+    },
+    {
+      "id": "21.4-11",
+      "feature": "No Object Split Across Layers",
+      "confirmed": true,
+      "how": "2 of 5 evidence names in the code, splitting among them"
+    },
+    {
+      "id": "21.4-12",
+      "feature": "Sky Layer Rule",
+      "confirmed": true,
+      "how": "2 of 5 evidence names in the code, sky only among them"
+    },
+    {
+      "id": "21.4-13",
+      "feature": "No Copying Flaws from Bought Art",
+      "confirmed": false,
+      "how": "the GDD says built; the search didn't confirm it (left for a person to check)"
+    },
+    {
+      "id": "7-9",
+      "feature": "Character Discovery System",
+      "confirmed": true,
+      "how": "planned in the GDD, but the second look quoted it from Assets/Scripts/Core/GameManager.cs"
+    },
+    {
+      "id": "16-13",
+      "feature": "Builder Agent",
+      "confirmed": true,
+      "how": "planned in the GDD, but the second look quoted it from Assets/Scripts/UI/CreditsPage.cs"
+    },
+    {
+      "id": "18-4",
+      "feature": "2P mode inclusion",
+      "confirmed": true,
+      "how": "planned in the GDD, but the second look quoted it from Assets/Scripts/UI/MainMenuController.cs"
+    },
+    {
+      "id": "18-5",
+      "feature": "Custom Game teaser",
+      "confirmed": true,
+      "how": "planned in the GDD, but the second look quoted it from Assets/Scripts/UI/MainMenuController.cs"
+    },
+    {
+      "id": "18-11",
+      "feature": "Achievements system",
+      "confirmed": true,
+      "how": "planned in the GDD, but the second look quoted it from Assets/Scripts/Services/PlatformServices.cs"
+    },
+    {
+      "id": "19-1",
+      "feature": "itch.io demo release",
+      "confirmed": true,
+      "how": "planned in the GDD, but the second look quoted it from Assets/Scripts/UI/MenuHighScores.cs"
+    },
+    {
+      "id": "19-7",
+      "feature": "Watchable replays",
+      "confirmed": true,
+      "how": "planned in the GDD, but the second look quoted it from Assets/Scripts/Services/PlatformServices.cs"
+    },
+    {
+      "id": "19-8",
+      "feature": "Workshop replays",
+      "confirmed": true,
+      "how": "planned in the GDD, but the second look quoted it from Assets/Scripts/Services/PlatformServices.cs"
+    }
+  ],
+  "waiting": {
+    "roast_lines": 22,
+    "characters": 31,
+    "backgrounds": 13,
+    "wardrobe": 2
+  }
+}

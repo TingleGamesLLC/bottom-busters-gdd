@@ -1,0 +1,308 @@
+[
+  {
+    "section": "1",
+    "feature": "Water kills instantly",
+    "quote": "Water kills instantly.",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "1",
+    "feature": "Replay sharing",
+    "quote": "mobile has come up as a possibility for clip sharing only.",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "1",
+    "feature": "Settings system",
+    "quote": "SettingsPage",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "1",
+    "feature": "Achievement system",
+    "quote": "Achievements",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "1",
+    "feature": "Roast line system",
+    "quote": "RoastBankData",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "1",
+    "feature": "Hud system",
+    "quote": "HudSnapshot",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "1",
+    "feature": "Victory screen",
+    "quote": "VictoryResult",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "1",
+    "feature": "Level completion screen",
+    "quote": "LevelCompletion",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "1",
+    "feature": "Demo end card",
+    "quote": "DemoEndCard",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "4.1",
+    "feature": "powerup system",
+    "quote": "grab powerups",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "4.1",
+    "feature": "flap mechanic",
+    "quote": "flap for height",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "4.2",
+    "feature": "Dual Player Input",
+    "quote": "In 1P, Player 1 reads every connected gamepad. Both players can share one keyboard or each use their own.",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "4.2",
+    "feature": "Pause Input",
+    "quote": "Pause: Escape or gamepad Start",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "4.2",
+    "feature": "Gamepad Support",
+    "quote": "Every connected controller works in the menus",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "4.4",
+    "feature": "Survival mode respawns",
+    "quote": "2 seconds in Survival.",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "5",
+    "feature": "Survival Mode",
+    "quote": "60 waves in three tiers of 20. Each tier climbs from 1 to 20 enemies falling in from the sky.",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "5",
+    "feature": "Bonus Round",
+    "quote": "Four chef animals flip food straight up; catch it for 500 points each.",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "5",
+    "feature": "Endless Mode",
+    "quote": "Levels keep coming with no end. Nothing changes but the enemy difficulty number, which climbs a step every few levels with no cap.",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "5",
+    "feature": "Game Settings",
+    "quote": "Since 2026-10-22 the High Score GAME OVER card has one too, starting a new run from level 1.",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "5",
+    "feature": "Powerup Configuration",
+    "quote": "All still changeable, and the demo marks Start Game \"Not Available in Demo\".",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "5",
+    "feature": "Difficulty Scaling",
+    "quote": "Difficulty steps up at waves 21 and 41 (shown as 100%, +25%, +25%).",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "6.2",
+    "feature": "200 total levels",
+    "quote": "The full game is planned at 200 levels.",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "6.3",
+    "feature": "Enemy count per level",
+    "quote": "Levels 1\u20133: 3 enemies.",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "6.3",
+    "feature": "Enemy count increase by world",
+    "quote": "Levels 4\u20136: 4 enemies.",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "6.3",
+    "feature": "Dynamic difficulty ramp",
+    "quote": "then +0.05 difficulty every 10 levels",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "9",
+    "feature": "Ham Life Restore",
+    "quote": "Ham | Restores a cheek",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "11",
+    "feature": "Powerup Pickup Points",
+    "quote": "Powerup Pickup | 50",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "12",
+    "feature": "Intro sting with whisper",
+    "quote": "Since 2026-10-28 a whispered \"Tingle\" plays 4 seconds into it",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "12",
+    "feature": "Colorblind simulation check",
+    "quote": "checked by colorblindness simulation: the red/green problems are fixed (player vs enemy glow under deuteranopia 24.6 -> 69.3 deltaE; burrito vs green burrito under protanopia 3.9 -> 21.2)",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "13",
+    "feature": "Itch Account Requirement",
+    "quote": "Only players signed in with an itch account are listed, and a 2P run shows both names",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "13",
+    "feature": "Online 2P How-To Page",
+    "quote": "the itch build's 1P/2P chooser points to a how-to page at tinglegames.com/bottom-busters/play-online/",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "16",
+    "feature": "Pre-recorded Voice Files",
+    "quote": "ElevenLabs, shipped as audio files",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "17",
+    "feature": "Diagnostic Logging Control",
+    "quote": "Demo builds ... saves no diagnostic files on their machines, and a full-game test copy that runs past the demo's end and keeps every diagnostic log, for development only.",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "18",
+    "feature": "Steam Workshop hats",
+    "quote": "Steam Workshop hats.",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "18",
+    "feature": "Seasonal and collectible hats",
+    "quote": "Seasonal and collectible hats.",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "18",
+    "feature": "Level progression curve",
+    "quote": "The 200 levels, with the curve and ending in Section 6.3.",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "21.1",
+    "feature": "Character name validation",
+    "quote": "Names are 'comically stereotypical but not offensive'... The Studio Director approves every name",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "21.1",
+    "feature": "Character death flail animation",
+    "quote": "12 death-flail frames",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "21.1",
+    "feature": "Character idle animation",
+    "quote": "3 idle frames",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "21.1",
+    "feature": "Character flying-arm animation",
+    "quote": "8 flying-arm frames",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "21.1",
+    "feature": "Character splat effect",
+    "quote": "a splat pair",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "21.2",
+    "feature": "Roast Line Threes Format",
+    "quote": "Threes work.",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "21.2",
+    "feature": "Roast Line No Character Body References",
+    "quote": "A line that's about a character's body or looks.",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "21.3",
+    "feature": "Procedural Wearable Art",
+    "quote": "Each item is drawn by code from flat shapes, the same way those four were.",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "21.3",
+    "feature": "Style Enforcement Rules",
+    "quote": "Pixel art on the characters' own grid. A thick dark outline all the way round.",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "21.4",
+    "feature": "Backdrop Generation Rules",
+    "quote": "Failure: Any visible seam or vertical line while a layer moves.",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "21.4",
+    "feature": "Object Integrity Check",
+    "quote": "Failure: An object split across layers.",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "21.4",
+    "feature": "Hole Detection System",
+    "quote": "Failure: Holes inside objects.",
+    "why": "quote under 5 words"
+  },
+  {
+    "section": "21.4",
+    "feature": "Color Key Integrity Check",
+    "quote": "Failure: Key color left behind.",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "21.4",
+    "feature": "Sky Layer Enforcement",
+    "quote": "Failure: Anything but sky on the sky layer.",
+    "why": "quote isn't in the section word for word"
+  },
+  {
+    "section": "21.4",
+    "feature": "Original Art Copying Prevention",
+    "quote": "Failure: Copying flaws from the bought originals.",
+    "why": "quote isn't in the section word for word"
+  }
+]

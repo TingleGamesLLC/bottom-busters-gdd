@@ -1,0 +1,26 @@
+[16:25:06] builder: read the GDD (31 sections) and the code (171 C# files)
+[16:25:06] builder: 346 requirements from the GDD; 51 dropped by the checks
+[16:25:56] builder: pass 3: 60 requirements confirmed in the code, 263 the GDD calls built that the search couldn't confirm, 17 gaps, 11 it can build now
+[16:25:59] builder: stopped: 21.1-14 is skipped: Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)
+{
+  "run": "20261115-161537",
+  "status": "stopped: 21.1-14 is skipped: Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)",
+  "pick": {
+    "id": "7-2",
+    "feature": "Character Skin Unlocking",
+    "section": "7",
+    "files": [
+      "Assets/Scripts/Characters/CharacterBase.cs",
+      "Assets/Scripts/Characters/CharacterIdle.cs",
+      "Assets/Scripts/Characters/CharacterSkinManager.cs"
+    ],
+    "unblocks": "31 characters waiting",
+    "ruling": "no dated ruling",
+    "visible": false,
+    "size": "3 file(s), about 30 lines",
+    "score": 4,
+    "math": "3x1 + 2x0 + 2x0 + 1 = 4"
+  },
+  "built": [],
+  "tokens": 191329
+}

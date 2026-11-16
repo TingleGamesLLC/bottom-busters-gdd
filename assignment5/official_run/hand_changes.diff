@@ -1,0 +1,149 @@
+diff -ru --strip-trailing-cr a/Assets/Scripts/Characters/CharacterNames.cs b/Assets/Scripts/Characters/CharacterNames.cs
+--- a/Assets/Scripts/Characters/CharacterNames.cs	2026-11-15 18:39:03.451828200 -0600
++++ b/Assets/Scripts/Characters/CharacterNames.cs	2026-11-15 18:39:03.559148500 -0600
+@@ -1,6 +1,5 @@
+ using System;
+ using System.Collections.Generic;
+-using TMPro;
+ using UnityEngine;
+ 
+ /// <summary>
+@@ -16,10 +15,12 @@
+ ///    new set's character is named: add its first name to Names and name its art after it.
+ /// 2. Otherwise the last number in the art's name ("player3") picks from the original ten.
+ ///
+-/// UNVERIFIED: that the original ten's art is numbered 1 to 10 in the order the Studio Director
+-/// listed them on 2026-11-01 (Larry, Doug, Norm, Greg, Carl, Steve, Barry, Terry, Kevin, Phil).
+-/// Each art's name, and how it was found, goes to the menu log once (CHARNAMES), so it can be
+-/// checked against the GDD's roster table. Art that matches neither rule shows no name.
++/// Checked 2026-11-15 against the art and the GDD's roster table: the original ten's art is "player"
++/// (Larry, no number) and "player2" to "player10" in the order the Studio Director listed them on
++/// 2026-11-01 (Larry, Doug, Norm, Greg, Carl, Steve, Barry, Terry, Kevin, Phil), so Character Select
++/// reads Larry, Norm, Doug, Greg, Carl, Steve, Barry, Terry, Kevin, Phil (C:\gdd\assignment5\evidence\
++/// character_select_tiles.png). Each art's name, and how it was found, goes to the menu log once
++/// (CHARNAMES). Art that matches neither rule shows no name.
+ /// </summary>
+ public static class CharacterNames
+ {
+@@ -50,6 +51,9 @@
+         if (first.Length == 0)
+         {
+             int number = LastNumber(art);
++            // The first character's art is "player", with no number (hand fix, 2026-11-15: the agent's
++            // version left Larry with no name).
++            if (number < 0 && art.Equals("player", StringComparison.OrdinalIgnoreCase)) number = 1;
+             if (number >= 1 && number <= OriginalCount)
+             {
+                 first = Names[number - 1];
+@@ -62,42 +66,6 @@
+         return first;
+     }
+ 
+-    /// <summary>
+-    /// Puts the character's first name along the bottom of a skin tile, in the RANDOM tile's
+-    /// label style. A thin paper halo keeps the ink readable where the name crosses the body.
+-    /// Added after the icon, so it draws on top.
+-    /// </summary>
+-    public static void Label(RectTransform tile, Sprite body)
+-    {
+-        string first = For(body);
+-        if (first.Length == 0) return;
+-
+-        GameObject go = new GameObject("Name", typeof(RectTransform), typeof(TextMeshProUGUI));
+-        go.transform.SetParent(tile, false);
+-        TMP_Text t = go.GetComponent<TMP_Text>();
+-        if (UIKit.ScrawlFont != null) t.font = UIKit.ScrawlFont;
+-        t.text = first;
+-        t.fontSize = 16f;
+-        t.enableAutoSizing = true;
+-        t.fontSizeMin = 10f;
+-        t.fontSizeMax = 16f;
+-        t.color = UIKit.Ink;
+-        t.alignment = TextAlignmentOptions.Center;
+-        t.textWrappingMode = TextWrappingModes.NoWrap;
+-        t.overflowMode = TextOverflowModes.Overflow;
+-        t.raycastTarget = false;
+-        t.outlineWidth = 0.2f;
+-        t.outlineColor = UIKit.Paper;
+-
+-        // The RANDOM label's place: 20 high, its bottom 8 above the tile's bottom, the tile's full width.
+-        RectTransform r = t.rectTransform;
+-        r.anchorMin = new Vector2(0f, 0f);
+-        r.anchorMax = new Vector2(1f, 0f);
+-        r.pivot = new Vector2(0.5f, 0f);
+-        r.sizeDelta = new Vector2(0f, 20f);
+-        r.anchoredPosition = new Vector2(0f, 8f);
+-    }
+-
+     /// <summary>The name appears in the text as a word of its own: no letter right before or
+     /// after it, except where a capital starts a new word ("LarryBody"). "Normal" is not Norm.</summary>
+     private static bool HasWord(string text, string word)
+diff -ru --strip-trailing-cr a/Assets/Scripts/UI/CharacterSelect.cs b/Assets/Scripts/UI/CharacterSelect.cs
+--- a/Assets/Scripts/UI/CharacterSelect.cs	2026-11-15 18:39:14.371100400 -0600
++++ b/Assets/Scripts/UI/CharacterSelect.cs	2026-11-15 18:39:03.652562800 -0600
+@@ -47,7 +47,11 @@
+ public class CharacterSelect : MonoBehaviour
+ {
+     // ---- the approved mockup, 1920x1080 canvas units ----
+-    private const float SheetHeight = 920f;
++    // Each skin tile's first name sits in a strip under it (DAVID, 2026-11-15). Two rows of skin tiles,
++    // so everything under them moves down two strips and the sheet grows by the same.
++    private const float NameHeight = 20f;
++    private const float NameShift = 2f * NameHeight;
++    private const float SheetHeight = 920f + NameShift;
+     private const float SheetWidth1P = 960f;
+     private const float SheetWidth2P = 1840f;
+     private const float ColumnWidth1P = 880f;
+@@ -65,19 +69,19 @@
+     private const float TileHeight = 100f;
+     private const float TileGap = 7f;
+     private const int TileColumns = 6;
+-    private const float HatHeadingY = 403f;
+-    private const float HatTileY = 431f;
+-    private const float ShadesHeadingY = 517f;
+-    private const float ShadesTileY = 545f;
++    private const float HatHeadingY = 403f + NameShift;
++    private const float HatTileY = 431f + NameShift;
++    private const float ShadesHeadingY = 517f + NameShift;
++    private const float ShadesTileY = 545f + NameShift;
+     private const float ItemTileHeight = 64f;
+     private const float ItemTileGap = 9f;
+     private const int ItemColumns = 4;
+-    private const float ColorsHeadingY = 631f;
+-    private const float ColorRowY = 659f;
++    private const float ColorsHeadingY = 631f + NameShift;
++    private const float ColorRowY = 659f + NameShift;
+     private const float ColorRowStep = 46f;
+     private const float ColorLabelWidth = 86f;
+     private const float SwatchGap = 8f;
+-    private const float ReadyY = 816f;
++    private const float ReadyY = 816f + NameShift;
+     private const float ReadyHeight = 76f;
+ 
+     private const float RepeatDelay = 0.4f;
+@@ -739,7 +743,7 @@
+         for (int i = 0; i <= skins; i++)
+         {
+             float tx = rightX + (i % TileColumns) * (tileWidth + TileGap);
+-            float ty = TileTop + (i / TileColumns) * (TileHeight + TileGap);
++            float ty = TileTop + (i / TileColumns) * (TileHeight + NameHeight + TileGap);
+             Tile tile = BuildTile(sheet, seat, Row.Skin, i, tx, ty, tileWidth, TileHeight);
+ 
+             if (i == 0)
+@@ -754,7 +758,15 @@
+             {
+                 GameObject prefab = gm.RecordedCharacterPrefab(true, i - 1);
+                 BuildIcon(tile.background.rectTransform, prefab, Mathf.Min(88f, tileWidth));
+-                if (prefab != null) CharacterNames.Label(tile.background.rectTransform, BodySprite(prefab));
++                // The first name, in the RANDOM label's style (hand fix, 2026-11-15: the agent's own label, with
++                // a paper outline and auto-sizing, didn't show in the game), in the strip under the tile.
++                string skinName = prefab != null ? CharacterNames.For(BodySprite(prefab)) : "";
++                if (skinName.Length > 0)
++                {
++                    TMP_Text nameLabel = Text(tile.background.transform, skinName, 16f, UIKit.Ink, false,
++                                              TextAlignmentOptions.Center);
++                    Place(nameLabel.rectTransform, 0f, TileHeight, tileWidth, NameHeight);
++                }
+             }
+         }
+ 

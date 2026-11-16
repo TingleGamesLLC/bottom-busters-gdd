@@ -1,0 +1,239 @@
+{
+  "id": "20261115-161537",
+  "started": "2026-11-15T16:15:37",
+  "status": "built 1 feature(s), its limit for this run",
+  "card": null,
+  "tasks": [],
+  "events": [
+    {
+      "at": "2026-11-15T16:15:38",
+      "agent": "builder",
+      "text": "read the GDD (31 sections) and the code (171 C# files)"
+    },
+    {
+      "at": "2026-11-15T16:20:13",
+      "agent": "builder",
+      "text": "346 requirements from the GDD; 51 dropped by the checks"
+    },
+    {
+      "at": "2026-11-15T16:22:39",
+      "agent": "builder",
+      "text": "pass 1: 60 requirements confirmed in the code, 263 the GDD calls built that the search couldn't confirm, 17 gaps, 11 it can build now"
+    },
+    {
+      "at": "2026-11-15T16:22:39",
+      "agent": "builder",
+      "text": "would build 7-2, Character Skin Unlocking (3x1 + 2x0 + 2x0 + 1 = 4); waiting on David"
+    },
+    {
+      "at": "2026-11-15T16:23:19",
+      "agent": "builder",
+      "text": "read the GDD (31 sections) and the code (171 C# files)"
+    },
+    {
+      "at": "2026-11-15T16:23:19",
+      "agent": "builder",
+      "text": "346 requirements from the GDD; 51 dropped by the checks"
+    },
+    {
+      "at": "2026-11-15T16:24:08",
+      "agent": "builder",
+      "text": "pass 2: 60 requirements confirmed in the code, 263 the GDD calls built that the search couldn't confirm, 17 gaps, 11 it can build now"
+    },
+    {
+      "at": "2026-11-15T16:24:13",
+      "agent": "builder",
+      "text": "stopped: 21.1-14 is skipped: Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "at": "2026-11-15T16:25:06",
+      "agent": "builder",
+      "text": "read the GDD (31 sections) and the code (171 C# files)"
+    },
+    {
+      "at": "2026-11-15T16:25:06",
+      "agent": "builder",
+      "text": "346 requirements from the GDD; 51 dropped by the checks"
+    },
+    {
+      "at": "2026-11-15T16:25:56",
+      "agent": "builder",
+      "text": "pass 3: 60 requirements confirmed in the code, 263 the GDD calls built that the search couldn't confirm, 17 gaps, 11 it can build now"
+    },
+    {
+      "at": "2026-11-15T16:25:59",
+      "agent": "builder",
+      "text": "stopped: 21.1-14 is skipped: Assets/Scripts/Core/GameManager.cs has uncommitted changes (another session's work)"
+    },
+    {
+      "at": "2026-11-15T16:29:56",
+      "agent": "builder",
+      "text": "read the GDD (31 sections) and the code (171 C# files)"
+    },
+    {
+      "at": "2026-11-15T16:29:56",
+      "agent": "builder",
+      "text": "346 requirements from the GDD; 51 dropped by the checks"
+    },
+    {
+      "at": "2026-11-15T16:30:50",
+      "agent": "builder",
+      "text": "pass 4: 60 requirements confirmed in the code, 263 the GDD calls built that the search couldn't confirm, 17 gaps, 11 it can build now"
+    },
+    {
+      "at": "2026-11-15T16:30:55",
+      "agent": "builder",
+      "text": "building 21.1-14, Character name display (3x1 + 2x0 + 2x1 + 0 = 5)"
+    },
+    {
+      "at": "2026-11-15T16:31:12",
+      "agent": "builder",
+      "text": "qwen3:30b-instruct, try 1: That answer couldn't be used: Assets/Scripts/UI/CharacterSelectMenu.cs doesn't exist (1 cheek(s) left)"
+    },
+    {
+      "at": "2026-11-15T16:31:27",
+      "agent": "builder",
+      "text": "qwen3:30b-instruct, try 2: That answer couldn't be used: Assets/Scripts/UI/MenuCanvas.cs doesn't exist (0 cheek(s) left)"
+    },
+    {
+      "at": "2026-11-15T16:31:27",
+      "agent": "builder",
+      "text": "qwen3:30b-instruct is out of cheeks on 21.1-14"
+    },
+    {
+      "at": "2026-11-15T16:31:56",
+      "agent": "builder",
+      "text": "claude-code, try 3: That answer couldn't be used: no NEW FILE or EDIT blocks in the reply (1 cheek(s) left)"
+    },
+    {
+      "at": "2026-11-15T16:32:21",
+      "agent": "builder",
+      "text": "claude-code, try 4: That answer couldn't be used: no NEW FILE or EDIT blocks in the reply (0 cheek(s) left)"
+    },
+    {
+      "at": "2026-11-15T16:32:21",
+      "agent": "builder",
+      "text": "claude-code is out of cheeks on 21.1-14"
+    },
+    {
+      "at": "2026-11-15T16:32:21",
+      "agent": "builder",
+      "text": "stopped: 21.1-14 (Character name display): no writer got it to build; everything is put back"
+    },
+    {
+      "at": "2026-11-15T16:39:28",
+      "agent": "builder",
+      "text": "read the GDD (31 sections) and the code (171 C# files)"
+    },
+    {
+      "at": "2026-11-15T16:39:28",
+      "agent": "builder",
+      "text": "346 requirements from the GDD; 51 dropped by the checks"
+    },
+    {
+      "at": "2026-11-15T16:40:16",
+      "agent": "builder",
+      "text": "pass 5: 60 requirements confirmed in the code, 263 the GDD calls built that the search couldn't confirm, 17 gaps, 11 it can build now"
+    },
+    {
+      "at": "2026-11-15T16:40:21",
+      "agent": "builder",
+      "text": "building 21.1-14, Character name display (3x1 + 2x0 + 2x1 + 0 = 5)"
+    },
+    {
+      "at": "2026-11-15T16:41:58",
+      "agent": "builder",
+      "text": "qwen3:30b-instruct, try 1: The build failed with these compiler errors: (1 cheek(s) left)"
+    },
+    {
+      "at": "2026-11-15T16:43:11",
+      "agent": "builder",
+      "text": "qwen3:30b-instruct, try 2: The build failed with these compiler errors: (0 cheek(s) left)"
+    },
+    {
+      "at": "2026-11-15T16:43:11",
+      "agent": "builder",
+      "text": "qwen3:30b-instruct is out of cheeks on 21.1-14"
+    },
+    {
+      "at": "2026-11-15T16:47:04",
+      "agent": "builder",
+      "text": "21.1-14 built by claude-code and the game builds; scanning again"
+    },
+    {
+      "at": "2026-11-15T16:48:11",
+      "agent": "builder",
+      "text": "pass 6: 61 requirements confirmed in the code, 263 the GDD calls built that the search couldn't confirm, 16 gaps, 10 it can build now"
+    }
+  ],
+  "builder": {
+    "passes": [
+      {
+        "pass": 1,
+        "gaps": 17,
+        "present": 323,
+        "buildable": 11
+      },
+      {
+        "pass": 2,
+        "gaps": 17,
+        "present": 323,
+        "buildable": 11
+      },
+      {
+        "pass": 3,
+        "gaps": 17,
+        "present": 323,
+        "buildable": 11
+      },
+      {
+        "pass": 4,
+        "gaps": 17,
+        "present": 323,
+        "buildable": 11
+      },
+      {
+        "pass": 5,
+        "gaps": 17,
+        "present": 323,
+        "buildable": 11
+      },
+      {
+        "pass": 6,
+        "gaps": 16,
+        "present": 324,
+        "buildable": 10
+      }
+    ],
+    "built": [
+      {
+        "id": "21.1-14",
+        "feature": "Character name display",
+        "writer": "claude-code",
+        "files": [
+          "Assets/Scripts/Characters/CharacterNames.cs",
+          "Assets/Scripts/UI/CharacterSelect.cs"
+        ],
+        "closed": true
+      }
+    ],
+    "pick": {
+      "id": "21.1-14",
+      "feature": "Character name display",
+      "section": "21.1",
+      "files": [
+        "Assets/Scripts/UI/CharacterSelect.cs",
+        "Assets/Scripts/Characters/Wearables.cs",
+        "Assets/Scripts/UI/CharSelectTest.cs"
+      ],
+      "unblocks": "31 characters waiting",
+      "ruling": "no dated ruling",
+      "visible": true,
+      "size": "3 file(s), about 0 lines",
+      "score": 5,
+      "math": "3x1 + 2x0 + 2x1 + 0 = 5",
+      "approved_by_david": "listed as unconfirmed; David approved building it"
+    }
+  },
+  "tokens": 253458
+}

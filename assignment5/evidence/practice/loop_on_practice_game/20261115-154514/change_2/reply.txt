@@ -1,0 +1,58 @@
+=== NEW FILE: Assets/Scripts/Core/BestScoreManager.cs
+using UnityEngine;
+
+/// <summary>
+/// The best score (GDD Section 11). It is saved between sessions in PlayerPrefs and
+/// shown on the main menu as BEST.
+/// </summary>
+public static class BestScoreManager
+{
+    private const string PrefsKey = "BottomBusters.BestScore";
+
+    private static bool loaded;
+    private static int best;
+
+    /// <summary>The best score saved so far. It is 0 until a run is submitted.</summary>
+    public static int Best
+    {
+        get
+        {
+            if (!loaded)
+            {
+                best = PlayerPrefs.GetInt(PrefsKey, 0);
+                loaded = true;
+            }
+            return best;
+        }
+    }
+
+    /// <summary>
+    /// Call this with the final score when a run ends. The score is saved only if it beats
+    /// the best. Returns true when it sets a new best.
+    /// NOT HOOKED UP YET: the code that ends a run and holds the score wasn't shown,
+    /// so nothing calls this yet. Until something does, BEST stays at 0.
+    /// </summary>
+    public static bool Submit(int score)
+    {
+        if (score <= Best) return false;
+
+        best = score;
+        PlayerPrefs.SetInt(PrefsKey, score);
+        PlayerPrefs.Save();
+        return true;
+    }
+
+    /// <summary>Draws "BEST: n" under the main menu's PLAY button. Call only from OnGUI.</summary>
+    public static void DrawMenuLabel()
+    {
+        GUI.Label(new Rect(20, 270, 200, 30), "BEST: " + Best);
+    }
+}
+=== EDIT: Assets/Scripts/UI/MainMenu.cs
+<<<<<<< FIND
+        if (!playing && GUI.Button(new Rect(20, 200, 200, 60), "PLAY")) StartRun();
+=======
+        if (!playing && GUI.Button(new Rect(20, 200, 200, 60), "PLAY")) StartRun();
+        if (!playing) BestScoreManager.DrawMenuLabel();
+>>>>>>> REPLACE
+=== END

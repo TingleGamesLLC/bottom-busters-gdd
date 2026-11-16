@@ -1,0 +1,17 @@
+GDD read: 207 requirements, 25 dropped, 190s
+gap pass: 138 met, 68 gaps, 731s, tokens {'builder': 598804}
+7 6.1-5 Platform Heights | 3x1 + 2x0 + 2x1 + 2 = 7 | ['Assets/Scripts/Level/PlatformHeightManager.cs']
+6 4.3-4 Arm flailing during death | 3x1 + 2x0 + 2x1 + 1 = 6 | ['Assets/Scripts/Characters/CharacterBase.cs', 'Assets/Scripts/Characters/CharacterIdle.cs', 'Assets/Scripts/Characters/DeathFlightController.cs']
+6 4.4-4 Respawn with invincibility | 3x1 + 2x0 + 2x1 + 1 = 6 | ['Assets/Scripts/Characters/CharacterBase.cs', 'Assets/Scripts/Player/InvincibilityRespawn.cs']
+6 14-8 bonus round chefs | 3x1 + 2x0 + 2x1 + 1 = 6 | ['Assets/Scripts/Core/LevelSetup.cs', 'Assets/Scripts/Characters/ChefAnimal.cs']
+6 21-6 White underwear lives | 3x1 + 2x0 + 2x1 + 1 = 6 | ['Assets/Scripts/Characters/CharacterBase.cs', 'Assets/Scripts/Characters/AIController.cs', 'Assets/Scripts/Characters/UnderwearLivesManager.cs']
+5 2-1 Height-based combat | 3x1 + 2x0 + 2x1 + 0 = 5 | ['Assets/Scripts/Characters/AIController.cs', 'Assets/Scripts/Characters/PlayerController.cs', 'Assets/Scripts/Characters/CharacterBase.cs', 'Assets/Scripts/Combat/HeightCombatSystem.cs']
+5 4.4-1 Lives display system | 3x1 + 2x0 + 2x1 + 0 = 5 | ['Assets/Scripts/Characters/PlayerController.cs', 'Assets/Scripts/Replay/ReplayPlayer.cs', 'Assets/Scripts/Replay/ReplayPreviewStage.cs', 'Assets/Scripts/HUD/LivesDisplay.cs']
+5 4.4-5 Co-op 1UP revival | 3x1 + 2x0 + 2x1 + 0 = 5 | ['Assets/Scripts/Characters/PlayerController.cs', 'Assets/Scripts/Replay/ReplayPlayer.cs', 'Assets/Scripts/Replay/ReplayPreviewStage.cs', 'Assets/Scripts/Coop/CoopReviveSystem.cs']
+5 6.1-2 Ground with Water Gaps | 3x1 + 2x0 + 2x1 + 0 = 5 | ['Assets/Scripts/Core/LevelSetup.cs', 'Assets/Scripts/Characters/GroundSnagTracker.cs', 'Assets/Scripts/Characters/CharacterBase.cs', 'Assets/Scripts/Level/GroundWithWaterGaps.cs']
+5 7-5 Character Animation System | 3x1 + 2x0 + 2x1 + 0 = 5 | ['Assets/Scripts/Characters/CharacterIdle.cs']
+5 14-2 terrain tile art | 3x1 + 2x0 + 2x1 + 0 = 5 | ['Assets/Scripts/Core/LevelSetup.cs']
+5 16-3 Roast Event Triggering | 3x1 + 2x0 + 2x1 + 0 = 5 | ['Assets/Scripts/Level/BonusLevel.cs', 'Assets/Scripts/Replay/ReplayFormat.cs', 'Assets/Scripts/Replay/ReplayPlayer.cs', 'Assets/Scripts/Events/RoastEventTrigger.cs']
+4 4.3-8 Damage source tracking | 3x0 + 2x0 + 2x1 + 2 = 4 | ['Assets/Scripts/DamageSource.cs']
+4 7-8 Dynamic Character Unlocking | 3x1 + 2x0 + 2x0 + 1 = 4 | ['Assets/Scripts/Characters/CharacterBase.cs', 'Assets/Scripts/Characters/CharacterUnlockManager.cs']
+4 10-2 Poo Staining System | 3x0 + 2x0 + 2x1 + 2 = 4 | ['Assets/Scripts/Powerups/PooPileManager.cs']

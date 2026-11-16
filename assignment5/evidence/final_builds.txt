@@ -1,0 +1,7 @@
+Final builds after the hand changes, 2026-11-15 (Unity headless, HeadlessBuild.Build and HeadlessBuild.BuildItch):
+
+HeadlessBuild: Succeeded — 0 errors, 1174 MB, 37s
+HeadlessBuild(full steam): Succeeded — 0 errors, 1174 MB, 8s at C:\bbust\full\steam
+HeadlessBuild(itch): Succeeded — 0 errors, 1173 MB, 36s
+HeadlessBuild(itch): Succeeded — zip 177 MB at C:\bbust\bbust-itch\BottomBusters-itch-demo-0.9.3.zip
+HeadlessBuild(full itch): Succeeded — 0 errors, 1173 MB, 10s at C:\bbust\full\itch

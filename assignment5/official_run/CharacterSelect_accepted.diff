@@ -1,0 +1,72 @@
+diff --git a/Assets/Scripts/UI/CharacterSelect.cs b/Assets/Scripts/UI/CharacterSelect.cs
+index 02421ed..da680c8 100644
+--- a/Assets/Scripts/UI/CharacterSelect.cs
++++ b/Assets/Scripts/UI/CharacterSelect.cs
+@@ -47,7 +47,11 @@
+ public class CharacterSelect : MonoBehaviour
+ {
+     // ---- the approved mockup, 1920x1080 canvas units ----
+-    private const float SheetHeight = 920f;
++    // Each skin tile's first name sits in a strip under it (DAVID, 2026-11-15). Two rows of skin tiles,
++    // so everything under them moves down two strips and the sheet grows by the same.
++    private const float NameHeight = 20f;
++    private const float NameShift = 2f * NameHeight;
++    private const float SheetHeight = 920f + NameShift;
+     private const float SheetWidth1P = 960f;
+     private const float SheetWidth2P = 1840f;
+     private const float ColumnWidth1P = 880f;
+@@ -65,19 +69,19 @@ public class CharacterSelect : MonoBehaviour
+     private const float TileHeight = 100f;
+     private const float TileGap = 7f;
+     private const int TileColumns = 6;
+-    private const float HatHeadingY = 403f;
+-    private const float HatTileY = 431f;
+-    private const float ShadesHeadingY = 517f;
+-    private const float ShadesTileY = 545f;
++    private const float HatHeadingY = 403f + NameShift;
++    private const float HatTileY = 431f + NameShift;
++    private const float ShadesHeadingY = 517f + NameShift;
++    private const float ShadesTileY = 545f + NameShift;
+     private const float ItemTileHeight = 64f;
+     private const float ItemTileGap = 9f;
+     private const int ItemColumns = 4;
+-    private const float ColorsHeadingY = 631f;
+-    private const float ColorRowY = 659f;
++    private const float ColorsHeadingY = 631f + NameShift;
++    private const float ColorRowY = 659f + NameShift;
+     private const float ColorRowStep = 46f;
+     private const float ColorLabelWidth = 86f;
+     private const float SwatchGap = 8f;
+-    private const float ReadyY = 816f;
++    private const float ReadyY = 816f + NameShift;
+     private const float ReadyHeight = 76f;
+ 
+     private const float RepeatDelay = 0.4f;
+@@ -739,7 +743,7 @@ private void BuildSeat(RectTransform sheet, int index, float x0, float columnWid
+         for (int i = 0; i <= skins; i++)
+         {
+             float tx = rightX + (i % TileColumns) * (tileWidth + TileGap);
+-            float ty = TileTop + (i / TileColumns) * (TileHeight + TileGap);
++            float ty = TileTop + (i / TileColumns) * (TileHeight + NameHeight + TileGap);
+             Tile tile = BuildTile(sheet, seat, Row.Skin, i, tx, ty, tileWidth, TileHeight);
+ 
+             if (i == 0)
+@@ -752,7 +756,17 @@ private void BuildSeat(RectTransform sheet, int index, float x0, float columnWid
+             }
+             else
+             {
+-                BuildIcon(tile.background.rectTransform, gm.RecordedCharacterPrefab(true, i - 1), Mathf.Min(88f, tileWidth));
++                GameObject prefab = gm.RecordedCharacterPrefab(true, i - 1);
++                BuildIcon(tile.background.rectTransform, prefab, Mathf.Min(88f, tileWidth));
++                // The first name, in the RANDOM label's style (hand fix, 2026-11-15: the agent's own label, with
++                // a paper outline and auto-sizing, didn't show in the game), in the strip under the tile.
++                string skinName = prefab != null ? CharacterNames.For(BodySprite(prefab)) : "";
++                if (skinName.Length > 0)
++                {
++                    TMP_Text nameLabel = Text(tile.background.transform, skinName, 16f, UIKit.Ink, false,
++                                              TextAlignmentOptions.Center);
++                    Place(nameLabel.rectTransform, 0f, TileHeight, tileWidth, NameHeight);
++                }
+             }
+         }
+ 

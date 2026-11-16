@@ -1,0 +1,27 @@
+--- a/Assets/Scripts/GameMode/PracticeGameMode.cs
++++ b/Assets/Scripts/GameMode/PracticeGameMode.cs
+@@ -0,0 +1,24 @@
++using UnityEngine;
++
++namespace BottomBusters.GameMode
++{
++    /// <summary>
++    /// A practice game mode that allows the player to play without scoring or time limits.
++    /// This mode is intended for the Builder agent to test and learn game mechanics.
++    /// </summary>
++    public class PracticeGameMode : MonoBehaviour
++    {
++        [Header("Configuration")]
++        [Tooltip("The scene to load when starting practice mode.")]
++        public string practiceSceneName = "GameScene";
++
++        /// <summary>
++        /// Starts the practice game mode by loading the designated game scene.
++        /// </summary>
++        public void StartPracticeMode()
++        {
++            // Load the practice scene
++            UnityEngine.SceneManagement.SceneManager.LoadScene(practiceSceneName);
++        }
++    }
++}

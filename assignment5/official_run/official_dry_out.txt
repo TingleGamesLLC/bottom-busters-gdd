@@ -1,0 +1,26 @@
+[16:15:38] builder: read the GDD (31 sections) and the code (171 C# files)
+[16:20:13] builder: 346 requirements from the GDD; 51 dropped by the checks
+[16:22:39] builder: pass 1: 60 requirements confirmed in the code, 263 the GDD calls built that the search couldn't confirm, 17 gaps, 11 it can build now
+[16:22:39] builder: would build 7-2, Character Skin Unlocking (3x1 + 2x0 + 2x0 + 1 = 4); waiting on David
+{
+  "run": "20261115-161537",
+  "status": "waiting on David",
+  "pick": {
+    "id": "7-2",
+    "feature": "Character Skin Unlocking",
+    "section": "7",
+    "files": [
+      "Assets/Scripts/Characters/CharacterBase.cs",
+      "Assets/Scripts/Characters/CharacterIdle.cs",
+      "Assets/Scripts/Characters/CharacterSkinManager.cs"
+    ],
+    "unblocks": "31 characters waiting",
+    "ruling": "no dated ruling",
+    "visible": false,
+    "size": "3 file(s), about 30 lines",
+    "score": 4,
+    "math": "3x1 + 2x0 + 2x0 + 1 = 4"
+  },
+  "built": [],
+  "tokens": 183217
+}

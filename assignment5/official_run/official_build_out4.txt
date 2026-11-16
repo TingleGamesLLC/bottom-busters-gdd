@@ -1,0 +1,43 @@
+[16:39:28] builder: read the GDD (31 sections) and the code (171 C# files)
+[16:39:28] builder: 346 requirements from the GDD; 51 dropped by the checks
+[16:40:16] builder: pass 5: 60 requirements confirmed in the code, 263 the GDD calls built that the search couldn't confirm, 17 gaps, 11 it can build now
+[16:40:21] builder: building 21.1-14, Character name display (3x1 + 2x0 + 2x1 + 0 = 5)
+[16:41:58] builder: qwen3:30b-instruct, try 1: The build failed with these compiler errors: (1 cheek(s) left)
+[16:43:11] builder: qwen3:30b-instruct, try 2: The build failed with these compiler errors: (0 cheek(s) left)
+[16:43:11] builder: qwen3:30b-instruct is out of cheeks on 21.1-14
+[16:47:04] builder: 21.1-14 built by claude-code and the game builds; scanning again
+[16:48:11] builder: pass 6: 61 requirements confirmed in the code, 263 the GDD calls built that the search couldn't confirm, 16 gaps, 10 it can build now
+{
+  "run": "20261115-161537",
+  "status": "built 1 feature(s), its limit for this run",
+  "pick": {
+    "id": "21.1-14",
+    "feature": "Character name display",
+    "section": "21.1",
+    "files": [
+      "Assets/Scripts/UI/CharacterSelect.cs",
+      "Assets/Scripts/Characters/Wearables.cs",
+      "Assets/Scripts/UI/CharSelectTest.cs"
+    ],
+    "unblocks": "31 characters waiting",
+    "ruling": "no dated ruling",
+    "visible": true,
+    "size": "3 file(s), about 0 lines",
+    "score": 5,
+    "math": "3x1 + 2x0 + 2x1 + 0 = 5",
+    "approved_by_david": "listed as unconfirmed; David approved building it"
+  },
+  "built": [
+    {
+      "id": "21.1-14",
+      "feature": "Character name display",
+      "writer": "claude-code",
+      "files": [
+        "Assets/Scripts/Characters/CharacterNames.cs",
+        "Assets/Scripts/UI/CharacterSelect.cs"
+      ],
+      "closed": true
+    }
+  ],
+  "tokens": 253458
+}

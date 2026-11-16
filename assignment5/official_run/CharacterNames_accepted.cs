@@ -1,0 +1,95 @@
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+
+/// <summary>
+/// Character names (GDD 21.1, "Sets": "The game shows no ethnicity information, just a list of
+/// characters with first names"). Character Select's skin tiles are that list. Each tile shows
+/// its character's first name along the bottom, where the RANDOM tile shows its word, and
+/// nothing else about the character.
+///
+/// A name goes with the ART, not the prefab slot: player2Prefab wears player3's art and
+/// player3Prefab wears player2's (CharacterSelect.BodySprite). So the name comes from the body
+/// sprite's texture name, the same name Player.log's CHARSELECT tileArt shows:
+/// 1. Art named after its character ("larry_body", "LarryBody") gets that name. This is how a
+///    new set's character is named: add its first name to Names and name its art after it.
+/// 2. Otherwise the last number in the art's name ("player3") picks from the original ten.
+///
+/// Checked 2026-11-15 against the art and the GDD's roster table: the original ten's art is "player"
+/// (Larry, no number) and "player2" to "player10" in the order the Studio Director listed them on
+/// 2026-11-01 (Larry, Doug, Norm, Greg, Carl, Steve, Barry, Terry, Kevin, Phil), so Character Select
+/// reads Larry, Norm, Doug, Greg, Carl, Steve, Barry, Terry, Kevin, Phil (C:\gdd\assignment5\evidence\
+/// character_select_tiles.png). Each art's name, and how it was found, goes to the menu log once
+/// (CHARNAMES). Art that matches neither rule shows no name.
+/// </summary>
+public static class CharacterNames
+{
+    /// <summary>Every character's one first name. The original ten come first, in art-number
+    /// order, and a new set's names go after them.</summary>
+    private static readonly string[] Names =
+    {
+        "Larry", "Doug", "Norm", "Greg", "Carl", "Steve", "Barry", "Terry", "Kevin", "Phil",
+    };
+
+    private const int OriginalCount = 10;
+
+    private static readonly Dictionary<string, string> found = new Dictionary<string, string>();
+
+    /// <summary>The first name for a body sprite, or "" when it has none.</summary>
+    public static string For(Sprite body)
+    {
+        if (body == null || body.texture == null) return "";
+        string art = body.texture.name;
+        if (found.TryGetValue(art, out string cached)) return cached;
+
+        string first = "";
+        string how = "no match";
+        foreach (string candidate in Names)
+        {
+            if (HasWord(art, candidate)) { first = candidate; how = "by name"; break; }
+        }
+        if (first.Length == 0)
+        {
+            int number = LastNumber(art);
+            // The first character's art is "player", with no number (hand fix, 2026-11-15: the agent's
+            // version left Larry with no name).
+            if (number < 0 && art.Equals("player", StringComparison.OrdinalIgnoreCase)) number = 1;
+            if (number >= 1 && number <= OriginalCount)
+            {
+                first = Names[number - 1];
+                how = "by number " + number;
+            }
+        }
+
+        found[art] = first;
+        MenuLog.Line($"CHARNAMES: art '{art}' -> '{first}' ({how})");
+        return first;
+    }
+
+    /// <summary>The name appears in the text as a word of its own: no letter right before or
+    /// after it, except where a capital starts a new word ("LarryBody"). "Normal" is not Norm.</summary>
+    private static bool HasWord(string text, string word)
+    {
+        int at = text.IndexOf(word, StringComparison.OrdinalIgnoreCase);
+        while (at >= 0)
+        {
+            int after = at + word.Length;
+            bool startOk = at == 0 || !char.IsLetter(text[at - 1]) || char.IsUpper(text[at]);
+            bool endOk = after >= text.Length || !char.IsLetter(text[after]) || char.IsUpper(text[after]);
+            if (startOk && endOk) return true;
+            at = text.IndexOf(word, at + 1, StringComparison.OrdinalIgnoreCase);
+        }
+        return false;
+    }
+
+    /// <summary>The last run of digits in the text, as a number, or -1 when there is none.</summary>
+    private static int LastNumber(string text)
+    {
+        int end = text.Length - 1;
+        while (end >= 0 && !char.IsDigit(text[end])) end--;
+        if (end < 0) return -1;
+        int start = end;
+        while (start > 0 && char.IsDigit(text[start - 1])) start--;
+        return int.TryParse(text.Substring(start, end - start + 1), out int n) ? n : -1;
+    }
+}
