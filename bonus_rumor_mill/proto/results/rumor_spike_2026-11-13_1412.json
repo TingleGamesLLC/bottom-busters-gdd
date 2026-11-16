@@ -1,0 +1,756 @@
+[
+  {
+    "i": 1,
+    "plan": {
+      "chain": [
+        "mildred",
+        "bev",
+        "gary",
+        "toby"
+      ],
+      "culprit": "mildred",
+      "root": "wrong_person",
+      "real": "ozzie",
+      "how": "on purpose, to cover for their friend Ozzie"
+    },
+    "town": {
+      "street": "Gossip Lane",
+      "places": {
+        "shop": {
+          "name": "Toby's Bar of Soap & Bubblegum",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "Mildred Ashby's Gossip Column House",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary Gusto's Broken Oar Repair Shop",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Ozzie Fink's Scissor Haircut Theater",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        },
+        "tavern": {
+          "name": "Bev Fairweather's Tea and Pie Tavern",
+          "works_or_lives": "works",
+          "who": "bev"
+        }
+      },
+      "roof_prop": "anvil"
+    },
+    "roles": {
+      "toby": "Sells bar of soap",
+      "mildred": "Writes gossip column",
+      "gary": "Fixes broken oars",
+      "bev": "Serves tea and pie",
+      "ozzie": "Cuts hair with scissors"
+    },
+    "best": null,
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "\"detail\" ran over the length limit (70 characters) and got cut off. Keep it shorter.",
+        "ms": 2746
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2451
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "Use plain English only.",
+        "ms": 2896
+      }
+    ],
+    "lines": [],
+    "seconds": 16.1
+  },
+  {
+    "i": 2,
+    "plan": {
+      "chain": [
+        "ozzie",
+        "toby",
+        "mildred"
+      ],
+      "culprit": "ozzie",
+      "root": "made_up",
+      "real": null,
+      "how": null
+    },
+    "town": {
+      "street": "Whispering Lane",
+      "places": {
+        "shop": {
+          "name": "Toby's Pickle Parade",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "Mildred's Ever-Watching Eye",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary's Rusty Net Repair",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Bev's Boring Ballroom",
+          "works_or_lives": "works",
+          "who": "bev"
+        },
+        "tavern": {
+          "name": "Ozzie's Dry Dregs",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        }
+      },
+      "roof_prop": "anvil"
+    },
+    "roles": {
+      "toby": "Shopkeeper selling pickles",
+      "mildred": "Neighbor watching everything",
+      "gary": "Dock worker mending nets",
+      "bev": "Theater manager running shows",
+      "ozzie": "Tavern waiter pouring drinks"
+    },
+    "best": null,
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2283
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2276
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "\"detail\" ran over the length limit (70 characters) and got cut off. Keep it shorter.",
+        "ms": 2471
+      }
+    ],
+    "lines": [],
+    "seconds": 22.9
+  },
+  {
+    "i": 3,
+    "plan": {
+      "chain": [
+        "ozzie",
+        "mildred",
+        "toby"
+      ],
+      "culprit": "ozzie",
+      "root": "wrong_person",
+      "real": "bev",
+      "how": "on purpose, to cover for their friend Bev"
+    },
+    "town": {
+      "street": "Gossip Lane",
+      "places": {
+        "shop": {
+          "name": "Toby's Crumb & Flour Run",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "Mildred's Gossip Column House",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary's Salvage Hauler Shed",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Bev's Stage Manager Theater",
+          "works_or_lives": "works",
+          "who": "bev"
+        },
+        "tavern": {
+          "name": "Ozzie's Card Sharp Tavern",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        }
+      },
+      "roof_prop": "fish"
+    },
+    "roles": {
+      "toby": "flour delivery driver",
+      "mildred": "neighborhood gossip columnist",
+      "gary": "dockside salvage hauler",
+      "bev": "theater stage manager",
+      "ozzie": "tavern card sharp"
+    },
+    "best": null,
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2170
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2264
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2231
+      }
+    ],
+    "lines": [],
+    "seconds": 16.5
+  },
+  {
+    "i": 4,
+    "plan": {
+      "chain": [
+        "bev",
+        "ozzie",
+        "toby"
+      ],
+      "culprit": "bev",
+      "root": "made_up",
+      "real": null,
+      "how": null
+    },
+    "town": {
+      "street": "Gossip Lane",
+      "places": {
+        "shop": {
+          "name": "Toby Crumb's Suds & Scent Shack",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "Mildred Ashby's Dusty Doormat Manor",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary Gusto's Rusty Rowboat Repair Barn",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Bev Fairweather's Blushing Ballroom",
+          "works_or_lives": "works",
+          "who": "bev"
+        },
+        "tavern": {
+          "name": "Ozzie Fink's Whiskey Wobble Tavern",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        }
+      },
+      "roof_prop": "anvil"
+    },
+    "roles": {
+      "toby": "soap salesman",
+      "mildred": "housekeeper",
+      "gary": "dock worker",
+      "bev": "actress",
+      "ozzie": "tavern keeper"
+    },
+    "best": null,
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2350
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2259
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "\"act\" ran over the length limit (110 characters) and got cut off. Keep it shorter.",
+        "ms": 2681
+      }
+    ],
+    "lines": [],
+    "seconds": 15.2
+  },
+  {
+    "i": 5,
+    "plan": {
+      "chain": [
+        "toby",
+        "bev",
+        "ozzie",
+        "gary"
+      ],
+      "culprit": "toby",
+      "root": "wrong_person",
+      "real": "mildred",
+      "how": "by mistake: they mixed the player up with Mildred"
+    },
+    "town": {
+      "street": "Sighlin Street",
+      "places": {
+        "shop": {
+          "name": "Toby Crumb's Canned Peach Emporium",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "Mildred Ashby's Mailbox Manor",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary Gusto's Lumber Cart Warehouse",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Ozzie Fink's Tele-Phone Theater",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        },
+        "tavern": {
+          "name": "Bev Fairweather's Whiskey Tavern",
+          "works_or_lives": "works",
+          "who": "bev"
+        }
+      },
+      "roof_prop": "anvil"
+    },
+    "roles": {
+      "toby": "Selling canned peaches",
+      "mildred": "Checking the mailbox",
+      "gary": "Hauling lumber carts",
+      "bev": "Serving whiskey drinks",
+      "ozzie": "Fixing broken telephones"
+    },
+    "best": null,
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "\"detail\" ran over the length limit (70 characters) and got cut off. Keep it shorter.",
+        "ms": 2571
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "\"detail\" ran over the length limit (70 characters) and got cut off. Keep it shorter.",
+        "ms": 2418
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2292
+      }
+    ],
+    "lines": [],
+    "seconds": 12.1
+  },
+  {
+    "i": 6,
+    "plan": {
+      "chain": [
+        "ozzie",
+        "bev",
+        "toby"
+      ],
+      "culprit": "ozzie",
+      "root": "made_up",
+      "real": null,
+      "how": null
+    },
+    "town": {
+      "street": "Gossip Lane",
+      "places": {
+        "shop": {
+          "name": "Toby Crumb's Suds & Suds",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "Mildred Ashby's Dusty Attic",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary Gusto's Wet Cargo Shed",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Bev Fairweather's Silly Act House",
+          "works_or_lives": "works",
+          "who": "bev"
+        },
+        "tavern": {
+          "name": "Ozzie Fink's Dry Martini Bar",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        }
+      },
+      "roof_prop": "anvil"
+    },
+    "roles": {
+      "toby": "Soap seller",
+      "mildred": "Housekeeper",
+      "gary": "Dock worker",
+      "bev": "Theater manager",
+      "ozzie": "Tavern bartender"
+    },
+    "best": null,
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2256
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "\"detail\" ran over the length limit (70 characters) and got cut off. Keep it shorter.",
+        "ms": 2403
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2362
+      }
+    ],
+    "lines": [],
+    "seconds": 15.0
+  },
+  {
+    "i": 7,
+    "plan": {
+      "chain": [
+        "toby",
+        "mildred",
+        "bev",
+        "gary"
+      ],
+      "culprit": "toby",
+      "root": "wrong_person",
+      "real": "ozzie",
+      "how": "by mistake: they mixed the player up with Ozzie"
+    },
+    "town": {
+      "street": "Whisper Lane",
+      "places": {
+        "shop": {
+          "name": "Toby's Crumb & Co.",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "The Ashby Attic Nest",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary's Gritty Grub Shed",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Bev's Broken Curtain Hall",
+          "works_or_lives": "works",
+          "who": "bev"
+        },
+        "tavern": {
+          "name": "Ozzie's Oak-Root Pub",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        }
+      },
+      "roof_prop": "anvil"
+    },
+    "roles": {
+      "toby": "store clerk",
+      "mildred": "housekeeper",
+      "gary": "dock hand",
+      "bev": "stage manager",
+      "ozzie": "tavern owner"
+    },
+    "best": null,
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "\"after\" ran over the length limit (70 characters) and got cut off. Keep it shorter.",
+        "ms": 2553
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2224
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "\"detail\" ran over the length limit (70 characters) and got cut off. Keep it shorter.",
+        "ms": 2398
+      }
+    ],
+    "lines": [],
+    "seconds": 19.8
+  },
+  {
+    "i": 8,
+    "plan": {
+      "chain": [
+        "ozzie",
+        "gary",
+        "bev"
+      ],
+      "culprit": "ozzie",
+      "root": "made_up",
+      "real": null,
+      "how": null
+    },
+    "town": {
+      "street": "Gossip Lane",
+      "places": {
+        "shop": {
+          "name": "Toby Crumb's Crayon Corner",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "Mildred Ashby's Nursing Nook",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary Gusto's Docks & Decks",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Bev Fairweather's Backstage Bunkers",
+          "works_or_lives": "lives",
+          "who": "bev"
+        },
+        "tavern": {
+          "name": "Ozzie Fink's Tavern Tab",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        }
+      },
+      "roof_prop": "anvil"
+    },
+    "roles": {
+      "toby": "Mail carrier",
+      "mildred": "Nurse",
+      "gary": "Dock keeper",
+      "bev": "Stagehand",
+      "ozzie": "Bartender"
+    },
+    "best": null,
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2281
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2610
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2163
+      }
+    ],
+    "lines": [],
+    "seconds": 27.8
+  },
+  {
+    "i": 9,
+    "plan": {
+      "chain": [
+        "toby",
+        "mildred",
+        "bev",
+        "ozzie"
+      ],
+      "culprit": "toby",
+      "root": "wrong_person",
+      "real": "gary",
+      "how": "on purpose, to cover for their friend Gary"
+    },
+    "town": {
+      "street": "Gossip Lane",
+      "places": {
+        "shop": {
+          "name": "Toby's Flour & Fiasco Bakery",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "Mildred's Tidy-Tooth House",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary Gusto's Dockside Dilemma Workshop",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Ozzie Fink's Playful Pantomime Theater",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        },
+        "tavern": {
+          "name": "Bev Fairweather's Beer & Bad Decisions",
+          "works_or_lives": "works",
+          "who": "bev"
+        }
+      },
+      "roof_prop": "anvil"
+    },
+    "roles": {
+      "toby": "sacks flour at bakery",
+      "mildred": "keeps house tidy",
+      "gary": "repairs dock shed",
+      "bev": "serves at tavern",
+      "ozzie": "plays theater"
+    },
+    "best": null,
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "\"detail\" ran over the length limit (70 characters) and got cut off. Keep it shorter.",
+        "ms": 2672
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "\"detail\" ran over the length limit (70 characters) and got cut off. Keep it shorter.",
+        "ms": 2303
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2299
+      }
+    ],
+    "lines": [],
+    "seconds": 15.5
+  },
+  {
+    "i": 10,
+    "plan": {
+      "chain": [
+        "ozzie",
+        "toby",
+        "gary"
+      ],
+      "culprit": "ozzie",
+      "root": "made_up",
+      "real": null,
+      "how": null
+    },
+    "town": {
+      "street": "Gossip Lane",
+      "places": {
+        "shop": {
+          "name": "Toby's Crumb & Scone Emporium",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "Mrs. Ashby's Pickled Peas Cottage",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary's Rusty Oar Barn",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Bev's Stage-Left Scrimmage Hall",
+          "works_or_lives": "works",
+          "who": "bev"
+        },
+        "tavern": {
+          "name": "Ozzie's Brew-and-Babble Pub",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        }
+      },
+      "roof_prop": "anvil"
+    },
+    "roles": {
+      "toby": "Miller's store clerk",
+      "mildred": "Mrs. Ashby's housekeeper",
+      "gary": "dock shed janitor",
+      "bev": "theater stagehand",
+      "ozzie": "tavern bartender"
+    },
+    "best": null,
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2321
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2034
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "act has no name or pronoun in front of it.",
+        "ms": 2077
+      }
+    ],
+    "lines": [],
+    "seconds": 16.3
+  }
+]

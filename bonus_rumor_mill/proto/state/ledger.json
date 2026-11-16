@@ -1,0 +1,783 @@
+{
+  "meta": {
+    "game": "Rumor Mill, Milestone 1",
+    "day": "Thursday",
+    "premise": 1,
+    "seed": 122577587,
+    "clock": 10,
+    "heat": 0.206,
+    "tier": "Whispers",
+    "believers": 6,
+    "outcome": null,
+    "twist": null,
+    "hunt": 1
+  },
+  "town": {
+    "street": "Main Street",
+    "roof_prop": "teapot",
+    "places": {
+      "shop": {
+        "name": "Lemonade Stand",
+        "who": "toby"
+      },
+      "house": {
+        "name": "Post Office",
+        "who": "mildred"
+      },
+      "dock_shed": {
+        "name": "Dock",
+        "who": "gary"
+      },
+      "theater": {
+        "name": "Theater",
+        "who": "ozzie"
+      },
+      "tavern": {
+        "name": "Coffee Shop",
+        "who": "bev"
+      }
+    }
+  },
+  "truth": {
+    "k1": {
+      "text": "Ozzie mails himself love letters signed \"a secret admirer.\" When Bev asked who keeps getting the pink envelopes, Mildred named you to protect her friend Ozzie."
+    }
+  },
+  "npcs": {
+    "toby": {
+      "personality": "the Salesman",
+      "job": "sells lemonade",
+      "building": "shop",
+      "place": "Lemonade Stand",
+      "relationships": {
+        "friend": null
+      },
+      "secret": null,
+      "talks_to": {},
+      "timeline": {
+        "Tuesday morning": "Lemonade Stand",
+        "Tuesday afternoon": "Lemonade Stand",
+        "Tuesday evening": "Lemonade Stand",
+        "Wednesday morning": "Lemonade Stand",
+        "Wednesday afternoon": "Lemonade Stand",
+        "Wednesday evening": "the Lemonade Stand"
+      },
+      "saw": [],
+      "beliefs": {
+        "r1": {
+          "role": "chain",
+          "version": "You've mailed yourself a perfumed love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+          "heard_from": "gary",
+          "heard_where": "the Lemonade Stand",
+          "heard_when": "Wednesday evening",
+          "told_to": null,
+          "told_where": "outside your door",
+          "told_when": "Thursday morning",
+          "about_player": true,
+          "started_it": false,
+          "knows_truth": false,
+          "lie": null
+        }
+      },
+      "status": [],
+      "said_to_player": [
+        "You've mailed yourself a perfumed love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+        "You've mailed yourself a perfumed love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+        "Well, Gary told me back at the Lemonade Stand on Wednesday evening!",
+        "All I know is what Gary told me, at the Lemonade Stand, Wednesday evening.",
+        "All I know is what Gary told me, at the Lemonade Stand, Wednesday evening.",
+        "Gary is a typical gossiper; he just repeats what he hears at the Lemonade Stand."
+      ],
+      "cracked": false,
+      "corrected": false
+    },
+    "mildred": {
+      "personality": "the Busybody",
+      "job": "sorts the mail",
+      "building": "house",
+      "place": "Post Office",
+      "relationships": {
+        "friend": "ozzie"
+      },
+      "secret": null,
+      "talks_to": {},
+      "timeline": {
+        "Tuesday morning": "Post Office",
+        "Tuesday afternoon": "Post Office",
+        "Tuesday evening": "Post Office",
+        "Wednesday morning": "the Coffee Shop",
+        "Wednesday afternoon": "Post Office",
+        "Wednesday evening": "Post Office"
+      },
+      "saw": [],
+      "beliefs": {
+        "r1": {
+          "role": "source",
+          "version": "You've been mailing yourself love letters signed \"a secret admirer.\"",
+          "heard_from": null,
+          "heard_where": null,
+          "heard_when": null,
+          "told_to": "bev",
+          "told_where": "the Coffee Shop",
+          "told_when": "Wednesday morning",
+          "about_player": true,
+          "started_it": true,
+          "knows_truth": false,
+          "lie": {
+            "liar": "mildred",
+            "kind": "self",
+            "covering_for": "mildred",
+            "first_listener": "bev",
+            "lie": "Nobody had to tell me. I hand those letters to you myself.",
+            "alibi": "",
+            "why": "Ozzie mails himself love letters signed \"a secret admirer.\" When Bev asked who keeps getting the pink envelopes, Mildred named you to protect her friend Ozzie.",
+            "truth": "Ozzie mails himself love letters signed \"a secret admirer.\" When Bev asked who keeps getting the pink envelopes, Mildred named you to protect her friend Ozzie.",
+            "tell": "",
+            "tell_key": "",
+            "tell_kind": "detail",
+            "claimed_source": "myself",
+            "claimed_where": "the Coffee Shop",
+            "claimed_when": "Wednesday morning",
+            "real_where": "the Coffee Shop",
+            "real_when": "Wednesday morning",
+            "catch": [
+              "envelope"
+            ],
+            "written_by": "approved by David"
+          }
+        }
+      },
+      "status": [],
+      "said_to_player": [],
+      "cracked": false,
+      "corrected": false
+    },
+    "gary": {
+      "personality": "the Exaggerator",
+      "job": "mends nets",
+      "building": "dock_shed",
+      "place": "Dock",
+      "relationships": {
+        "friend": null
+      },
+      "secret": null,
+      "talks_to": {},
+      "timeline": {
+        "Tuesday morning": "Dock",
+        "Tuesday afternoon": "Dock",
+        "Tuesday evening": "Dock",
+        "Wednesday morning": "Dock",
+        "Wednesday afternoon": "the Coffee Shop",
+        "Wednesday evening": "the Lemonade Stand"
+      },
+      "saw": [],
+      "beliefs": {
+        "r1": {
+          "role": "chain",
+          "version": "You've mailed yourself a love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+          "heard_from": "bev",
+          "heard_where": "the Coffee Shop",
+          "heard_when": "Wednesday afternoon",
+          "told_to": "toby",
+          "told_where": "the Lemonade Stand",
+          "told_when": "Wednesday evening",
+          "about_player": true,
+          "started_it": false,
+          "knows_truth": false,
+          "lie": null
+        }
+      },
+      "status": [],
+      "said_to_player": [],
+      "cracked": false,
+      "corrected": false
+    },
+    "bev": {
+      "personality": "the Drama Queen",
+      "job": "serves coffee",
+      "building": "tavern",
+      "place": "Coffee Shop",
+      "relationships": {
+        "friend": null
+      },
+      "secret": null,
+      "talks_to": {},
+      "timeline": {
+        "Tuesday morning": "Coffee Shop",
+        "Tuesday afternoon": "Coffee Shop",
+        "Tuesday evening": "Coffee Shop",
+        "Wednesday morning": "the Coffee Shop",
+        "Wednesday afternoon": "the Coffee Shop",
+        "Wednesday evening": "Coffee Shop"
+      },
+      "saw": [],
+      "beliefs": {
+        "r1": {
+          "role": "chain",
+          "version": "You've been mailing yourself love letters signed \"a secret admirer,\" and Mildred has to hand them to you with a straight face.",
+          "heard_from": "mildred",
+          "heard_where": "the Coffee Shop",
+          "heard_when": "Wednesday morning",
+          "told_to": "gary",
+          "told_where": "the Coffee Shop",
+          "told_when": "Wednesday afternoon",
+          "about_player": true,
+          "started_it": false,
+          "knows_truth": false,
+          "lie": null
+        }
+      },
+      "status": [],
+      "said_to_player": [],
+      "cracked": false,
+      "corrected": false
+    },
+    "ozzie": {
+      "personality": "the Liar",
+      "job": "writes plays",
+      "building": "theater",
+      "place": "Theater",
+      "relationships": {
+        "friend": "mildred"
+      },
+      "secret": null,
+      "talks_to": {},
+      "timeline": {
+        "Tuesday morning": "Theater",
+        "Tuesday afternoon": "Theater",
+        "Tuesday evening": "Theater",
+        "Wednesday morning": "Theater",
+        "Wednesday afternoon": "Theater",
+        "Wednesday evening": "Theater"
+      },
+      "saw": [],
+      "beliefs": {
+        "r1": {
+          "role": "bystander",
+          "version": "You've mailed yourself a perfumed love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+          "heard_from": "townsfolk",
+          "heard_where": "in the street",
+          "heard_when": "Thursday morning",
+          "told_to": null,
+          "told_where": null,
+          "told_when": null,
+          "about_player": true,
+          "started_it": false,
+          "knows_truth": true,
+          "lie": null
+        }
+      },
+      "status": [],
+      "said_to_player": [],
+      "cracked": false,
+      "corrected": false
+    }
+  },
+  "rumors": {
+    "r1": {
+      "kernel": "k1",
+      "started_by": "mildred",
+      "chain": [
+        {
+          "hop": 1,
+          "npc": "mildred",
+          "heard_from": null,
+          "heard_where": null,
+          "heard_when": null,
+          "told_to": "bev",
+          "told_where": "the Coffee Shop",
+          "told_when": "Wednesday morning",
+          "version": "You've been mailing yourself love letters signed \"a secret admirer.\"",
+          "mutation": "started it",
+          "field_changed": "-",
+          "before": "(nothing: started it)",
+          "after": "You've been mailing yourself love letters signed \"a secret admirer.\"",
+          "consistency": "pass",
+          "written_by": "approved by David",
+          "why": "Ozzie mails himself love letters signed \"a secret admirer.\" When Bev asked who keeps getting the pink envelopes, Mildred named you to protect her friend Ozzie."
+        },
+        {
+          "hop": 2,
+          "npc": "bev",
+          "heard_from": "mildred",
+          "heard_where": "the Coffee Shop",
+          "heard_when": "Wednesday morning",
+          "told_to": "gary",
+          "told_where": "the Coffee Shop",
+          "told_when": "Wednesday afternoon",
+          "version": "You've been mailing yourself love letters signed \"a secret admirer,\" and Mildred has to hand them to you with a straight face.",
+          "mutation": "added that Mildred has to hand them to you with a straight face",
+          "field_changed": "-",
+          "before": "You've been mailing yourself love letters signed \"a secret admirer.\"",
+          "after": "You've been mailing yourself love letters signed \"a secret admirer,\" and Mildred has to hand them to you with a straight face.",
+          "consistency": "pass",
+          "written_by": "approved by David",
+          "why": null
+        },
+        {
+          "hop": 3,
+          "npc": "gary",
+          "heard_from": "bev",
+          "heard_where": "the Coffee Shop",
+          "heard_when": "Wednesday afternoon",
+          "told_to": "toby",
+          "told_where": "the Lemonade Stand",
+          "told_when": "Wednesday evening",
+          "version": "You've mailed yourself a love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+          "mutation": "made it every day for a month",
+          "field_changed": "-",
+          "before": "You've been mailing yourself love letters signed \"a secret admirer,\" and Mildred has to hand them to you with a straight face.",
+          "after": "You've mailed yourself a love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+          "consistency": "pass",
+          "written_by": "approved by David",
+          "why": null
+        },
+        {
+          "hop": 4,
+          "npc": "toby",
+          "heard_from": "gary",
+          "heard_where": "the Lemonade Stand",
+          "heard_when": "Wednesday evening",
+          "told_to": null,
+          "told_where": "outside your door",
+          "told_when": "Thursday morning",
+          "version": "You've mailed yourself a perfumed love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+          "mutation": "added the perfume",
+          "field_changed": "-",
+          "before": "You've mailed yourself a love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+          "after": "You've mailed yourself a perfumed love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+          "consistency": "pass",
+          "written_by": "approved by David",
+          "why": null
+        }
+      ],
+      "hops": [
+        {
+          "teller": "mildred",
+          "listener": "bev",
+          "where": "the Coffee Shop",
+          "when": "Wednesday morning",
+          "witnesses": []
+        },
+        {
+          "teller": "bev",
+          "listener": "gary",
+          "where": "the Coffee Shop",
+          "when": "Wednesday afternoon",
+          "witnesses": []
+        },
+        {
+          "teller": "gary",
+          "listener": "toby",
+          "where": "the Lemonade Stand",
+          "when": "Wednesday evening",
+          "witnesses": []
+        }
+      ],
+      "heat": 0.62,
+      "believers": 6,
+      "relevance_score": 0.625
+    }
+  },
+  "mutation_log": [
+    {
+      "hop": 1,
+      "npc": "mildred",
+      "heard_from": null,
+      "mutation": "started it",
+      "before": "(nothing: started it)",
+      "after": "You've been mailing yourself love letters signed \"a secret admirer.\"",
+      "consistency": "pass",
+      "written_by": "approved by David"
+    },
+    {
+      "hop": 2,
+      "npc": "bev",
+      "heard_from": "mildred",
+      "mutation": "added that Mildred has to hand them to you with a straight face",
+      "before": "You've been mailing yourself love letters signed \"a secret admirer.\"",
+      "after": "You've been mailing yourself love letters signed \"a secret admirer,\" and Mildred has to hand them to you with a straight face.",
+      "consistency": "pass",
+      "written_by": "approved by David"
+    },
+    {
+      "hop": 3,
+      "npc": "gary",
+      "heard_from": "bev",
+      "mutation": "made it every day for a month",
+      "before": "You've been mailing yourself love letters signed \"a secret admirer,\" and Mildred has to hand them to you with a straight face.",
+      "after": "You've mailed yourself a love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+      "consistency": "pass",
+      "written_by": "approved by David"
+    },
+    {
+      "hop": 4,
+      "npc": "toby",
+      "heard_from": "gary",
+      "mutation": "added the perfume",
+      "before": "You've mailed yourself a love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+      "after": "You've mailed yourself a perfumed love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+      "consistency": "pass",
+      "written_by": "approved by David"
+    }
+  ],
+  "lies": {
+    "mildred": {
+      "liar": "mildred",
+      "kind": "self",
+      "covering_for": "mildred",
+      "first_listener": "bev",
+      "lie": "Nobody had to tell me. I hand those letters to you myself.",
+      "alibi": "",
+      "why": "Ozzie mails himself love letters signed \"a secret admirer.\" When Bev asked who keeps getting the pink envelopes, Mildred named you to protect her friend Ozzie.",
+      "truth": "Ozzie mails himself love letters signed \"a secret admirer.\" When Bev asked who keeps getting the pink envelopes, Mildred named you to protect her friend Ozzie.",
+      "tell": "",
+      "tell_key": "",
+      "tell_kind": "detail",
+      "claimed_source": "myself",
+      "claimed_where": "the Coffee Shop",
+      "claimed_when": "Wednesday morning",
+      "real_where": "the Coffee Shop",
+      "real_when": "Wednesday morning",
+      "catch": [
+        "envelope"
+      ],
+      "written_by": "approved by David"
+    }
+  },
+  "evidence": {},
+  "quest": [
+    {
+      "step": 1,
+      "find": "gary",
+      "from": "toby",
+      "how": "ask Toby who told them"
+    },
+    {
+      "step": 2,
+      "find": "bev",
+      "from": "gary",
+      "how": "ask Gary who told them"
+    },
+    {
+      "step": 3,
+      "find": "mildred",
+      "from": "bev",
+      "how": "ask Bev who told them"
+    },
+    {
+      "step": 4,
+      "find": "the source",
+      "from": "mildred",
+      "how": "look around to find An envelope from Mildred's dead-letter tray (Post Office), Ozzie's typewriter, at the Theater (Theater), then call out Mildred while holding it"
+    }
+  ],
+  "solvability": [],
+  "morning": {
+    "hook": {
+      "line": "You've mailed yourself a perfumed love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+      "face": "talking",
+      "anim": "finger_guns",
+      "source": "approved by David"
+    },
+    "crier": {
+      "headline": "Self-mailing Love Letters",
+      "subhead": "You sent perfumed notes daily for thirty days. Mildred must deliver them with a straight face.",
+      "caption": "Suspect looks like they mailed themselves, but not really."
+    },
+    "arrival": {
+      "toby": {
+        "line": "You've mailed yourself a perfumed love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+        "face": "talking",
+        "anim": "finger_guns",
+        "source": "approved by David"
+      },
+      "mildred": {
+        "line": "AND you know what ELSE? You've been mailing yourself love letters signed \"a secret admirer.\"",
+        "face": "talking",
+        "anim": "peer_binoculars",
+        "source": "approved by David"
+      },
+      "gary": {
+        "line": "Every single day! You've mailed yourself a love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+        "face": "talking",
+        "anim": "this_big_sweep",
+        "source": "approved by David"
+      },
+      "bev": {
+        "line": "I nearly DIED. You've been mailing yourself love letters signed \"a secret admirer,\" and Mildred has to hand them to you with a straight face.",
+        "face": "talking",
+        "anim": "faint",
+        "source": "approved by David"
+      },
+      "ozzie": {
+        "line": "Trust me. You've mailed yourself a perfumed love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+        "face": "talking",
+        "anim": "rub_hands",
+        "source": "approved by David"
+      }
+    },
+    "barks": {
+      "toby": [
+        "You've mailed yourself a perfumed love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face."
+      ],
+      "mildred": [
+        "AND you know what ELSE?",
+        "You've been mailing yourself love letters signed \"a secret admirer.\""
+      ],
+      "gary": [
+        "Every single day!",
+        "You've mailed yourself a love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face."
+      ],
+      "bev": [
+        "I nearly DIED.",
+        "You've been mailing yourself love letters signed \"a secret admirer,\" and Mildred has to hand them to you with a straight face."
+      ],
+      "ozzie": [
+        "Trust me.",
+        "You've mailed yourself a perfumed love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face."
+      ]
+    },
+    "overheard": {
+      "hop1": "Mildred told Bev she saw a squirrel wearing a tie at the Coffee Shop on Wednesday morning.",
+      "hop2": "Bev and Gary are whispering about how Gary spilled his coffee on the Lemonade Stand's tablecloth yesterday afternoon.",
+      "hop3": "Gary and Toby are arguing over who found the first blue sock near the Lemonade Stand at dusk."
+    },
+    "overheard_facts": [
+      {
+        "id": "hop1",
+        "names": [
+          "Mildred",
+          "Bev"
+        ],
+        "place": "the Coffee Shop",
+        "when": "Wednesday morning",
+        "saw": "Mildred and Bev with their heads together, gossiping, at the Coffee Shop, Wednesday morning",
+        "plain": "I saw Mildred and Bev with their heads together at the Coffee Shop, Wednesday morning."
+      },
+      {
+        "id": "hop2",
+        "names": [
+          "Bev",
+          "Gary"
+        ],
+        "place": "the Coffee Shop",
+        "when": "Wednesday afternoon",
+        "saw": "Bev and Gary with their heads together, gossiping, at the Coffee Shop, Wednesday afternoon",
+        "plain": "I saw Bev and Gary with their heads together at the Coffee Shop, Wednesday afternoon."
+      },
+      {
+        "id": "hop3",
+        "names": [
+          "Gary",
+          "Toby"
+        ],
+        "place": "the Lemonade Stand",
+        "when": "Wednesday evening",
+        "saw": "Gary and Toby with their heads together, gossiping, at the Lemonade Stand, Wednesday evening",
+        "plain": "I saw Gary and Toby with their heads together at the Lemonade Stand, Wednesday evening."
+      }
+    ],
+    "escalation": {
+      "whispers": {
+        "assets": [
+          "wanted_poster"
+        ],
+        "line": "A wanted poster for a missing letter writer appears on every building."
+      },
+      "talk": {
+        "assets": [
+          "guard"
+        ],
+        "line": "The guard trots by and whispers that you're currently in the mail system."
+      },
+      "scandal": {
+        "assets": [
+          "stocks"
+        ],
+        "line": "At six, you spend the night in the stocks while pies fly at you."
+      }
+    }
+  },
+  "player": {
+    "evidence": [],
+    "visited": [
+      {
+        "npc": "toby",
+        "clock": "10:00 AM"
+      }
+    ],
+    "said": [
+      {
+        "npc": "toby",
+        "clock": "10:00 AM",
+        "text": "Who told u that?",
+        "intent": "ask_who_told",
+        "read_by": "model"
+      },
+      {
+        "npc": "toby",
+        "clock": "10:00 AM",
+        "text": "did he say anything else?",
+        "intent": "ask_about",
+        "read_by": "model"
+      },
+      {
+        "npc": "toby",
+        "clock": "10:00 AM",
+        "text": "does gary normally run his mouth like that?",
+        "intent": "ask_about",
+        "read_by": "model"
+      },
+      {
+        "npc": "toby",
+        "clock": "10:00 AM",
+        "text": "look around",
+        "intent": "look_around",
+        "read_by": "model"
+      },
+      {
+        "npc": "toby",
+        "clock": "10:00 AM",
+        "text": "ask if gary is a good friend or a typical shit talker",
+        "intent": "talk",
+        "read_by": "model"
+      }
+    ],
+    "accusations": [],
+    "shown": [],
+    "actions": [
+      {
+        "npc": "toby",
+        "clock": "10:00 AM",
+        "did": "looked around",
+        "found": []
+      }
+    ]
+  },
+  "night_log": [
+    {
+      "agent": "Hunt",
+      "kind": "code",
+      "result": "hunt 1: You've mailed yourself a perfumed love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+      "source": "approved by David"
+    },
+    {
+      "agent": "Chain",
+      "kind": "code",
+      "result": "Mildred -> Bev -> Gary -> Toby -> you",
+      "source": "approved by David"
+    },
+    {
+      "agent": "Red Herring",
+      "kind": "code",
+      "result": "Mildred lies: Nobody had to tell me. I hand those letters to you myself.",
+      "source": "approved by David"
+    },
+    {
+      "agent": "First words",
+      "kind": "code",
+      "result": "Toby: You've mailed yourself a perfumed love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+      "source": "approved by David"
+    },
+    {
+      "agent": "First words",
+      "kind": "code",
+      "result": "Mildred: AND you know what ELSE? You've been mailing yourself love letters signed \"a secret admirer.\"",
+      "source": "approved by David"
+    },
+    {
+      "agent": "First words",
+      "kind": "code",
+      "result": "Gary: Every single day! You've mailed yourself a love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+      "source": "approved by David"
+    },
+    {
+      "agent": "First words",
+      "kind": "code",
+      "result": "Bev: I nearly DIED. You've been mailing yourself love letters signed \"a secret admirer,\" and Mildred has to hand them to you with a straight face.",
+      "source": "approved by David"
+    },
+    {
+      "agent": "First words",
+      "kind": "code",
+      "result": "Ozzie: Trust me. You've mailed yourself a perfumed love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+      "source": "approved by David"
+    },
+    {
+      "agent": "Messenger",
+      "kind": "code",
+      "result": "Toby: You've mailed yourself a perfumed love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+      "source": "approved by David"
+    },
+    {
+      "agent": "Town Crier",
+      "kind": "LLM",
+      "result": "Self-mailing Love Letters. You sent perfumed notes daily for thirty days. Mildred must deliver them with a straight face.",
+      "source": "model (critic kept)"
+    },
+    {
+      "agent": "Gossip Barks",
+      "kind": "code",
+      "result": "Toby: You've mailed yourself a perfumed love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+      "source": "approved by David"
+    },
+    {
+      "agent": "Gossip Barks",
+      "kind": "code",
+      "result": "Mildred: AND you know what ELSE? / You've been mailing yourself love letters signed \"a secret admirer.\"",
+      "source": "approved by David"
+    },
+    {
+      "agent": "Gossip Barks",
+      "kind": "code",
+      "result": "Gary: Every single day! / You've mailed yourself a love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+      "source": "approved by David"
+    },
+    {
+      "agent": "Gossip Barks",
+      "kind": "code",
+      "result": "Bev: I nearly DIED. / You've been mailing yourself love letters signed \"a secret admirer,\" and Mildred has to hand them to you with a straight face.",
+      "source": "approved by David"
+    },
+    {
+      "agent": "Gossip Barks",
+      "kind": "code",
+      "result": "Ozzie: Trust me. / You've mailed yourself a perfumed love letter signed \"a secret admirer\" every day for a month, and Mildred has to hand them to you with a straight face.",
+      "source": "approved by David"
+    },
+    {
+      "agent": "Gossip Barks",
+      "kind": "LLM",
+      "result": "3 overheard lines",
+      "source": "model"
+    },
+    {
+      "agent": "Escalation Agent",
+      "kind": "LLM",
+      "result": "whispers: A wanted poster for a missing letter writer appears on every building.; talk: The guard trots by and whispers that you're currently in the mail system.; scandal: At six, you spend the night in the stocks while pies fly at you.",
+      "source": "model"
+    }
+  ],
+  "finds": [
+    {
+      "id": "envelope",
+      "where": "house",
+      "icon": "note",
+      "title": "An envelope from Mildred's dead-letter tray",
+      "lines": [
+        "No address on it.",
+        "Typed on the front: \"a s_cr_t admir_r\""
+      ]
+    },
+    {
+      "id": "typewriter",
+      "where": "theater",
+      "icon": "note",
+      "title": "Ozzie's typewriter, at the Theater",
+      "lines": [
+        "Its \"e\" key is missing."
+      ]
+    }
+  ]
+}

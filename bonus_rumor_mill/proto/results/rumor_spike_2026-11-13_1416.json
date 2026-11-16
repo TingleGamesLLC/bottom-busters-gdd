@@ -1,0 +1,1324 @@
+[
+  {
+    "i": 1,
+    "plan": {
+      "chain": [
+        "mildred",
+        "bev",
+        "gary",
+        "toby"
+      ],
+      "culprit": "mildred",
+      "root": "wrong_person",
+      "real": "ozzie",
+      "how": "by mistake: they mixed the player up with Ozzie"
+    },
+    "town": {
+      "street": "Whispering Pines Lane",
+      "places": {
+        "shop": {
+          "name": "Toby Crumb's Nuts & Bolts",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "Mildred Ashby's Tea Time Cottage",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary Gusto's Rusty Hook Shack",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Bev Fairweather's Curtain Call Hall",
+          "works_or_lives": "works",
+          "who": "bev"
+        },
+        "tavern": {
+          "name": "Ozzie Fink's Soggy Sock Tavern",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        }
+      },
+      "roof_prop": "anvil"
+    },
+    "roles": {
+      "toby": "hardware clerk",
+      "mildred": "tea lady",
+      "gary": "dock worker",
+      "bev": "theater usher",
+      "ozzie": "tavern bartender"
+    },
+    "best": null,
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "What really happened is the same act, done by the real person.",
+        "ms": 2380
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "Gary's after must be exactly the morning scale.",
+        "ms": 2228
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "Gary's after must be exactly the morning scale.",
+        "ms": 2196
+      }
+    ],
+    "lines": [],
+    "seconds": 14.8
+  },
+  {
+    "i": 2,
+    "plan": {
+      "chain": [
+        "gary",
+        "toby",
+        "ozzie"
+      ],
+      "culprit": "gary",
+      "root": "made_up",
+      "real": null,
+      "how": null
+    },
+    "town": {
+      "street": "Sigh Street",
+      "places": {
+        "shop": {
+          "name": "Toby Crumb's Pies",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "Mildred Ashby's Den",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary Gusto's Docks",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Bev Fairweather's Stage",
+          "works_or_lives": "works",
+          "who": "bev"
+        },
+        "tavern": {
+          "name": "Ozzie Fink's Tap",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        }
+      },
+      "roof_prop": "fish"
+    },
+    "roles": {
+      "toby": "Pie baker",
+      "mildred": "Gossip columnist",
+      "gary": "Dock foreman",
+      "bev": "Stage manager",
+      "ozzie": "Tavern keeper"
+    },
+    "best": [
+      {
+        "morning": {
+          "act": "licked three licks of a pie crust.",
+          "scale": "three times this Tuesday evening.",
+          "place": "Toby Crumb's Pies",
+          "time": "Tuesday evening",
+          "other": "Bev"
+        },
+        "undo": {
+          "ozzie": {
+            "before": "Ozzie",
+            "after": "Bev"
+          },
+          "toby": {
+            "added": "three licks of a pie crust"
+          }
+        },
+        "root": {
+          "who": "nobody",
+          "what_really_happened": "Gary licked the frosting off his own thumb.",
+          "detail": "one smear of blueberry jam on Tuesday morning at Gary Gusto's Docks",
+          "motive": "to make Bev feel guilty about his dock work"
+        }
+      },
+      [
+        {
+          "who": "gary",
+          "change": "made it up",
+          "v": {
+            "act": "licked three licks of a pie crust.",
+            "scale": "three times this Tuesday evening.",
+            "place": "Toby Crumb's Pies",
+            "time": "Tuesday evening",
+            "other": "Ozzie",
+            "extras": []
+          }
+        },
+        {
+          "who": "toby",
+          "change": "added: three licks of a pie crust",
+          "v": {
+            "act": "licked three licks of a pie crust.",
+            "scale": "three times this Tuesday evening.",
+            "place": "Toby Crumb's Pies",
+            "time": "Tuesday evening",
+            "other": "Ozzie",
+            "extras": [
+              "three licks of a pie crust"
+            ]
+          }
+        },
+        {
+          "who": "ozzie",
+          "change": "swapped Ozzie for Bev",
+          "v": {
+            "act": "licked three licks of a pie crust.",
+            "scale": "three times this Tuesday evening.",
+            "place": "Toby Crumb's Pies",
+            "time": "Tuesday evening",
+            "other": "Bev",
+            "extras": [
+              "three licks of a pie crust"
+            ]
+          }
+        }
+      ],
+      {
+        "pass": false,
+        "why": "not every step makes it worse",
+        "raw": {
+          "versions": [
+            {
+              "one_claim": true,
+              "stings": true,
+              "believable": true,
+              "petty_not_crime": true,
+              "note": "Gary's specific claim about licking pie crust at Toby Crumb's Pies is a believable, petty lie that would make the player feel embarrassed but not scared."
+            },
+            {
+              "one_claim": true,
+              "stings": true,
+              "believable": true,
+              "petty_not_crime": true,
+              "note": "Toby repeating the same act with the same details adds no new sting, just reinforces the absurdity of the original lie."
+            },
+            {
+              "one_claim": true,
+              "stings": true,
+              "believable": true,
+              "petty_not_crime": true,
+              "note": "Ozzie swapping Bev for Ozzie keeps the lie petty and believable, though the name change makes it slightly more specific to the current gossip cycle."
+            }
+          ],
+          "each_step_worse": false,
+          "root_fits": true,
+          "note": "The first version is a clear invention by Gary that fits the 'rumor' criteria perfectly, even though the real event involved Gary himself."
+        }
+      }
+    ],
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "The judge sent it back: not every step makes it worse",
+        "ms": 2012
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "act leaves out the place; that goes in place.",
+        "ms": 2388
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "Ozzie's after must be the morning's other person.",
+        "ms": 2138
+      }
+    ],
+    "lines": [
+      "Every day I see hundreds of people watching them lick three licks of that pie crust at Toby Crumb's Pies, and guess what? The whole thing is now the size of a wagon!",
+      "Three licks on Tuesday? I'll sell you a slice for two bucks and tell your friends about Ozzie!",
+      "Trust me, you licked three licks of that pie crust on Tuesday evening at Toby Crumb's Pies while Bev was there\u2014I would never do something so specific."
+    ],
+    "seconds": 20.2
+  },
+  {
+    "i": 3,
+    "plan": {
+      "chain": [
+        "toby",
+        "ozzie",
+        "mildred",
+        "gary"
+      ],
+      "culprit": "toby",
+      "root": "wrong_person",
+      "real": "bev",
+      "how": "by mistake: they mixed the player up with Bev"
+    },
+    "town": {
+      "street": "Gossip Lane",
+      "places": {
+        "shop": {
+          "name": "Toby's Crumb Corner",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "Mildred's Post Office",
+          "works_or_lives": "works",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary's Dockside Saloon",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Bev's Dramatic Den",
+          "works_or_lives": "works",
+          "who": "bev"
+        },
+        "tavern": {
+          "name": "Ozzie's Tantalizing Tap",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        }
+      },
+      "roof_prop": "anvil"
+    },
+    "roles": {
+      "toby": "shopkeeper",
+      "mildred": "postmistress",
+      "gary": "dockhand",
+      "bev": "actress",
+      "ozzie": "bartender"
+    },
+    "best": null,
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "act leaves out the place; that goes in place.",
+        "ms": 2504
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "Ozzie's after must be the morning's other person.",
+        "ms": 2154
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "Ozzie's after must be the morning's other person.",
+        "ms": 2443
+      }
+    ],
+    "lines": [],
+    "seconds": 19.6
+  },
+  {
+    "i": 4,
+    "plan": {
+      "chain": [
+        "toby",
+        "bev",
+        "ozzie",
+        "gary"
+      ],
+      "culprit": "toby",
+      "root": "made_up",
+      "real": null,
+      "how": null
+    },
+    "town": {
+      "street": "Gossip Lane",
+      "places": {
+        "shop": {
+          "name": "Toby Crumb's Candy Corner",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "Mildred Ashby's Dusty Drawing Room",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary Gusto's Rusty Sail House",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Bev Fairweather's Blinding Stage",
+          "works_or_lives": "works",
+          "who": "bev"
+        },
+        "tavern": {
+          "name": "Ozzie Fink's Soggy Ale Hall",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        }
+      },
+      "roof_prop": "anvil"
+    },
+    "roles": {
+      "toby": "Candy sales clerk",
+      "mildred": "Housekeeper",
+      "gary": "Dock worker",
+      "bev": "Actress",
+      "ozzie": "Tavern bartender"
+    },
+    "best": [
+      {
+        "morning": {
+          "act": "tripped",
+          "scale": "three times in a row",
+          "place": "Ozzie Fink's Soggy Ale Hall",
+          "time": "Wednesday evening",
+          "other": "Bev"
+        },
+        "undo": {
+          "gary": {
+            "before": "once",
+            "after": "three times in a row"
+          },
+          "ozzie": {
+            "before": "Gary",
+            "after": "Bev"
+          },
+          "bev": {
+            "added": "she was embarrassed"
+          }
+        },
+        "root": {
+          "who": "nobody",
+          "what_really_happened": "You spilled a drop of ketchup on the floor at Toby Crumb's Candy Corner",
+          "detail": "at exactly 9:12 AM on Tuesday",
+          "motive": "to blame you for slipping on his own sticky floor to stop Bev from buying too many lollipops"
+        }
+      },
+      [
+        {
+          "who": "toby",
+          "change": "made it up",
+          "v": {
+            "act": "tripped",
+            "scale": "once",
+            "place": "Ozzie Fink's Soggy Ale Hall",
+            "time": "Wednesday evening",
+            "other": "Gary",
+            "extras": []
+          }
+        },
+        {
+          "who": "bev",
+          "change": "added: she was embarrassed",
+          "v": {
+            "act": "tripped",
+            "scale": "once",
+            "place": "Ozzie Fink's Soggy Ale Hall",
+            "time": "Wednesday evening",
+            "other": "Gary",
+            "extras": [
+              "she was embarrassed"
+            ]
+          }
+        },
+        {
+          "who": "ozzie",
+          "change": "swapped Gary for Bev",
+          "v": {
+            "act": "tripped",
+            "scale": "once",
+            "place": "Ozzie Fink's Soggy Ale Hall",
+            "time": "Wednesday evening",
+            "other": "Bev",
+            "extras": [
+              "she was embarrassed"
+            ]
+          }
+        },
+        {
+          "who": "gary",
+          "change": "made it bigger: \"once\" became \"three times in a row\"",
+          "v": {
+            "act": "tripped",
+            "scale": "three times in a row",
+            "place": "Ozzie Fink's Soggy Ale Hall",
+            "time": "Wednesday evening",
+            "other": "Bev",
+            "extras": [
+              "she was embarrassed"
+            ]
+          }
+        }
+      ],
+      {
+        "pass": false,
+        "why": "the first version doesn't come from what really happened",
+        "raw": {
+          "versions": [
+            {
+              "one_claim": true,
+              "stings": true,
+              "believable": true,
+              "petty_not_crime": true,
+              "note": "This version is perfect gossip: specific, embarrassing, and plausible."
+            },
+            {
+              "one_claim": true,
+              "stings": true,
+              "believable": true,
+              "petty_not_crime": true,
+              "note": "Adding Bev's embarrassment makes the social sting sharper without breaking believability."
+            },
+            {
+              "one_claim": true,
+              "stings": true,
+              "believable": true,
+              "petty_not_crime": true,
+              "note": "Swapping names keeps the core event intact while shifting blame slightly."
+            },
+            {
+              "one_claim": true,
+              "stings": true,
+              "believable": true,
+              "petty_not_crime": true,
+              "note": "Escalating to three times is still petty gossip, though it feels increasingly exaggerated."
+            }
+          ],
+          "each_step_worse": true,
+          "root_fits": false,
+          "note": "The first version invents a trip at an ale hall, whereas the real event was a ketchup spill at a candy store."
+        }
+      }
+    ],
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "Gary's after must be exactly the morning scale.",
+        "ms": 2654
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "Gary's after must be exactly the morning scale.",
+        "ms": 2188
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "The judge sent it back: the first version doesn't come from what really happened",
+        "ms": 2189
+      }
+    ],
+    "lines": [
+      "They tripped at Ozzie Fink's Soggy Ale Hall last Wednesday when Gary was there, and get this\u2014grab a pint for $4.50 or tell your friends before the special ends!",
+      "Oh, Ozzie! I saw them trip right there at your Soggy Ale Hall on that Wednesday evening with Gary, and I nearly DIED!",
+      "\"Trust me, they tripped right up against my Soggy Ale Hall doorframe on Wednesday night while Bev was laughing too hard to help them.\" \"I would never frame a friend with that kind of clumsy evidence, though.\"",
+      "Every single day this week, you tripped three times at Ozzie Fink's Soggy Ale Hall while Bev was right there, and I've heard it from hundreds of folks since it happened."
+    ],
+    "seconds": 19.1
+  },
+  {
+    "i": 5,
+    "plan": {
+      "chain": [
+        "ozzie",
+        "toby",
+        "gary",
+        "mildred"
+      ],
+      "culprit": "ozzie",
+      "root": "wrong_person",
+      "real": "bev",
+      "how": "on purpose, to cover for their friend Bev"
+    },
+    "town": {
+      "street": "Sour Gossip Lane",
+      "places": {
+        "shop": {
+          "name": "Toby's Canned Peach Stand",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "Mildred's Dusty Diner House",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary's Rusty Boat Dock Shed",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Bev's Barnstorming Theater",
+          "works_or_lives": "works",
+          "who": "bev"
+        },
+        "tavern": {
+          "name": "Ozzie's Swilling Tavern",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        }
+      },
+      "roof_prop": "anvil"
+    },
+    "roles": {
+      "toby": "canned peach vendor",
+      "mildred": "housekeeper",
+      "gary": "dock foreman",
+      "bev": "theater manager",
+      "ozzie": "tavern bartender"
+    },
+    "best": null,
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "act leaves out the place; that goes in place.",
+        "ms": 2600
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "Gary's after must be exactly the morning scale.",
+        "ms": 2380
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "Gary's after must be exactly the morning scale.",
+        "ms": 2406
+      }
+    ],
+    "lines": [],
+    "seconds": 26.0
+  },
+  {
+    "i": 6,
+    "plan": {
+      "chain": [
+        "mildred",
+        "toby",
+        "gary"
+      ],
+      "culprit": "mildred",
+      "root": "made_up",
+      "real": null,
+      "how": null
+    },
+    "town": {
+      "street": "Gossip Lane",
+      "places": {
+        "shop": {
+          "name": "Toby's Crumb Corner",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "Mildred's Post Office Hole",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary's Dockside Dump",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Bev's Barnstorming Booth",
+          "works_or_lives": "works",
+          "who": "bev"
+        },
+        "tavern": {
+          "name": "Ozzie's Oaken Stomp",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        }
+      },
+      "roof_prop": "fish"
+    },
+    "roles": {
+      "toby": "grocery store clerk",
+      "mildred": "post office helper",
+      "gary": "dock worker",
+      "bev": "theater usher",
+      "ozzie": "tavern bartender"
+    },
+    "best": [
+      {
+        "morning": {
+          "act": "spilled coffee on three different people",
+          "scale": "three times in a row",
+          "place": "Ozzie's Oaken Stomp",
+          "time": "Wednesday afternoon",
+          "other": "none"
+        },
+        "undo": {
+          "gary": {
+            "before": "once",
+            "after": "three times in a row"
+          },
+          "toby": {
+            "added": "coffee on three different people"
+          }
+        },
+        "root": {
+          "who": "nobody",
+          "what_really_happened": "Mildred accidentally knocked over her own pitcher while handing out flyers to Ozzie at his tavern on Tuesday morning, soaking the table and three empty chairs",
+          "detail": "the blue ceramic jug",
+          "motive": "covering for herself"
+        }
+      },
+      [
+        {
+          "who": "mildred",
+          "change": "made it up",
+          "v": {
+            "act": "spilled coffee on three different people",
+            "scale": "once",
+            "place": "Ozzie's Oaken Stomp",
+            "time": "Wednesday afternoon",
+            "other": "none",
+            "extras": []
+          }
+        },
+        {
+          "who": "toby",
+          "change": "added: coffee on three different people",
+          "v": {
+            "act": "spilled coffee on three different people",
+            "scale": "once",
+            "place": "Ozzie's Oaken Stomp",
+            "time": "Wednesday afternoon",
+            "other": "none",
+            "extras": [
+              "coffee on three different people"
+            ]
+          }
+        },
+        {
+          "who": "gary",
+          "change": "made it bigger: \"once\" became \"three times in a row\"",
+          "v": {
+            "act": "spilled coffee on three different people",
+            "scale": "three times in a row",
+            "place": "Ozzie's Oaken Stomp",
+            "time": "Wednesday afternoon",
+            "other": "none",
+            "extras": [
+              "coffee on three different people"
+            ]
+          }
+        }
+      ],
+      {
+        "pass": false,
+        "why": "the first version doesn't come from what really happened",
+        "raw": {
+          "versions": [
+            {
+              "one_claim": true,
+              "stings": true,
+              "believable": true,
+              "petty_not_crime": true,
+              "note": "This version pins the specific accident on you at a real location, making it a believable but embarrassing lie."
+            },
+            {
+              "one_claim": true,
+              "stings": true,
+              "believable": true,
+              "petty_not_crime": true,
+              "note": "Repeating the core claim makes it sound like a pattern of behavior rather than a one-time slip."
+            },
+            {
+              "one_claim": true,
+              "stings": true,
+              "believable": true,
+              "petty_not_crime": true,
+              "note": "Adding frequency implies you are a chronic mess-maker, which is the most damaging yet still cartoonishly petty."
+            }
+          ],
+          "each_step_worse": true,
+          "root_fits": false,
+          "note": "The first version is a clear invention because the real event happened on Tuesday morning and involved Mildred, not you."
+        }
+      }
+    ],
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "Gary's after must be exactly the morning scale.",
+        "ms": 2330
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "The judge sent it back: the first version doesn't come from what really happened",
+        "ms": 1955
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "Gary's after must be exactly the morning scale.",
+        "ms": 2187
+      }
+    ],
+    "lines": [
+      "You spilled coffee on three different people, once, at Ozzie's Oaken Stomp, Wednesday afternoon, AND you know what ELSE!",
+      "Gary, three cups of hot brew on Ozzie's Stomp floor last Wednesday, and I got you a 2-for-1 special on the espresso machine if you tell your friends!",
+      "Every single day at Ozzie's Oaken Stomp, you spill coffee on three different folks, three times in a row, until the mess is the size of a wagon!"
+    ],
+    "seconds": 19.5
+  },
+  {
+    "i": 7,
+    "plan": {
+      "chain": [
+        "gary",
+        "bev",
+        "toby",
+        "ozzie"
+      ],
+      "culprit": "gary",
+      "root": "wrong_person",
+      "real": "mildred",
+      "how": "by mistake: they mixed the player up with Mildred"
+    },
+    "town": {
+      "street": "Maple Lane",
+      "places": {
+        "shop": {
+          "name": "Toby Crumb's Candy Cart",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "Mildred Ashby's Tea Room",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary Gusto's Cargo Pit",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Bev Fairweather's Stage Door",
+          "works_or_lives": "works",
+          "who": "bev"
+        },
+        "tavern": {
+          "name": "Ozzie Fink's Card Table",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        }
+      },
+      "roof_prop": "candle"
+    },
+    "roles": {
+      "toby": "sugar salesman",
+      "mildred": "tea inspector",
+      "gary": "dock foreman",
+      "bev": "stagehand",
+      "ozzie": "card sharp"
+    },
+    "best": null,
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "Ozzie's after must be the morning's other person.",
+        "ms": 2627
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "Ozzie's after must be the morning's other person.",
+        "ms": 2536
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "Ozzie's after must be the morning's other person.",
+        "ms": 2394
+      }
+    ],
+    "lines": [],
+    "seconds": 17.0
+  },
+  {
+    "i": 8,
+    "plan": {
+      "chain": [
+        "toby",
+        "mildred",
+        "bev",
+        "ozzie"
+      ],
+      "culprit": "toby",
+      "root": "made_up",
+      "real": null,
+      "how": null
+    },
+    "town": {
+      "street": "Whispering Pines Drive",
+      "places": {
+        "shop": {
+          "name": "Toby's Crumb Corner",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "Mildred's Nook of Truth",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary's Rusty Scuttles",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Bev's Velvet Curtain",
+          "works_or_lives": "works",
+          "who": "bev"
+        },
+        "tavern": {
+          "name": "Ozzie's Card Table",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        }
+      },
+      "roof_prop": "anvil"
+    },
+    "roles": {
+      "toby": "Bakery flour bagger",
+      "mildred": "House gossip writer",
+      "gary": "Dock salvage foreman",
+      "bev": "Theater curtain raiser",
+      "ozzie": "Tavern card sharp"
+    },
+    "best": null,
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "Ozzie's after must be the morning's other person.",
+        "ms": 2527
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "act leaves out the place; that goes in place.",
+        "ms": 2427
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "Ozzie's after must be the morning's other person.",
+        "ms": 2288
+      }
+    ],
+    "lines": [],
+    "seconds": 17.0
+  },
+  {
+    "i": 9,
+    "plan": {
+      "chain": [
+        "ozzie",
+        "toby",
+        "gary"
+      ],
+      "culprit": "ozzie",
+      "root": "wrong_person",
+      "real": "bev",
+      "how": "on purpose, to cover for their friend Bev"
+    },
+    "town": {
+      "street": "Whispering Pines Avenue",
+      "places": {
+        "shop": {
+          "name": "Toby Crumb's Froth & Foam Dairy",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "Mildred Ashby's Hush-Hush Hamlet",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary Gusto's Gusty Gear Galley",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Bev Fairweather's Big Blue Blower",
+          "works_or_lives": "works",
+          "who": "bev"
+        },
+        "tavern": {
+          "name": "Ozzie Fink's Oathless Oaken Oast",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        }
+      },
+      "roof_prop": "anvil"
+    },
+    "roles": {
+      "toby": "fresh milk seller",
+      "mildred": "gossip collector",
+      "gary": "dock hand",
+      "bev": "theater actress",
+      "ozzie": "tavern bartender"
+    },
+    "best": [
+      {
+        "morning": {
+          "act": "tried to steal a jar of pickles.",
+          "scale": "Three times in one hour.",
+          "place": "Gary Gusto's Gusty Gear Galley",
+          "time": "Wednesday afternoon",
+          "other": "Bev"
+        },
+        "undo": {
+          "gary": {
+            "before": "Once",
+            "after": "Three times in one hour"
+          },
+          "toby": {
+            "added": "You reached into the display case."
+          }
+        },
+        "root": {
+          "who": "Bev",
+          "what_really_happened": "Bev accidentally knocked a jar of pickles off the counter at Gary Gusto's Gusty Gear Galley on Wednesday afternoon.",
+          "detail": "It was exactly one jar of dill pickles, not stolen but spilled.",
+          "motive": "Ozzie lied to protect Bev from Mildred's gossip."
+        }
+      },
+      [
+        {
+          "who": "ozzie",
+          "change": "made it about you",
+          "v": {
+            "act": "tried to steal a jar of pickles.",
+            "scale": "Once",
+            "place": "Gary Gusto's Gusty Gear Galley",
+            "time": "Wednesday afternoon",
+            "other": "Bev",
+            "extras": []
+          }
+        },
+        {
+          "who": "toby",
+          "change": "added: You reached into the display case.",
+          "v": {
+            "act": "tried to steal a jar of pickles.",
+            "scale": "Once",
+            "place": "Gary Gusto's Gusty Gear Galley",
+            "time": "Wednesday afternoon",
+            "other": "Bev",
+            "extras": [
+              "You reached into the display case."
+            ]
+          }
+        },
+        {
+          "who": "gary",
+          "change": "made it bigger: \"Once\" became \"Three times in one hour\"",
+          "v": {
+            "act": "tried to steal a jar of pickles.",
+            "scale": "Three times in one hour",
+            "place": "Gary Gusto's Gusty Gear Galley",
+            "time": "Wednesday afternoon",
+            "other": "Bev",
+            "extras": [
+              "You reached into the display case."
+            ]
+          }
+        }
+      ],
+      {
+        "pass": false,
+        "why": "version 1 fails one_claim, stings, believable, petty_not_crime (This version invents theft and a specific time/location not present in the truth, failing the 'one claim' and 'believable' rules.); the first version doesn't come from what really happened",
+        "raw": {
+          "versions": [
+            {
+              "one_claim": false,
+              "stings": false,
+              "believable": false,
+              "petty_not_crime": false,
+              "note": "This version invents theft and a specific time/location not present in the truth, failing the 'one claim' and 'believable' rules."
+            },
+            {
+              "one_claim": true,
+              "stings": true,
+              "believable": true,
+              "petty_not_crime": true,
+              "note": "This version adds a specific action ('reached in') that makes the theft plausible while remaining petty and focused on the player."
+            },
+            {
+              "one_claim": true,
+              "stings": true,
+              "believable": true,
+              "petty_not_crime": true,
+              "note": "This version escalates by adding frequency ('three times'), making the accusation of habitual theft more damaging yet still within the petty bounds."
+            }
+          ],
+          "each_step_worse": true,
+          "root_fits": false,
+          "note": "The first version is a clear invention of theft rather than a direct misattribution of the actual event where Bev knocked over a jar."
+        }
+      }
+    ],
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "Gary's after must be exactly the morning scale.",
+        "ms": 2651
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "Gary's after must be exactly the morning scale.",
+        "ms": 1992
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "The judge sent it back: version 1 fails one_claim, stings, believable, petty_not_crime (This version invents theft and a specific time/location not present in the truth, failing the 'one claim' and 'believable' rules.); the first version doesn't come from what really happened",
+        "ms": 2085
+      }
+    ],
+    "lines": [
+      "Trust me, I'd never steal pickles from Gary Gusto's Gusty Gear Galley on a Wednesday afternoon while Bev is right there\u2014I just swapped her name to make this whole mess happen.",
+      "Hey Gary! You see them reach for that jar? They tried to steal a pickle at Gusty Gear Galley on Wednesday with Bev there, but I told 'em: tell your friends, we're having a special sale\u2014buy one get two free!",
+      "\"Every day at Gusty Gear Galley, I've seen hundreds of you try to steal pickles, and one Wednesday afternoon you reached into my display case.\"}"
+    ],
+    "seconds": 21.8
+  },
+  {
+    "i": 10,
+    "plan": {
+      "chain": [
+        "bev",
+        "ozzie",
+        "mildred",
+        "gary"
+      ],
+      "culprit": "bev",
+      "root": "made_up",
+      "real": null,
+      "how": null
+    },
+    "town": {
+      "street": "Maple Whistle Lane",
+      "places": {
+        "shop": {
+          "name": "Toby's Nuts & Bolts",
+          "works_or_lives": "works",
+          "who": "toby"
+        },
+        "house": {
+          "name": "The Ashby Manor of Misinformation",
+          "works_or_lives": "lives",
+          "who": "mildred"
+        },
+        "dock_shed": {
+          "name": "Gary's Greasy Grind and Gear",
+          "works_or_lives": "works",
+          "who": "gary"
+        },
+        "theater": {
+          "name": "Bev's Big Boobie Ballroom",
+          "works_or_lives": "works",
+          "who": "bev"
+        },
+        "tavern": {
+          "name": "Ozzie's Old Oaf Oyster Bar",
+          "works_or_lives": "works",
+          "who": "ozzie"
+        }
+      },
+      "roof_prop": "anvil"
+    },
+    "roles": {
+      "toby": "hardware store clerk",
+      "mildred": "neighborhood watch captain",
+      "gary": "dock laborer",
+      "bev": "theater stagehand",
+      "ozzie": "tavern bartender"
+    },
+    "best": [
+      {
+        "morning": {
+          "act": "tried to steal three nuts",
+          "scale": "every day this week",
+          "place": "Toby's Nuts & Bolts",
+          "time": "Tuesday afternoon",
+          "other": "Ozzie"
+        },
+        "undo": {
+          "gary": {
+            "before": "three nuts",
+            "after": "every day this week"
+          },
+          "mildred": {
+            "added": "You then tried to sell them to Ozzie at the tavern."
+          },
+          "ozzie": {
+            "before": "Toby",
+            "after": "Ozzie"
+          }
+        },
+        "root": {
+          "who": "nobody",
+          "what_really_happened": "Bev accidentally dropped a bag of three nuts on Tuesday afternoon while setting up at the theater, and she blamed you to cover her mistake.",
+          "detail": "Tuesday afternoon",
+          "motive": "covering for herself"
+        }
+      },
+      [
+        {
+          "who": "bev",
+          "change": "made it up",
+          "v": {
+            "act": "tried to steal three nuts",
+            "scale": "three nuts",
+            "place": "Toby's Nuts & Bolts",
+            "time": "Tuesday afternoon",
+            "other": "Toby",
+            "extras": []
+          }
+        },
+        {
+          "who": "ozzie",
+          "change": "swapped Toby for Ozzie",
+          "v": {
+            "act": "tried to steal three nuts",
+            "scale": "three nuts",
+            "place": "Toby's Nuts & Bolts",
+            "time": "Tuesday afternoon",
+            "other": "Ozzie",
+            "extras": []
+          }
+        },
+        {
+          "who": "mildred",
+          "change": "added: You then tried to sell them to Ozzie at the tavern.",
+          "v": {
+            "act": "tried to steal three nuts",
+            "scale": "three nuts",
+            "place": "Toby's Nuts & Bolts",
+            "time": "Tuesday afternoon",
+            "other": "Ozzie",
+            "extras": [
+              "You then tried to sell them to Ozzie at the tavern."
+            ]
+          }
+        },
+        {
+          "who": "gary",
+          "change": "made it bigger: \"three nuts\" became \"every day this week\"",
+          "v": {
+            "act": "tried to steal three nuts",
+            "scale": "every day this week",
+            "place": "Toby's Nuts & Bolts",
+            "time": "Tuesday afternoon",
+            "other": "Ozzie",
+            "extras": [
+              "You then tried to sell them to Ozzie at the tavern."
+            ]
+          }
+        }
+      ],
+      {
+        "pass": false,
+        "why": "version 3 fails one_claim (Adding a second crime (selling the nuts) violates the rule of one claim and escalates the accusation unfairly.); version 4 fails one_claim (Extending the theft to 'every day this week' creates a pattern of criminal behavior, breaking the one-claim limit.); the first version doesn't come from what really happened",
+        "raw": {
+          "versions": [
+            {
+              "one_claim": true,
+              "stings": true,
+              "believable": true,
+              "petty_not_crime": true,
+              "note": "Bev's accusation of theft is specific enough to sting but petty enough to be whispered."
+            },
+            {
+              "one_claim": true,
+              "stings": true,
+              "believable": true,
+              "petty_not_crime": true,
+              "note": "Ozzie's presence shifts blame to a friend, making the theft seem more intentional and harder to dismiss."
+            },
+            {
+              "one_claim": false,
+              "stings": true,
+              "believable": true,
+              "petty_not_crime": true,
+              "note": "Adding a second crime (selling the nuts) violates the rule of one claim and escalates the accusation unfairly."
+            },
+            {
+              "one_claim": false,
+              "stings": true,
+              "believable": true,
+              "petty_not_crime": true,
+              "note": "Extending the theft to 'every day this week' creates a pattern of criminal behavior, breaking the one-claim limit."
+            }
+          ],
+          "each_step_worse": true,
+          "root_fits": false,
+          "note": "The first version is a clear invention by Bev, not a reflection of the actual accident where she dropped the nuts herself."
+        }
+      }
+    ],
+    "tries": [
+      {
+        "attempt": 1,
+        "ok": false,
+        "note": "The judge sent it back: version 1 fails one_claim (This version is too specific about the exact item and time, which feels like a lie rather than a whisper.); version 2 fails one_claim (Swapping Mildred for Gary makes it sound like a conspiracy, but the core accusation of theft remains too precise.); version 4 fails petty_not_crime (Throwing bolts at someone's face is cartoon violence, but it crosses the line from petty to assault.); the first version doesn't come from what really happened",
+        "ms": 2302
+      },
+      {
+        "attempt": 2,
+        "ok": false,
+        "note": "The judge sent it back: version 3 fails one_claim (Adding a second crime (selling the nuts) violates the rule of one claim and escalates the accusation unfairly.); version 4 fails one_claim (Extending the theft to 'every day this week' creates a pattern of criminal behavior, breaking the one-claim limit.); the first version doesn't come from what really happened",
+        "ms": 2199
+      },
+      {
+        "attempt": 3,
+        "ok": false,
+        "note": "act leaves out the place; that goes in place.",
+        "ms": 2247
+      }
+    ],
+    "lines": [
+      "Oh my god, you tried to steal three nuts, three nuts, at Toby's Nuts & Bolts on Tuesday! I can't even believe it\u2014I nearly DIED when Toby saw you with your hands full!",
+      "\"Trust me, they tried to swipe three nuts from Toby's Nuts & Bolts on Tuesday afternoon, and I was right there.\" \"I would never steal from a local hardware store; it's just bad form.\"}",
+      "They tried to steal three nuts at Toby's Nuts & Bolts on Tuesday afternoon with Ozzie there, AND you know what ELSE: they tried to sell those very same three nuts to Ozzie at the tavern.",
+      "Every single day this week for hundreds of hours, you've been trying to steal three nuts at Toby's Nuts & Bolts while Ozzie watches, and then you're selling those same three nuts to him every evening at the tavern."
+    ],
+    "seconds": 21.5
+  }
+]

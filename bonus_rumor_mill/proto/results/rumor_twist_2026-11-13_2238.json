@@ -1,0 +1,163 @@
+{
+  "life": {
+    "job": "scraps old tires",
+    "works_at": "The Tire Yard",
+    "known_for": "replacing a flat with a squeaky balloon in under ten seconds",
+    "touchy_about": "people calling his rubber 'bald'",
+    "friend": "Mildred",
+    "cant_stand": "Bev"
+  },
+  "town": {
+    "street": "Sour Grapes Lane",
+    "places": {
+      "shop": {
+        "name": "Toby's Sour Sips",
+        "works_or_lives": "works",
+        "who": "toby"
+      },
+      "house": {
+        "name": "Mildred's Mailbox Manor",
+        "works_or_lives": "lives",
+        "who": "mildred"
+      },
+      "dock_shed": {
+        "name": "Gary's Gnarly Gear",
+        "works_or_lives": "works",
+        "who": "gary"
+      },
+      "theater": {
+        "name": "Ozzie's Over-the-Top Theater",
+        "works_or_lives": "works",
+        "who": "ozzie"
+      },
+      "tavern": {
+        "name": "Bev's Boiling Brew",
+        "works_or_lives": "works",
+        "who": "bev"
+      }
+    },
+    "roof_prop": "fish"
+  },
+  "rows": [
+    {
+      "act": {
+        "what": "scrapped old tires",
+        "place": "Toby's Sour Sips",
+        "time": "Wednesday morning",
+        "who": "Toby"
+      },
+      "qwen4b": "You just replaced a flat at Toby's Sour Sips with a squeaky balloon that made everyone think the whole lemonade stand is bald.",
+      "qwen4b_s": 0.516,
+      "big": "You replaced Toby's lemonade with squeaky balloon juice and charged him ten cents for a flat tire repair.",
+      "big_s": 47.43459153175354
+    },
+    {
+      "act": {
+        "what": "replaced a flat with a squeaky balloon",
+        "place": "Mildred's Mailbox Manor",
+        "time": "Wednesday afternoon",
+        "who": "Mildred"
+      },
+      "qwen4b": "They say you replaced Mildred's flat tire at her mailbox manor with a squeaky balloon instead of real rubber.",
+      "qwen4b_s": 0.515,
+      "big": "You replaced Mildred's mailbox with a squeaky balloon and called it 'a new kind of mail delivery'.",
+      "big_s": 0.807258129119873
+    },
+    {
+      "act": {
+        "what": "refused to call his rubber bald",
+        "place": "Gary's Gnarly Gear",
+        "time": "Wednesday evening",
+        "who": "Gary"
+      },
+      "qwen4b": "You tried to fix Gary's net with that squeaky balloon you're so proud of, but it just got stuck in his gear.",
+      "qwen4b_s": 0.493,
+      "big": "You called Gary's net a bald tire and said it was better than yours.",
+      "big_s": 0.7120101451873779
+    },
+    {
+      "act": {
+        "what": "ordered a coffee at Bev's Boiling Brew",
+        "place": "Bev's Boiling Brew",
+        "time": "Wednesday morning",
+        "who": "Bev"
+      },
+      "qwen4b": "You tried to swap Bev's coffee mug for a squeaky balloon just like you did at The Tire Yard.",
+      "qwen4b_s": 0.435,
+      "big": "You replaced Bev's coffee with a squeaky balloon and said it was 'the new signature brew'.",
+      "big_s": 0.7761211395263672
+    },
+    {
+      "act": {
+        "what": "watched Ozzie rehearse a script",
+        "place": "Ozzie's Over-the-Top Theater",
+        "time": "Wednesday afternoon",
+        "who": "Ozzie"
+      },
+      "qwen4b": "You told Ozzie his new script was flat because your replacement balloon squeaked too loud.",
+      "qwen4b_s": 0.46,
+      "big": "You tried to replace Ozzie's script with a squeaky balloon and called it 'art'.",
+      "big_s": 0.7792418003082275
+    },
+    {
+      "act": {
+        "what": "collected the mail",
+        "place": "Mildred's Mailbox Manor",
+        "time": "Wednesday morning",
+        "who": "Mildred"
+      },
+      "qwen4b": "You replaced Mildred's flat mailbag with a squeaky balloon.",
+      "qwen4b_s": 0.402,
+      "big": "You tried to mail a squeaky balloon instead of a letter, and Mildred caught you\u2014she said it was the most 'bald' thing she'd ever seen.",
+      "big_s": 0.9282934665679932
+    },
+    {
+      "act": {
+        "what": "fixed a torn fishing net",
+        "place": "Gary's Gnarly Gear",
+        "time": "Wednesday afternoon",
+        "who": "Gary"
+      },
+      "qwen4b": "You replaced Gary's torn net with a squeaky balloon while he was there.",
+      "qwen4b_s": 0.416,
+      "big": "You replaced Gary's torn fishing net with a squeaky balloon and called it 'fixing it'.",
+      "big_s": 0.7708401679992676
+    },
+    {
+      "act": {
+        "what": "asked for an extra shot of coffee",
+        "place": "Bev's Boiling Brew",
+        "time": "Wednesday evening",
+        "who": "Bev"
+      },
+      "qwen4b": "You asked for an extra shot of coffee at Bev's Boiling Brew and now you're stuck selling lemonade with a squeaky balloon instead of your real one.",
+      "qwen4b_s": 0.517,
+      "big": "You tried to pay for your extra shot of coffee with a squeaky balloon.",
+      "big_s": 0.7153422832489014
+    },
+    {
+      "act": {
+        "what": "clapped hands at the curtain call",
+        "place": "Ozzie's Over-the-Top Theater",
+        "time": "Wednesday evening",
+        "who": "Ozzie"
+      },
+      "qwen4b": "You're replacing flats with squeaky balloons again.",
+      "qwen4b_s": 0.385,
+      "big": "You replaced Ozzie's curtain with a squeaky balloon and clapped for it at the theater.",
+      "big_s": 0.756950855255127
+    },
+    {
+      "act": {
+        "what": "drove home on empty roads",
+        "place": "Toby's Sour Sips",
+        "time": "Wednesday evening",
+        "who": "Toby"
+      },
+      "qwen4b": "They say you replaced a flat at The Tire Yard with a squeaky balloon and Toby laughed so hard he threw his lemonade on Gary's nets.",
+      "qwen4b_s": 0.485,
+      "big": "You drove home on a squeaky balloon, Toby's lemonade still in your cup.",
+      "big_s": 0.7373647689819336
+    }
+  ]
+}
